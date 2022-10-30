@@ -17,6 +17,7 @@ body{
     width: 100%;
     position: absolute;
     top:5vh;
+    padding-bottom: 100px;
     height: 200px;
 }
 
@@ -28,7 +29,7 @@ body{
 
 
 .area{
-    background: #643ffb;  
+    background: #ff0000;  
     background: -webkit-linear-gradient(to left, #643ffb, #ff008a);  
     width: 100%;
     height:100vh;

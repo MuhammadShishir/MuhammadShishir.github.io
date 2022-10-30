@@ -15,7 +15,7 @@ body{
 
 .context {
     width: 100%;
-    position: absolute;
+    position: top;
     top:50vh;
     
 }
@@ -29,7 +29,7 @@ body{
 
 .area{
     background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8800ff, #ef00ff);  
+    background: -webkit-linear-gradient(to left, #643ffb, #ff008a);  
     width: 100%;
     height:100vh;
     

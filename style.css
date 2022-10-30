@@ -15,9 +15,9 @@ body{
 
 .context {
     width: 100%;
-    position: top;
-    top:50vh;
-    
+    position: absolute;
+    top:5vh;
+    height: 200px;
 }
 
 .context h1{
@@ -28,7 +28,7 @@ body{
 
 
 .area{
-/*     background: #643ffb;   */
+    background: #643ffb;  
     background: -webkit-linear-gradient(to left, #643ffb, #ff008a);  
     width: 100%;
     height:100vh;

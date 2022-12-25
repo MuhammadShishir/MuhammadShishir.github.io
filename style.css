@@ -19,7 +19,7 @@ body{
     width: 100%;
 /*     position: absolute; */
      position: relative;
-    top:5vh;
+    top:9vh;
 
 }
 
@@ -31,10 +31,10 @@ body{
 
 
 .area{
-/*     background: #6200ff;  
-    background: -webkit-linear-gradient(to left, #ffffff, #0026ff);   */
+    /* s */
+    background: -webkit-linear-gradient(to left, #008cff, #fd03aa);  
     width: 100%;
-    height:500vh;
+    height:150vh;
     
    
 }
@@ -45,6 +45,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -10;
 /*     overflow: hidden; */
 }
 
@@ -156,6 +157,7 @@ body{
 .grid-2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    z-index: 10;
 }
 
 
@@ -166,10 +168,11 @@ p, h2,.white{
 a{
     color: #ffffff;
     text-decoration: none;
+    z-index: 10;
 }
 /* section 1 */
 .section-1{
-    padding-top: 40vh;
+    padding-top: 25vh;
     text-align: center;
 }
 
@@ -231,6 +234,79 @@ a{
     position: relative;
     padding-left: 10px;
 }
+
+.project{
+    display:flex;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    hight: 300px;
+    z-index: 10;
+    
+}
+.project H1{
+    padding-left: 120px;
+    padding-bottom: 150px;
+    
+}
+.gallery-text{
+    display:inline;
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    /* left: auto; */
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    background-color: #05cdff28;
+}
+.gallery-text i{
+    
+    padding: 5px;
+    font-size: 2.2rem;
+    padding-left: 0;
+    width: 100px;
+    color: #fff;
+    
+}
+/* animations / utilities */
+.gallery-text i:hover{
+    font-size: 2.5rem;
+    color: rgb(117, 58, 255);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.gallery-text2 h2{
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+.gallery-container{
+  
+    display: flex;
+    /* overflow: scroll; */
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.gallery-container img{
+    height:fit-content;
+    width: 100%;
+}
+
+.gallery-container div{
+    /* padding: 10px; */
+    background-color:  #dbdbdb86;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
 /* media queres */
 @media(max-width:780px){

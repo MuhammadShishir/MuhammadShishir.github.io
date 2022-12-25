@@ -30,8 +30,8 @@ body{
 
 
 .area{
-    background: #6200ff;  
-    background: -webkit-linear-gradient(to left, #ffffff, #0026ff);  
+/*     background: #6200ff;  
+    background: -webkit-linear-gradient(to left, #ffffff, #0026ff);   */
     width: 100%;
     height:500vh;
     

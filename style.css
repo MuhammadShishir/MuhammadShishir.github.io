@@ -238,7 +238,7 @@ a{
 .project{
     display:flex;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    hight: 300px;
+    height: 300px;
     z-index: 10;
     
 }

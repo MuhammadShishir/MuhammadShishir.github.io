@@ -313,9 +313,21 @@ a{
     justify-content: center;
     text-align: center;
 }
-h3,h2{
+.navbar-container{
+    height: 100px;
+    z-index: 10;
+
+}
+.navbar-container h3,h2, h5{
 
     color: white !important;
+    padding-left: 12px;
+}
+
+.navbar-container h3,h2, h5,a{
+
+    color: white !important;
+    /* padding-left: 20px; */
 }
 
 /* media queres */

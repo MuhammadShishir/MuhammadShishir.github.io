@@ -313,7 +313,10 @@ a{
     justify-content: center;
     text-align: center;
 }
+h3,h2{
 
+    color: white !important;
+}
 
 /* media queres */
 @media(max-width:780px){

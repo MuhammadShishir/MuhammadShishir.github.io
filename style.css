@@ -313,6 +313,10 @@ a{
     justify-content: center;
     text-align: center;
 }
+
+.gallery-container img{
+    height: 445px;
+}
 .navbar-container{
     height: 100px;
     z-index: 10;

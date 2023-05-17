@@ -21,6 +21,7 @@ body{
     color: white;
     text-align: center;
     font-family: Arial, sans-serif;
+    font-size: 1vw !important;
 }
 .line {
     position: relative;
@@ -541,9 +542,7 @@ footer {
 
 /* media queres */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-    .body{
-        width: 100%;
-    }
+   
     .grid-2{
         grid-template-columns: 1fr;
     }

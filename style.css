@@ -21,7 +21,6 @@ body{
     color: white;
     text-align: center;
     font-family: Arial, sans-serif;
-    font-size: 1vw !important;
 }
 .line {
     position: relative;
@@ -533,16 +532,9 @@ a{
     opacity: 0;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
 
 /* media queres */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-   
+@media(max-width:780px){
     .grid-2{
         grid-template-columns: 1fr;
     }

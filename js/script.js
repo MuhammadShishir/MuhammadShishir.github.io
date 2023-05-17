@@ -1,5 +1,5 @@
 expiration = new Date;
-expiration.setMonth(expiration.getMonth()+6)
+expiration.setMonth(expiration.getMonth()+12)
 counter = eval(cookieVal("total_visited"))
 counter++
 document.cookie = "total_visited="+counter+";expires=" + expiration.toGMTString()

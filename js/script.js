@@ -15,4 +15,4 @@ function cookieVal(cookieName) {
 	return 0;
 }
  
-document.getElementById('result').innerHTML = "<h5>You've visited this page <label style='font-size:25px; color:#f68084 !important;' class='text-info'>"+counter+"</label> times.</h5>";
+document.getElementById('result').innerHTML = "<p>You've visited this page <label style=' color:#f68084 !important;' class='text-info'>"+counter+"</label> times.</p>";

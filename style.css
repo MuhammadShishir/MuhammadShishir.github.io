@@ -549,8 +549,8 @@ footer{
 /* media queres */
 @media(max-width:780px){
      
-    .sup{
-        padding: 4px !important;
+    .tree{
+        padding-right: 3px !important;
     }
     body{
         width: 100%;

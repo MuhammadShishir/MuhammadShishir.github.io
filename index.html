@@ -251,8 +251,9 @@
 
             
             <div style="background-color: #0505057e !important;">
+                    <br>
                     <h1 align="center" style="color:white !important;">Projects</h1>
-
+                    <br>
                     <div class="line"></div>
                     <br>
                     <div class="dash">
@@ -261,13 +262,24 @@
                         <div class="grid-container">
                             
                             <div class="grid-item">
-                                <p>Jebbyurgth Phantasy: Tale of Asygarth(game)</p>
+                                <img src="./20.webp" width="100%">
+                                <br><p>Jebbyurgth Phantasy: Tale of Asygarth</p>
+                                
                             </div>
                             <div class="grid-item">
-                                <p>The Exploading Ball (game)</p>
+                                <img src="./ball.png" width="100%">
+                                <br>
+                                <p>The Exploading Ball</p>
                             </div>
                             <div class="grid-item">
+                                <img src="./rhls.png" width="100%">
+                                <br>
                                 <p>Resurgence: Humanity's Last Stand</p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./shadow.png" width="100%">
+                                <br>
+                                <p>Cursed Blade:Shadow Myst</p>
                             </div>
                         </div>  
                 
@@ -277,17 +289,50 @@
                         <div class="grid-container">
                         
                             <div class="grid-item">
+                                <img src="./UI1.png" width="100%">
+                                <br>
                                 <p>4mArchive: Project Thesis Publishing Website</p>
                             </div>
                             <div class="grid-item">
+                                <img src="./Fantech K612 Soldier RGB Gaming Keyboard.png" width="100%" height="70%">
+                                <br>
                                 <p>e-Commerce Website</p>
                             </div>
                             
                             <div class="grid-item">
-                                <p>Etc. Other Projects in Github</p>
+                                <img src="./p.jpg" width="100%">
+                                <br>
+                                <p>Portfolio</p>
                             </div>
                         </div>
+
+                        <h2 align="center">Other Projects</h2>
+                        <div class="line"></div>
+                        <div class="grid-container">
+                            
+                            <div class="grid-item">
+                                <img src="./logo.png" width="60%" height="80%">
+                                <br><p><a href="https://github.com/MuhammadShishir/Project_1">PDF to HTML CSS</a></p>
+                                
+                            </div>
+                            <div class="grid-item">
+                                <img src="./rESULT.png" width="50%">
+                                <br>
+                                <p><a href="https://github.com/MuhammadShishir/Result-Management-System">Result Management System</a></p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./GitHub-Logo.png" width="100%">
+                                <br>
+                                <p><a href="https://github.com/MuhammadShishir">Find More at Github</a></p>
+                            </div>
+                            
+                        </div>  
+                
+
                     </div>
+
+                    
+                    
                 </div>
 
 
@@ -334,6 +379,8 @@
                     <div class="seven"><img src="./erwra.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
                     <div class="eight"><img src="./Water1.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
                     <div class="nine"><img src="./HighresScreenshot_2023.05.17-14.12.05.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
+                    <div class="ten"><img src="./shado2.png" alt="https://muhammadshishir.github.io/" width="600px"></div>
+                    <div class="eleven"><img src="./shadow.png" alt="https://muhammadshishir.github.io/" width="600px"></div>
                 
                 </div>
             </div>
@@ -351,10 +398,36 @@
 
         
     </div>
-
+    
     <footer>
-     <p align="center" >&copy; 2023 - Md Kamruzzaman Shishir. All rights reserved.</p>
+        <p align="center">&copy; 2023 Portfolio Md Kamruzzaman Shishir. All rights reserved. | Designed by <a href="https://github.com/MuhammadShishir">Md Kamruzzaman Shishir</a></p>
+        <p align="center"><a href="#">Contact Me</a></p>
     </footer>
 
+    <div class="go-to-top" id="goToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Show the "Go to top" button when scrolling
+        window.onscroll = function() {
+            showGoToTopButton();
+        };
+
+        function showGoToTopButton() {
+            var goToTopButton = document.getElementById("goToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                goToTopButton.classList.add("show-go-to-top");
+            } else {
+                goToTopButton.classList.remove("show-go-to-top");
+            }
+        }
+
+        // Scroll to top when the button is clicked
+        document.getElementById("goToTop").addEventListener("click", function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
 </body>              
 </html>

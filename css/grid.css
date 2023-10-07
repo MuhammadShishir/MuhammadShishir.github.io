@@ -1,11 +1,16 @@
 /* Grid container */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 2fr); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
     grid-gap: 20px; /* Adjust the gap between grid items */
     /* Background color for the grid container */
 }
-
+.projects-tab{
+    background-color: #0505057e;
+}
+.about-top{
+    background-color: #0505057e;
+}
 /* Grid items */
 .grid-item {
     background-color: #0505057e; /* Adjust background color as needed */
@@ -54,7 +59,7 @@
     transition: border 0.3s ease, transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Add the following for the description text inside grid items */
+/*  description text inside grid items */
 .grid-item .description-text {
     position: relative;
     z-index: 1;
@@ -63,11 +68,11 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    min-height: 30vh;
     padding-left: 2rem;
     padding-right: 2rem;
 }

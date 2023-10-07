@@ -309,7 +309,7 @@ footer {
 
 @media (max-width: 780px) {
     .about-top{
-        width: 50% !important;
+        margin-top: 1.8rem !important;
     }
     .about-left {
         text-align: center !important;
@@ -353,6 +353,7 @@ footer {
     }
     .context {
         font-size: 5vw;
+        margin-top: 30rem;
     }
     .nav-container {
         font-size: 3vw;

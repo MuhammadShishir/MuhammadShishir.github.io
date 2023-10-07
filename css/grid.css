@@ -1,0 +1,158 @@
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px; /* Adjust the gap between grid items */
+    /* Background color for the grid container */
+}
+
+/* Grid items */
+.grid-item {
+    background-color: #0505057e; /* Adjust background color as needed */
+    padding: 20px; /* Adjust padding as needed */
+    border: 1px solid #ddd; /* Add a border if desired */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    border: 2px solid #3498db; /* Change border color on hover */
+    transform: scale(1.05); /* Increase size on hover */
+    filter: brightness(1.2); /* Increase brightness on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+/* Short description on hover */
+.grid-item:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+}
+
+/* Description styles */
+.description {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Center grid items horizontally and vertically */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+    height: 100%; /* Fill the grid cell height */
+    cursor: pointer;
+    transition: border 0.3s ease, transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add the following for the description text inside grid items */
+.grid-item .description-text {
+    position: relative;
+    z-index: 1;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.grid-item {
+    background-color: #0505057e;
+    padding: 20px;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: border 0.3s ease, transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.nav-container {
+    background-color: #05cdff28;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Add an animation for the navbar background when scrolling */
+.nav-scroll {
+    background-color:#013b49 !important; /* Background color when scrolling */
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px;
+    transition: all 0.3s ease; /* Add animation for list items */
+}
+
+/* Add hover animation for list items */
+nav ul li:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Add colors and styles to icons */
+.navbar-brand i, .nav-link i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+/* Add custom colors to icons */
+.navbar-brand i.fa-rocket {
+    color: #ff6b6b;
+}
+
+.nav-link i.fa-images {
+    color: #ffb677;
+}
+
+.nav-link i.fa-home {
+    color: #95c2de;
+}
+
+.nav-link i.fa-user {
+    color: #b5e7a0;
+}
+
+.nav-link i.fa-laptop-code {
+    color: #fca311;
+}
+
+.nav-link i.fa-envelope {
+    color: #6a0572;
+}
+p{
+    color: white!important;
+}
+

@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,37 +7,67 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <link rel="icon" type="image/x-icon" href="./M-K-S.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-tjn9bhqSmv8URWVdmvmsMYaBp/z5k6t7x4xqBHKBV9Tu5rwX5bq5vbzru+31W4++F5w5Tlj0OjvNnqcc0Rb71g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>Portfolio Md Kamruzzaman Shishir</title>
 </head>
 <body>
+    <div id="result" style="color: white; left: 0% !important; position: absolute;"></div>
+    <script src="js/script.js"></script>
     
-    <div   class="nav-container"  style="position: absolute; padding: 5px;">
-        <!-- <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <a class="navbar-brand">Md Kamruzzaman Shishir</a>
+    <div class="nav-container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fas fa-rocket"></i> Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><i class="fas fa-user"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html"><i class="fas fa-laptop-code"></i> My Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </nav> -->
-        <!-- <div class="col-md-3"></div>
-        <div class="col-md-6 well"> -->
-            <!-- <h5 class="text-primary">Page Visitor Count</h5>
-            <hr style="border-top:1px dotted #ccc;"/> -->
-            <div id="result"></div>
-        <!-- </div> -->
+        </nav>
+    </div>
+    
+<script>
+    // JavaScript to add the "nav-scroll" class when scrolling
+    window.addEventListener("scroll", function() {
+        const navContainer = document.querySelector(".nav-container");
+        if (window.scrollY > 0) {
+            navContainer.classList.add("nav-scroll");
+        } else {
+            navContainer.classList.remove("nav-scroll");
+        }
+    });
+</script>
 
-        <script src="js/script.js"></script>
-    </div>
-    
-    <div class="gallery-text">
-        <p id="34" style="position: absolute; left: 50% ;" >Gallery</p>
-        <a href="#gallery"><i class="fa fa-angle-double-down" aria-hidden="true" ></i></a>
-    </div>
-    
-    
-    <div class="context" >
-        Welcome to My Profile
-    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 
         
     <div class="sup">
@@ -57,10 +86,12 @@
                                 <li></li>
                         </ul>
                 
-
+                        <div class="context" >
+                            Welcome to My Profile
+                        </div>
 
                     <div class="grid-2" style="background-color: #0505057e !important;">
-                        <div class="section-1">
+                        <div class="section-1" id="contact">
                             <div style="text-align: center;">
                             <img src="./media/img/M K S.png" width="200rem" alt="https://muhammadshishir.github.io/" height="200rem"><br>
                             <!-- <i class="fas fa-code fa-5x white"></i> -->
@@ -104,237 +135,129 @@
 
                 </div>
 
-                    <div class="tree-container" style="  font-size: large;
-                            background-color: #0505057e;   display: grid;
-                            margin-left: auto;
-                            margin-right: auto;
-                            color: white; justify-content: center; align-content: center; width: 100%;
-                            background-image: url(./media/img/hiclipart.com.webp);
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size:contain;
-                            background-attachment: fixed;
-                            
-                            opacity: 1;
-                            ">
-                        <div class="tree" style="
-                            background-color: #00000093;
-                            ">
-                            <div class="tree" style="
-                            background-color: #00000093;
-                            ">
-                                    <h2 align="center">My Journey</h2>
-                                    <div class="line"></div>
-
-                                    <ul>
-                                        <li>
-                                            Greetings! I'm a web developer, programmer, and game developer specializing in Unreal Engine.
-                                            <ul>
-                                                <li>
-                                                    Web Development
-                                                    <ul>
-                                                        <li>
-                                                            Improving My HTML, CSS, BootStrap, JavaScript, jQuery, PHP, MySQL, PHPMyAdmin
-                                                        </li>
-                                                        <li>
-                                                            Creating Responsive, user-friendly websites
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Programming
-                                                    <ul>
-                                                        <li>
-                                                        Improving My C, C++, Java, Python, R
-                                                        </li>
-                                                        <li>
-                                                            Creating Robust and efficient software solutions
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Game Development
-                                                    <ul>
-                                                        <li>
-                                                            Learning Unreal Engine 4.26-5.0.3-5.1.1-5.2-onwards
-                                                        </li>
-                                                        <li>
-                                                        Creating Game mechanics, AI programming, level design, asset integration, Beautiful scenes
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Graphic Design
-                                                    <ul>
-                                                        <li>
-                                                            Canva, Photoshop, Illustrator
-                                                        </li>
-                                                        <li>
-                                                            Creating Visually stunning game elements, UI/UX, Logo design
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Continuous Learning
-                                                    <ul>
-                                                        <li>
-                                                            Staying up-to-date with latest technologies
-                                                        </li>
-                                                        <li>
-                                                            Exploring emerging trends
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Passion for Video Games
-                                                    <ul>
-                                                        <li>
-                                                            Generating & Designing captivating and engaging video game ideas
-                                                        </li>
-                                                        <li>
-                                                            Gaining valuable insights from a player's perspective by play testing
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Enthusiasm and Commitment
-                                                    <ul>
-                                                        <li>
-                                                            Attention to detail
-                                                        </li>
-                                                        <li>
-                                                            Delivering exceptional results to all my projects
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Collaboration and Innovation
-                                                    <ul>
-                                                        <li>
-                                                            Contributing to diverse teams
-                                                        </li>
-                                                        <li>
-                                                            Driving innovative solutions
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Excited for New Opportunities
-                                                    <ul>
-                                                        <li>
-                                                            Pushing boundaries in web development, programming, and game development
-                                                        </li>
-                                                        <li>
-                                                            Embracing a journey of innovation and creativity
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <br>
-                                </div>
-                        </div>
-                    </div>
-            <script>
-                const treeItems = document.querySelectorAll('.tree li');
-                
-                treeItems.forEach(item => {
-                    item.addEventListener('click', () => {
-                        item.querySelector('.content').classList.toggle('show');
-                    });
-                });
-            </script>
 
 
-
-
-            
-            <div style="background-color: #0505057e !important;">
-                    <br>
-                    <h1 align="center" style="color:white !important;">Projects</h1>
-                    <br>
-                    <div class="line"></div>
-                    <br>
-                    <div class="dash">
-                        <h2 align="center">Game</h2>
-                        <div class="line"></div>
-                        <div class="grid-container">
-                            
-                            <div class="grid-item">
-                                <img src="./media/img/20.webp" width="100%">
-                                <br><p>Jebbyurgth Phantasy: Tale of Asygarth</p>
-                                
-                            </div>
-                            <div class="grid-item">
-                                <img src="./media/img/ball.png" width="100%">
-                                <br>
-                                <p>The Exploading Ball</p>
-                            </div>
-                            <div class="grid-item">
-                                <img src="./media/img/resurgence.webp" width="100%">
-                                <br>
-                                <p>Resurgence: Humanity's Last Stand</p>
-                            </div>
-                            <div class="grid-item">
-                                <img src="./media/img/shadow.webp" width="100%">
-                                <br>
-                                <p>Cursed Blade:Shadow Myst</p>
-                            </div>
-                        </div>  
-                
-
-                        <h2 align="center">Websites</h2>
-                        <div class="line"></div>
-                        <div class="grid-container">
-                        
-                            <div class="grid-item">
-                                <img src="./media/img/UI1.png" width="100%">
-                                <br>
-                                <p>4mArchive: Project Thesis Publishing Website</p>
-                            </div>
-                            <div class="grid-item">
-                                <img src="./media/img/Fantech K612 Soldier RGB Gaming Keyboard.png" width="60%">
-                                <br>
-                                <p>e-Commerce Website</p>
-                            </div>
-                            
-                            <div class="grid-item">
-                                <img src="./media/img/p.jpg" width="100%">
-                                <br>
-                                <p>Portfolio</p>
-                            </div>
-                        </div>
-
-                        <h2 align="center">Other Projects</h2>
-                        <div class="line"></div>
-                        <div class="grid-container">
-                            
-                            <div class="grid-item">
-                                <img src="./media/img/logo.png" width="50%" >
-                                <br><p><a href="https://github.com/MuhammadShishir/Project_1">PDF to HTML CSS</a></p>
-                                
-                            </div>
-                            <div class="grid-item">
-                                <img src="./media/img/rESULT.png" width="50%">
-                                <br>
-                                <p><a href="https://github.com/MuhammadShishir/Result-Management-System">Result Management System</a></p>
-                            </div>
-                            <div class="grid-item">
-                                <img src="./media/img/GitHub-Logo.png" width="70%">
-                                <br>
-                                <p><a href="https://github.com/MuhammadShishir">Find More at Github</a></p>
-                            </div>
-                            
-                        </div>  
-                
-
-                    </div>
-
-                    
-                    
-                </div>
-
+<!-- Start of Projects -->
+<div class="projects-tab" style="background-color: #0505057e !important;">
+    <br>
+    <h1 align="center" style="color:white !important;"><a href="projects.html" class="animated-button"><span class="icon">&rarr;</span>Projects</a></h1>
+    <br>
+    <div class="line"></div>
+    <br><h2 align="center"><a href="games.html" class="animated-button" ><span class="icon">&rarr;</span>Game</a></h2>
+    <div class="line"></div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="jebyurgth-phantasy.html">
+                <img src="./media/img/20.webp" width="100%">
+                <br><p>Jebbyurgth Phantasy: Tale of Asygarth</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="exploading-ball.html">
+                <img src="./media/img/ball.png" width="100%">
+                <br>
+                <p>The Exploading Ball</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="resurgence.html">
+                <img src="./media/img/resurgence.webp" width="100%">
+                <br>
+                <p>Resurgence: Humanity's Last Stand</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="shadow-myst.html">
+                <img src="./media/img/shadow.webp" width="100%">
+                <br>
+                <p>Cursed Blade: Shadow Myst</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+    </div>  
+    
+    <h2 align="center"><a href="websites.html" class="animated-button"><span class="icon">&rarr;</span>Websites</a></h2>
+    <div class="line"></div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="4marchive.html">
+                <img src="./media/img/UI1.png" width="100%">
+                <br>
+                <p>4mArchive: Project Thesis Publishing Website</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="ecommerce-website.html">
+                <img src="./media/img/Fantech K612 Soldier RGB Gaming Keyboard.png" width="60%">
+                <br>
+                <p>e-Commerce Website</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="portfolio.html">
+                <img src="./media/img/p.jpg" width="100%">
+                <br>
+                <p>Portfolio</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+    </div>
+    
+    <h2 align="center"><a href="other-projects.html" class="animated-button"><span class="icon">&rarr;</span>Other Projects</a></h2>
+    <div class="line"></div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="pdf-to-html-css.html">
+                <img src="./media/img/logo.png" width="50%" >
+                <br><p>PDF to HTML CSS</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="result-management-system.html">
+                <img src="./media/img/rESULT.png" width="50%">
+                <br>
+                <p>Result Management System</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="github-projects.html">
+                <img src="./media/img/GitHub-Logo.png" width="70%">
+                <br>
+                <p>Find More at Github</p>
+            </a>
+            <div class="description">
+                <div class="description-text">Description text goes here.</div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!-- End of Projects -->
 
             <div style="background-color:#0505057e;">
                 <h2 align="center">Test My Projects</h2>
@@ -355,89 +278,173 @@
                             <br>
                             <br>
                     </div>
-
             </div>
+<!-- My Journey -->
 
-            
-            <div class="gallery-text2" style="width: 100% !important; margin-right: auto; margin-left: auto; background-color:#0505057e; ">
-                <h2>Gallery</h2>
-                <div class="line-2"></div>
+<div class="Journey"
+style="margin: 0;
+            padding: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0505057e;">
+    <div class="tree-container" >
+        <div class="tree"
+        style="    
+        background-image: url(./media/img/hiclipart.com.webp); /* Background image */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        ">
+            <div class="tree" style="  background-color: #0505057e;">
+                <h2 align="center">My Journey</h2>
+                <div class="line"></div>
+                <ul class="tree-list">
+                    <li>
+                        <i class="fas fa-laptop-code"></i> Greetings! I'm a web developer, programmer, and game developer specializing in Unreal Engine.
+                        <ul class="sub-tree">
+                            <li>
+                                <i class="fas fa-code"></i> Web Development
+                                <ul class="sub-sub-tree">
+                                    <li>
+                                        <i class="fas fa-cogs"></i> Improving My HTML, CSS, BootStrap, JavaScript, jQuery, PHP, MySQL, PHPMyAdmin
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-laptop"></i> Creating Responsive, user-friendly websites
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-terminal"></i> Programming
+                                <ul class="sub-sub-tree">
+                                    <li>
+                                        <i class="fas fa-code"></i> Improving My C, C++, Java, Python, R
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-tasks"></i> Creating Robust and efficient software solutions
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-gamepad"></i> Game Development
+                                <ul class="sub-sub-tree">
+                                    <li>
+                                        <i class="fas fa-rocket"></i> Learning Unreal Engine 4.26-5.0.3-5.1.1-5.2-onwards
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-puzzle-piece"></i> Creating Game mechanics, AI programming, level design, asset integration, Beautiful scenes
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-paint-brush"></i> Graphic Design
+                                <ul class="sub-sub-tree">
+                                    <li>
+                                        <i class="fas fa-paint-brush"></i> Canva, Photoshop, Illustrator
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-image"></i> Creating Visually stunning game elements, UI/UX, Logo design
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-graduation-cap"></i> Continuous Learning
+                                <ul class="sub-sub-tree">
+                                    <li>
+                                        <i class="fas fa-book"></i> Staying up-to-date with latest technologies
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-chart-line"></i> Exploring emerging trends
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-gamepad"></i> Passion for Video Games
+                                <ul class="sub-sub-tree">
+                                    <li>
+                                        <i class="fas fa-lightbulb"></i> Generating & Designing captivating and engaging video game ideas
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-gamepad"></i> Gaining valuable insights from a player's perspective by play testing
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-thumbs-up"></i> Enthusiasm and Commitment
+                                <ul class="sub-sub-tree">
+                                    <li>
+                                        <i class="fas fa-check-circle"></i> Attention to detail
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-heart"></i> Delivering exceptional results to all my projects
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-users"></i> Collaboration and Innovation
+                                <ul class="sub-sub-tree">
+                                    <li>
+                                        <i class="fas fa-handshake"></i> Contributing to diverse teams
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-lightbulb"></i> Driving innovative solutions
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-search"></i> Excited for New Opportunities
+                                <ul class="sub-sub-tree">
+                                    <li>
+                                        <i class="fas fa-flag"></i> Pushing boundaries in web development, programming, and game development
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-rocket"></i> Embracing a journey of innovation and creativity
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
                 <br>
-                <br>
             </div>
-
-            <div class="gallery-container" id="gallery"  >
-                <div class="video-container">
-                    <iframe width="720" height="360" src="https://www.youtube.com/embed/pkVka8jisVg" title="Demo level designing for a top down rogue-like dungeon crawler Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="photo-container"> 
-                    <div class="one"><img src="./media/img/1.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="two"><img src="./media/img/2.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="three"><img src="./media/img/3.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="three"><img src="./media/img/3541.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="three"><img src="./media/img/3452.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                
-                    <div class="four"><img src="./media/img/4.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="five"><img src="./media/img/20.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="six"><img src="./media/img/fc.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-            
-                    
-                    <div class="eight"><img src="./media/img/Water1.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="nine"><img src="./media/img/HighresScreenshot_2023.05.17-14.12.05.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="ten"><img src="./media/img/shado2.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    
-                    <div class="eleven"><img src="./media/img/shadow.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="eleven"><img src="./media/img/inven.png" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="eleven"><img src="./media/img/magic.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                    <div class="eleven"><img src="./media/img/savsl.png" alt="https://muhammadshishir.github.io/" width="380px"></div>
-                    <div class="eleven"><img src="./media/img/shop.webp" alt="https://muhammadshishir.github.io/" width="600px"></div>
-                
-                </div>
-            </div>
-            
-        <div style="background-color:#0505057e;"><br></div>
-            <script>
-                // Add event listener to each image for console log
-                const images = document.querySelectorAll('.gallery-container img');
-                images.forEach((image) => {
-                    image.addEventListener('click', () => {
-                        console.log('Image clicked:', image.src);
-                    });
-                });
-            </script>
-
-        
+        </div>
     </div>
     
-    <footer>
-        <p align="center">&copy; 2023 Portfolio Md Kamruzzaman Shishir. All rights reserved. | Designed by <a href="https://github.com/MuhammadShishir">Md Kamruzzaman Shishir</a></p>
-        <p align="center"><a href="#">Contact Me</a></p>
-    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <div class="go-to-top" id="goToTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+</div>
+<footer>
+    <p align="center">&copy; 2023 Portfolio Md Kamruzzaman Shishir. All rights reserved. | Designed by <a href="https://github.com/MuhammadShishir">Md Kamruzzaman Shishir</a></p>
+    <p align="center"><a href="#">Contact Me</a></p>
+</footer>
 
-    <script>
-        // Show the "Go to top" button when scrolling
-        window.onscroll = function() {
-            showGoToTopButton();
-        };
+<div class="go-to-top" id="goToTop">
+    <i class="fas fa-arrow-up"></i>
+</div>
 
-        function showGoToTopButton() {
-            var goToTopButton = document.getElementById("goToTop");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                goToTopButton.classList.add("show-go-to-top");
-            } else {
-                goToTopButton.classList.remove("show-go-to-top");
-            }
+<script>
+    // Show the "Go to top" button when scrolling
+    window.onscroll = function() {
+        showGoToTopButton();
+    };
+
+    function showGoToTopButton() {
+        var goToTopButton = document.getElementById("goToTop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            goToTopButton.classList.add("show-go-to-top");
+        } else {
+            goToTopButton.classList.remove("show-go-to-top");
         }
+    }
 
-        // Scroll to top when the button is clicked
-        document.getElementById("goToTop").addEventListener("click", function() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        });
-    </script>
+    // Scroll to top when the button is clicked
+    document.getElementById("goToTop").addEventListener("click", function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+</script>
+
 </body>              
 </html>

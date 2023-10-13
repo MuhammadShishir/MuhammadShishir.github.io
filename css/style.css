@@ -306,8 +306,17 @@ footer {
 .show-go-to-top {
     display: block;
 }
-
-@media (max-width: 780px) {
+/* This is mobile part */
+@media (max-width: 768px), (max-width: 480px) {
+    .line{
+        width: 5rem !important;
+    }
+    .tree{
+        min-width: 100%!important;
+        font-size: 0.75rem!important;
+        padding: .5rem!important;
+    
+    }
     .about-top{
         margin-top: 1.8rem !important;
     }
@@ -360,7 +369,9 @@ footer {
     }
 }
 
+/* Mobile part end */
 
+/* This is the special animation on first page */
 .area{
     /* s */
     /* background: -webkit-linear-gradient(to left, #008cff, #fd03aa);   */

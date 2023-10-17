@@ -328,6 +328,11 @@ footer {
 }
 /* This is mobile part */
 @media (max-width: 768px), (max-width: 480px) {
+    *{
+        box-shadow: none !important;
+        text-shadow: none !important;
+        animation: none !important;
+    }
     .line{
         width: 5rem !important;
     }
@@ -335,10 +340,9 @@ footer {
         min-width: 100%!important;
         font-size: 0.75rem!important;
         padding: .5rem!important;
-    
     }
     .animated-button{
-        box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+        box-shadow: none !important;
     }
     .about-top{
         margin-top: 1.8rem !important;
@@ -382,7 +386,6 @@ footer {
     .grid-item{
         max-height: 40vh!important;
         min-width:40vh!important;
-        box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
 
     }
     footer {
@@ -395,7 +398,7 @@ footer {
     .context {
         font-size: 5vw;
         margin-top: 30rem;
-        text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+        text-shadow: none!important;
     }
     .nav-container {
         font-size: 3vw;
@@ -403,12 +406,10 @@ footer {
         color:white!important;
         width: 100%;
     }
-    .name{
-        box-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
-        background-color: rgba(0, 255, 255, 0.3)!important;
-        border: 2px solid #d0ff00;
-        color: #d0ff00!important;
+    .navbar-brand{
+        font-size: 0.75rem!important;
     }
+   
     .gallery-container{
         grid-template-columns: repeat(1, .5fr) !important;
     }

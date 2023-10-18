@@ -17,58 +17,74 @@
     
     <title>Gallery of Md Kamruzzaman Shishir</title>
 
-
 </head>
 <body>
     <div id="result" style="color: white; left: 0% !important; position: absolute;"></div>
     <script src="js/script.js"></script>
+   
+<!-- Nav start   -->
+<div class="nav-container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-rocket"></i> Hi, This is MKShishir Menu &rrarr; </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-user"></i> About</a>
+                    </li>
 
-    <div class="nav-container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#"><i class="fas fa-rocket"></i> Hi, This is <span class="name" style="text-shadow: 0 0 5px rgba(0, 255, 255, 0.9);">MKShishir</span> | Menu &rrarr; </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" ></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html"><i class="fas fa-user"></i> About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html"><i class="fas fa-laptop-code"></i> My Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-laptop-code"></i> Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="projectsDropdown" >
+                            <a class="dropdown-item" href="projects.html">All Projects</a>
+                            <a class="dropdown-item" href="websites.html">Websites</a>
+                            <a class="dropdown-item" href="games.html">Games</a>
+                            <a class="dropdown-item" href="other-projects.html">Other Projects</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html"><i class="fa fa-suitcase" ></i> Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
-    
+        </div>
+    </nav>
+</div>
+
 <script>
-    // JavaScript to add the "nav-scroll" class when scrolling
-    window.addEventListener("scroll", function() {
-        const navContainer = document.querySelector(".nav-container");
-        if (window.scrollY > 0) {
-            navContainer.classList.add("nav-scroll");
-        } else {
-            navContainer.classList.remove("nav-scroll");
-        }
-    });
+// JavaScript to add the "nav-scroll" class when scrolling
+window.addEventListener("scroll", function() {
+    const navContainer = document.querySelector(".nav-container");
+    if (window.scrollY > 0) {
+        navContainer.classList.add("nav-scroll");
+    } else {
+        navContainer.classList.remove("nav-scroll");
+    }
+});
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- nav end -->
 
 
 
@@ -80,84 +96,18 @@
     <h2 >Gallery</h2>
     <div class="line"></div>
 </div>
-<!-- <div class="gallery-container" style="margin-top: 1rem;">
-    <div class="gallery-item">
-        <img src="./media/img/1.webp" alt="Image 1">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/2.webp" alt="Image 2">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/3.webp" alt="Image 3">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/3541.webp" alt="Image 4">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/3452.webp" alt="Image 5">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/4.webp" alt="Image 6">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/20.webp" alt="Image 7">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/fc.webp" alt="Image 8">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/Water1.webp" alt="Image 9">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/HighresScreenshot_2023.05.17-14.12.05.webp" alt="Image 10">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/shado2.webp" alt="Image 11">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/shadow.webp" alt="Image 12">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/inven.png" alt="Image 13">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/magic.webp" alt="Image 14">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/savsl.png" alt="Image 15">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/shop.webp" alt="Image 16">
-        <button class="zoom-button">Zoom</button>
-    </div>
-    <div class="gallery-item">
-        <img src="./media/img/green shores.webp" alt="Image 17">
-        <button class="zoom-button">Zoom</button>
-    </div>
-</div> -->
 
-<div class="gallery-container" style="margin-top: 1rem;"></div>
+    <div class="gallery-container" ></div>
+
+    
+
+
 
 
 <div class="video-container">
     <h2>Video Section</h2>
     <div class="line"></div>
-    <iframe width="720" height="360" src="https://www.youtube.com/embed/pkVka8jisVg" title="Demo level designing for a top-down rogue-like dungeon crawler Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/pkVka8jisVg" title="Demo level designing for a top-down rogue-like dungeon crawler Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

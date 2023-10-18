@@ -18,7 +18,7 @@
 <body>
     <div id="result" style="color: white; left: 0% !important; position: absolute;"></div>
     <script src="js/script.js"></script>
-    
+
 <!-- Nav start   -->
 <div class="nav-container">
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -83,57 +83,107 @@ window.addEventListener("scroll", function() {
 
 <!-- nav end -->
 
-<div style="height: 5rem;"></div>
-
-<h2 align="center"><a href="other-projects.html" class="animated-button"><span class="icon">&rarr;</span>Other Projects</a></h2>
+<div style="height: 4.7rem;"></div>
+<h2 align="center">Services</h2>
 <div class="line"></div>
-<div class="grid-container">
-    <div class="grid-item">
-        <a href="pdf-to-html-css.html">
-            <img src="./media/img/logo.png" width="50%" >
-            <br><p>PDF to HTML CSS</p>
-        </a>
-        <div class="description">
-            <div class="description-text">Example of PDF to HTML conversion</div>
+<!-- main Page -->
+<div class="page-container">
+    <div class="service-container">
+        <!-- Service card 1: Unreal Engine -->
+        <div class="service-card" style="background-color: #599cdf;">
+            <div class="service-title">Unreal Engine</div>
+            <ul class="service-description">
+                <li>Create immersive and interactive game experiences using Unreal Engine.</li>
+                <li>Develop stunning 3D environments and characters.</li>
+                <li>Advanced game physics and AI development.</li>
+            </ul>
+            <div class="service-price">Contact for pricing</div>
+            <button class="show-more-button" onclick="showMore('service1')">Details</button>
+            <div class="more-content" id="service1">
+                <p>More details about Unreal Engine...</p>
+                <p>Example images:</p>
+                <img src="/media/img/8.webp" alt="Example 1">
+                <img src="/media/img/6.webp" alt="Example 2">
+            </div>
+            <button class="order-button" onclick="showOrderForm('Unreal Engine')">Order Now</button>
         </div>
-    </div>
-    <div class="grid-item">
-        <a href="result-management-system.html">
-            <img src="./media/img/rESULT.png" width="50%">
-            <br>
-            <p>Result Management System</p>
-        </a>
-        <div class="description">
-            <div class="description-text">A Java Swing code for calculating result</div>
+
+        <!-- Service card 2: Website Design & Development -->
+        <div class="service-card" style="background-color: #3aaa88;">
+            <div class="service-title">Website Design & Development</div>
+            <ul class="service-description">
+                <li>Custom website design tailored to your brand.</li>
+                <li>Responsive and user-friendly web development.</li>
+                <li>E-commerce integration and content management systems.</li>
+            </ul>
+            <div class="service-price">Contact for pricing</div>
+            <button class="show-more-button" onclick="showMore('service2')">Details</button>
+            <div class="more-content" id="service2">
+                <p>More details about Website Design & Development...</p>
+                <p>Example images:</p>
+                <img src="/media/img/p.jpg" alt="Example 1">
+                <img src="/media/img/UI1.png" alt="Example 2">
+            </div>
+            <button class="order-button" onclick="showOrderForm('Website Design & Development')">Order Now</button>
         </div>
-    </div>
-    <div class="grid-item">
-        <a href="github-projects.html">
-            <img src="./media/img/GitHub-Logo.png" width="70%">
-            <br>
-            <p>Find More at Github</p>
-        </a>
-        <div class="description">
-            <div class="description-text">Find me in GitHub</div>
+
+        <!-- Service card 3: UE5 Scenes -->
+        <div class="service-card" style="background-color: #9bb14e;">
+            <div class="service-title">UE5 Scenes</div>
+            <ul class="service-description">
+                <li>Design and create stunning scenes and environments with Unreal Engine 5.</li>
+                <li>High-quality lighting and rendering for realistic visuals.</li>
+                <li>Interactive and immersive VR environments.</li>
+            </ul>
+            <div class="service-price">Contact for pricing</div>
+            <button class="show-more-button" onclick="showMore('service3')">Details</button>
+            <div class="more-content" id="service3">
+                <p>More details about UE5 Scenes...</p>
+                <p>Example images:</p>
+                <img src="/media/img/1.webp" alt="Example 1">
+                <img src="/media/img/10.webp" alt="Example 2">
+            </div>
+            <button class="order-button" onclick="showOrderForm('UE5 Scenes')">Order Now</button>
         </div>
     </div>
 </div>
 
+<div id="order-form" style="display: none; text-align: center;">
+    <h2>Order Form</h2>
+    <form action="send_order.php" method="post">
+        <input type="text" name="subject" placeholder="Subject" required><br><br>
+        <input type="email" name="contact_email" placeholder="Contact Email" required><br><br>
+        <textarea name="message" placeholder="Message" rows="4" required></textarea><br><br>
+        <input type="hidden" name="service_name" id="service-name" value="">
+        <input type="submit" value="Send" style="background-color: #0073e6; color: white; border: none; padding: 10px 20px; cursor: pointer;">
+    </form>
+    <h3>Or,</h3>
+    <a href="mailto:mdkamruzzaman.shishir@outlook.com" style="text-decoration: none;">
+        <button style="background-color: #0073e6; color: white; border: none; padding: 10px 20px; cursor: pointer;">
+            Send Mail
+        </button>
+    </a>
+</div>
 
+<script>
+    function showMore(serviceId) {
+        var moreContent = document.getElementById(serviceId);
+        moreContent.style.display = moreContent.style.display === 'none' ? 'block' : 'none';
+    }
 
-
-
-
-
-
-
-
-<div style="height: 2rem; background-color: #0505057e;"></div>
-
-
-
-
-
+    function showOrderForm(serviceName) {
+        document.getElementById('service-name').value = serviceName;
+        document.getElementById('order-form').style.display = 'block';
+    }
+</script>
+<!-- end of main page -->
+<div class="transparent-box" style="text-align: center; background-color: rgba(3, 3, 23, .5); height: 6rem;">
+    <br>
+    <br>
+    <p>PS. Custom order possible. For Custom Order Send Email</p>
+    
+</div>
+<!-- Footer beging -->
 <footer>
     <p align="center">&copy; 2023 Portfolio Md Kamruzzaman Shishir. All rights reserved. | Designed by <a href="https://github.com/MuhammadShishir">Md Kamruzzaman Shishir</a></p>
     <p align="center"><a href="#">Contact Me</a></p>

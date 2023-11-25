@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>logitech &#8211; ITIO Tech</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>IT Service Hardware Training</description>
+	<lastBuildDate>Fri, 11 Feb 2022 17:00:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>./../../../wp-content/uploads/2022/03/cropped-1-1-32x32.png</url>
+	<title>logitech &#8211; ITIO Tech</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Logitech H110 STEREO Headset</title>
+		<link>./../../../logitech-h110-stereo-headset/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=logitech-h110-stereo-headset</link>
+					<comments>./../../../logitech-h110-stereo-headset/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[ITIOTECHADMINIFUBRUTEFORCEAGAINYOURBITCH]]></dc:creator>
+		<pubDate>Fri, 11 Feb 2022 16:48:43 +0000</pubDate>
+				<guid isPermaLink="false">./../../../index.html?post_type=product&#038;p=1448</guid>
+
+					<description><![CDATA[<ul>
+ 	<li>Frequency: 20Hz - 20kHz</li>
+ 	<li>Sensitivity: 100dB +/-3dB</li>
+ 	<li>Cable Length: 5.90 ft</li>
+</ul>]]></description>
+										<content:encoded><![CDATA[<div class="section-head">
+<h2>Description</h2>
+</div>
+<div class="full-description">
+<p>Logitech H110 STEREO Headset (Two port)</p>
+<p>&nbsp;</p>
+<ul>
+<li>Noise-canceling microphone</li>
+<li>Adjustable headband</li>
+<li>Flexible, rotating boom</li>
+<li>Full stereo sound</li>
+<li>Versatile design</li>
+<li>Color-coded 3.5 mm plugs</li>
+</ul>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../logitech-h110-stereo-headset/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

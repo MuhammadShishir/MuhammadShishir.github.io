@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Software Development &#8211; ITIO Tech</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>IT Service Hardware Training</description>
+	<lastBuildDate>Thu, 06 Jan 2022 09:44:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>./../../../wp-content/uploads/2022/03/cropped-1-1-32x32.png</url>
+	<title>Software Development &#8211; ITIO Tech</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>6 software development trends to expect in 2022</title>
+		<link>./../../../blog/6-software-development-trends-to-expect-in-2022/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=6-software-development-trends-to-expect-in-2022</link>
+					<comments>./../../../blog/6-software-development-trends-to-expect-in-2022/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[ITIOTECHADMINIFUBRUTEFORCEAGAINYOURBITCH]]></dc:creator>
+		<pubDate>Sun, 02 Jan 2022 02:49:12 +0000</pubDate>
+				<guid isPermaLink="false">./../../../index.html?post_type=docs&#038;p=728</guid>
+
+					<description><![CDATA[The final month of the year is a unique time where we like to think back on all that’s happened during the year, while also looking to the future, in anticipation of what the new year could bring. The accelerated digitalization from last year continued in 2021. As we predicted last year, we’ve seen a greater investment &#8230;<p class="read-more"> <a class="" href="./../../../blog/6-software-development-trends-to-expect-in-2022/index.html"> <span class="screen-reader-text">6 software development trends to expect in 2022</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[<p>The final month of the year is a unique time where we like to think back on all that’s happened during the year, while also looking to the future, in anticipation of what the new year could bring.</p>
+<p>The accelerated digitalization from last year continued in 2021. As we predicted last year, we’ve seen a greater investment in delivering <strong>omnichannel</strong> experiences, facilitated by <strong>decoupled</strong> setups; a greater focus on <strong>privacy</strong>, with Google almost phasing out 3rd-party cookies; and <strong>greater adoption of new technologies</strong> across all sectors.</p>
+<p>This year, we’ll do things a little differently. Rather than make predictions for the entire digital experience space, we’ll focus more on predictions in software and web development. We’ll be taking a look at 6 trends we believe will increase in dominance in 2022 no matter what industry you’re in or what your technology stack looks like.</p>
+<p>&nbsp;</p>
+<h2>1. Developer experience</h2>
+<p>Admittedly, this is a more general trend across all industries, essentially the part of the employee experience that focuses on the experience of software developers. A major reason for this focus on employee experience is no doubt the recent trend of employees quitting their jobs, a.k.a. “<strong>the great resignation</strong>”.</p>
+<p>As far as DX is specifically concerned, latest frameworks and their optimizations have largely concentrated on improving the experience of their main stakeholders &#8211; the employees, i.e. the developers working with these frameworks.</p>
+<p>We believe that these two factors combined will lead to an even greater focus on the developer experience in 2022, both from the technical perspective and in the context of the company culture. This latter one can include things like <strong>fewer meetings</strong>, more <strong>async</strong> communication, <strong>flexible</strong> working hours, <strong>dedicated onboarding/mentorship</strong>, etc.</p>
+<p>&nbsp;</p>
+<h2>2. DevOps</h2>
+<p>Still intrinsically connected to developer experience is the DevOps approach, which in short combines Software Development with IT operations to <strong>streamline the efficiency of the software delivery process</strong>. DevOps practices also include a lot of elements of agile, which has also been on the rise since the start of the crisis.</p>
+<p>Since both speed and employee experience are gaining ground as key business elements of the transformation age, companies will try to find strategies and approaches that <strong>kill two birds with one stone by accommodating both</strong>.</p>
+<p>It’s likely that we’ll see a rise of both specific DevOps adoption as well as parallel practices that draw from other agile and lean approaches and are better tailored to the needs of specific companies (e.g. flow engineering).</p>
+<p>&nbsp;</p>
+<h2>3. Documentation</h2>
+<p>Even if it may not seem like it at first, good documentation is one of the absolutely essential elements in software engineering. A lot of otherwise highly capable technologies <strong>lack adoption due to poor or insufficient documentation</strong>.</p>
+<p>In contrast, certain frameworks, such as Vue or Laravel, owe much of their success to their <strong>meticulous documentation</strong> which reflects the quality of the framework and makes the process of mastering a technology an enjoyable rather than a dreaded challenge.</p>
+<p>Recently, we’ve seen frameworks with a reputation for having inadequate documentation commit to streamlining their efforts, making it more user-friendly both to beginners as well as more seasoned professionals (e.g. Angular).</p>
+<p>&nbsp;</p>
+<h2>4. Services-based approaches</h2>
+<p>Another recent trend that we’ve been seeing as a consequence of both channel and framework explosion is the increasing usage of (micro)services architectures, which essentially break applications down into smaller components, <strong>each responsible for a specific function</strong> of the application.</p>
+<p>With more and more companies demanding digital experiences at the highest level, and more and more frameworks integrating well together, we’re very likely to see an adoption of microservices (or even micro frontend) approaches, especially in fields such as ecommerce.</p>
+<p>One of the main appeals of such an approach is <strong>guaranteeing the future readiness</strong> of the website or platform, as it makes it easier to make feature and/or security updates to only a certain service rather than having to update the entire site/platform.</p>
+<p>&nbsp;</p>
+<h2>5. Integrations</h2>
+<p>As just stated in the above point, brands are increasingly opting for technologies that allow for easy integration between one another. Integration is becoming an integral (pun semi-intended) part of software development, with more and more cohesive platforms and systems whose <strong>different components need to be able to talk to each other</strong>.</p>
+<p>Since well-developed APIs are required for good integration between frameworks, we’re likely to see one aspect of this drive to optimize integration focusing on <strong>API development</strong>, while the other focuses on streamlining the features enabled by the integration.</p>
+<p>Moreover, one of the key features will be enabling good integration not only between different components of a website or a desktop application, but between any kind of digital technology interacting with another in even the least frequent omnichannel scenarios (e.g. pulling data from a web database to then analyze and display it on, say, a medical tablet app or hospital screen).</p>
+<p>&nbsp;</p>
+<h2>6. Ease of upgrade &amp; backward compatibility</h2>
+<p>A big trend that’s been on the rise is the focus of new software versions to be <strong>more backward compatible and hence have significantly easier upgrades</strong>. Several of the technologies we at Agiledrop work with have adopted such an approach in the past few years &#8211; Drupal and React, for example.</p>
+<p>The more usage and adoption of a software project grows, the more it can innovate &#8211; but, paradoxically, the more websites and systems also exist which adopt and deploy these technologies but are unable to regularly keep upgrading to new versions for one reason or another.</p>
+<p>Smoother, backward compatible releases aim to facilitate this with <strong>major upgrades that are seamlessly executed</strong> and hence don’t represent as significant an undertaking as they used to, considering the platform keeps up to date with the minor updates, which tend to be much less cumbersome anyway.</p>
+<p>&nbsp;</p>
+<h2>In conclusion</h2>
+<article data-align="center"><img loading="lazy" src="https://www.agiledrop.com/sites/default/files/styles/medium_800/public/2021-12/Dev%20trends%202022%20%2812%29.png?itok=pSVUN4zV" alt="Bright lines moving toward central focal point" width="800" height="400" title="6 software development trends to expect in 2022 2"></article>
+<p>Making accurate predictions in fast-changing times and environments is very often impossible, but there are certain expectations we can hold based on observable trends.</p>
+<p>In our view, it’s a pretty safe bet to expect an <strong>increased focus on empowering developers</strong>, either in business or in the context of (open-source) software projects. Many of the trends we’ve outlined in this article are a reflection of this drive to empower developers and we can thus expect to encounter them more and more frequently going forward.</p>
+<p>If you’re in need of reliable developers in 2022, drop us a line and let’s talk about how we can best collaborate.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../blog/6-software-development-trends-to-expect-in-2022/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

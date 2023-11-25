@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Hardware &#8211; ITIO Tech</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>IT Service Hardware Training</description>
+	<lastBuildDate>Thu, 06 Jan 2022 09:40:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>./../../../wp-content/uploads/2022/03/cropped-1-1-32x32.png</url>
+	<title>Hardware &#8211; ITIO Tech</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Upcoming PC Hardware Release Calendar 2022</title>
+		<link>./../../../blog/upcoming-pc-hardware-release-calendar-2022/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=upcoming-pc-hardware-release-calendar-2022</link>
+					<comments>./../../../blog/upcoming-pc-hardware-release-calendar-2022/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[ITIOTECHADMINIFUBRUTEFORCEAGAINYOURBITCH]]></dc:creator>
+		<pubDate>Sun, 02 Jan 2022 02:48:00 +0000</pubDate>
+				<guid isPermaLink="false">./../../../index.html?post_type=docs&#038;p=725</guid>
+
+					<description><![CDATA[What&#8217;s happening with the GPU market? Will it recover in 2022? What is in store for budget gamers and PC enthusiasts in the coming months? &#160; As we near Christmas, our thoughts naturally turn to the New Year. 2022 could well be the year of the PC, considering the technology coming our way from Nvidia, &#8230;<p class="read-more"> <a class="" href="./../../../blog/upcoming-pc-hardware-release-calendar-2022/index.html"> <span class="screen-reader-text">Upcoming PC Hardware Release Calendar 2022</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[<div class="row justify-content-md-center mt-4">
+<div class="col-md-9 col-sm-12 d-flex">
+<div id="ctl22_pnlTitle">
+<p class="lead mb-0">What&#8217;s happening with the GPU market? Will it recover in 2022? What is in store for budget gamers and PC enthusiasts in the coming months?</p>
+</div>
+</div>
+</div>
+<div class="row justify-content-md-center mt-4">
+<div class="col-md-9 col-sm-12">
+<div id="ctl22_pnlArticleBody">
+<div></div>
+<article class="blog">
+<section id="header-image">
+<div><img src="https://cclonline.com/images/articles/_PCHardwareReleaseCalendar2021-2022x.png?width=1250" alt="Upcoming PC Hardware Release Calendar 2022" title="Upcoming PC Hardware Release Calendar 2022 5"></div>
+<p>&nbsp;</p>
+</section>
+<section id="introduction">As we near Christmas, our thoughts naturally turn to the New Year. 2022 could well be the year of the PC, considering the technology coming our way from Nvidia, AMD and Intel &#8211; not to mention DDR5 and the possibility of Windows 11’s DirectStorage being implemented by developers in some patched/updated games.Those of us who have had the fortitude and patience in waiting until 2022 for their gaming PC build will be rewarded with the latest technology that promises to deliver framerates and performance like never before. All of this will, of course, come at a cost… but will it be reasonably priced technology in a troubled market? Will manufacturers take pity on the consumers who have hung on for dear life in the final throes of this year’s multi-market wheelie bin fire?</p>
+</section>
+<h3 id="amd-radeon-rx-6600-gpu----bad-news-good-news">AMD Radeon RX 6600 GPU – Bad News, Good News</h3>
+<p>Some great news for GPU buyers came from AMD with the 1080p winner, the <strong>non-XT</strong> variant of the <strong>RX 6600</strong> cards. Sadly, this was followed up with the bad news that the GPU worked great with Ethereum mining. <em>Great</em>.</p>
+<p>The <strong>RX 6600 non-XT GPUs</strong> were priced very well, under £500 in the UK, and promptly began to sell out in all stores. And then something incredible happened. Retailers were restocking quickly.</p>
+<p>Right now, if you are in the market for a reasonably priced GPU that will handle <strong>1080p gaming</strong> on the latest AAA titles, then you could do a lot worse than the RX 6600 non-XT cards.</p>
+<p>&nbsp;</p>
+<div><iframe loading="lazy" title="YouTube video player" src="https://www.youtube.com/embed/e_4eGix7D-k" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></div>
+<p>&nbsp;</p>
+<div><img src="https://cclonline.com/images/articles/_AssassinsCreedValhallaRX6600vsRTX3060.png?width=1250" alt="Assassin&#039;s Creed Valhalla RX 6600 vs RTX 3060 screenshot" title="Upcoming PC Hardware Release Calendar 2022 6"></div>
+<p>Credit: Testing Games (YouTube)</p>
+<p>&nbsp;</p>
+<h2 id="2022-hardware-release-calendar">2022 Hardware Release Calendar</h2>
+<p>While some dates are potentially going to shift, and stock is going to be debatable, here’s a rundown of the releases we’re going to check out today.</p>
+<table>
+<thead>
+<tr>
+<th scope="col">APPROX DATE</th>
+<th scope="col">RELEASE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Approx Date">January 2022(?)</td>
+<td data-label="Release">RTX 2060 refresh from Nvidia and Ampere “SUPER” refresh</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Early 2022</td>
+<td data-label="Release">AMD Rembrandt APUs (Zen 3/RDNA2)</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Q1 2022</td>
+<td data-label="Release">ARC Alchemist</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Q1 or Q2 2022</td>
+<td data-label="Release">AMD Zen 3 XT processors</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Q3 2022</td>
+<td data-label="Release">Intel Sapphire Rapids-X HEDT processors</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Late 2022</td>
+<td data-label="Release">AMD Raphael Zen 4</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Late 2022</td>
+<td data-label="Release">Navi 3X (RDNA3)</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Late 2022</td>
+<td data-label="Release">Intel Raptor Lake desktop &amp; mobile processors</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Late 2022</td>
+<td data-label="Release">Nvidia Ada Lovelace GPUs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nvidia-rtx-2060-refresh">Nvidia RTX 2060 Refresh</h3>
+<p>With Nvidia’s inability to produce enough RTX 30x series GPUs to meet demand, Overclocking.com reported that sources at Nvidia have got under way with plans to repurpose a large stock of <strong>RTX 2060</strong> cards that will be given a <strong>12GB VRAM</strong> upgrade.</p>
+<p>“<em>According to our sources, NVIDIA is now planning an updated RTX 2060 GPU based on Turing architecture. A model known as PG161 would feature 12GB GDDR6 memory and the same TU106-300 GPU, except wth a KX postfix. Thus, the card would only see a change in doubled memory capacity compared to RTX 2060 6GB which launched in January 2019. NVIDIA has allegedly told board partners to anticipate this card by the end of this year, possibly in January [2022], depending on how quickly they can be manufactured.</em>” – Videocardz</p>
+<p>Moore&#8217;s Law Is Dead, a YouTube leaker, <strong>confirmed the RTX 2060 refresh</strong>, saying “<em>I’m told that these rumours of a 2060 relaunch with 12GB is actually something that’s gonna happen. From my perspective I don’t know why they wouldn’t just keep it with 6GB and try to get it below $300,</em>”.</p>
+<p>The RTX 2060 came out in 2019 and as this news emerged, we started to see the card discontinued on retailers’ websites. The guesswork among experts has settled around the $300/£300 price mark, and if the <strong>RX 6600</strong> is anything to go by, we can add another $100/£100 on top, if not more.</p>
+<p>The sensibility is there. Nvidia are taking an older architecture that can be mass produced very quickly and fill a gap in the market for those with shallow pockets waiting on the final piece of their gaming build puzzle.</p>
+<h3 id="nvidia-ampere-super-refresh">Nvidia Ampere “Super” Refresh</h3>
+<p>According to <em>fairly reliable</em> leaker, @kopite7kimi we are going to see a <strong>Super</strong> line-up that will slot between the regular and Ti models of the RTX 30x series.</p>
+<p>&nbsp;</p>
+<div>
+<div class="twitter-tweet twitter-tweet-rendered"><iframe id="twitter-widget-0" class="" title="Twitter Tweet" src="https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdHdlZXRfZW1iZWRfOTU1NSI6eyJidWNrZXQiOiJodGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3NwYWNlX2NhcmQiOnsiYnVja2V0Ijoib2ZmIiwidmVyc2lvbiI6bnVsbH19&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1440516490164260868&amp;lang=en&amp;origin=https%3A%2F%2Fwww.cclonline.com%2Farticle%2F2007%2FNews%2FCCL-Gaming-PCs%2FUpcoming-PC-Hardware-Release-Calendar-2022%2F&amp;sessionId=33824a43e0ef2ed918265a8f8c540e46b12a5753&amp;theme=light&amp;widgetsVersion=9fd78d5%3A1638479056965&amp;width=550px" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" data-tweet-id="1440516490164260868" data-mce-fragment="1"></iframe></div>
+</div>
+<p>&nbsp;</p>
+<p>At the more affordable end, the RTX 3060 Super would look like this against the other models: &#8211;</p>
+<ul>
+<li><strong>GeForce RTX 3060 Super: 5,632 CUDA cores, 44 SMs, 12GB GDDR6</strong></li>
+<li>GeForce RTX 3060 Ti: 4,864 CUDA cores, 38 SMs, 8GB GDDR6</li>
+<li>GeForce RTX 3060: 3,584 CUDA cores, 28 SMs, 12GB GDDR6</li>
+</ul>
+<p>Oddly, rather than sitting between the regular and Ti, the <strong>RTX</strong> <strong>3060 Super</strong> would actually surpass the Ti in terms of specification, and if we consider Nvidia produced an RTX 3060 with more VRAM than it’s Ti cousin, anything is possible.</p>
+<h3 id="amd-rembrandt-apus">AMD Rembrandt APUs</h3>
+<p>While the 5600G/5700G APUs stand up great in benchmarking, they both use Vega 8 graphics. The Rembrandt will use <strong>Zen 3+</strong> and <strong>Navi 2 GPU</strong> cores in a 6000-series that will be hot on the heels of <strong>Alder Lake</strong>. Although we have only seen semi-interesting benchmarks from engineering samples, journalists have been vocal in their support of the chips, despite early leaks of performance looking like Rembrandt APUs will be flagging against Alder Lake iGPU chips.</p>
+<h3 id="arc-alchemist">ARC Alchemist</h3>
+<p>CCL writer, Milyana Spence, has covered ARC Alchemist in some detail, and more info on Intel’s flagship GPU can be found here:</p>
+<p>&nbsp;</p>
+<div><a href="https://www.cclonline.com/article/1894/News/Graphics-Cards/Intel-s-ARC-Alchemist-GPU-Alchemist-to-be-Intel-s-first-dedicated-gaming-GPU" rel="nofollow noopener" target="_blank"><img src="https://cclonline.com/images/articles/_IntelARCAlchemistGPU.png?width=1250" alt="Intel&#039;s ARC Alchemist GPU: Alchemist to be Intel&#039;s first dedicated gaming GPU" title="Upcoming PC Hardware Release Calendar 2022 7"></a></div>
+<div>
+<p>&nbsp;</p>
+<p>Intel&#8217;s ARC Alchemist GPU: Alchemist to be Intel&#8217;s first dedicated gaming GPU</p>
+</div>
+<p>&nbsp;</p>
+<h3 id="amd-zen-3-xt">AMD Zen 3 XT</h3>
+<p>With more leaks than Edward Scissorhands’ paddling pool, 2021 has been interesting to say the least, with ransomware cyberattacks at Gigabyte, and the good old Twittersphere chatter amped up to the max. An interesting tweet from @Greymon55, an accurate leaker in the past, stated that Zen 3 XT will be coming in the first half of 2022.</p>
+<p>&nbsp;</p>
+<div>
+<div class="twitter-tweet twitter-tweet-rendered"><iframe id="twitter-widget-1" class="" title="Twitter Tweet" src="https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;embedId=twitter-widget-1&amp;features=eyJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdHdlZXRfZW1iZWRfOTU1NSI6eyJidWNrZXQiOiJodGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3NwYWNlX2NhcmQiOnsiYnVja2V0Ijoib2ZmIiwidmVyc2lvbiI6bnVsbH19&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1442834787668922368&amp;lang=en&amp;origin=https%3A%2F%2Fwww.cclonline.com%2Farticle%2F2007%2FNews%2FCCL-Gaming-PCs%2FUpcoming-PC-Hardware-Release-Calendar-2022%2F&amp;sessionId=33824a43e0ef2ed918265a8f8c540e46b12a5753&amp;theme=light&amp;widgetsVersion=9fd78d5%3A1638479056965&amp;width=550px" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" data-tweet-id="1442834787668922368" data-mce-fragment="1"></iframe></div>
+</div>
+<p>&nbsp;</p>
+<p>In an attempt to steal Intel’s Alder Lake thunder, AMD are repeating their success with the Ryzen 3000 XT; <strong>Zen 3 XT</strong> should see some improvement over Zen 3, with rumours buzzing around increased boost clocks, smaller 6nm node over Zen 3’s 7nm, and we’ll also be treated to bug fixes. AMD’s <strong>5000 series</strong> processors will see the <strong>5000 3D V-Cache</strong> at the top of the range, the <strong>5000XT in the mid-range</strong>, and the regular 5000 at an affordable end of the spectrum.</p>
+<p>Codenamed “<strong>Warhol</strong>” the Zen 3 XT could well facilitate a price drop in Ryzen 5000 processors, which will allow AMD to be a little more attractive to those consumers weighing up an Alder Lake purchase. The Zen 3 XT (ZEN3XT) seems to fit in the launch map just right, as we await the Zen 4 release next year. Further, the Zen 3 XT may also see a range of APUs that include <strong>RDNA2</strong> architecture over the Vega graphics in the 5600G/5700G processors.</p>
+<h3 id="intel-sapphire-rapids-x-hedt-processors">Intel Sapphire Rapids-X HEDT Processors</h3>
+<p>It will be a while until we start seeing the matchups for Intel <strong>Sapphire Rapids-X HEDT</strong> <strong>vs AMD Threadripper</strong> on benchmark websites, but we’re looking forward to them just the same as millions of other PC enthusiasts. We know that <strong>Cascade Lake-X</strong> maxed out at just 18 cores (36 threads), which was the <em>Clubber Lang</em> to AMD’s <em>Rocky</em> – the 64 core Threadripper sluggers. Sapphire Rapids-X however, looks to be more of an Apollo Creed in this new heavyweight bout, set to hit our monitors in Q3 2022.</p>
+<p>The rumour is that Sapphire Rapids-X HEDT chips are Intel’s salvo that will rock AMD’s solid high-end market position, taking on the Threadripper series with close to 60 cores. Sapphire Rapids-X features a total of 4 chiplets, each with up to 15 cores (14 enabled).</p>
+<h3 id="amd-raphael-zen-4">AMD Raphael Zen 4</h3>
+<p>Next-gen Zen 4 Ryzen desktop CPUs, with the codename ‘Raphael’ are set for a late-2022 release, replacing the Vermeer Zen 3 Ryzen 5000 CPUs. Rumours have hinted at a 25% IPC (Instructions Per Clock), but more conservative commentators think a 20% increase is more realistic. Whilst most people are talking about Alder Lake comparisons when it comes to AMD’s new line-ups, it is likely the Raphael Zen 4 will be a closer competitor to Intel’s Raptor Lake.</p>
+<p>Raphael CPUs are also being mentioned in the same breath as RDNA 2 integrated graphics, and will use the new AM5 socket, supporting DDR5 and PCIe 5.0.</p>
+<h3 id="rdna3-architecture--navi-3x">RDNA3 Architecture / Navi 3X</h3>
+<p>Further down the page you will notice Nvidia’s Ada Lovelace CPUs are mentioned, and it is no coincidence that AMD are set to launch their RDNA3 line of graphics cards in the same year. The flagship (rumour) GPU will be the Navi 31 with 160 CUs and more than 15,000 GPU cores; a performance increase of 3x over Navi 21. The Navi 21 GPUs have 80 CUs and 5120 GPU cores (Radeon RX 6800, Radeon RX 6800XT and Radeon RX 6900 XT).</p>
+<p>The RDNA3 GPUs are expected to take advantage of TSMC’s 5nm node with MCM chiplets. The GPUs are leaked to be Radeon RX 7900 XT, 7800 XT, 7700 XT and 7600 XT.</p>
+<h3 id="intel-raptor-lake-desktop--mobile-processors">Intel Raptor Lake Desktop &amp; Mobile Processors</h3>
+<p>Intel’s 13th-Gen Core processor is the successor to the 12th-Gen Alder Lake, and even before either of these processors have hit the shelves, <strong>HWiNFO</strong> have been provided the data for monitoring the Raptor Lake chips.</p>
+<p>&nbsp;</p>
+<div><img src="https://cclonline.com/images/articles/_IntelRaptorLake-SRaptorLake-PSupport.png?width=1250" alt="Intel Raptor Lake Desktop &amp; Mobile Processors" title="Upcoming PC Hardware Release Calendar 2022 8"></div>
+<p>Intel Raptor Lake-S &amp; Raptor Lake-P Support Source: HWiNFO</p>
+<p>&nbsp;</p>
+<p>This has sparked conversation around the 24 cores and <strong>LPDDR5X</strong> memory support. TDP remains the same as Alder Lake, with 125W, 65W and 35W for desktop CPUs and up to 45W for mobile.</p>
+<h3 id="nvidia-ada-lovelace-gpus">Nvidia Ada Lovelace GPUs</h3>
+<p>Things continue to get exciting for the GPU market with news of <strong>Nvidia’s Ada Lovelace</strong>, slated for late 2022 release, with no coincidence around the launch time considering AMD’s plans for Navi 3x.</p>
+<p>There’s rarely much point in discussing Nvidia leaks owing to the fact that the company likes to move the goalposts entirely come launch time and change things up at the last moment. That said, the leaks from @Greymon55 have been… <em>interesting</em>.</p>
+<p>The Nvidia GeForce RTX 4000 series – codename Ada Lovelace – are in production right now, and set for release in the last part of the year in 2022, with a 5nm fab process, from 8nm Samsung (Ampere) chips. This speaks to Nvidia’s focus on reducing power usage and increasing performance.</p>
+<p>The rumours point to a specification comparison that looks a lot like this: &#8211;</p>
+<p>&nbsp;</p>
+<table class="dcf-table dcf-table-responsive">
+<thead>
+<tr>
+<th scope="col">RTX 30 VS RTX 40 (AMPERE VS ADA LOVELACE)</th>
+<th scope="col"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">GPU</td>
+<td>GA102</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">GPU Architecture</td>
+<td>Ampere</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Fabrication Process</td>
+<td>8nm</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">CUDA Cores</td>
+<td>10752</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">TFLOPs</td>
+<td>37.6</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Graphics Processing Clusters</td>
+<td>7</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Texture Processing Clusters</td>
+<td>42</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Total Graphics Power (TGP)</td>
+<td>~350W</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Release Date</td>
+<td>Sep-20</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>With a specification that flexes this hard, AMD and Intel are going to be watching closely to see how the three-way GPU war will be fought into 2023. The real interest will be coming from the consumer who has been left out in the cold for the last few years, with the only option for value being in budget gaming builds using APUs and used (and abused) GPUs.</p>
+<p>&nbsp;</p>
+</article>
+</div>
+</div>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../blog/upcoming-pc-hardware-release-calendar-2022/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

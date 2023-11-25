@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>support &#8211; ITIO Tech</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>IT Service Hardware Training</description>
+	<lastBuildDate>Sun, 13 Mar 2022 23:37:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>./../../../wp-content/uploads/2022/03/cropped-1-1-32x32.png</url>
+	<title>support &#8211; ITIO Tech</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to Fix AMD Radeon Software Not Opening (2022)</title>
+		<link>./../../../blog/how-to-fix-amd-radeon-software-not-opening-2022/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-fix-amd-radeon-software-not-opening-2022</link>
+					<comments>./../../../blog/how-to-fix-amd-radeon-software-not-opening-2022/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[ITIOTECHADMINIFUBRUTEFORCEAGAINYOURBITCH]]></dc:creator>
+		<pubDate>Sun, 02 Jan 2022 02:51:52 +0000</pubDate>
+				<guid isPermaLink="false">./../../../index.html?post_type=docs&#038;p=731</guid>
+
+					<description><![CDATA[AMD Radeon Software allows you to control basically everything about your graphics card. But after several iterations, AMD programs are still showing issues on Windows, and the most common one is AMD Radeon Software not opening. But don’t worry if you’re having the same issue. Here we’ve gathered some fixes that have worked for many gamers. &#8230;<p class="read-more"> <a class="" href="./../../../blog/how-to-fix-amd-radeon-software-not-opening-2022/index.html"> <span class="screen-reader-text">How to Fix AMD Radeon Software Not Opening (2022)</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[<figure class="wp-block-image size-large is-resized"><img loading="lazy" class="wp-image-156420" src="https://images.drivereasy.com/wp-content/uploads/2021/10/amd-radeon-software-featured-1-1200x675.jpg" sizes="(max-width: 486px) 100vw, 486px" srcset="https://images.drivereasy.com/wp-content/uploads/2021/10/amd-radeon-software-featured-1-1200x675.jpg 1200w, https://images.drivereasy.com/wp-content/uploads/2021/10/amd-radeon-software-featured-1-600x338.jpg 600w, https://images.drivereasy.com/wp-content/uploads/2021/10/amd-radeon-software-featured-1-150x84.jpg 150w, https://images.drivereasy.com/wp-content/uploads/2021/10/amd-radeon-software-featured-1.jpg 1280w" alt="amd radeon software featured 1 ITIO Tech" width="486" height="273" title="How to Fix AMD Radeon Software Not Opening (2022) 17"></figure>
+<p>AMD Radeon Software allows you to control basically everything about your graphics card. But after several iterations, AMD programs are still showing issues on Windows, and the most common one is <strong>AMD Radeon Software not opening</strong>.</p>
+<p>But don’t worry if you’re having the same issue. Here we’ve gathered some fixes that have worked for many gamers. Try them and get your Radeon Software working in a jiff.</p>
+<h2 id="h-try-these-fixes">Try these fixes</h2>
+<p>You might not need to try all of them. Simply go down the list until you find the one that does the charm.</p>
+<ol>
+<li><strong>Check for system updates</strong></li>
+<li><strong>Scan and repair your drivers</strong></li>
+<li><strong>Perform a clean boot</strong></li>
+<li><strong>Rebuild the Radeon profiles</strong></li>
+<li><strong>Repair your system</strong></li>
+</ol>
+<h3 id="fix1">Fix 1: Check for system updates</h3>
+<p>A large part of users facing this issue have recently updated their system. Since you can’t stop Windows from updating, you can <strong>check for updates manually </strong>and see if there’s a newer patch targeting the Radeon Software issue.</p>
+<p>Here’s how you can check for updates manually:</p>
+<ol class="brackets">
+<li>On your keyboard, press <strong>Win</strong> (the Windows logo key). At the bottom left corner of your screen, click the<strong> gear icon </strong>to open Settings.<br />
+<img loading="lazy" class="wp-image-134617" src="https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-gear-icon.jpg" sizes="(max-width: 470px) 100vw, 470px" srcset="https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-gear-icon.jpg 470w, https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-gear-icon-150x93.jpg 150w" alt="windows 10 start menu open settings gear icon ITIO Tech" width="470" height="291" title="How to Fix AMD Radeon Software Not Opening (2022) 18"></li>
+<li>Scroll down and select <strong>Update &amp; Security</strong>.<br />
+<img loading="lazy" class="wp-image-134618" src="https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update.jpg" sizes="(max-width: 846px) 100vw, 846px" srcset="https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update.jpg 846w, https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-600x530.jpg 600w, https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-150x133.jpg 150w" alt="windows 10 start menu open settings update ITIO Tech" width="846" height="748" title="How to Fix AMD Radeon Software Not Opening (2022) 19"></li>
+<li>Click <strong>Windows Update</strong>.<br />
+<img loading="lazy" class="wp-image-134619" src="https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-2.jpg" sizes="(max-width: 846px) 100vw, 846px" srcset="https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-2.jpg 846w, https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-2-600x530.jpg 600w, https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-2-150x133.jpg 150w" alt="windows 10 start menu open settings update 2 ITIO Tech" width="846" height="748" title="How to Fix AMD Radeon Software Not Opening (2022) 20"></li>
+<li>Click <strong>Check for updates</strong>. Then wait for the process to complete. After that, restart your PC.<br />
+<img loading="lazy" class="wp-image-134620" src="https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-3.jpg" sizes="(max-width: 846px) 100vw, 846px" srcset="https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-3.jpg 846w, https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-3-600x530.jpg 600w, https://images.drivereasy.com/wp-content/uploads/2020/12/windows-10-start-menu-open-settings-update-3-150x133.jpg 150w" alt="windows 10 start menu open settings update 3 ITIO Tech" width="846" height="748" title="How to Fix AMD Radeon Software Not Opening (2022) 21"></li>
+</ol>
+<div class="note info">To make sure you’ve installed <em>all </em>the system updates, <strong>repeat these steps</strong> until it prompts “You’re up to date” when you click <strong>Check for updates</strong> again.</div>
+<p>After installing all the system updates, do a restart and check if Radeon Software is working now.</p>
+<p>If this doesn’t help you, take a look at the next fix.</p>
+<h3 id="fix2">Fix 2: Scan and repair your drivers</h3>
+<p>This issue could indicate that you’re using <strong>a buggy or outdated graphics driver</strong>. So if you don’t remember when was the last time you checked for driver updates, definitely do it now. The latest GPU driver usually overwrites the faulty settings and fixes most of the compatibility issues.</p>
+<p>You can update your drivers manually, by visiting the AMD website, finding the latest correct installer and installing step by step. But if you’re not comfortable playing with device drivers, you can update your drivers automatically with <strong>Driver Easy</strong>. And its <strong>restore point feature</strong> will help you safely recover from buggy driver updates.</p>
+<div class="note info">If your PC is having persistent display issues, we recommend you use a third-party driver updater. A professional tool not only updates drivers on your PC, it also <em>fixes </em>those that are either broken or missing altogether.</div>
+<ol class="brackets">
+<li>Download and install Driver Easy.</li>
+<li>Run Driver Easy and click the <strong>Scan Now</strong> button. Driver Easy will then scan your computer and detect any problem drivers.<br />
+<img loading="lazy" class="wp-image-153464" src="https://images.drivereasy.com/wp-content/uploads/2021/09/scan-now.jpg" sizes="(max-width: 801px) 100vw, 801px" srcset="https://images.drivereasy.com/wp-content/uploads/2021/09/scan-now.jpg 801w, https://images.drivereasy.com/wp-content/uploads/2021/09/scan-now-600x449.jpg 600w, https://images.drivereasy.com/wp-content/uploads/2021/09/scan-now-150x112.jpg 150w" alt="scan now ITIO Tech" width="801" height="600" title="How to Fix AMD Radeon Software Not Opening (2022) 22"></li>
+<li>Click <strong>Update All</strong> to automatically download and install the correct version of <em>all</em> the drivers that are missing or out of date on your system.<br />
+(This requires the <strong>Pro version</strong> – you’ll be prompted to upgrade when you click Update All. If you don’t want to pay for the Pro version, you can still download and install all the drivers you need with the free version; you just have to download them one at a time, and manually install them, the normal Windows way.)<br />
+<img loading="lazy" class="wp-image-156409" src="https://images.drivereasy.com/wp-content/uploads/2021/10/de-update-6700-xt-driver.jpg" sizes="(max-width: 993px) 100vw, 993px" srcset="https://images.drivereasy.com/wp-content/uploads/2021/10/de-update-6700-xt-driver.jpg 993w, https://images.drivereasy.com/wp-content/uploads/2021/10/de-update-6700-xt-driver-600x451.jpg 600w, https://images.drivereasy.com/wp-content/uploads/2021/10/de-update-6700-xt-driver-150x113.jpg 150w" alt="de update 6700 xt driver ITIO Tech" width="993" height="746" title="How to Fix AMD Radeon Software Not Opening (2022) 23"></li>
+</ol>
+<div class="note success">The <strong>Pro version</strong> of Driver Easy comes with <strong>full technical support</strong>. If you need assistance, please contact Driver Easy’s support team at <strong>support@drivereasy.com</strong>.</div>
+<p>After updating your drivers, restart your PC and check if Radeon Software is working.</p>
+<p>If the latest graphics driver doesn’t do the trick, you can try the next method.</p>
+<h3 id="fix3">Fix 3: Perform a clean boot</h3>
+<p>We all have different setups, so it’s possible that some programs or services on your PC are conflicting with Radeon Software. A clean boot disables background tasks that can interfere with your Radeon Software.</p>
+<ol id="block-32975339-0ed4-40f3-8977-df8676938f3c" class="brackets">
+<li>On your keyboard, press <strong>Win+R </strong>(the Windows logo key and the r key) at the same time to invoke the Run box. Type or paste <strong>msconfig </strong>and click <strong>OK</strong>.<br />
+<img src="https://images.drivereasy.com/wp-content/uploads/2020/11/msconfig-clean-boot-1.jpg" alt="msconfig clean boot 1 ITIO Tech" title="How to Fix AMD Radeon Software Not Opening (2022) 24"></li>
+<li>In the pop-up window, navigate to the <strong>Services </strong>tab and check the box next to <strong>Hide all Microsoft services</strong>.<br />
+<img src="https://images.drivereasy.com/wp-content/uploads/2020/09/msconfig-hide-all-windows-services.jpg" alt="msconfig hide all windows services ITIO Tech" title="How to Fix AMD Radeon Software Not Opening (2022) 25"></li>
+<li><strong>Uncheck </strong>all the services EXCEPT those belong to your hardware manufacturers, such as <strong>Realtek</strong>, <strong>AMD</strong>, <strong>NVIDIA</strong>, <strong>Logitech </strong>and <strong>Intel</strong>. Then click <strong>OK </strong>to apply the changes.<br />
+<img src="https://images.drivereasy.com/wp-content/uploads/2020/09/msconfig-disable-services-except-gpu-audio.jpg" alt="msconfig disable services except gpu audio ITIO Tech" title="How to Fix AMD Radeon Software Not Opening (2022) 26"></li>
+<li>On your keyboard, press <strong>Ctrl</strong>, <strong>Shift </strong>and <strong>Esc </strong>at the same time to open Task Manager, then navigate to the <strong>Startup </strong>tab.<br />
+<img src="https://images.drivereasy.com/wp-content/uploads/2020/08/task-manager-startup.jpg" alt="task manager startup ITIO Tech" title="How to Fix AMD Radeon Software Not Opening (2022) 27"></li>
+<li>One at a time, select any programs you suspect might be interfering, and click <strong>Disable</strong>.<br />
+<img src="https://images.drivereasy.com/wp-content/uploads/2020/08/task-manager-startup-disable-startup-program.jpg" alt="task manager startup disable startup program ITIO Tech" title="How to Fix AMD Radeon Software Not Opening (2022) 28"></li>
+<li>Restart your PC.</li>
+</ol>
+<p>Now you can try to launch Radeon Software. If it’s working now, repeat the steps above and disable half of the services and programs to locate the trouble maker.</p>
+<p>If this trick doesn’t give you luck, simply move on to the next fix.</p>
+<h3 id="fix4">Fix 4: Rebuild the Radeon profiles</h3>
+<p>Some users reported that instead of reinstalling the graphics driver, there’s another potential fix that could get Radeon Software working again. All you need to do is delete a file. You can try this and see how things go.</p>
+<ol class="brackets">
+<li>On your keyboard, press <strong>Win+R </strong>(the Windows logo key and the R key) to open the Run box. Type or paste <strong>%localappdata%/AMD/CN</strong> and click <strong>OK</strong>.<br />
+<img loading="lazy" class="wp-image-156415" src="https://images.drivereasy.com/wp-content/uploads/2021/10/radeon-profile-1.jpg" sizes="(max-width: 458px) 100vw, 458px" srcset="https://images.drivereasy.com/wp-content/uploads/2021/10/radeon-profile-1.jpg 458w, https://images.drivereasy.com/wp-content/uploads/2021/10/radeon-profile-1-150x90.jpg 150w" alt="radeon profile 1 ITIO Tech" width="458" height="274" title="How to Fix AMD Radeon Software Not Opening (2022) 29"></li>
+<li>Delete a file named <strong>gmdb.blb</strong>. Then restart your PC and check if Radeon Software works now.<br />
+<img loading="lazy" class="wp-image-156416" src="https://images.drivereasy.com/wp-content/uploads/2021/10/radeon-profile-2.jpg" sizes="(max-width: 503px) 100vw, 503px" srcset="https://images.drivereasy.com/wp-content/uploads/2021/10/radeon-profile-2.jpg 503w, https://images.drivereasy.com/wp-content/uploads/2021/10/radeon-profile-2-150x106.jpg 150w" alt="radeon profile 2 ITIO Tech" width="503" height="357" title="How to Fix AMD Radeon Software Not Opening (2022) 30"></li>
+<li>If this doesn’t work for you, repeat the steps but delete <strong>the entire CN folder</strong>.</li>
+</ol>
+<p>If this method doesn’t help your case, take a look at the next one below.</p>
+<h3 id="fix5">Fix 5: Repair your system</h3>
+<p>If none of the fixes above work for you, it could imply a critical system issue. But before trying the nuclear option of reinstalling Windows, you can use a professional tool to repair your system.</p>
+<p><strong>Restoro </strong>is an online repair tool that could fix Windows automatically. By replacing only the corrupted files, Restoro keeps your data intact and saves you the time to reinstall.</p>
+<ol id="block-eca7becd-ca99-4066-9878-870567cb7b68" class="brackets">
+<li><strong>Download</strong> and install Restoro.</li>
+<li>Open Restoro. It will run a free scan of your PC and give you <strong>a detailed report of your PC status</strong>.<br />
+<img src="https://images.drivereasy.com/wp-content/uploads/2021/09/restoro-scan.jpg" alt="restoro scan ITIO Tech" title="How to Fix AMD Radeon Software Not Opening (2022) 31"></li>
+<li>Once finished, you’ll see a report showing all the issues. To fix all the issues automatically, click <strong>START REPAIR</strong> (You’ll need to purchase the full version. It comes with a 60-day Money-Back Guarantee so you can refund anytime if Restoro doesn’t fix your problem).<br />
+<img src="https://images.drivereasy.com/wp-content/uploads/2021/09/restoro-fix.jpg" alt="restoro ITIO Tech" title="How to Fix AMD Radeon Software Not Opening (2022) 32"></li>
+</ol>
+<hr class="wp-block-separator" />
+<p>Hopefully this post helps you fix the Radeon Software not opening issue. If you have any questions or ideas, feel free to leave a comment down below.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../blog/how-to-fix-amd-radeon-software-not-opening-2022/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Upcoming PC Hardware Release Calendar 2022</title>
+		<link>./../../../blog/upcoming-pc-hardware-release-calendar-2022/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=upcoming-pc-hardware-release-calendar-2022</link>
+					<comments>./../../../blog/upcoming-pc-hardware-release-calendar-2022/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[ITIOTECHADMINIFUBRUTEFORCEAGAINYOURBITCH]]></dc:creator>
+		<pubDate>Sun, 02 Jan 2022 02:48:00 +0000</pubDate>
+				<guid isPermaLink="false">./../../../index.html?post_type=docs&#038;p=725</guid>
+
+					<description><![CDATA[What&#8217;s happening with the GPU market? Will it recover in 2022? What is in store for budget gamers and PC enthusiasts in the coming months? &#160; As we near Christmas, our thoughts naturally turn to the New Year. 2022 could well be the year of the PC, considering the technology coming our way from Nvidia, &#8230;<p class="read-more"> <a class="" href="./../../../blog/upcoming-pc-hardware-release-calendar-2022/index.html"> <span class="screen-reader-text">Upcoming PC Hardware Release Calendar 2022</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[<div class="row justify-content-md-center mt-4">
+<div class="col-md-9 col-sm-12 d-flex">
+<div id="ctl22_pnlTitle">
+<p class="lead mb-0">What&#8217;s happening with the GPU market? Will it recover in 2022? What is in store for budget gamers and PC enthusiasts in the coming months?</p>
+</div>
+</div>
+</div>
+<div class="row justify-content-md-center mt-4">
+<div class="col-md-9 col-sm-12">
+<div id="ctl22_pnlArticleBody">
+<div></div>
+<article class="blog">
+<section id="header-image">
+<div><img src="https://cclonline.com/images/articles/_PCHardwareReleaseCalendar2021-2022x.png?width=1250" alt="Upcoming PC Hardware Release Calendar 2022" title="Upcoming PC Hardware Release Calendar 2022 37"></div>
+<p>&nbsp;</p>
+</section>
+<section id="introduction">As we near Christmas, our thoughts naturally turn to the New Year. 2022 could well be the year of the PC, considering the technology coming our way from Nvidia, AMD and Intel &#8211; not to mention DDR5 and the possibility of Windows 11’s DirectStorage being implemented by developers in some patched/updated games.Those of us who have had the fortitude and patience in waiting until 2022 for their gaming PC build will be rewarded with the latest technology that promises to deliver framerates and performance like never before. All of this will, of course, come at a cost… but will it be reasonably priced technology in a troubled market? Will manufacturers take pity on the consumers who have hung on for dear life in the final throes of this year’s multi-market wheelie bin fire?</p>
+</section>
+<h3 id="amd-radeon-rx-6600-gpu----bad-news-good-news">AMD Radeon RX 6600 GPU – Bad News, Good News</h3>
+<p>Some great news for GPU buyers came from AMD with the 1080p winner, the <strong>non-XT</strong> variant of the <strong>RX 6600</strong> cards. Sadly, this was followed up with the bad news that the GPU worked great with Ethereum mining. <em>Great</em>.</p>
+<p>The <strong>RX 6600 non-XT GPUs</strong> were priced very well, under £500 in the UK, and promptly began to sell out in all stores. And then something incredible happened. Retailers were restocking quickly.</p>
+<p>Right now, if you are in the market for a reasonably priced GPU that will handle <strong>1080p gaming</strong> on the latest AAA titles, then you could do a lot worse than the RX 6600 non-XT cards.</p>
+<p>&nbsp;</p>
+<div><iframe loading="lazy" title="YouTube video player" src="https://www.youtube.com/embed/e_4eGix7D-k" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></div>
+<p>&nbsp;</p>
+<div><img src="https://cclonline.com/images/articles/_AssassinsCreedValhallaRX6600vsRTX3060.png?width=1250" alt="Assassin&#039;s Creed Valhalla RX 6600 vs RTX 3060 screenshot" title="Upcoming PC Hardware Release Calendar 2022 38"></div>
+<p>Credit: Testing Games (YouTube)</p>
+<p>&nbsp;</p>
+<h2 id="2022-hardware-release-calendar">2022 Hardware Release Calendar</h2>
+<p>While some dates are potentially going to shift, and stock is going to be debatable, here’s a rundown of the releases we’re going to check out today.</p>
+<table>
+<thead>
+<tr>
+<th scope="col">APPROX DATE</th>
+<th scope="col">RELEASE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Approx Date">January 2022(?)</td>
+<td data-label="Release">RTX 2060 refresh from Nvidia and Ampere “SUPER” refresh</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Early 2022</td>
+<td data-label="Release">AMD Rembrandt APUs (Zen 3/RDNA2)</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Q1 2022</td>
+<td data-label="Release">ARC Alchemist</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Q1 or Q2 2022</td>
+<td data-label="Release">AMD Zen 3 XT processors</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Q3 2022</td>
+<td data-label="Release">Intel Sapphire Rapids-X HEDT processors</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Late 2022</td>
+<td data-label="Release">AMD Raphael Zen 4</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Late 2022</td>
+<td data-label="Release">Navi 3X (RDNA3)</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Late 2022</td>
+<td data-label="Release">Intel Raptor Lake desktop &amp; mobile processors</td>
+</tr>
+<tr>
+<td data-label="Approx Date">Late 2022</td>
+<td data-label="Release">Nvidia Ada Lovelace GPUs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nvidia-rtx-2060-refresh">Nvidia RTX 2060 Refresh</h3>
+<p>With Nvidia’s inability to produce enough RTX 30x series GPUs to meet demand, Overclocking.com reported that sources at Nvidia have got under way with plans to repurpose a large stock of <strong>RTX 2060</strong> cards that will be given a <strong>12GB VRAM</strong> upgrade.</p>
+<p>“<em>According to our sources, NVIDIA is now planning an updated RTX 2060 GPU based on Turing architecture. A model known as PG161 would feature 12GB GDDR6 memory and the same TU106-300 GPU, except wth a KX postfix. Thus, the card would only see a change in doubled memory capacity compared to RTX 2060 6GB which launched in January 2019. NVIDIA has allegedly told board partners to anticipate this card by the end of this year, possibly in January [2022], depending on how quickly they can be manufactured.</em>” – Videocardz</p>
+<p>Moore&#8217;s Law Is Dead, a YouTube leaker, <strong>confirmed the RTX 2060 refresh</strong>, saying “<em>I’m told that these rumours of a 2060 relaunch with 12GB is actually something that’s gonna happen. From my perspective I don’t know why they wouldn’t just keep it with 6GB and try to get it below $300,</em>”.</p>
+<p>The RTX 2060 came out in 2019 and as this news emerged, we started to see the card discontinued on retailers’ websites. The guesswork among experts has settled around the $300/£300 price mark, and if the <strong>RX 6600</strong> is anything to go by, we can add another $100/£100 on top, if not more.</p>
+<p>The sensibility is there. Nvidia are taking an older architecture that can be mass produced very quickly and fill a gap in the market for those with shallow pockets waiting on the final piece of their gaming build puzzle.</p>
+<h3 id="nvidia-ampere-super-refresh">Nvidia Ampere “Super” Refresh</h3>
+<p>According to <em>fairly reliable</em> leaker, @kopite7kimi we are going to see a <strong>Super</strong> line-up that will slot between the regular and Ti models of the RTX 30x series.</p>
+<p>&nbsp;</p>
+<div>
+<div class="twitter-tweet twitter-tweet-rendered"><iframe id="twitter-widget-0" class="" title="Twitter Tweet" src="https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdHdlZXRfZW1iZWRfOTU1NSI6eyJidWNrZXQiOiJodGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3NwYWNlX2NhcmQiOnsiYnVja2V0Ijoib2ZmIiwidmVyc2lvbiI6bnVsbH19&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1440516490164260868&amp;lang=en&amp;origin=https%3A%2F%2Fwww.cclonline.com%2Farticle%2F2007%2FNews%2FCCL-Gaming-PCs%2FUpcoming-PC-Hardware-Release-Calendar-2022%2F&amp;sessionId=33824a43e0ef2ed918265a8f8c540e46b12a5753&amp;theme=light&amp;widgetsVersion=9fd78d5%3A1638479056965&amp;width=550px" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" data-tweet-id="1440516490164260868" data-mce-fragment="1"></iframe></div>
+</div>
+<p>&nbsp;</p>
+<p>At the more affordable end, the RTX 3060 Super would look like this against the other models: &#8211;</p>
+<ul>
+<li><strong>GeForce RTX 3060 Super: 5,632 CUDA cores, 44 SMs, 12GB GDDR6</strong></li>
+<li>GeForce RTX 3060 Ti: 4,864 CUDA cores, 38 SMs, 8GB GDDR6</li>
+<li>GeForce RTX 3060: 3,584 CUDA cores, 28 SMs, 12GB GDDR6</li>
+</ul>
+<p>Oddly, rather than sitting between the regular and Ti, the <strong>RTX</strong> <strong>3060 Super</strong> would actually surpass the Ti in terms of specification, and if we consider Nvidia produced an RTX 3060 with more VRAM than it’s Ti cousin, anything is possible.</p>
+<h3 id="amd-rembrandt-apus">AMD Rembrandt APUs</h3>
+<p>While the 5600G/5700G APUs stand up great in benchmarking, they both use Vega 8 graphics. The Rembrandt will use <strong>Zen 3+</strong> and <strong>Navi 2 GPU</strong> cores in a 6000-series that will be hot on the heels of <strong>Alder Lake</strong>. Although we have only seen semi-interesting benchmarks from engineering samples, journalists have been vocal in their support of the chips, despite early leaks of performance looking like Rembrandt APUs will be flagging against Alder Lake iGPU chips.</p>
+<h3 id="arc-alchemist">ARC Alchemist</h3>
+<p>CCL writer, Milyana Spence, has covered ARC Alchemist in some detail, and more info on Intel’s flagship GPU can be found here:</p>
+<p>&nbsp;</p>
+<div><a href="https://www.cclonline.com/article/1894/News/Graphics-Cards/Intel-s-ARC-Alchemist-GPU-Alchemist-to-be-Intel-s-first-dedicated-gaming-GPU" rel="nofollow noopener" target="_blank"><img src="https://cclonline.com/images/articles/_IntelARCAlchemistGPU.png?width=1250" alt="Intel&#039;s ARC Alchemist GPU: Alchemist to be Intel&#039;s first dedicated gaming GPU" title="Upcoming PC Hardware Release Calendar 2022 39"></a></div>
+<div>
+<p>&nbsp;</p>
+<p>Intel&#8217;s ARC Alchemist GPU: Alchemist to be Intel&#8217;s first dedicated gaming GPU</p>
+</div>
+<p>&nbsp;</p>
+<h3 id="amd-zen-3-xt">AMD Zen 3 XT</h3>
+<p>With more leaks than Edward Scissorhands’ paddling pool, 2021 has been interesting to say the least, with ransomware cyberattacks at Gigabyte, and the good old Twittersphere chatter amped up to the max. An interesting tweet from @Greymon55, an accurate leaker in the past, stated that Zen 3 XT will be coming in the first half of 2022.</p>
+<p>&nbsp;</p>
+<div>
+<div class="twitter-tweet twitter-tweet-rendered"><iframe id="twitter-widget-1" class="" title="Twitter Tweet" src="https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;embedId=twitter-widget-1&amp;features=eyJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdHdlZXRfZW1iZWRfOTU1NSI6eyJidWNrZXQiOiJodGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3NwYWNlX2NhcmQiOnsiYnVja2V0Ijoib2ZmIiwidmVyc2lvbiI6bnVsbH19&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1442834787668922368&amp;lang=en&amp;origin=https%3A%2F%2Fwww.cclonline.com%2Farticle%2F2007%2FNews%2FCCL-Gaming-PCs%2FUpcoming-PC-Hardware-Release-Calendar-2022%2F&amp;sessionId=33824a43e0ef2ed918265a8f8c540e46b12a5753&amp;theme=light&amp;widgetsVersion=9fd78d5%3A1638479056965&amp;width=550px" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" data-tweet-id="1442834787668922368" data-mce-fragment="1"></iframe></div>
+</div>
+<p>&nbsp;</p>
+<p>In an attempt to steal Intel’s Alder Lake thunder, AMD are repeating their success with the Ryzen 3000 XT; <strong>Zen 3 XT</strong> should see some improvement over Zen 3, with rumours buzzing around increased boost clocks, smaller 6nm node over Zen 3’s 7nm, and we’ll also be treated to bug fixes. AMD’s <strong>5000 series</strong> processors will see the <strong>5000 3D V-Cache</strong> at the top of the range, the <strong>5000XT in the mid-range</strong>, and the regular 5000 at an affordable end of the spectrum.</p>
+<p>Codenamed “<strong>Warhol</strong>” the Zen 3 XT could well facilitate a price drop in Ryzen 5000 processors, which will allow AMD to be a little more attractive to those consumers weighing up an Alder Lake purchase. The Zen 3 XT (ZEN3XT) seems to fit in the launch map just right, as we await the Zen 4 release next year. Further, the Zen 3 XT may also see a range of APUs that include <strong>RDNA2</strong> architecture over the Vega graphics in the 5600G/5700G processors.</p>
+<h3 id="intel-sapphire-rapids-x-hedt-processors">Intel Sapphire Rapids-X HEDT Processors</h3>
+<p>It will be a while until we start seeing the matchups for Intel <strong>Sapphire Rapids-X HEDT</strong> <strong>vs AMD Threadripper</strong> on benchmark websites, but we’re looking forward to them just the same as millions of other PC enthusiasts. We know that <strong>Cascade Lake-X</strong> maxed out at just 18 cores (36 threads), which was the <em>Clubber Lang</em> to AMD’s <em>Rocky</em> – the 64 core Threadripper sluggers. Sapphire Rapids-X however, looks to be more of an Apollo Creed in this new heavyweight bout, set to hit our monitors in Q3 2022.</p>
+<p>The rumour is that Sapphire Rapids-X HEDT chips are Intel’s salvo that will rock AMD’s solid high-end market position, taking on the Threadripper series with close to 60 cores. Sapphire Rapids-X features a total of 4 chiplets, each with up to 15 cores (14 enabled).</p>
+<h3 id="amd-raphael-zen-4">AMD Raphael Zen 4</h3>
+<p>Next-gen Zen 4 Ryzen desktop CPUs, with the codename ‘Raphael’ are set for a late-2022 release, replacing the Vermeer Zen 3 Ryzen 5000 CPUs. Rumours have hinted at a 25% IPC (Instructions Per Clock), but more conservative commentators think a 20% increase is more realistic. Whilst most people are talking about Alder Lake comparisons when it comes to AMD’s new line-ups, it is likely the Raphael Zen 4 will be a closer competitor to Intel’s Raptor Lake.</p>
+<p>Raphael CPUs are also being mentioned in the same breath as RDNA 2 integrated graphics, and will use the new AM5 socket, supporting DDR5 and PCIe 5.0.</p>
+<h3 id="rdna3-architecture--navi-3x">RDNA3 Architecture / Navi 3X</h3>
+<p>Further down the page you will notice Nvidia’s Ada Lovelace CPUs are mentioned, and it is no coincidence that AMD are set to launch their RDNA3 line of graphics cards in the same year. The flagship (rumour) GPU will be the Navi 31 with 160 CUs and more than 15,000 GPU cores; a performance increase of 3x over Navi 21. The Navi 21 GPUs have 80 CUs and 5120 GPU cores (Radeon RX 6800, Radeon RX 6800XT and Radeon RX 6900 XT).</p>
+<p>The RDNA3 GPUs are expected to take advantage of TSMC’s 5nm node with MCM chiplets. The GPUs are leaked to be Radeon RX 7900 XT, 7800 XT, 7700 XT and 7600 XT.</p>
+<h3 id="intel-raptor-lake-desktop--mobile-processors">Intel Raptor Lake Desktop &amp; Mobile Processors</h3>
+<p>Intel’s 13th-Gen Core processor is the successor to the 12th-Gen Alder Lake, and even before either of these processors have hit the shelves, <strong>HWiNFO</strong> have been provided the data for monitoring the Raptor Lake chips.</p>
+<p>&nbsp;</p>
+<div><img src="https://cclonline.com/images/articles/_IntelRaptorLake-SRaptorLake-PSupport.png?width=1250" alt="Intel Raptor Lake Desktop &amp; Mobile Processors" title="Upcoming PC Hardware Release Calendar 2022 40"></div>
+<p>Intel Raptor Lake-S &amp; Raptor Lake-P Support Source: HWiNFO</p>
+<p>&nbsp;</p>
+<p>This has sparked conversation around the 24 cores and <strong>LPDDR5X</strong> memory support. TDP remains the same as Alder Lake, with 125W, 65W and 35W for desktop CPUs and up to 45W for mobile.</p>
+<h3 id="nvidia-ada-lovelace-gpus">Nvidia Ada Lovelace GPUs</h3>
+<p>Things continue to get exciting for the GPU market with news of <strong>Nvidia’s Ada Lovelace</strong>, slated for late 2022 release, with no coincidence around the launch time considering AMD’s plans for Navi 3x.</p>
+<p>There’s rarely much point in discussing Nvidia leaks owing to the fact that the company likes to move the goalposts entirely come launch time and change things up at the last moment. That said, the leaks from @Greymon55 have been… <em>interesting</em>.</p>
+<p>The Nvidia GeForce RTX 4000 series – codename Ada Lovelace – are in production right now, and set for release in the last part of the year in 2022, with a 5nm fab process, from 8nm Samsung (Ampere) chips. This speaks to Nvidia’s focus on reducing power usage and increasing performance.</p>
+<p>The rumours point to a specification comparison that looks a lot like this: &#8211;</p>
+<p>&nbsp;</p>
+<table class="dcf-table dcf-table-responsive">
+<thead>
+<tr>
+<th scope="col">RTX 30 VS RTX 40 (AMPERE VS ADA LOVELACE)</th>
+<th scope="col"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">GPU</td>
+<td>GA102</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">GPU Architecture</td>
+<td>Ampere</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Fabrication Process</td>
+<td>8nm</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">CUDA Cores</td>
+<td>10752</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">TFLOPs</td>
+<td>37.6</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Graphics Processing Clusters</td>
+<td>7</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Texture Processing Clusters</td>
+<td>42</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Total Graphics Power (TGP)</td>
+<td>~350W</td>
+</tr>
+<tr>
+<td data-label="RTX 30 vs RTX 40 (Ampere vs Ada Lovelace)">Release Date</td>
+<td>Sep-20</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>With a specification that flexes this hard, AMD and Intel are going to be watching closely to see how the three-way GPU war will be fought into 2023. The real interest will be coming from the consumer who has been left out in the cold for the last few years, with the only option for value being in budget gaming builds using APUs and used (and abused) GPUs.</p>
+<p>&nbsp;</p>
+</article>
+</div>
+</div>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../blog/upcoming-pc-hardware-release-calendar-2022/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The best video editing software in 2022</title>
+		<link>./../../../blog/the-best-video-editing-software-in-2022/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-best-video-editing-software-in-2022</link>
+					<comments>./../../../blog/the-best-video-editing-software-in-2022/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[ITIOTECHADMINIFUBRUTEFORCEAGAINYOURBITCH]]></dc:creator>
+		<pubDate>Sun, 02 Jan 2022 02:27:35 +0000</pubDate>
+				<guid isPermaLink="false">./../../../index.html?post_type=docs&#038;p=710</guid>
+
+					<description><![CDATA[The best video editing software can save you from long, frustrating hours sat in front of your computer, by providing you with time-saving tools and an interface that fits in with your personal workflow. As a result, you&#8217;ll find editing video a smooth, fast and perhaps even pleasurable experience. To help you reach this editing &#8230;<p class="read-more"> <a class="" href="./../../../blog/the-best-video-editing-software-in-2022/index.html"> <span class="screen-reader-text">The best video editing software in 2022</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[<p>The best video editing software can save you from long, frustrating hours sat in front of your computer, by providing you with time-saving tools and an interface that fits in with your personal workflow. As a result, you&#8217;ll find editing video a smooth, fast and perhaps even pleasurable experience.</p>
+<div id="ad-unit-1" class="ad-unit"></div>
+<div id="bordeaux-static-slot-7" class="bordeaux-slot" data-feat-ref="bordeaux-feat-id-200"></div>
+<p>To help you reach this editing nirvana, we&#8217;ve selected the best video editing software available today, bar none. We have software at a range of budgets, and for Windows PCs, Mac and Android devices. (If you&#8217;re <em>only </em>interested in mobile apps, though, then our guide to the best video editing apps will serve you better.)</p>
+<aside class="hawk-nest hawk-processed" data-render-type="fte" data-skip="dealsy" data-widget-type="seasonal" data-widget-id="1446569228683844600" data-result="missing"></aside>
+<div id="bordeaux-static-slot-8" class="bordeaux-slot" data-feat-ref="bordeaux-feat-id-201"></div>
+<p>Whether you&#8217;re a professional working on movies and streaming content, a YouTube trying to make your footage sing, or just an enthusiastic smartphone user wanted to make your holiday clips look slick, you&#8217;ll find the right tool for your needs here. Of course, along with the best video editing software, you&#8217;re going to want the best hardware. So don&#8217;t miss our guides to the best monitors for video editing, the best laptops for video editing and the best tablets for video editing.</p>
+<div id="bordeaux-static-slot-9" class="bordeaux-slot" data-feat-ref="bordeaux-feat-id-202"></div>
+<p>Right now, though, scroll down to find quick links to today&#8217;s top 3 deals, followed by our full dive into the best video editing software.</p>
+<h2 id="the-best-video-editing-software-our-top-3">The best video editing software: Our top 3</h2>
+<div class="hawk-nest hawk-processed" style="margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; line-height: inherit; font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; vertical-align: baseline; animation-duration: 0.001s; animation-name: insQ_100; --black: #000; --white: #fff; --orange: #ff6f28; --red: red; --light-grey: #eaeaea; --light-mid-grey: #ccc; --trd-blue: #2f6e91; --site-color: #e94e1b; --site-color-hover: #c94300; --rows-background-color: var(--white); --site-font-family: inherit; --site-logo-width: 100%; --site-logo-max-width: none; --site-logo-max-height: none; --product-label-background: var(--light-grey); --product-label-text-color: var(--black); --price-widget-padding: 0 0 0.8em 0; --deal-widget-border-color: #ddd; width: 602px; letter-spacing: normal; position: relative; --yellow: #ffd800; --green: #3c8d0d; --pink: #e6248a; --light-blue: #97edfc; --mid-grey: #333; --grey: #adadad; --dark-grey: #545454; --prime-blue: #00aeef; --prime-green: #eaf7e9; --lighter-mid-grey: #ebebeb; --game-platform-grey: #dbddde; --amazon-orange: #ffce00; --amazon-prime-day-blue: #70b7d9; --error-red: #f33f3f; --playstation-blue: #003791; --playstation-white: #fff; --xbox-green: #107c10; --nintendo-red: #e60012; --trd-pink: #e6248a; --trd-light-pink: #ea489d; --trd-grey: #ededed; --trd-dark-grey: #333; --trd-dark-blue: #315062; --rose-gold: #b76e79; --pc-orange: #ff8201; --heading-color: #2f6e91; --tab-color: var(--trd-blue); --cc-border-color: var(--light-mid-grey); --cc-filters-title-color: var(--black); --expanded-row-color: var(--trd-blue); --expanded-row-box-shadow: 4px 4px 20px var(--expanded-row-color); --toggle-color: var(--trd-blue); --toggle-switch-color: var(--trd-blue); --postcode-entry-button-color: var(--site-color); --comparison-load-more-background-color: #262626; --tv-channels-display-label-color: #696969; --index-color: #999; --editors-pick-background-color: #ededed; --editors-pick-promo-color: var(--site-color); --editors-pick-promo-rgba-color: rgba(233,78,27,0.3); --editors-pick-voucher-background-color: #e6248a; --filter-border-color: #c1c1c1; --filter-hover-border-color: #535353; --filter-selected-hover-border-color: #666; --countdown-in-progress-color: var(--trd-pink); --hawk-footer-background: var(--trd-grey); --hawk-footer-game-platform-border: solid 1px var(--game-platform-grey); --hover-panel-color: orange; --description-hover-background: #cac7c7; --display-price-code-color: var(--site-color); --hawk-tab-text-color: #666; --hawk-tab-background: #d6d6d6; --review-background: var(--trd-grey); --review-rows-background: var(--white); --review-peacock-background: var(--white); --seasonal-event-grey: #797979; --seasonal-event-dark-grey: #313131; --seasonal-event-merchants-background: var(--white); --game-platform-background: transparent; --price-widget-padding-mobile: 0 0 0.8em 0; --was-price-text-color: #848484; --was-price-promo-color: #be0707; --was-price-light-promo-color: #ededed; --was-price-light-promo-text-color: #be0707; --dotw-header-border-top: 1px solid #ddd; --dotw-header-border-bottom: 4px solid #006ea9; --dotw-toggle-background-color: #1b1b1b; --dotw-search-input-border-color: #ddd; --dotw-header-background: transparent; --dotw-header-text-color: var(--black); --user-input-color: #c1c1c1; --user-input-hover-color: #535353; --user-input-input-background: #f2f2f2; --user-input-input-error-color: #838383; --radio-button-color: #c1c1c1; --checkbox-color: #c1c1c1; --range-filter-shadow-color: #a9a9a9; --range-filter-background-color: var(--site-color); --pre-order-promise-color: #aaa; --merchant-link-mona-background-color: var(--site-color); --merchant-link-mona-text-color: var(--white); --merchant-link-mona-text-color-hover: var(--white); --merchant-link-border-radius: 3px; --mona-site-font-family: inherit; --mona-site-text-color: inherit; --mona-widget-extra-background: #a5a5a5; --mona-widget-extra-backgound-hover: #a5a5a5; --shop-filter-button-background-color: var(--trd-blue); --shop-filter-button-text-color: var(--white); --pagination-button-selected-background-color: var(--trd-blue); --deal-hero-promo-background: var(--grey); --deal-hero-promo-color: #fff; --deal-hero-promo-background-progressive: transparent; --deal-hero-promo-color-progressive: #d21f26; --deal-widget-hero-box-shadow-color: hsla(0,0%,91.4%,0.231373); --sticky-promo-color: #e19c42; --terms-conditions-orange: #f19670; --voucher-promo-red: #c0464a; color: #333333; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-image="https://cdn.mos.cms.futurecdn.net/La2SekQaScPjxJX8gF7FeL-200-100.jpg" data-link="https://tracker.tradedoubler.com/click?p=265883&amp;a=3009146&amp;g=22913796&amp;epi=hawk-custom-tracking&amp;url=https%3A%2F%2Fwww.adobe.com%2Fuk%2Fproducts%2Fpremiere.html" data-link-text="View Deal" data-model-name="1. Premiere Pro: the best video editing software for pros" data-show-fallback="button" data-webp-image="https://cdn.mos.cms.futurecdn.net/La2SekQaScPjxJX8gF7FeL-200-100.jpg.webp" data-widget-introduction="&lt;p&gt;&lt;strong&gt;1. &lt;/strong&gt;&lt;a href=&quot;https://tracker.tradedoubler.com/click?p=265883&amp;a=3009146&amp;g=22913796&amp;epi=hawk-custom-tracking&amp;url=https%3A%2F%2Fwww.adobe.com%2Fuk%2Fproducts%2Fpremiere.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;&lt;strong&gt;Premiere Pro: the best video editing software for pros&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&lt;br&gt; &lt;/strong&gt;Perfect for working editors and pro YouTubers, Adobe's Premiere Pro is the best video editing software overall. The industry-standard tool works on both PC and Mac, and the latest October 2021 updates make it more powerful than ever. A seven-day free trial is available.&lt;br&gt; &lt;/p&gt;" data-widget-type="deal" data-render-type="editorial" data-viewports="tablet" data-widget-id="1277756354230228200" data-feat-ref="hawk-id-0" data-result="rendered">
+<div class="hawk-deal-widget-container">
+<div class="hawk-deal-widget-image-container">
+<div class="hawk-lazy-load-container hawk-lazy-load-deal-widget" data-feat-ref="hawk-id-1"><a class="hawk-affiliate-link-deal-widget" href="https://tracker.tradedoubler.com/click?p=265883&amp;a=3009146&amp;g=22913796&amp;epi=cbq-bd-1342815401964500200&amp;url=https%3A%2F%2Fwww.adobe.com%2Fuk%2Fproducts%2Fpremiere.html" target="_blank" rel="sponsored noopener nofollow" data-url="https://tracker.tradedoubler.com/click?p=265883&amp;a=3009146&amp;g=22913796&amp;epi=cbq-bd-1342815401964500200&amp;url=https%3A%2F%2Fwww.adobe.com%2Fuk%2Fproducts%2Fpremiere.html" data-match-id="0" data-google-interstitial="false"><picture><source srcset="https://cdn.mos.cms.futurecdn.net/La2SekQaScPjxJX8gF7FeL-200-100.jpg.webp" type="image/webp" /><img class="hawk-deal-widget-image-image" title="1. Premiere Pro: the best video editing software for pros" draggable="false" src="https://cdn.mos.cms.futurecdn.net/La2SekQaScPjxJX8gF7FeL-200-100.jpg" alt="1. Premiere Pro: the best video editing software for pros" /></picture></a></div>
+</div>
+<div class="hawk-deal-widget-main">
+<p><strong>1. </strong><strong>Premiere Pro: the best video editing software for pros</strong><strong><br />
+</strong>Perfect for working editors and pro YouTubers, Adobe&#8217;s Premiere Pro is the best video editing software overall. The industry-standard tool works on both PC and Mac, and the latest October 2021 updates make it more powerful than ever. A seven-day free trial is available.</p>
+</div>
+</div>
+</div>
+<div class="hawk-nest hawk-processed" style="margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; line-height: inherit; font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; vertical-align: baseline; animation-duration: 0.001s; animation-name: insQ_100; --black: #000; --white: #fff; --orange: #ff6f28; --red: red; --light-grey: #eaeaea; --light-mid-grey: #ccc; --trd-blue: #2f6e91; --site-color: #e94e1b; --site-color-hover: #c94300; --rows-background-color: var(--white); --site-font-family: inherit; --site-logo-width: 100%; --site-logo-max-width: none; --site-logo-max-height: none; --product-label-background: var(--light-grey); --product-label-text-color: var(--black); --price-widget-padding: 0 0 0.8em 0; --deal-widget-border-color: #ddd; width: 602px; letter-spacing: normal; position: relative; --yellow: #ffd800; --green: #3c8d0d; --pink: #e6248a; --light-blue: #97edfc; --mid-grey: #333; --grey: #adadad; --dark-grey: #545454; --prime-blue: #00aeef; --prime-green: #eaf7e9; --lighter-mid-grey: #ebebeb; --game-platform-grey: #dbddde; --amazon-orange: #ffce00; --amazon-prime-day-blue: #70b7d9; --error-red: #f33f3f; --playstation-blue: #003791; --playstation-white: #fff; --xbox-green: #107c10; --nintendo-red: #e60012; --trd-pink: #e6248a; --trd-light-pink: #ea489d; --trd-grey: #ededed; --trd-dark-grey: #333; --trd-dark-blue: #315062; --rose-gold: #b76e79; --pc-orange: #ff8201; --heading-color: #2f6e91; --tab-color: var(--trd-blue); --cc-border-color: var(--light-mid-grey); --cc-filters-title-color: var(--black); --expanded-row-color: var(--trd-blue); --expanded-row-box-shadow: 4px 4px 20px var(--expanded-row-color); --toggle-color: var(--trd-blue); --toggle-switch-color: var(--trd-blue); --postcode-entry-button-color: var(--site-color); --comparison-load-more-background-color: #262626; --tv-channels-display-label-color: #696969; --index-color: #999; --editors-pick-background-color: #ededed; --editors-pick-promo-color: var(--site-color); --editors-pick-promo-rgba-color: rgba(233,78,27,0.3); --editors-pick-voucher-background-color: #e6248a; --filter-border-color: #c1c1c1; --filter-hover-border-color: #535353; --filter-selected-hover-border-color: #666; --countdown-in-progress-color: var(--trd-pink); --hawk-footer-background: var(--trd-grey); --hawk-footer-game-platform-border: solid 1px var(--game-platform-grey); --hover-panel-color: orange; --description-hover-background: #cac7c7; --display-price-code-color: var(--site-color); --hawk-tab-text-color: #666; --hawk-tab-background: #d6d6d6; --review-background: var(--trd-grey); --review-rows-background: var(--white); --review-peacock-background: var(--white); --seasonal-event-grey: #797979; --seasonal-event-dark-grey: #313131; --seasonal-event-merchants-background: var(--white); --game-platform-background: transparent; --price-widget-padding-mobile: 0 0 0.8em 0; --was-price-text-color: #848484; --was-price-promo-color: #be0707; --was-price-light-promo-color: #ededed; --was-price-light-promo-text-color: #be0707; --dotw-header-border-top: 1px solid #ddd; --dotw-header-border-bottom: 4px solid #006ea9; --dotw-toggle-background-color: #1b1b1b; --dotw-search-input-border-color: #ddd; --dotw-header-background: transparent; --dotw-header-text-color: var(--black); --user-input-color: #c1c1c1; --user-input-hover-color: #535353; --user-input-input-background: #f2f2f2; --user-input-input-error-color: #838383; --radio-button-color: #c1c1c1; --checkbox-color: #c1c1c1; --range-filter-shadow-color: #a9a9a9; --range-filter-background-color: var(--site-color); --pre-order-promise-color: #aaa; --merchant-link-mona-background-color: var(--site-color); --merchant-link-mona-text-color: var(--white); --merchant-link-mona-text-color-hover: var(--white); --merchant-link-border-radius: 3px; --mona-site-font-family: inherit; --mona-site-text-color: inherit; --mona-widget-extra-background: #a5a5a5; --mona-widget-extra-backgound-hover: #a5a5a5; --shop-filter-button-background-color: var(--trd-blue); --shop-filter-button-text-color: var(--white); --pagination-button-selected-background-color: var(--trd-blue); --deal-hero-promo-background: var(--grey); --deal-hero-promo-color: #fff; --deal-hero-promo-background-progressive: transparent; --deal-hero-promo-color-progressive: #d21f26; --deal-widget-hero-box-shadow-color: hsla(0,0%,91.4%,0.231373); --sticky-promo-color: #e19c42; --terms-conditions-orange: #f19670; --voucher-promo-red: #c0464a; color: #333333; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-image="https://cdn.mos.cms.futurecdn.net/CUrBHwEeEWUhddx3zBkwH3-200-100.png" data-link="https://www.anrdoezrs.net/links/6361382/type/dlg/sid/hawk-custom-tracking/https://www.cyberlink.com/products/powerdirector-video-editing-software-mac/features_en_GB.html?" data-link-text="View Deal" data-model-name="2. CyberLink PowerDirector 365: the best video editing software for everyday use" data-show-fallback="button" data-webp-image="https://cdn.mos.cms.futurecdn.net/CUrBHwEeEWUhddx3zBkwH3-200-100.png.webp" data-widget-introduction="&lt;p&gt;&lt;strong&gt;2. &lt;/strong&gt;&lt;a href=&quot;https://www.anrdoezrs.net/links/6361382/type/dlg/sid/hawk-custom-tracking/https://www.cyberlink.com/products/powerdirector-video-editing-software-mac/features_en_GB.html?&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;&lt;strong&gt;CyberLink PowerDirector 365: the best video editing software for everyday use&lt;/strong&gt;&lt;/a&gt;&lt;br&gt; CyberLink PowerDirector 365 is among the best video software available for a one-off fee. It offers an array of video editing tools, plus access to the Shutterstock library. You can try it with a 30-day free trial.&lt;/p&gt;" data-widget-type="deal" data-render-type="editorial" data-viewports="tablet" data-widget-id="3699177797686941700" data-feat-ref="hawk-id-2" data-result="rendered">
+<div class="hawk-deal-widget-container">
+<div class="hawk-deal-widget-image-container">
+<div class="hawk-lazy-load-container hawk-lazy-load-deal-widget" data-feat-ref="hawk-id-3"><a class="hawk-affiliate-link-deal-widget" href="https://www.anrdoezrs.net/links/6361382/type/dlg/sid/cbq-bd-1018405369330926200/https://www.cyberlink.com/products/powerdirector-video-editing-software-mac/features_en_GB.html?" target="_blank" rel="sponsored noopener nofollow" data-url="https://www.anrdoezrs.net/links/6361382/type/dlg/sid/cbq-bd-1018405369330926200/https://www.cyberlink.com/products/powerdirector-video-editing-software-mac/features_en_GB.html?" data-match-id="0" data-google-interstitial="false"><picture><source srcset="https://cdn.mos.cms.futurecdn.net/CUrBHwEeEWUhddx3zBkwH3-200-100.png.webp" type="image/webp" /><img class="hawk-deal-widget-image-image" title="2. CyberLink PowerDirector 365: the best video editing software for everyday use" draggable="false" src="https://cdn.mos.cms.futurecdn.net/CUrBHwEeEWUhddx3zBkwH3-200-100.png" alt="2. CyberLink PowerDirector 365: the best video editing software for everyday use" /></picture></a></div>
+</div>
+<div class="hawk-deal-widget-main">
+<p><strong>2. </strong><strong>CyberLink PowerDirector 365: the best video editing software for everyday use</strong><br />
+CyberLink PowerDirector 365 is among the best video software available for a one-off fee. It offers an array of video editing tools, plus access to the Shutterstock library. You can try it with a 30-day free trial.</p>
+</div>
+<div class="hawk-deal-widget-footer">
+<div class="hawk-deal-widget-button-wrapper"></div>
+</div>
+</div>
+</div>
+<div class="hawk-nest hawk-processed" style="margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; line-height: inherit; font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; vertical-align: baseline; animation-duration: 0.001s; animation-name: insQ_100; --black: #000; --white: #fff; --orange: #ff6f28; --red: red; --light-grey: #eaeaea; --light-mid-grey: #ccc; --trd-blue: #2f6e91; --site-color: #e94e1b; --site-color-hover: #c94300; --rows-background-color: var(--white); --site-font-family: inherit; --site-logo-width: 100%; --site-logo-max-width: none; --site-logo-max-height: none; --product-label-background: var(--light-grey); --product-label-text-color: var(--black); --price-widget-padding: 0 0 0.8em 0; --deal-widget-border-color: #ddd; width: 602px; letter-spacing: normal; position: relative; --yellow: #ffd800; --green: #3c8d0d; --pink: #e6248a; --light-blue: #97edfc; --mid-grey: #333; --grey: #adadad; --dark-grey: #545454; --prime-blue: #00aeef; --prime-green: #eaf7e9; --lighter-mid-grey: #ebebeb; --game-platform-grey: #dbddde; --amazon-orange: #ffce00; --amazon-prime-day-blue: #70b7d9; --error-red: #f33f3f; --playstation-blue: #003791; --playstation-white: #fff; --xbox-green: #107c10; --nintendo-red: #e60012; --trd-pink: #e6248a; --trd-light-pink: #ea489d; --trd-grey: #ededed; --trd-dark-grey: #333; --trd-dark-blue: #315062; --rose-gold: #b76e79; --pc-orange: #ff8201; --heading-color: #2f6e91; --tab-color: var(--trd-blue); --cc-border-color: var(--light-mid-grey); --cc-filters-title-color: var(--black); --expanded-row-color: var(--trd-blue); --expanded-row-box-shadow: 4px 4px 20px var(--expanded-row-color); --toggle-color: var(--trd-blue); --toggle-switch-color: var(--trd-blue); --postcode-entry-button-color: var(--site-color); --comparison-load-more-background-color: #262626; --tv-channels-display-label-color: #696969; --index-color: #999; --editors-pick-background-color: #ededed; --editors-pick-promo-color: var(--site-color); --editors-pick-promo-rgba-color: rgba(233,78,27,0.3); --editors-pick-voucher-background-color: #e6248a; --filter-border-color: #c1c1c1; --filter-hover-border-color: #535353; --filter-selected-hover-border-color: #666; --countdown-in-progress-color: var(--trd-pink); --hawk-footer-background: var(--trd-grey); --hawk-footer-game-platform-border: solid 1px var(--game-platform-grey); --hover-panel-color: orange; --description-hover-background: #cac7c7; --display-price-code-color: var(--site-color); --hawk-tab-text-color: #666; --hawk-tab-background: #d6d6d6; --review-background: var(--trd-grey); --review-rows-background: var(--white); --review-peacock-background: var(--white); --seasonal-event-grey: #797979; --seasonal-event-dark-grey: #313131; --seasonal-event-merchants-background: var(--white); --game-platform-background: transparent; --price-widget-padding-mobile: 0 0 0.8em 0; --was-price-text-color: #848484; --was-price-promo-color: #be0707; --was-price-light-promo-color: #ededed; --was-price-light-promo-text-color: #be0707; --dotw-header-border-top: 1px solid #ddd; --dotw-header-border-bottom: 4px solid #006ea9; --dotw-toggle-background-color: #1b1b1b; --dotw-search-input-border-color: #ddd; --dotw-header-background: transparent; --dotw-header-text-color: var(--black); --user-input-color: #c1c1c1; --user-input-hover-color: #535353; --user-input-input-background: #f2f2f2; --user-input-input-error-color: #838383; --radio-button-color: #c1c1c1; --checkbox-color: #c1c1c1; --range-filter-shadow-color: #a9a9a9; --range-filter-background-color: var(--site-color); --pre-order-promise-color: #aaa; --merchant-link-mona-background-color: var(--site-color); --merchant-link-mona-text-color: var(--white); --merchant-link-mona-text-color-hover: var(--white); --merchant-link-border-radius: 3px; --mona-site-font-family: inherit; --mona-site-text-color: inherit; --mona-widget-extra-background: #a5a5a5; --mona-widget-extra-backgound-hover: #a5a5a5; --shop-filter-button-background-color: var(--trd-blue); --shop-filter-button-text-color: var(--white); --pagination-button-selected-background-color: var(--trd-blue); --deal-hero-promo-background: var(--grey); --deal-hero-promo-color: #fff; --deal-hero-promo-background-progressive: transparent; --deal-hero-promo-color-progressive: #d21f26; --deal-widget-hero-box-shadow-color: hsla(0,0%,91.4%,0.231373); --sticky-promo-color: #e19c42; --terms-conditions-orange: #f19670; --voucher-promo-red: #c0464a; color: #333333; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-image="https://cdn.mos.cms.futurecdn.net/VSoSg35tbVXrRwYAjKFeMN-200-100.png" data-link="https://tracker.tradedoubler.com/click?p=265883&amp;a=3009146&amp;g=22913796&amp;epi=hawk-custom-tracking&amp;url=https%3A%2F%2Fwww.adobe.com%2Fuk%2Fproducts%2Fpremiere-elements.html" data-link-text="View Deal" data-model-name="3. Adobe Premiere Elements: the best video editing software for beginners" data-show-fallback="button" data-webp-image="https://cdn.mos.cms.futurecdn.net/VSoSg35tbVXrRwYAjKFeMN-200-100.png.webp" data-widget-introduction="&lt;p&gt;&lt;strong&gt;3. &lt;/strong&gt;&lt;a href=&quot;https://tracker.tradedoubler.com/click?p=265883&amp;a=3009146&amp;g=22913796&amp;epi=hawk-custom-tracking&amp;url=https%3A%2F%2Fwww.adobe.com%2Fuk%2Fproducts%2Fpremiere-elements.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;&lt;strong&gt;Adobe Premiere Elements: the best video editing software for beginners&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&lt;br&gt; &lt;/strong&gt;If you're new to video editing, Adobe Premiere Pro can be a bit challenging. Instead start with Adobe Premiere Elements, a simplified version of the software that's also cheaper (and there's a 30-day free trial, too).&lt;/p&gt;" data-widget-type="deal" data-render-type="editorial" data-viewports="tablet" data-widget-id="1250273077347533300" data-feat-ref="hawk-id-4" data-result="rendered">
+<div class="hawk-deal-widget-container">
+<div class="hawk-deal-widget-image-container">
+<div class="hawk-lazy-load-container hawk-lazy-load-deal-widget" data-feat-ref="hawk-id-5"><a class="hawk-affiliate-link-deal-widget" href="https://tracker.tradedoubler.com/click?p=265883&amp;a=3009146&amp;g=22913796&amp;epi=cbq-bd-1052281354688708000&amp;url=https%3A%2F%2Fwww.adobe.com%2Fuk%2Fproducts%2Fpremiere-elements.html" target="_blank" rel="sponsored noopener nofollow" data-url="https://tracker.tradedoubler.com/click?p=265883&amp;a=3009146&amp;g=22913796&amp;epi=cbq-bd-1052281354688708000&amp;url=https%3A%2F%2Fwww.adobe.com%2Fuk%2Fproducts%2Fpremiere-elements.html" data-match-id="0" data-google-interstitial="false"><picture><source srcset="https://cdn.mos.cms.futurecdn.net/VSoSg35tbVXrRwYAjKFeMN-200-100.png.webp" type="image/webp" /><img class="hawk-deal-widget-image-image" title="3. Adobe Premiere Elements: the best video editing software for beginners" draggable="false" src="https://cdn.mos.cms.futurecdn.net/VSoSg35tbVXrRwYAjKFeMN-200-100.png" alt="3. Adobe Premiere Elements: the best video editing software for beginners" /></picture></a></div>
+</div>
+<div class="hawk-deal-widget-main">
+<p><strong>3. </strong><strong>Adobe Premiere Elements: the best video editing software for beginners</strong><strong><br />
+</strong>If you&#8217;re new to video editing, Adobe Premiere Pro can be a bit challenging. Instead start with Adobe Premiere Elements, a simplified version of the software that&#8217;s also cheaper (and there&#8217;s a 30-day free trial, too).</p>
+</div>
+</div>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../blog/the-best-video-editing-software-in-2022/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

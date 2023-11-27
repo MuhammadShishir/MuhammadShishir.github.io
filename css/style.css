@@ -420,6 +420,11 @@ footer {
         max-width: 25rem !important;
         max-height: 15rem !important;
     }
+    #projectTypesContainer{
+        display: flex;
+        width: 100%;
+        
+    }
 }
 
 /* Mobile part end */

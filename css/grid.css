@@ -375,7 +375,7 @@ p{
     margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: cen;
+    justify-content: center;
 }
 
 .service-card {
@@ -460,4 +460,89 @@ p{
 #order-form a {
     text-decoration: none;
     
+}
+
+
+
+.project-type-card {
+    width: 20rem;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow:  .1rem .1rem .1rem .1rem rgba(39, 39, 39, 0.308);
+
+}
+
+#projectTypesContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    background-color: rgba(180, 180, 180, 0.151);
+}
+
+/* Add specific styles for each card here */
+#wordpress {
+    background-color: #f44336;
+}
+
+#wix {
+    background-color: #4CAF50;
+}
+
+#shopify {
+    background-color: #2196F3;
+}
+
+#custom {
+    background-color: #FF9800;
+}
+/* ... (your existing styles) */
+
+.learn-more-button {
+    background-color: #0073e6;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#projectTypesContainer li{
+    text-align: left;
+}
+#projectTypesContainer{
+    color: red !important;
+}
+
+
+.website-types-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(180, 180, 180, 0.151);
+}
+
+.website-type {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(39, 39, 39, 0.308);
+}
+
+.website-type img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.website-type h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.website-type p {
+    font-size: 1rem;
+    color: #555;
 }

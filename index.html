@@ -47,7 +47,7 @@
                             <div class="dropdown-menu" aria-labelledby="projectsDropdown" >
                                 <a class="dropdown-item" href="projects.html">All Projects</a>
                                 <a class="dropdown-item" href="websites.html">Websites</a>
-                                <a class="dropdown-item" href="games.html">Games</a>
+                                <a class="dropdown-item" href="games.html">Unreal Engine</a>
                                 <a class="dropdown-item" href="other-projects.html">Other Projects</a>
                             </div>
                         </li>
@@ -65,26 +65,83 @@
         </nav>
     </div>
     
-<script>
-    // JavaScript to add the "nav-scroll" class when scrolling
-    window.addEventListener("scroll", function() {
-        const navContainer = document.querySelector(".nav-container");
-        if (window.scrollY > 0) {
-            navContainer.classList.add("nav-scroll");
-        } else {
-            navContainer.classList.remove("nav-scroll");
-        }
-    });
-</script>
+    <script>
+        // JavaScript to add the "nav-scroll" class when scrolling
+        window.addEventListener("scroll", function() {
+            const navContainer = document.querySelector(".nav-container");
+            if (window.scrollY > 0) {
+                navContainer.classList.add("nav-scroll");
+            } else {
+                navContainer.classList.remove("nav-scroll");
+            }
+        });
+    </script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <!-- nav end -->
 
+<div class="banner-con">
+    <div class="banner">
+        <div class="slide">
+            <h2>Welcome to My Profile</h2>
+            <img src="./media/img/hi.png" height="50rem"><p>I am MKShishir, I make WordPress websites</p>
+        </div>
+        <div class="slide">
+            <img src="./media/img/4-removebg-preview.png" height="100rem">
+            <h2>Your Custom Solutions | Affordable Prices | 100% Reliable</h2>
+            <p>Scroll Down Bellow to Choose or Email me for Custom Orders</p>
+            
+        </div>
+        <div class="slide">
+            <h2>24h/7d | Never Miss an Update </h2>
+            <p>We Take Care of Your Website's Updates so that You Can Relax</p>
+        </div>
+        <div class="slide">
+            <h2>100% Genuine Themes & Plugins | Say No to Virus</h2>
+            <p>Our Themes & Plugins are Original, We DO NOT use Any nulled or cracked Products</p>
+        </div>
+        <div class="slide">
+            <img src="./media/img/9250.png_1200-removebg-preview.png" height="100rem">
+            <h2>Your Website's Security Ensurement</h2>
+            <p>With us Your Website will Stay Safe & Secure, We follow Best Practice and Provide Solutions for Cyber Security</p>
+        </div>
+    </div>
+    <a href="#" class="navigation-button prev" onclick="changeSlide(-1)"> &lt; </a>
+    <a href="#" class="navigation-button next" onclick="changeSlide(1)"> &gt; </a>
+</div>
+
+<script>
+    let currentSlide = 0;
+
+    function changeSlide(direction) {
+        const banner = document.querySelector('.banner');
+        const slides = document.querySelectorAll('.slide');
         
-    <div class="sup">
+        currentSlide += direction;
+
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        } else if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+
+        banner.style.transform = `translateX(${-currentSlide * 100}%)`;
+    }
+
+    // Set initial position to show the first slide
+    document.addEventListener('DOMContentLoaded', function () {
+        const banner = document.querySelector('.banner');
+        banner.style.transform = 'translateX(0%)';
+    });
+</script>
+
+
+
+
+
 
             <div class="area"  >
                         <ul class="circles">
@@ -100,217 +157,49 @@
                                 <li></li>
                         </ul>
                 
-                        <div class="context" >
-                            Welcome to My Profile
-                        </div>
-
-                    <div class="grid-2" style="background-color: #0505057e !important;">
-                        <div class="section-1" id="contact">
-                            <div style="text-align: center;">
-                            <img src="./media/img/M K S.png" width="200rem" alt="https://muhammadshishir.github.io/" height="200rem"><br>
-                            <!-- <i class="fas fa-code fa-5x white"></i> -->
-                            <h2>Md Kamruzzaman Shishir</h2>
-                            <p>Dhaka, Bangladesh</p>
-                            <p>Contact :</p>
-                            <p>E-mail: mdkamruzzaman.shishir@outlook.com</p>
-                            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-                            <a href="https://mksge.itch.io/"><i class="fa fa-globe" aria-hidden="true"></i> Itch.io Page</a>
-                            <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir//"><i class="fab fa-linkedin"></i>Linkedin</a>
-                            <a href="https://github.com/MuhammadShishir"><i class="fab fa-github"></i>GitHub</a>
+                       
+                    <div class="sup">
+                        <div class="grid-2" >
+                            <div class="section-1" id="contact">
+                                <div style="text-align: center;">
+                                <img src="./media/img/M K S.png" width="200rem" alt="https://muhammadshishir.github.io/" height="200rem"><br>
+                                <!-- <i class="fas fa-code fa-5x white"></i> -->
+                                <h2>Md Kamruzzaman Shishir</h2>
+                                <p>Dhaka, Bangladesh</p>
+                                <p>Contact :</p>
+                                <p>E-mail: mdkamruzzaman.shishir@outlook.com</p>
+                                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                                <a href="https://mksge.itch.io/"><i class="fa fa-globe" aria-hidden="true"></i> Itch.io Page</a>
+                                <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir//"><i class="fab fa-linkedin"></i> Linkedin</a>
+                                <a href="https://github.com/MuhammadShishir"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                                <br><br>
+                                
+                                
                             </div>
-                            <br><br>
-                            
-                            
-                        </div>
-                        <div class="section-2">
-                            <div>
-                                    <h2>About Me</h2>
-                                    <ul 
-                                    style="color:white;
-                                    
-                                    
-                                    "
-                                    >
-                                        <li>Web development: HTML, CSS, BootStrap, JavaScript, jQuery, PHP, MySQL, PHPMyAdmin</li>
-                                        <li>Programming languages: C, C++, Java, Python, R</li>
-                                        <li>Unreal Engine game development</li>
-                                        <li>Graphic design: Canva, Photoshop, Illustrator</li>
-                                        <li>Video editing</li>
-                                        <li>Strong foundation in algorithms, data structures, and software design principles</li>
-                                        <li>Continuous learning and exploration of new technologies</li>
-                                        <li>Excellent problem-solving and analytical skills</li>
-                                        <li>Strong attention to detail and quality</li>
-                                        <li>Collaborative team player</li>
-                                        <li>Passion for video games and immersive experiences</li>
-                                    </ul>
+                            <div class="section-2">
+                                <div>
+                                        <h2>About Me</h2>
+                                        <ul>
+                                            <li>Web development: HTML, CSS, BootStrap, JavaScript, jQuery, PHP, MySQL, PHPMyAdmin</li>
+                                            <li>Programming languages: C, C++, Java, Python, R</li>
+                                            <li>Unreal Engine game development</li>
+                                            <li>Graphic design: Canva, Photoshop, Illustrator</li>
+                                            <li>Video editing</li>
+                                            <li>Strong foundation in algorithms, data structures, and software design principles</li>
+                                            <li>Continuous learning and exploration of new technologies</li>
+                                            <li>Excellent problem-solving and analytical skills</li>
+                                            <li>Strong attention to detail and quality</li>
+                                            <li>Collaborative team player</li>
+                                            <li>Passion for video games and immersive experiences</li>
+                                        </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-
-
-
-<!-- Start of Projects -->
-
-<div class="projects-tab" >
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1 align="center" style="color:white;"><a href="projects.html" class="animated-button"><span class="icon">&rarr;</span>Project Portfolio</a></h1>
-    <br>
-    <div class="line"></div>
     
-    <h2 align="center"><a href="websites.html" class="animated-button"><span class="icon">&rarr;</span>Websites</a></h2>
-    <div class="line"></div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <a href="4marchive.html">
-                <img src="./media/img/UI1.png" width="100%">
-                <br>
-                <p>4mArchive (Archiving/News etc)</p>
-            </a>
-            <div class="description">
-                <div class="description-text">A Project Thesis Publishing Website</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="/include/glazclone/index.html">
-                <img src="./media/img/glazw.jpg" width="100%">
-                <br>
-                <p>e-Commerce Website(Smart Mirror) </p>
-            </a>
-            <div class="description">
-                <div class="description-text">E-comerce website(Smart Mirror) Clone</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="/include/itiotech/index.html">
-                <img src="./media/img/itiotech.jpg" width="100%">
-                <br>
-                <p>e-Commerce Website(Technology)</p>
-            </a>
-            <div class="description">
-                <div class="description-text">E-comerce website(Technology)</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="portfolio.html">
-                <img src="./media/img/p.jpg" width="100%">
-                <br>
-                <p>Portfolio</p>
-            </a>
-            <div class="description">
-                <div class="description-text">The portfolio website you are watching now</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="psdtohtml.html">
-                <img src="./media/img/psd.jpg" width="100%">
-                <br>
-                <p>PSD to HTML</p>
-            </a>
-            <div class="description">
-                <div class="description-text">PSD to HTML Sample</div>
-            </div>
-        </div>
-    </div>
-    
-    
-
-    <br><h2 align="center"><a href="games.html" class="animated-button" ><span class="icon">&rarr;</span>Game</a></h2>
-    <div class="line"></div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <a href="Lost in Green Shores.html">
-                <img src="./media/img/10.webp" width="100%">
-                <br><p>Lost in Green Shores</p>
-            </a>
-            <div class="description">
-                <div class="description-text">A Survival Project with many islands</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="jebyurgth-phantasy.html">
-                <img src="./media/img/6.webp" width="100%">
-                <br><p>Jebbyurgth Phantasy: Tale of Asygarth</p>
-            </a>
-            <div class="description">
-                <div class="description-text">A RPG Project with magical fantasy elements</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="exploading-ball.html">
-                <img src="./media/img/ball.png" width="100%">
-                <br>
-                <p>The Exploding Ball</p>
-            </a>
-            <div class="description">
-                <div class="description-text">A weird funny game that plays with human psycie</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="resurgence.html">
-                <img src="./media/img/13.webp" width="100%">
-                <br>
-                <p>Resurgence: Humanity's Last Stand</p>
-            </a>
-            <div class="description">
-                <div class="description-text">A Zoombie shooter demo</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="shadow-myst.html">
-                <img src="./media/img/8.webp" width="100%">
-                <br>
-                <p>Cursed Blade: Shadow Myst</p>
-            </a>
-            <div class="description">
-                <div class="description-text">A top down dungeon crawler</div>
-            </div>
-        </div>
-    </div>  
-
-    <h2 align="center"><a href="other-projects.html" class="animated-button"><span class="icon">&rarr;</span>Other Projects</a></h2>
-    <div class="line"></div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <a href="pdf-to-html-css.html">
-                <img src="./media/img/logo.png" width="50%" >
-                <br><p>PDF to HTML CSS</p>
-            </a>
-            <div class="description">
-                <div class="description-text">Example of PDF to HTML conversion</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="result-management-system.html">
-                <img src="./media/img/rESULT.png" width="50%">
-                <br>
-                <p>Result Management System</p>
-            </a>
-            <div class="description">
-                <div class="description-text">A Java Swing code for calculating result</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <a href="github-projects.html">
-                <img src="./media/img/GitHub-Logo.png" width="70%">
-                <br>
-                <p>Find More at Github</p>
-            </a>
-            <div class="description">
-                <div class="description-text">Find me in GitHub</div>
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-
-<!-- End of Projects -->
-
 
 
 
@@ -398,8 +287,8 @@
 </div>
 
 
-<h2 align="center">Types of Website Projects</h2>
-<div class="line"></div>
+ <h2 align="left"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">&rarr;</span>We Provide Solutions For: </h2>
+
 
 <div class="project-types-container" id="projectTypesContainer">
     <!-- Project cards will be dynamically added here -->
@@ -458,13 +347,173 @@
 
 
 
+<!-- Start of Projects -->
+
+<div class="projects-tab" >
+
+    <div class="projects">
+        <h2 align="center" style="color:white;"><a href="projects.html" class="animated-button"><span class="icon">&rarr;</span>Project Portfolio</a></h2>
+        <div class="line"></div>
+        
+        <h3 align="left"><a href="websites.html" class="animated-button"><span class="icon">&rarr;</span>Websites: WordPress, PSD to HTML etc. </a></h3>
+        
+        <div class="grid-container" >
+            <div class="grid-item">
+                <a href="4marchive.html">
+                    <img src="./media/img/UI1.png" width="100%">
+                    <br>
+                    <p>4mArchive (Archiving/News etc)</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">A Project Thesis Publishing Website</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="/include/glazclone/index.html">
+                    <img src="./media/img/glazw.jpg" width="100%">
+                    <br>
+                    <p>e-Commerce Website(Smart Mirror) </p>
+                </a>
+                <div class="description">
+                    <div class="description-text">E-comerce website(Smart Mirror) Clone</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="/include/itiotech/index.html">
+                    <img src="./media/img/itiotech.jpg" width="100%">
+                    <br>
+                    <p>e-Commerce Website(Technology)</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">E-comerce website(Technology)</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="portfolio.html">
+                    <img src="./media/img/p.jpg" width="100%">
+                    <br>
+                    <p>Portfolio</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">The portfolio website you are watching now</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="psdtohtml.html">
+                    <img src="./media/img/psd.jpg" width="100%">
+                    <br>
+                    <p>PSD to HTML</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">PSD to HTML Sample</div>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+        <br><h3 align="left"><a href="games.html" class="animated-button" ><span class="icon">&rarr;</span>Unreal Engine: Games & Scenes</a></h3>
+        
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="Lost in Green Shores.html">
+                    <img src="./media/img/10.webp" width="100%">
+                    <br><p>Lost in Green Shores</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">A Survival Project with many islands</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="jebyurgth-phantasy.html">
+                    <img src="./media/img/6.webp" width="100%">
+                    <br><p>Jebbyurgth Phantasy: Tale of Asygarth</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">A RPG Project with magical fantasy elements</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="exploading-ball.html">
+                    <img src="./media/img/ball.png" width="100%">
+                    <br>
+                    <p>The Exploding Ball</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">A weird funny game that plays with human psycie</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="resurgence.html">
+                    <img src="./media/img/13.webp" width="100%">
+                    <br>
+                    <p>Resurgence: Humanity's Last Stand</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">A Zoombie shooter demo</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="shadow-myst.html">
+                    <img src="./media/img/8.webp" width="100%">
+                    <br>
+                    <p>Cursed Blade: Shadow Myst</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">A top down dungeon crawler</div>
+                </div>
+            </div>
+        </div>  
+    
+        <h3 align="left"><a href="other-projects.html" class="animated-button"><span class="icon">&rarr;</span>Other Projects</a></h3>
+       
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="pdf-to-html-css.html">
+                    <img src="./media/img/logo.png" width="50%" >
+                    <br><p>PDF to HTML CSS</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">Example of PDF to HTML conversion</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="result-management-system.html">
+                    <img src="./media/img/rESULT.png" width="50%">
+                    <br>
+                    <p>Result Management System</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">A Java Swing code for calculating result</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="github-projects.html">
+                    <img src="./media/img/GitHub-Logo.png" width="70%">
+                    <br>
+                    <p>Find More at Github</p>
+                </a>
+                <div class="description">
+                    <div class="description-text">Find me in GitHub</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- End of Projects -->
 
 
 
 
 
 
-            <div class="testproj"   style="background-color:#0505057e;">
+
+
+
+            <div class="testproj" >
                 <h2 align="center">Test My Projects</h2>
 
                 <div class="line"></div>

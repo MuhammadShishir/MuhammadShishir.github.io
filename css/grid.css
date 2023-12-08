@@ -1,24 +1,56 @@
 
 .projects-tab{
-    background-color: #0505057e;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 .about-top{
     background-color: #0505057e;
 }
 /* Grid items */
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
 
+.grid-item {
+    display: flex;
+    text-align: center;
+    background-color: #0505057e;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
 
 .grid-item:hover {
-    /* border: 2px solid #3498db;  */
-    /* Change border color on hover */
-    transform: scale(1.05); /* Increase size on hover */
-    filter: brightness(1.2); /* Increase brightness on hover */
-    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
-     /* Add a subtle shadow on hover */
-    background-color: rgba(5, 112, 112, 0.534);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
-    border: 2px solid rgba(0, 255, 255, 0.7);
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.grid-container:hover .grid-item:not(:hover) {
+    opacity: 0.6;
+    transform: scale(0.9);
 }
 
 /* Short description on hover */
@@ -52,47 +84,22 @@
 /* Grid container */
 
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    min-height: 30vh;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.grid-item {
-    display: flex;
-    text-align: center;
-    background-color: #0505057e;
-    padding: 20px;
-    border: 1px solid #ddd;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    transition: border 0.3s ease, transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-}
 
 
 .nav-container {
-    background-color: #0bd2ff1f;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     transition: background-color 0.3s ease;
-    
+    background-color: transparent;
     
 }
 
 /* Add an animation for the navbar background when scrolling */
 .nav-scroll {
-    background-color:#02181d !important; /* Background color when scrolling */
+    background-color:#06121a !important; /* Background color when scrolling */
     transition: background-color 0.3s ease;
     /* animation: glow 5s infinite alternate; */
     z-index: 1000;
@@ -139,9 +146,9 @@ nav ul li{
 nav ul li:hover {
     transform: scale(1.1); 
     transition: all 0.3s ease;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+   
     /* border: 2px solid rgba(0, 255, 255, 0.7); */
-    background-color: rgba(5, 112, 112, 0.534)!important;
+   
 }
 
 nav ul li a{
@@ -158,10 +165,10 @@ nav ul li a:hover{
     font-size: 18px;
 }
 
-.nav-container button{
+/* .nav-container button{
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
     border: 2px solid rgba(0, 255, 255, 0.7) !important;
-}
+} */
 .navbar-toggler-icon {
     color: white;
 }
@@ -274,7 +281,11 @@ p{
     cursor: pointer;
     display: none;
 }
-
+.modal-close{
+    background-color: #0073e6 !important;
+    border: 1px solid transparent;
+    border-radius: 5rem;
+}
 /* Show zoom button on hover */
 .gallery-item:hover .zoom-button {
     display: block;
@@ -367,7 +378,7 @@ p{
 .page-container{
     display: flex;
     justify-content: center;
-    background-color: #02181d;
+    background-color: #06121ad2;
     padding-bottom: 5rem!important;
 }
 
@@ -479,7 +490,7 @@ p{
     display: flex;
     justify-content: center;
     flex-wrap: wrap; 
-    background-color: rgba(180, 180, 180, 0.151);
+    /* background-color: rgba(180, 180, 180, 0.151); */
 }
 
 /* Add specific styles for each card here */
@@ -520,7 +531,7 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
-    background-color: rgba(180, 180, 180, 0.151);
+    /* background-color: rgba(180, 180, 180, 0.151); */
 }
 
 .website-type {

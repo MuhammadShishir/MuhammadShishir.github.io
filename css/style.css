@@ -24,8 +24,8 @@ a:hover{
     color: aqua !important;
 }
 h2 {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 1em;
+    padding-top: 1em;
     color: white !important;
 }
 
@@ -42,12 +42,12 @@ main {
 
 .line {
     position: relative;
-    width: 20rem;
-    height: 0.1rem;
+    width: 20em;
+    height: 0.1em;
     background-color: rgba(255, 255, 255, 0.747);
     overflow: hidden;
     margin: auto;
-    margin-bottom: 2rem!important;
+    margin-bottom: 2em!important;
 }
 
 .line::before {
@@ -87,13 +87,13 @@ main {
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
-    margin-top: 1.5rem;
+    margin-top: 1.5em;
     
     color: white;
     border: none;
     border-radius: 4px;
     transition:  transform 1s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 /* Hover state */
@@ -146,7 +146,7 @@ main {
     color: #fff;
     font-size: 3vw;
     position: absolute;
-    padding-top: .5rem;
+    padding-top: .5em;
 }
 
 
@@ -190,7 +190,7 @@ main {
 .sup{
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 2em;
     
 }
 
@@ -201,7 +201,7 @@ main {
     z-index: 1;
     justify-content: center;
     margin: 0;
-    width: 100rem;
+    width: 100em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     height: auto;
 }
@@ -217,19 +217,19 @@ main {
 }
 
 .section-1 p {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     padding-bottom: 10px;
     margin: 0;
     color: white;
 }
 
 .section-1 h2 {
-    font-size: 1.7rem;
+    font-size: 1.7em;
     margin-bottom: 10px;
 }
 
 .section-1 a {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     padding: 10px;
     color: wheat;
     transition: box-shadow 0.3s, border 0.3s;
@@ -252,19 +252,19 @@ main {
 
 .section-2 h2 {
     padding-top: 100px;
-    font-size: 1.7rem;
+    font-size: 1.7em;
     margin-bottom: 10px;
 }
 
 .section-2 p {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     padding-bottom: 10px;
     margin: auto;
 }
 
 .section-2 a {
     padding: 5px;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     padding-left: 0;
     text-decoration: none;
 
@@ -332,18 +332,18 @@ footer {
         animation: none !important;
     }
     .line{
-        width: 5rem !important;
+        width: 5em !important;
     }
     .tree{
         min-width: 100%!important;
-        font-size: 0.75rem!important;
-        padding: .5rem!important;
+        font-size: 0.75em!important;
+        padding: .5em!important;
     }
     .animated-button{
         box-shadow: none !important;
     }
     .about-top{
-        margin-top: 1.8rem !important;
+        margin-top: 1.8em !important;
     }
     .about-left {
         text-align: center !important;
@@ -356,28 +356,28 @@ footer {
     }
     .section-1 {
         padding: 0 !important;
-        padding-top: 5rem !important;
+        padding-top: 5em !important;
     }
     .section-2 {
         padding: 0 !important;
-        padding-left: 1.5rem !important;
-        padding-top: 2rem !important;
+        padding-left: 1.5em !important;
+        padding-top: 2em !important;
     }
     .gallery-text {
         width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
-        font-size: 1rem !important;
+        font-size: 1em !important;
     }
     .dash {
         width: 50% !important;
         margin: 0 !important;
         padding: 0 !important;
-        font-size: 0.6rem !important;
+        font-size: 0.6em !important;
     }
     .grid-container {
         grid-template-columns: repeat(1, 0.7fr)!important;
-        font-size: 0.6rem!important;
+        font-size: 0.6em!important;
         
         
     }
@@ -395,7 +395,7 @@ footer {
     }
     .context {
         font-size: 5vw;
-        margin-top: 30rem;
+        margin-top: 30em;
         text-shadow: none!important;
     }
     .nav-container {
@@ -405,25 +405,28 @@ footer {
         width: 100%;
     }
     .navbar-brand{
-        font-size: 0.75rem!important;
+        font-size: 0.75em!important;
     }
    
     .gallery-container{
         grid-template-columns: repeat(1, 1fr) !important;
         justify-content: center;
-        grid-gap: 1rem !important;
+        grid-gap: 1em !important;
         width: 100% !important;
     }
     .gallery-item img {
-        padding: 2rem !important;
+        padding: 2em !important;
         justify-content: center;
-        max-width: 25rem !important;
-        max-height: 15rem !important;
+        max-width: 25em !important;
+        max-height: 15em !important;
     }
     #projectTypesContainer{
         display: flex;
         width: 100%;
         
+    }
+    .slide {
+        padding-left: 10vw !important;
     }
 }
 
@@ -576,14 +579,14 @@ footer {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    min-height: 25rem;
+    min-height: 25em;
 }
 
 .banner {
     display: flex;
     transition: transform 0.5s ease-in-out;
     justify-content: flex-start; /* Adjusted to align slides to the left */
-    min-height: 25rem;
+    min-height: 25em;
 }
 
 .slide {
@@ -595,14 +598,14 @@ footer {
     box-sizing: border-box;
     background-color: #06121ad2;
     color: #fff;
-    min-height: 25rem;
-    padding-left: 20rem; /* Add padding to create some space around the content */
+    min-height: 25em;
+    padding-left: 20vw; /* Add padding to create some space around the content */
     transform: translateX(0%); /* Added to ensure the first slide is initially visible */
 }
 
 
 .slide h2 {
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
 }
 
 .navigation-button {
@@ -615,7 +618,7 @@ footer {
     color: gold !important;
     text-decoration: none;
     font-size: 1.8em; /* Adjust font size as needed */
-    line-height: .6; /* Set line-height to 1 to remove extra space */
+    line-height: .6; /* Set line-height to 1 to emove extra space */
     border: 1px solid gold;
     border-radius: 50%;
     cursor: pointer;

@@ -11,9 +11,7 @@
     justify-content: center;
     
 }
-.about-top{
-    background-color: #0505057e;
-}
+
 /* Grid items */
 
 .grid-container {
@@ -32,7 +30,8 @@
     display: flex;
     text-align: center;
     background-color: #0505057e;
-    border: 1px solid #ddd;
+    border: 1px solid #000000d2;
+    
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -68,8 +67,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background-color: black;
+    color: #fff !important;
     padding: 10px;
     font-size: 14px;
 }
@@ -79,6 +78,7 @@
 /*  description text inside grid items */
 .grid-item .description-text {
     position: relative;
+    color: #fff !important;
     z-index: 1;
 }
 /* Grid container */
@@ -93,16 +93,17 @@
     top: 0;
     z-index: 1000;
     transition: background-color 0.3s ease;
-    background-color: transparent;
+   
     
 }
 
 /* Add an animation for the navbar background when scrolling */
 .nav-scroll {
-    background-color:#06121a !important; /* Background color when scrolling */
+    background-color:#ffffff !important; /* Background color when scrolling */
     transition: background-color 0.3s ease;
     /* animation: glow 5s infinite alternate; */
     z-index: 1000;
+    border-bottom:1px solid #333;
     
 }
 
@@ -153,18 +154,18 @@ nav ul li:hover {
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
     transition: text-shadow 0.3s;
 }
 nav ul li a:hover{
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    text-shadow: 0 0 20px rgb(248, 232, 5);
 }
 .active a{
     text-shadow: 0 0 10px rgb(0, 202, 17);
 }
 .inactive a{
     opacity: .2;
-    text-shadow: 0 0 10px rgb(255, 0, 0);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 /* Add colors and styles to icons */
 .navbar-brand i, .nav-link i {
@@ -177,7 +178,10 @@ nav ul li a:hover{
     border: 2px solid rgba(0, 255, 255, 0.7) !important;
 } */
 .navbar-toggler-icon {
-    color: white;
+    background-color: #000000ea !important;
+    color: rgb(255, 255, 255) !important;
+    border: 1px solid transparent;
+    border-radius: .25rem;
 }
 /* Add custom colors to icons */
 .navbar-brand i.fa-rocket {
@@ -207,7 +211,7 @@ nav ul li a:hover{
     color: #07cc00;
 }
 p{
-    color: white!important;
+    color: rgb(0, 0, 0);
 }
 
 .nav-item.dropdown {
@@ -216,9 +220,9 @@ p{
 }
 
 .dropdown-menu {
-    background-color:#02181d !important;
-     /* Change background color */
-    border: 1px solid #ffffff !important;
+    background-color:#ffffff !important;
+    
+    border: 1px solid #fdb416 !important;
     border-radius: 0;
     transition: all 0.3s ease-in-out; /* Add an ease-in transition effect */
     opacity: 0;
@@ -235,12 +239,13 @@ p{
 }
 
 .dropdown-item {
-    color: #fff; /* Change text color */
+    color: black; /* Change text color */
     transition: all 0.3s ease-in-out; /* Add an ease-in transition effect */
 }
 
 .dropdown-item:hover {
-    background-color: rgba(5, 112, 112, 0.534)!important; /* Change background color on hover */
+    background-color: rgba(252, 198, 22, 0.904)!important; /* Change background color on hover */
+    color: white !important;
 }
 
 
@@ -385,11 +390,12 @@ p{
 .page-container{
     display: flex;
     justify-content: center;
-    background-color: #06121ad2;
+    background-color: #eedf1510;
     padding-bottom: 5em!important;
 }
 
 .service-container {
+    background-color: #000000bb;
     margin-top: 5em;
     display: flex;
     flex-wrap: wrap;
@@ -489,8 +495,8 @@ p{
     text-align: center;
     border-radius: 10px;
     color: white;
-    box-shadow:  .1em .1em .1em .1em rgba(39, 39, 39, 0.308);
-
+    box-shadow:  .1em .1em .1em .1em rgba(255, 238, 0, 0.151);
+    
 }
 
 #projectTypesContainer {

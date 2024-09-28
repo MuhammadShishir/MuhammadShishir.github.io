@@ -626,7 +626,7 @@ footer p{
     overflow: hidden;
     min-height: 25em;
     width: 100%;
-    
+    background-color: #ffd9051e;
 }
 
 .banner {

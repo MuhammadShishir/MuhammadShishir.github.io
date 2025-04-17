@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="icon" type="image/x-icon" href="./M-K-S.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-tjn9bhqSmv8URWVdmvmsMYaBp/z5k6t7x4xqBHKBV9Tu5rwX5bq5vbzru+31W4++F5w5Tlj0OjvNnqcc0Rb71g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -19,68 +19,8 @@
 
 </head>
 <body>
-    <div id="result" style="color: white; left: 0% !important; position: absolute;"></div>
+  
     <script src="js/script.js"></script>
-   
-<!-- Nav start   -->
-<div class="nav-container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-rocket"></i> Hi, This is MKShishir | Menu &rrarr; </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" ></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
-                    </li>
-                    <li class="nav-item inactive">
-                        <a class="nav-link " href="#"><i class="fas fa-user"></i> About</a>
-                    </li>
-
-                    <li class="nav-item dropdown inactive">
-                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-laptop-code"></i> Projects
-                        </a>
-                        <div class="dropdown-menu inactive" aria-labelledby="projectsDropdown" >
-                            <a class="dropdown-item" href="#">All Projects</a>
-                            <a class="dropdown-item" href="#">Websites</a>
-                            <a class="dropdown-item" href="#">Unreal Engine</a>
-                            <a class="dropdown-item" href="#">Other Projects</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item inactive">
-                        <a class="nav-link" href="#"><i class="fa fa-suitcase" ></i> Services</a>
-                    </li>
-
-                    <li class="nav-item inactive">
-                        <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-
-
-<script>
-// JavaScript to add the "nav-scroll" class when scrolling
-window.addEventListener("scroll", function() {
-    const navContainer = document.querySelector(".nav-container");
-    if (window.scrollY > 0) {
-        navContainer.classList.add("nav-scroll");
-    } else {
-        navContainer.classList.remove("nav-scroll");
-    }
-});
-</script>
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -164,14 +104,34 @@ window.addEventListener("scroll", function() {
 <!-- End of gallery -->
 
 
-<footer>
-    <p align="center">&copy; 2023 Portfolio Md Kamruzzaman Shishir. All rights reserved. | Designed by <a href="https://github.com/MuhammadShishir">Md Kamruzzaman Shishir</a></p>
-    <p align="center"><a href="#">Contact Me</a></p>
-</footer>
-
-<div class="go-to-top" id="goToTop">
-    <i class="fas fa-arrow-up"></i>
-</div>
+<footer class="footer mt-5 text-center">
+    <div class="footer-content">
+      
+  
+      <div class="footer-icons d-flex justify-content-center gap-3 mb-2">
+  
+        <a href="https://github.com/MuhammadShishir" class="icon-wrapper github" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+  
+        <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" class="icon-wrapper linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+  
+        <a href="mailto:mdkamruzzaman.shishir@outlook.com" class="icon-wrapper email" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+  
+        <a href="https://mksge.itch.io/" class="icon-wrapper itch" target="_blank" title="Itch.io">
+          <i class="fa fa-globe"></i>
+        </a>
+  
+      </div>
+      <br>
+      <p class="mb-2">&copy; 2025 <strong>Md Kamruzzaman Shishir</strong></p>
+      <p class="description-text small">// Built with 💻, ☕, and 🚀</p>
+    </div>
+  </footer>
 
 <script>
     // Show the "Go to top" button when scrolling
@@ -194,5 +154,16 @@ window.addEventListener("scroll", function() {
         document.documentElement.scrollTop = 0;
     });
 </script>
+<div class="go-to-top-container" >
+    <!-- Go to Top Button -->
+    <div class="go-to-top" id="goToTop" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- Go Home Button -->
+    <a href="index.html" class="go-home" title="Back to Home">
+        <i class="fas fa-home"></i>
+    </a> 
+</div>
 </body>
 </html>    

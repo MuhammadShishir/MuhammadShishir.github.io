@@ -1,572 +1,82 @@
-
-.projects-tab{
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-}
-.projects{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-/* Grid items */
-
+/* Grid layout for project sections */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
-    justify-content: center;
-    align-items: center;
-    min-height: 30vh;
-    padding-left: 2em;
-    padding-right: 2em;
-    
-}
-
-.grid-item {
-    display: flex;
-    text-align: center;
-    background-color: #0505057e;
-    border: 1px solid #000000d2;
-    
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    transform: scale(1);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.grid-item:hover {
-    opacity: 1;
-    transform: scale(1.08);
-}
-
-.grid-container:hover .grid-item:not(:hover) {
-    opacity: 0.6;
-    transform: scale(0.9);
-}
-
-/* Short description on hover */
-.grid-item:hover .description {
-    opacity: 1;
-    transform: translateY(0);
-    display: block;
-}
-
-
-/* Description styles */
-.description {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    color: #fff !important;
-    padding: 10px;
-    font-size: 14px;
-}
-
-/* Center grid items horizontally and vertically */
-
-/*  description text inside grid items */
-.grid-item .description-text {
-    position: relative;
-    color: #fff !important;
-    z-index: 1;
-}
-/* Grid container */
-
-
-
-
-.nav-container {
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-   
-    
-}
-
-/* Add an animation for the navbar background when scrolling */
-.nav-scroll {
-    background-color:#ffffff !important; /* Background color when scrolling */
-    transition: background-color 0.3s ease;
-    /* animation: glow 5s infinite alternate; */
-    z-index: 1000;
-    border-bottom:1px solid #333;
-    
-}
-
-/* @keyframes glow {
-    0% {
-        box-shadow: 0 0 8px rgba(255, 208, 0, 0.6);
-        
-        
-    }
-    25% {
-        box-shadow: 0 0 12px rgba(0, 255, 55, 0.6);
-        
-    }
-    50% {
-       
-        box-shadow: 0 0 14px rgba(0, 255, 255, 0.7);
-    }
-    75% {
-        box-shadow: 0 0 16px rgba(212, 0, 255, 0.8); 
-        
-    }
-    100% {
-        box-shadow: 0 0 22px rgba(119, 0, 255, 0.9);
-        
-    }
-} */
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li{
-    margin: 10px;
-    transition: all 0.3s ease; 
-    /* Add animation for list items */
-}
-
-/* Add hover animation for list items */
-nav ul li:hover {
-    transform: scale(1.1); 
-    transition: all 0.3s ease;
-   
-    /* border: 2px solid rgba(0, 255, 255, 0.7); */
-   
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    transition: text-shadow 0.3s;
-}
-nav ul li a:hover{
-    text-shadow: 0 0 20px rgb(248, 232, 5);
-}
-.active a{
-    text-shadow: 0 0 10px rgb(0, 202, 17);
-}
-.inactive a{
-    opacity: .2;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
-}
-/* Add colors and styles to icons */
-.navbar-brand i, .nav-link i {
-    margin-right: 5px;
-    font-size: 18px;
-}
-
-/* .nav-container button{
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
-    border: 2px solid rgba(0, 255, 255, 0.7) !important;
-} */
-.navbar-toggler-icon {
-    background-color: #000000ea !important;
-    color: rgb(255, 255, 255) !important;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-}
-/* Add custom colors to icons */
-.navbar-brand i.fa-rocket {
-    color: #ff6b6b;
-}
-
-.nav-link i.fa-images {
-    color: #ff9c45;
-}
-
-.nav-link i.fa-home {
-    color: #5cbcf8;
-}
-
-.nav-link i.fa-user {
-    color: #c1ffa7;
-}
-
-.nav-link i.fa-laptop-code {
-    color: #fca311;
-}
-
-.nav-link i.fa-envelope {
-    color: #ee00ff;
-}
-.nav-link i.fa-suitcase {
-    color: #07cc00;
-}
-p{
-    color: rgb(0, 0, 0);
-}
-
-.nav-item.dropdown {
-    position: relative; /* Necessary for absolute positioning of dropdown */
-    
-}
-
-.dropdown-menu {
-    background-color:#ffffff !important;
-    
-    border: 1px solid #fdb416 !important;
-    border-radius: 0;
-    transition: all 0.3s ease-in-out; /* Add an ease-in transition effect */
-    opacity: 0;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-.nav-item:hover .dropdown-menu {
-    opacity: 1; /* Make the dropdown visible */
-    display: block;
-    
-}
-
-.dropdown-item {
-    color: black; /* Change text color */
-    transition: all 0.3s ease-in-out; /* Add an ease-in transition effect */
-}
-
-.dropdown-item:hover {
-    background-color: rgba(252, 198, 22, 0.904)!important; /* Change background color on hover */
-    color: white !important;
-}
-
-
-
-
-/* Gallery Styles */
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.gallery-item {
-    display: flex;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    
-    transition: border 0.3s ease, transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item img {
-    max-width: 35em;
-    height: 20em;
-    cursor: pointer;
-}
-
-/* Add CSS for the modal dialog */
-
-.zoom-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: none;
-}
-.modal-close{
-    background-color: #0073e6 !important;
-    border: 1px solid transparent;
-    border-radius: 5em;
-}
-/* Show zoom button on hover */
-.gallery-item:hover .zoom-button {
-    display: block;
-}
-
-/* Style for the modal dialog */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding: 20px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-    margin: 0 auto;
-    max-width: 80%;
-    max-height: 80%;
-    display: block;
-}
-
-.modal-image {
-    width: 100%;
-    max-height: 100%;
-    display: block;
-}
-
-.modal-close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-
-/* Video Styles */
-.video-container {
-    text-align: center;
-}
-
-.video-container iframe {
-    max-width: 30em;
-    max-height: 25em;
-}
-/* gallery end */
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: wheat; */
-    padding: 20px;
-}
-
-/* Style form elements */
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-    color: black;
-    background-color: whitesmoke;
-    border: none;
-    border-bottom: 1px solid black;
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-}
-
-/* Style the "Send" button */
-#contact-form input[type="submit"] {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-/* Style placeholder text */
-#contact-form input[type="text"]::placeholder,
-#contact-form input[type="email"]::placeholder,
-#contact-form textarea::placeholder {
-    color: grey;
-}
-
-.page-container{
-    display: flex;
-    justify-content: center;
-    background-color: #eedf1510;
-    padding-bottom: 5em!important;
-}
-
-.service-container {
-    background-color: #000000bb;
-    margin-top: 5em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.service-card {
-    background-color: #f6b7b2;
-    margin: 10px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    width: 20em;
-    text-align: center;
-}
-
-.more-content img{
-    max-height:7em;
-    padding-bottom: 1em;
-}
-
-.more-content {
-    display: none;
-    margin-top: 10px;
-}
-.service-card h3 {
-    color: #333;
-    margin: 0;
-}
-
-.service-description li {
-    margin: 10px 0;
-    text-align: left;
-}
-
-.service-price {
-    margin: 10px 0;
-    color: #333;
-    font-weight: bold;
-}
-.service-title{
-    font-size: 2em;
-    
-}
-
-#order-form {
-    display: none;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(3, 3, 23, .5);
-}
-
-#order-form h2 {
-    color: white;
-}
-
-#order-form input[type="text"],
-#order-form input[type="email"],
-#order-form textarea {
-    width: 50%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    color: black !important;
-}
-
-#order-form input[type="text"]::placeholder,
-#order-form input[type="email"]::placeholder,
-#order-form textarea::placeholder {
-    color: grey;
-}
-.show-more-button,
-.order-button {
-    background-color: #0073e6;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#order-form h3 {
-    color: #333;
-    margin-top: 20px;
-}
-
-#order-form a {
-    text-decoration: none;
-    
-}
-
-
-
-.project-type-card {
-    width: 20em;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-    box-shadow:  .1em .1em .1em .1em rgba(255, 238, 0, 0.151);
-    
-}
-
-#projectTypesContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    /* background-color: rgba(180, 180, 180, 0.151); */
-}
-
-/* Add specific styles for each card here */
-#wordpress {
-    background-color: #f44336;
-}
-
-#wix {
-    background-color: #4CAF50;
-}
-
-#shopify {
-    background-color: #2196F3;
-}
-
-#custom {
-    background-color: #FF9800;
-}
-/* ... (your existing styles) */
-
-.learn-more-button {
-    background-color: #0073e6;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-#projectTypesContainer li{
-    text-align: left;
-}
-#projectTypesContainer{
-    color: red !important;
-}
-
-
-.website-types-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    /* background-color: rgba(180, 180, 180, 0.151); */
-}
-
-.website-type {
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: rgba(39, 39, 39, 0.308);
-}
-
-.website-type img {
-    width: 100%;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    margin-top: 1rem;
+  }
+
+  /* Each project card */
+  .grid-item {
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.website-type h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.website-type p {
-    font-size: 1em;
-    color: #555;
-}
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    
+  }
+  
+  /* Hover effect with glow */
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.466),
+                0 0 20px rgba(0, 0, 0, 0.575);
+  }
+  
+  /* Image in each grid item */
+  .grid-item img {
+    border-radius: 6px;
+    object-fit: cover;
+    max-height: 150px;
+    width: 100%;
+  }
+  
+  /* Title under image */
+  .grid-item p {
+    margin: 0.5rem 0 0;
+    font-weight: bold;
+    font-size: 1rem;
+    
+  }
+  
+  /* Description text */
+  .description-text {
+    font-size: 0.85rem;
+    color: #bbb;
+    margin-top: 0.25rem;
+  }
+  
+  /* Optional: Add glow effect to section headings */
+  #projects h4 {
+    color: #00ffe7;
+    margin-top: 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+  }
+  
+  /* Tag style */
+  #projects .tag {
+    color: #ff79c6;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-size: 1.1rem;
+  }
+  
+  /* Link animation style */
+  .animated-button {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .animated-button:hover .icon {
+    transform: translateX(5px);
+  }
+  
+  .animated-button:hover {
+    color: #fff;
+  }
+  

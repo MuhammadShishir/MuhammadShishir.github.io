@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      
         <!-- Social meta tags -->
         <meta property="og:title" content="Hi I am Md Kamruzzaman Shishir">
         <meta property="og:description" content="IT,WebDesign&Development,WordPress,UnrealEngine Etc">
@@ -14,888 +14,464 @@
         <meta name="twitter:title" content="Hi I am Md Kamruzzaman Shishir">
         <meta name="twitter:description" content="IT,WebDesign&Development,WordPress,UnrealEngine Etc">
         <meta name="twitter:image" content="https://muhammadshishir.github.io/media/img/SoShishir.png">
-
-        <!-- End of social meta tags -->
-    
+      
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-tjn9bhqSmv8URWVdmvmsMYaBp/z5k6t7x4xqBHKBV9Tu5rwX5bq5vbzru+31W4++F5w5Tlj0OjvNnqcc0Rb71g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+      
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="./M-K-S.ico">
-    
-        <title>Portfolio: Md Kamruzzaman Shishir</title>
-    </head>
-    
-<body>
-    <div id="result" style="color: black; left: 0% !important; position: absolute;"></div>
-    <script src="js/script.js"></script>
-    
-<!-- Nav start   -->
-    <div class="nav-container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#"><i class="fas fa-rocket"></i> Hi, This is MKShishir | Menu &rrarr; </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" ></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-laptop-code"></i> Projects
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="projectsDropdown" >
-                                <a class="dropdown-item" href="#all-proj">All Projects</a>
-                                <a class="dropdown-item" href="#websites">Websites</a>
-                                <a class="dropdown-item" href="#unreal">Unreal Engine</a>
-                                <a class="dropdown-item" href="#other">Other Projects</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#service"><i class="fa fa-suitcase" ></i> Services</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    
-    <script>
-        // JavaScript to add the "nav-scroll" class when scrolling
-        window.addEventListener("scroll", function() {
-            const navContainer = document.querySelector(".nav-container");
-            if (window.scrollY > 0) {
-                navContainer.classList.add("nav-scroll");
-            } else {
-                navContainer.classList.remove("nav-scroll");
+      
+        <title>Md Kamruzzaman Shishir | Portfolio</title>
+      
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+        <style id="theme-style">  header h1, .role {
+            color: #ffffff;
+          }
+        
+          </style>
+        <style>
+          body {
+            font-family: 'Fira Code', monospace;
+            transition: background-color 0.3s, color 0.3s;
+          }
+          /* Push content right */
+            body > .flex-grow-1, .main-content {
+            margin-left: 260px;
+            padding: 2rem;
             }
-        });
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- nav end -->
-
-
-    <div class="banner-con">
-        <div class="banner">
-            <div class="slide">
-                <h2>Welcome to My Profile</h2>
-                <img src="./media/img/hi.png" height="50rem"><p>I am MKShishir, I make WordPress websites</p>
-            </div>
-            <div class="slide">
-                <img src="./media/img/4-removebg-preview.png" height="100rem">
-                <h2>Your Custom Solutions | Affordable Prices | 100% Reliable</h2>
-                <p>Scroll Down Bellow to Choose or Email me for Custom Orders</p>
-                
-            </div>
-            <div class="slide">
-                <h2>24h/7d | Never Miss an Update </h2>
-                <p>We Take Care of Your Website's Updates so that You Can Relax</p>
-            </div>
-            <div class="slide">
-                <h2>100% Genuine Themes & Plugins | Say No to Virus</h2>
-                <p>Our Themes & Plugins are Original, We DO NOT use Any nulled or cracked Products</p>
-            </div>
-            <div class="slide">
-                <img src="./media/img/9250.png_1200-removebg-preview.png" height="100rem">
-                <h2>Your Website's Security Ensurement</h2>
-                <p>With us Your Website will Stay Safe & Secure, We follow Best Practice and Provide Solutions for Cyber Security</p>
-            </div>
-        </div>
-        <a href="#" class="navigation-button prev" onclick="changeSlide(-1)"> &lt; </a>
-        <a href="#" class="navigation-button next" onclick="changeSlide(1)"> &gt; </a>
-    </div>
-
-    <script>
-        let currentSlide = 0;
-
-        function changeSlide(direction) {
-            const banner = document.querySelector('.banner');
-            const slides = document.querySelectorAll('.slide');
-            
-            currentSlide += direction;
-
-            if (currentSlide < 0) {
-                currentSlide = slides.length - 1;
-            } else if (currentSlide >= slides.length) {
-                currentSlide = 0;
-            }
-
-            banner.style.transform = `translateX(${-currentSlide * 100}%)`;
-        }
-
-        // Set initial position to show the first slide
-        document.addEventListener('DOMContentLoaded', function () {
-            const banner = document.querySelector('.banner');
-            banner.style.transform = 'translateX(0%)';
-        });
-    </script>
-
-<!-- Infinite Scroll Animation start -->
-   <style>
-    .app {
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-
-.tag-list {
-  width: 30rem;
-  max-width: 90vw;
-  display: flex;
-  flex-shrink: 0;
-  flex-direction: column;
-  gap: 1rem 0;
-  position: relative;
-  padding: 1.5rem 0;
-  overflow: hidden;
-}
-
-.loop-slider {
-  .inner {
-    display: flex;
-    width: fit-content;
-    animation-name: loop;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: var(--direction);
-    animation-duration: var(--duration);
-  }
-}
-
-.tag {
-  display: flex;
-  align-items: center;
-  gap: 0 0.2rem;
-  color: #000000;
-  font-size: 0.9rem;
-  background-color: #ffc4238e;
-  border-radius: 0.4rem;
-  padding: 0.7rem 1rem;
-  margin-right: 1rem;
-  box-shadow: 
-    0 0.1rem 0.2rem rgb(0 0 0 / 5%),
-    0 0.1rem 0.5rem rgb(0 0 0 / 10%),
-    0 0.2rem 1.5rem rgb(0 0 0 / 20%);
-  
-  span {
-    font-size: 1.2rem;
-    color: #64748b;
-  }
-}
-
-.fade {
-  pointer-events: none;
-  background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b);
-  position: absolute;
-  inset: 0;
-}
-
-@keyframes loop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-   </style>
-   <div class="header-con">
-    
-        
-        <div class="tag-list">
-          <div class="loop-slider" style="--duration:15951ms; --direction:normal;">
-            <div class="inner">
-              <div class="tag"><span>#</span> JavaScript</div>
-              <div class="tag"><span>#</span> webdev</div>
-              <div class="tag"><span>#</span> Typescript</div>
-              <div class="tag"><span>#</span> Next.js</div>
-              <div class="tag"><span>#</span> UI/UX</div>
-              <!-- duplicated content -->
-              <div class="tag"><span>#</span> JavaScript</div>
-              <div class="tag"><span>#</span> webdev</div>
-              <div class="tag"><span>#</span> Typescript</div>
-              <div class="tag"><span>#</span> Next.js</div>
-              <div class="tag"><span>#</span> UI/UX</div>
-            </div>
-          </div>
-          <div class="loop-slider" style="--duration:19260ms; --direction:reverse;">
-            <div class="inner">
-              <div class="tag"><span>#</span> webdev</div>
-              <div class="tag"><span>#</span> Gatsby</div>
-              <div class="tag"><span>#</span> JavaScript</div>
-              <div class="tag"><span>#</span> Tailwind</div>
-              <div class="tag"><span>#</span> Typescript</div>
-              <!-- duplicated content -->
-              <div class="tag"><span>#</span> webdev</div>
-              <div class="tag"><span>#</span> Gatsby</div>
-              <div class="tag"><span>#</span> JavaScript</div>
-              <div class="tag"><span>#</span> Tailwind</div>
-              <div class="tag"><span>#</span> Typescript</div>
-            </div>
-          </div>
-          <div class="loop-slider" style="--duration:10449ms; --direction:normal;">
-            <div class="inner">
-              <div class="tag"><span>#</span> animation</div>
-              <div class="tag"><span>#</span> Tailwind</div>
-              <div class="tag"><span>#</span> React</div>
-              <div class="tag"><span>#</span> SVG</div>
-              <div class="tag"><span>#</span> HTML</div>
-              <!-- duplicated content -->
-              <div class="tag"><span>#</span> animation</div>
-              <div class="tag"><span>#</span> Tailwind</div>
-              <div class="tag"><span>#</span> React</div>
-              <div class="tag"><span>#</span> SVG</div>
-              <div class="tag"><span>#</span> HTML</div>
-            </div>
-          </div>
-          <div class="loop-slider" style="--duration:16638ms; --direction:reverse;">
-            <div class="inner">
-              <div class="tag"><span>#</span> Gatsby</div>
-              <div class="tag"><span>#</span> HTML</div>
-              <div class="tag"><span>#</span> CSS</div>
-              <div class="tag"><span>#</span> React</div>
-              <div class="tag"><span>#</span> Next.js</div>
-              <!-- duplicated content -->
-              <div class="tag"><span>#</span> Gatsby</div>
-              <div class="tag"><span>#</span> HTML</div>
-              <div class="tag"><span>#</span> CSS</div>
-              <div class="tag"><span>#</span> React</div>
-              <div class="tag"><span>#</span> Next.js</div>
-            </div>
-          </div>
-          <div class="loop-slider" style="--duration:15936ms; --direction:normal;">
-            <div class="inner">
-              <div class="tag"><span>#</span> Next.js</div>
-              <div class="tag"><span>#</span> React</div>
-              <div class="tag"><span>#</span> webdev</div>
-              <div class="tag"><span>#</span> Typescript</div>
-              <div class="tag"><span>#</span> Gatsby</div>
-              <!-- duplicated content -->
-              <div class="tag"><span>#</span> Next.js</div>
-              <div class="tag"><span>#</span> React</div>
-              <div class="tag"><span>#</span> webdev</div>
-              <div class="tag"><span>#</span> Typescript</div>
-              <div class="tag"><span>#</span> Gatsby</div>
-            </div>
-          </div>
-          <div class="fade"></div>
-        
-      </div>
-    <div class="header-right">
-        <div class="envelope">
-            <div class="seal-flap"></div>
-            <ul >
-                <li>Create immersive and interactive game experiences using Unreal Engine.</li>
-                <li>Develop stunning 3D environments and characters.</li>
-                <li>Advanced game physics and AI development.</li>
-            </ul>
-          </div>
-        
-    </div>
-</div>
-<!-- Infinite Scroll Animation -->
-<div class="area"  >
-    <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-</div>
-    
-
-
-
-
-
-
-<!-- Start of Projects -->
-
-<div class="projects-tab" id="all-proj">
-
-    <div class="projects">
-        <h2 align="center" style="color:rgb(0, 0, 0);"><a href="projects.html" class="animated-button"><span class="icon">&rarr;</span>Project Portfolio</a></h2>
-        <div class="line"></div>
-        
-        <h3 align="left"><a href="websites.html" class="animated-button"><span class="icon">&rarr;</span>Websites: WordPress, PSD to HTML etc. </a></h3>
-        
-        <div class="grid-container" id="websites" >
-            <div class="grid-item">
-                <a href="https://www.cymaxbd.com/">
-                    <img src="./media/img/cymaxeng.jpg" width="100%">
-                    <br>
-                    <p>Cymax Engineering Co</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">A Website for Mechanical and Electrical project and solutions</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="https://veteranfriendlybusinessassociation.com/">
-                    <img src="./media/img/veteran.jpg" width="100%">
-                    <br>
-                    <p>Veteran Friendly Association</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">A donation website for Veterans</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="4marchive.html">
-                    <img src="./media/img/UI1.png" width="100%">
-                    <br>
-                    <p>4mArchive (Archiving/News etc)</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">A Project Thesis Publishing Website</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="/include/glazclone/index.html">
-                    <img src="./media/img/glazw.jpg" width="100%">
-                    <br>
-                    <p>e-Commerce Website(Smart Mirror) </p>
-                </a>
-                <div class="description">
-                    <div class="description-text">E-comerce website(Smart Mirror) Clone</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="/include/itiotech/index.html">
-                    <img src="./media/img/itiotech.jpg" width="100%">
-                    <br>
-                    <p>e-Commerce Website(Technology)</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">E-comerce website(Technology)</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="portfolio.html">
-                    <img src="./media/img/p.jpg" width="100%">
-                    <br>
-                    <p>Portfolio</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">The portfolio website you are watching now</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="psdtohtml.html">
-                    <img src="./media/img/psd.jpg" width="100%">
-                    <br>
-                    <p>PSD to HTML</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">PSD to HTML Sample</div>
-                </div>
-            </div>
-        </div>
-        
-        
-    
-        <br><h3 align="left"><a href="games.html" class="animated-button" ><span class="icon">&rarr;</span>Unreal Engine: Games & Scenes</a></h3>
-        
-        <div class="grid-container" id="unreal">
-            <div class="grid-item">
-                <a href="Lost in Green Shores.html">
-                    <img src="./media/img/10.webp" width="100%">
-                    <br><p>Lost in Green Shores</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">A Survival Project with many islands</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="jebyurgth-phantasy.html">
-                    <img src="./media/img/6.webp" width="100%">
-                    <br><p>Jebbyurgth Phantasy: Tale of Asygarth</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">A RPG Project with magical fantasy elements</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="exploading-ball.html">
-                    <img src="./media/img/ball.png" width="100%">
-                    <br>
-                    <p>The Exploding Ball</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">A weird funny game that plays with human psycie</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="resurgence.html">
-                    <img src="./media/img/13.webp" width="100%">
-                    <br>
-                    <p>Resurgence: Humanity's Last Stand</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">A Zoombie shooter demo</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="shadow-myst.html">
-                    <img src="./media/img/8.webp" width="100%">
-                    <br>
-                    <p>Cursed Blade: Shadow Myst</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">A top down dungeon crawler</div>
-                </div>
-            </div>
-        </div>  
-    
-        <h3 align="left"><a href="other-projects.html" class="animated-button"><span class="icon">&rarr;</span>Other Projects</a></h3>
-       
-        <div class="grid-container" id="other">
-            <div class="grid-item">
-                <a href="pdf-to-html-css.html">
-                    <img src="./media/img/logo.png" width="50%" >
-                    <br><p>PDF to HTML CSS</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">Example of PDF to HTML conversion</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="result-management-system.html">
-                    <img src="./media/img/rESULT.png" width="50%">
-                    <br>
-                    <p>Result Management System</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">A Java Swing code for calculating result</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a href="github-projects.html">
-                    <img src="./media/img/GitHub-Logo.png" width="70%">
-                    <br>
-                    <p>Find More at Github</p>
-                </a>
-                <div class="description">
-                    <div class="description-text">Find me in GitHub</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-
-<!-- End of Projects -->
-
-
-
-
-
-
-
-
-
-            <div class="testproj" >
-                <h2 align="center">Test My Projects</h2>
-
-                <div class="line"></div>
-                    <br>
-                    <div
-                        style="
-                        display: block;
-                        
-                        margin-left: auto;
-                        margin-right: auto;
-                        "  
-                        >
-                            <p align="center">
-                            <iframe frameborder="0" src="https://itch.io/embed/1916359?linkback=true&amp;bg_color=001&amp;fg_color=fff&amp;link_color=a221a8&amp;border_color=ffffff" width="50%" height="100%"  ><a href="https://mksge.itch.io/the-expload-ball">The Exploding Ball by MKS Entertainment</a></iframe>
-                            </p>
-                            <br>
-                            <br>
-                    </div>
-            </div>
-
-            
-
-<h2 align="center">Services</h2>
-<div class="line"></div>
-<!-- main Page -->
-<div class="page-container" id="service">
-    <div class="service-container">
-        <!-- Service card 1: Unreal Engine -->
-        <div class="service-card" style="background-color: #599cdf;">
-            <div class="service-title">Unreal Engine</div>
-            <ul class="service-description">
-                <li>Create immersive and interactive game experiences using Unreal Engine.</li>
-                <li>Develop stunning 3D environments and characters.</li>
-                <li>Advanced game physics and AI development.</li>
-            </ul>
-            <div class="service-price">Contact for pricing</div>
-            <button class="show-more-button" onclick="showMore('service1')">Details</button>
-            <div class="more-content" id="service1">
-                <p>More details about Unreal Engine...</p>
-                <p>Example images:</p>
-                <img src="/media/img/8.webp" alt="Example 1">
-                <img src="/media/img/6.webp" alt="Example 2">
-            </div>
-            <button class="order-button" onclick="showOrderForm('Unreal Engine')">Order Now</button>
-        </div>
-
-        <!-- Service card 2: Website Design & Development -->
-        <div class="service-card" style="background-color: #3aaa88;">
-            <div class="service-title">Website Design & Development</div>
-            <ul class="service-description">
-                <li>Custom website design tailored to your brand.</li>
-                <li>Responsive and user-friendly web development.</li>
-                <li>E-commerce integration and content management systems.</li>
-            </ul>
-            <div class="service-price">Contact for pricing</div>
-            <button class="show-more-button" onclick="showMore('service2')">Details</button>
-            <div class="more-content" id="service2">
-                <p>More details about Website Design & Development...</p>
-                <p>Example images:</p>
-                <img src="/media/img/p.jpg" alt="Example 1">
-                <img src="/media/img/UI1.png" alt="Example 2">
-            </div>
-            <button class="order-button" onclick="showOrderForm('Website Design & Development')">Order Now</button>
-        </div>
-
-        <!-- Service card 3: UE5 Scenes -->
-        <div class="service-card" style="background-color: #9bb14e;">
-            <div class="service-title">UE5 Scenes</div>
-            <ul class="service-description">
-                <li>Design and create stunning scenes and environments with Unreal Engine 5.</li>
-                <li>High-quality lighting and rendering for realistic visuals.</li>
-                <li>Interactive and immersive VR environments.</li>
-            </ul>
-            <div class="service-price">Contact for pricing</div>
-            <button class="show-more-button" onclick="showMore('service3')">Details</button>
-            <div class="more-content" id="service3">
-                <p>More details about UE5 Scenes...</p>
-                <p>Example images:</p>
-                <img src="/media/img/1.webp" alt="Example 1">
-                <img src="/media/img/10.webp" alt="Example 2">
-            </div>
-            <button class="order-button" onclick="showOrderForm('UE5 Scenes')">Order Now</button>
-        </div>
-    </div>
-</div>
-
-<div id="order-form" style="display: none; text-align: center;">
-    <h2>Order Form</h2>
-    <form action="send_order.php" method="post">
-        <input type="text" name="subject" placeholder="Subject" required><br><br>
-        <input type="email" name="contact_email" placeholder="Contact Email" required><br><br>
-        <textarea name="message" placeholder="Message" rows="4" required></textarea><br><br>
-        <input type="hidden" name="service_name" id="service-name" value="">
-        <input type="submit" value="Send" style="background-color: #0073e6; color: white; border: none; padding: 10px 20px; cursor: pointer;">
-    </form>
-    <h3>Or,</h3>
-    <a href="mailto:mdkamruzzaman.shishir@outlook.com" style="text-decoration: none;">
-        <button style="background-color: #0073e6; color: white; border: none; padding: 10px 20px; cursor: pointer;">
-            Send Mail
-        </button>
-    </a>
-</div>
-
-
- <h2 align="left"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">&rarr;</span>We Provide Solutions For: </h2>
-
-
-<div class="project-types-container" id="projectTypesContainer">
-    <!-- Project cards will be dynamically added here -->
-</div>
-
-<script src="./js/script.js"></script>
-
-<script>
-    function showMore(serviceId) {
-        var moreContent = document.getElementById(serviceId);
-        moreContent.style.display = moreContent.style.display === 'none' ? 'block' : 'none';
-    }
-
-    function showOrderForm(serviceName) {
-        document.getElementById('service-name').value = serviceName;
-        document.getElementById('order-form').style.display = 'block';
-    }
-</script>
-
-
-
-
-<div class="website-types-container">
-    <div class="website-type">
-        <img src="./media/img/fondex-business-website-template.jpg" alt="Business Website">
-        <h3>Business Websites</h3>
-        <p>Boost your online presence with a professional website that reflects your brand.</p>
-    </div>
-
-    <div class="website-type">
-        <img src="./media/img/The-best-eCommerce-platform-for-Food-delivery.png" alt="E-commerce Store">
-        <h3>E-commerce Stores</h3>
-        <p>Take your products online with a feature-rich e-commerce platform like Shopify.</p>
-    </div>
-
-    <div class="website-type">
-        <img src="./media/img/how-to-create-blog-1170x560.jpg" alt="Blogs & Content Platforms">
-        <h3>Blogs & Content Platforms</h3>
-        <p>Share your thoughts and knowledge through a user-friendly blogging platform.</p>
-    </div>
-
-    <div class="website-type">
-        <img src="./media/img/portfolio_showcase_presentation_slide_355802.jpg" alt="Portfolio & Showcase">
-        <h3>Portfolio & Showcase</h3>
-        <p>Display your work, art, or achievements in style with a captivating portfolio.</p>
-    </div>
-
-    <div class="website-type">
-        <img src="./media/img/Custom web design for your business.jpg" alt="Custom Web Solutions">
-        <h3>Custom Web Solutions</h3>
-        <p>For unique and complex projects, we offer custom development tailored to your exact requirements.</p>
-    </div>
-</div>
-<div style="height: 2rem; background-color: #ffffff;"></div>
-<div style="height: 2rem; background-color: #ffffff;"></div>
-<!-- My Journey -->
-
-<div class="journey"
-id="about"
-style="margin: 0;
-            padding: 0;
-            
+          .btn-outline-light{
+            color: #000 ;
+            border-color: #000 ;
+            background-color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+          }
+          body.dark {
+            width: 100%;
+            height: 100%;
+            --color: rgba(114, 114, 114, 0.3);
+            background-color: #191a1a;
+            background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+              linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+            background-size: 55px 55px;
+          }
+      
+          body.light {
+            background-color: #f4f4f4;
+            --color: rgba(255, 183, 197, 0.35);
+            background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+              linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+            background-size: 55px 55px;
+          }
+      
+          .code-block {
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #000;
+            margin-bottom: 2rem;
+          }
+      
+          .tag {
+            font-weight: bold;
+          }
+      
+          header h1 {
+            color: #569cd6;
+          }
+          
+          .role {
+            font-style: italic;
+            margin-top: 0.5rem;
+          }
+      
+          footer {
+            text-align: center;
+            color: #888;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+          }
+      
+          .language-switch {
+            margin-right: 0.5rem;
+          }
+      
+          #themeToggleBtn {
+            padding: 6px 12px;
+            border-radius: 25px;
             display: flex;
-            justify-content: center;
             align-items: center;
-            ">
-    <div class="tree-container" >
-        <div class="tree"
-        style="    
-        background-image: url(./media/img/hiclipart.com.webp); /* Background image */
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:contain;
-        
-        min-width: 1vw;
-        ">
-            <div class="tree" style="  background-color: #050505e5;  box-shadow: 0 0 20px rgb(0, 0, 0);">
-                <h2 align="center" >My Journey</h2>
-                <div class="line"></div>
-                <div >
-                    <div>
-                        <ul class="tree-list">
-                            <li>
-                                <i class="fas fa-laptop-code"></i> Greetings! I specialize in web and game development
-                                <ul class="sub-tree">
-                                    <li>
-                                        <i class="fas fa-code"></i> Strengthening my WordPress Web Development Skills,
-                                        <ul class="sub-sub-tree">
-                                            <li>
-                                                <i class="fas fa-cogs"></i> Encompassing HTML, CSS, JavaScript, PHP, and MySQL.
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-laptop"></i> Creating Responsive, user-friendly websites
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-terminal"></i> Augmenting my Programming Expertise
-                                        <ul class="sub-sub-tree">
-                                            <li>
-                                                <i class="fas fa-code"></i> Enhancing proficiency in C, C++, Java, Python
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-tasks"></i> Crafting resilient and efficient software solutions.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-gamepad"></i> Game Development with Unreal Engine
-                                        <ul class="sub-sub-tree">
-                                            <li>
-                                                <i class="fas fa-rocket"></i> Creating captivating indie games with Unreal Engine 4 and 5.
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-puzzle-piece"></i> Creating scenes,game demos, and multimedia content in UE5.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-paint-brush"></i> Graphic Design Basics
-                                        <ul class="sub-sub-tree">
-                                            <li>
-                                                <i class="fas fa-paint-brush"></i> Canva, Photoshop, Illustrator
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-image"></i> Creating Visually stunning game elements, UI/UX, Logo design
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-graduation-cap"></i> Continuous Pursuit of Knowledge
-                                        <ul class="sub-sub-tree">
-                                            <li>
-                                                <i class="fas fa-book"></i> Staying up-to-date with latest technologies
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-chart-line"></i> Exploring emerging trends
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-gamepad"></i> My Passion for Video Games
-                                        <ul class="sub-sub-tree">
-                                            <li>
-                                                <i class="fas fa-lightbulb"></i> Generating & Designing captivating and engaging ideas
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-gamepad"></i> Gaining valuable insights by play testing
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-thumbs-up"></i> Enthusiasm and Commitment
-                                        <ul class="sub-sub-tree">
-                                            <li>
-                                                <i class="fas fa-check-circle"></i> Attention to detail
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-heart"></i> Exemplifying Dedication and Zeal in Every Project
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-users"></i>Innovation and Creativity
-                                        <ul class="sub-sub-tree">
-                                            <li>
-                                                <i class="fas fa-handshake"></i> Unique Designs
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-lightbulb"></i> Driving innovative solutions
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-search"></i> Excited for New Opportunities
-                                        <ul class="sub-sub-tree">
-                                            <li>
-                                                <i class="fas fa-flag"></i> Pushing boundaries in all aspect
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-rocket"></i> Embracing a journey of innovation and creativity
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
+          }
+      
+          #themeIcon {
+            font-size: 1.2rem;
+            margin-right: 8px;
+          }
+        </style>
+      </head>
+      <body class="dark d-flex">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="bg-dark text-white p-lg-5 d-flex flex-column justify-content-start">
+            <div class="text-center mb-4">
+              <img src="./media/img/M K S.png" alt="Profile Picture" width="150" height="150" class="img-fluid ">
             </div>
-            
-        </div>
-
-    </div>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-</div>
-
-<!-- End of My Journey -->
- 
-<div class="sup">
-    <div class="grid-2" >
-        <div class="section-1" id="contact">
-            <div style="text-align: center;">
-            <img src="./media/img/M K S.png" width="200rem" alt="https://muhammadshishir.github.io/" height="200rem"><br>
-            <!-- <i class="fas fa-code fa-5x white"></i> -->
-            <h2>Md Kamruzzaman Shishir</h2>
-            <p>Dhaka, Bangladesh</p>
-            <p>Contact :</p>
-            <p>E-mail: mdkamruzzaman.shishir@outlook.com</p>
-            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-            <a href="https://mksge.itch.io/"><i class="fa fa-globe" aria-hidden="true"></i> Itch.io Page</a>
-            <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir//"><i class="fab fa-linkedin"></i> Linkedin</a>
-            <a href="https://github.com/MuhammadShishir"><i class="fab fa-github"></i> GitHub</a>
-            <a href="mailto:mdkamruzzaman.shishir@outlook.com" style="text-decoration: none;"><i class="fa fa-envelope"></i> Send Mail</a>
-            </div>
-            <br><br>
-            
-            
-        </div>
-        <div class="section-2">
+            <h4 class="text-center mb-4">Menu</h4>
+            <ul class="nav flex-column mt-auto">
+              <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#test-game">Playable Demo</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+          
+      
+        <!-- Main Content -->
+        <div class="flex-grow-1 p-4">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <!-- Language Toggle -->
             <div>
-                    <h2>About Me</h2>
-                    <ul>
-                        <li>Web development: HTML, CSS, BootStrap, JavaScript, jQuery, PHP, MySQL, PHPMyAdmin</li>
-                        <li>Programming languages: C, C++, Java, Python, R</li>
-                        <li>Unreal Engine game development</li>
-                        <li>Graphic design: Canva, Photoshop, Illustrator</li>
-                        <li>Video editing</li>
-                        <li>Strong foundation in algorithms, data structures, and software design principles</li>
-                        <li>Continuous learning and exploration of new technologies</li>
-                        <li>Excellent problem-solving and analytical skills</li>
-                        <li>Strong attention to detail and quality</li>
-                        <li>Collaborative team player</li>
-                        <li>Passion for video games and immersive experiences</li>
-                    </ul>
+              <button class="btn btn-outline-light language-switch" onclick="setLanguage('en')">🇬🇧 EN</button>
+              <button class="btn btn-outline-light language-switch" onclick="setLanguage('bn')">🇧🇩 BN</button>
             </div>
+            <!-- Theme Toggle -->
+            <button id="themeToggleBtn" class="btn btn-outline-light" title="Toggle Theme">
+              <i class="fas fa-moon" id="themeIcon"></i>
+              <span id="themeLabel">Dark Mode</span>
+            </button>
+          </div>
+      
+          <header class="mb-5">
+            <h1>&lt;<span data-en="Md Kamruzzaman Shishir" data-bn="মোঃ কামরুজ্জামান শিশির"></span> /&gt;</h1>
+            <p class="role"
+              data-en="IT Specialist, Web Designer and Developer, WordPress, Shopify, Unreal Engine, Computer Enthusiast"
+              data-bn="আইটি স্পেশালিস্ট, ওয়েব ডিজাইনার ও ডেভেলপার, ওয়ার্ডপ্রেস, শপিফাই, আনরিয়েল ইঞ্জিন, কম্পিউটার অনুরাগী">
+            </p>
+            <p class="role" data-en="I am a passionate developer with a love for technology."
+              data-bn="আমি প্রযুক্তির প্রতি ভালোবাসা নিয়ে একজন উত্সাহী ডেভেলপার।"></p>
+          </header>
+      
+          <section id="about" class="code-block">
+            <span class="tag">// About Me</span><br>
+            <span><span class="label">I'm:</span> <span class="value"
+                data-en="Creative problem solver, tech-savvy, and passionate about development."
+                data-bn="সৃজনশীল সমস্যা সমাধানকারী, প্রযুক্তি অনুরাগী এবং ডেভেলপমেন্টের প্রতি আগ্রহী।"></span></span><br>
+            <span><span class="label">Location:</span> <span class="value">Bangladesh</span></span><br>
+            <span><span class="label">Email:</span> <span class="value">mdkamruzzamanshishir@gmail.com</span></span>
+          </section>
+      
+          <section id="skills" class="code-block">
+            <span class="tag">// Skills</span><br>
+          
+            <span><span class="label">Languages:</span> <span class="value">["HTML", "CSS", "JavaScript", "C", "C++", "Java"]</span></span><br>
+            
+            <span><span class="label">Frameworks & CMS:</span> <span class="value">["WordPress", "Bootstrap", "Shopify"]</span></span><br>
+            
+            <span><span class="label">Shopify:</span> <span class="value">["Theme Development", "Customization", "AJAX Integration"]</span></span><br>
+            
+            <span><span class="label">Server & Hosting:</span> <span class="value">["cPanel", "WHM", "Linux Server", "Hosting Management"]</span></span><br>
+            
+            <span><span class="label">Tools:</span> <span class="value">["VS Code", "GitHub", "AI", "Unreal Engine"]</span></span><br>
+            
+            <span><span class="label">Graphics Design:</span> <span class="value">["Canva", "Figma"]</span></span><br>
+            
+            <span><span class="label">Networking:</span> <span class="value">["NMap", "Cisco Packet Tracer", "Wireshark"]</span></span><br>
+            
+            <span><span class="label">Testing:</span> <span class="value">["JMeter", "Jira", "ClickUp", "Notion", "Acunetix"]</span></span><br>
+            
+            <span><span class="label">Database:</span> <span class="value">["Oracle", "MySQL"]</span></span>
+          </section>
+          
+          <section id="projects" class="code-block">
+            <span class="tag">// Projects</span>
+          
+            <!-- Websites -->
+            <h4 class="mt-4 mb-2"><span class="label">Websites:</span></h4>
+            <div class="grid-container" id="websites">
+              <div class="grid-item">
+                <a href="https://www.cymaxbd.com/">
+                  <img src="./media/img/cymaxeng.jpg" width="100%">
+                  <p>Cymax Engineering Co</p>
+                </a>
+                <div class="description-text">A Website for Mechanical and Electrical project and solutions</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="https://veteranfriendlybusinessassociation.com/">
+                  <img src="./media/img/veteran.jpg" width="100%">
+                  <p>Veteran Friendly Association</p>
+                </a>
+                <div class="description-text">A donation website for Veterans</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="4marchive.html">
+                  <img src="./media/img/UI1.png" width="100%">
+                  <p>4mArchive (Archiving/News etc)</p>
+                </a>
+                <div class="description-text">A Project Thesis Publishing Website</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="/include/glazclone/index.html">
+                  <img src="./media/img/glazw.jpg" width="100%">
+                  <p>e-Commerce Website (Smart Mirror)</p>
+                </a>
+                <div class="description-text">E-commerce website (Smart Mirror) Clone</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="/include/itiotech/index.html">
+                  <img src="./media/img/itiotech.jpg" width="100%">
+                  <p>e-Commerce Website (Technology)</p>
+                </a>
+                <div class="description-text">E-commerce website (Technology)</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="portfolio.html">
+                  <img src="./media/img/p.jpg" width="100%">
+                  <p>Portfolio</p>
+                </a>
+                <div class="description-text">The portfolio website you are watching now</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="psdtohtml.html">
+                  <img src="./media/img/psd.jpg" width="100%">
+                  <p>PSD to HTML</p>
+                </a>
+                <div class="description-text">PSD to HTML Sample</div>
+              </div>
+            </div>
+          
+            <!-- Unreal Engine Projects -->
+            <h4 class="mt-5 mb-2"><span class="label">Unreal Engine Projects:</span></h4>
+            <div class="grid-container" id="unreal">
+              <div class="grid-item">
+                <a href="Lost in Green Shores.html">
+                  <img src="./media/img/10.webp" width="100%">
+                  <p>Lost in Green Shores</p>
+                </a>
+                <div class="description-text">A Survival Project with many islands</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="jebyurgth-phantasy.html">
+                  <img src="./media/img/6.webp" width="100%">
+                  <p>Jebbyurgth Phantasy: Tale of Asygarth</p>
+                </a>
+                <div class="description-text">An RPG project with magical fantasy elements</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="exploading-ball.html">
+                  <img src="./media/img/ball.png" width="100%">
+                  <p>The Exploding Ball</p>
+                </a>
+                <div class="description-text">A weird funny game that plays with human psyche</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="resurgence.html">
+                  <img src="./media/img/13.webp" width="100%">
+                  <p>Resurgence: Humanity's Last Stand</p>
+                </a>
+                <div class="description-text">A zombie shooter demo</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="shadow-myst.html">
+                  <img src="./media/img/8.webp" width="100%">
+                  <p>Cursed Blade: Shadow Myst</p>
+                </a>
+                <div class="description-text">A top-down dungeon crawler</div>
+              </div>
+            </div>
+          
+            <!-- Other Projects -->
+            <h4 class="mt-5 mb-2"><span class="label">Other Projects:</span></h4>
+            <div class="grid-container" id="other">
+              <div class="grid-item">
+                <a href="pdf-to-html-css.html">
+                  <img src="./media/img/logo.png" width="100%">
+                  <p>PDF to HTML CSS</p>
+                </a>
+                <div class="description-text">Example of PDF to HTML conversion</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="result-management-system.html">
+                  <img src="./media/img/rESULT.png" width="100%">
+                  <p>Result Management System</p>
+                </a>
+                <div class="description-text">A Java Swing app for calculating results</div>
+              </div>
+          
+              <div class="grid-item">
+                <a href="github-projects.html">
+                  <img src="./media/img/GitHub-Logo.png" width="100%">
+                  <p>Find More on GitHub</p>
+                </a>
+                <div class="description-text">Find me in GitHub</div>
+              </div>
+            </div>
+          </section>
+          <section id="contact" class="code-block">
+            <span class="tag">// Contact</span>
+          
+            <!-- External Links -->
+            <div class="mb-4 d-flex flex-column gap-2">
+              <a href="https://mksge.itch.io/" target="_blank" class="contact-link">
+                <i class="fa fa-globe"></i> Itch.io Page
+              </a>
+              <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/MuhammadShishir" target="_blank" class="contact-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="mailto:mdkamruzzaman.shishir@outlook.com" class="contact-link">
+                <i class="fa fa-envelope"></i> Send Mail
+              </a>
+            </div>
+          
+            <!-- Contact Form (Formspree) -->
+            <form action="https://formspree.io/f/xanegwyz" method="POST" class="mt-4">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" class="form-control bg-dark text-white border-secondary" required>
+              </div>
+              <div class="form-group mt-2">
+                <input type="email" name="_replyto" placeholder="Your Email" class="form-control bg-dark text-white border-secondary" required>
+              </div>
+              <div class="form-group mt-2">
+                <textarea name="message" rows="4" placeholder="Your Message" class="form-control bg-dark text-white border-secondary" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-info mt-3">Send Message</button>
+            </form>
+          </section>
+          <section id="test-game" class="code-block">
+            <span class="tag">// Playable Demo</span>
+          
+            <div class="text-center mt-4">
+              <p class="value mb-3">
+                🎮 Test out one of my mini mind-bending Unreal Engine games below — <strong>"The Exploding Ball"</strong>. It's weird. It's funny. It’s chaos in a click.
+              </p>
+          
+              <div class="game-embed-wrapper mb-4">
+                <iframe
+                  frameborder="0"
+                  src="https://itch.io/embed/1916359?linkback=true&amp;bg_color=001&amp;fg_color=fff&amp;link_color=a221a8&amp;border_color=ffffff"
+                  width="560"
+                  height="175"
+                  style="max-width: 100%; border-radius: 8px; box-shadow: 0 0 12px rgba(0,255,255,0.15);">
+                  <a href="https://mksge.itch.io/the-expload-ball">The Exploding Ball by MKS Entertainment</a>
+                </iframe>
+              </div>
+          
+              <a href="https://mksge.itch.io/the-expload-ball" target="_blank" class="play-now-btn">
+                ▶ PLAY NOW
+              </a>
+          
+              <p class="description-text mt-3">Built with Unreal Engine. Expect chaos 💥</p>
+            </div>
+          </section>
+          
+          <footer class="footer mt-5 text-center">
+            <div class="footer-content">
+              
+          
+              <div class="footer-icons d-flex justify-content-center gap-3 mb-2">
+          
+                <a href="https://github.com/MuhammadShishir" class="icon-wrapper github" target="_blank" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+          
+                <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" class="icon-wrapper linkedin" target="_blank" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+          
+                <a href="mailto:mdkamruzzaman.shishir@outlook.com" class="icon-wrapper email" title="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+          
+                <a href="https://mksge.itch.io/" class="icon-wrapper itch" target="_blank" title="Itch.io">
+                  <i class="fa fa-globe"></i>
+                </a>
+          
+              </div>
+              <br>
+              <p class="mb-2">&copy; 2025 <strong>Md Kamruzzaman Shishir</strong></p>
+              <p class="description-text small">// Built with 💻, ☕, and 🚀</p>
+            </div>
+          </footer>
+          
+          
         </div>
-        
-    </div>
-</div>
+     
+      
 
-<div style="height: 2rem; background-color: #ffffff7e;"></div>
+  <!-- JS for Language and Theme -->
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.dataset[lang];
+      });
+    }
+  
+    const themeBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+    const styleTag = document.getElementById('theme-style');
+  
+    const darkTheme = `
+      body.dark { background-color: #1e1e1e; color: #d4d4d4; }
+      .code-block { background-color: #252526; }
+      .tag { color: #ce9178; }
+      .label { color: #569cd6; }
+      .value { color: #dcdcaa; }
+    `;
+  
+    const lightTheme = `
+      body.light { background-color: #f4f4f4; color: #1e1e1e; }
+      .code-block { background-color: #ffffff; }
+      .tag { color: #c71585; }
+      .label { color: #005cc5; }
+      .value { color: #22863a; }
+    `;
+  
+    let isDark = true;
+  
+    themeBtn.addEventListener('click', () => {
+      isDark = !isDark;
+      document.body.classList.toggle('dark', isDark);
+      document.body.classList.toggle('light', !isDark);
+      styleTag.textContent = isDark ? darkTheme : lightTheme;
+      themeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
+      themeLabel.textContent = isDark ? 'Dark Mode' : 'Light Mode';
+    });
+  
+    // Set default theme
+    document.body.classList.add('dark');
+    styleTag.textContent = darkTheme;
+  
+    // 👇 Automatically set default language to English
+    window.addEventListener('DOMContentLoaded', () => {
+      setLanguage('en');
+    });
+  </script>
+  
 
+  <!-- External Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-<footer>
-    <p align="center">&copy; 2023 Portfolio Md Kamruzzaman Shishir. All rights reserved. | Designed by <a href="https://github.com/MuhammadShishir">Md Kamruzzaman Shishir</a></p>
-    <p align="center"><a href="#">Contact Me</a></p>
-</footer>
-
-<div class="go-to-top" id="goToTop">
-    <i class="fas fa-arrow-up"></i>
-</div>
-
-<script>
+  <script>
     // Show the "Go to top" button when scrolling
     window.onscroll = function() {
         showGoToTopButton();
@@ -916,6 +492,9 @@ style="margin: 0;
         document.documentElement.scrollTop = 0;
     });
 </script>
-
-</body>              
+<!-- Go to Top Button -->
+<div class="go-to-top" id="goToTop" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+</body>
 </html>

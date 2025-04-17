@@ -1,24 +1,119 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="icon" type="image/x-icon" href="./M-K-S.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-tjn9bhqSmv8URWVdmvmsMYaBp/z5k6t7x4xqBHKBV9Tu5rwX5bq5vbzru+31W4++F5w5Tlj0OjvNnqcc0Rb71g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <title>Gallery of Md Kamruzzaman Shishir</title>
-
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      
+        <!-- Social meta tags -->
+        <meta property="og:title" content="Hi I am Md Kamruzzaman Shishir">
+        <meta property="og:description" content="IT,WebDesign&Development,WordPress,UnrealEngine Etc">
+        <meta property="og:image" content="https://muhammadshishir.github.io/media/img/SoShishir.png">
+        <meta property="og:url" content="https://muhammadshishir.github.io">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Hi I am Md Kamruzzaman Shishir">
+        <meta name="twitter:description" content="IT,WebDesign&Development,WordPress,UnrealEngine Etc">
+        <meta name="twitter:image" content="https://muhammadshishir.github.io/media/img/SoShishir.png">
+      
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+      
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./M-K-S.ico">
+      
+        <title>Md Kamruzzaman Shishir | Gallery</title>
+      
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+        <style id="theme-style">  header h1, .role {
+            color: #ffffff;
+          }
+        
+          </style>
+        <style>
+          body {
+            font-family: 'Fira Code', monospace;
+            transition: background-color 0.3s, color 0.3s;
+          }
+          /* Push content right */
+            body > .flex-grow-1, .main-content {
+            margin-left: 260px;
+            padding: 2rem;
+            }
+          .btn-outline-light{
+            color: #000 ;
+            border-color: #000 ;
+            background-color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+          }
+          body.dark {
+            width: 100%;
+            height: 100%;
+            --color: rgba(114, 114, 114, 0.3);
+            background-color: #191a1a;
+            background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+              linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+            background-size: 55px 55px;
+          }
+      
+          body.light {
+            background-color: #f4f4f4;
+            --color: rgba(255, 183, 197, 0.35);
+            background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+              linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+            background-size: 55px 55px;
+          }
+      
+          .code-block {
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #000;
+            margin-bottom: 2rem;
+          }
+      
+          .tag {
+            font-weight: bold;
+          }
+      
+          header h1 {
+            color: #569cd6;
+          }
+          
+          .role {
+            font-style: italic;
+            margin-top: 0.5rem;
+          }
+      
+          footer {
+            text-align: center;
+            color: #888;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+          }
+      
+          .language-switch {
+            margin-right: 0.5rem;
+          }
+      
+          #themeToggleBtn {
+            padding: 6px 12px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+          }
+      
+          #themeIcon {
+            font-size: 1.2rem;
+            margin-right: 8px;
+          }
+        </style>
+      </head>
+<body class="dark">
   
     <script src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -30,7 +125,7 @@
 
 
 <!-- Gallery start -->
-<div class="gallery-text" style="text-align: center;" >
+<div class="gallery-text" style="text-align: center; color: #fff !important;" >
     <br>
     <br>
     <br>
@@ -43,10 +138,10 @@
     
 
 
+    <h2 style="text-align: center; color: #fff !important;">Video Section</h2>
 
-
-<div class="video-container">
-    <h2>Video Section</h2>
+<div class="video-container" style="display: flex; justify-content: center; gap: 2rem;">
+   
     <div class="line"></div>
     <iframe src="https://www.youtube.com/embed/pkVka8jisVg" title="Demo level designing for a top-down rogue-like dungeon crawler Game" width="560" height="314"  style="border:none;overflow:hidden" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
     <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmksbd2022%2Fvideos%2F714632553897115%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>

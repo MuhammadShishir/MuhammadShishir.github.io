@@ -471,37 +471,41 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <script>
-    // Show the "Go to top" button when scrolling
-    window.onscroll = function() {
-        showGoToTopButton();
-    };
+  <div class="go-to-top-container">
 
-    function showGoToTopButton() {
-        var goToTopButton = document.getElementById("goToTop");
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    <!-- Go Home Button -->
+    <a href="index.html" class="go-home" title="Back to Home">
+        <i class="fas fa-home"></i>
+    </a> 
+
+    <!-- Go to Top Button -->
+    <div class="go-to-top" id="goToTop" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const goToTopButton = document.getElementById("goToTop");
+
+    // Show/hide the "Go to top" button on scroll
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 20) {
             goToTopButton.classList.add("show-go-to-top");
         } else {
             goToTopButton.classList.remove("show-go-to-top");
         }
-    }
+    });
 
     // Scroll to top when the button is clicked
-    document.getElementById("goToTop").addEventListener("click", function() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+    goToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
+});
 </script>
-<div class="go-to-top-container" >
-  <!-- Go to Top Button -->
-  <div class="go-to-top" id="goToTop" title="Back to Top">
-      <i class="fas fa-arrow-up"></i>
-  </div>
-  
-  <!-- Go Home Button -->
-  <a href="index.html" class="go-home" title="Back to Home">
-      <i class="fas fa-home"></i>
-  </a> 
-</div>
 </body>
 </html>

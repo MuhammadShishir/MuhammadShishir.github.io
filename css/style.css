@@ -195,7 +195,9 @@
   .gallery-item:hover {
     transform: translateY(-5px);
   }
-  
+  .video-container{
+    flex-direction: row;
+  }
   .zoom-button {
     position: absolute;
     bottom: 10px;
@@ -320,4 +322,13 @@
     #sidebar {
       display: none;
     }
+    .video-container{
+      padding-left: 20px;
+      padding-right: 20px;
+      flex-direction: column;
+      width: 40%;
+    }
+    .video-container iframe{
+      width: fit-content;
+  }
   }

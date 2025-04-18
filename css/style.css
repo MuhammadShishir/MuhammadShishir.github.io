@@ -5,7 +5,12 @@
   font-size: 1.1rem;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-
+button#mobileMenuToggle {
+  
+  top: 1rem !important;
+  left: 2rem !important;
+  margin-left: 1rem;
+}
 /* Hover glow effects for each nav item */
 #sidebar .nav-item:nth-child(1) .nav-link:hover {
   color: #0ff;

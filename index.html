@@ -22,7 +22,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
-      
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="./M-K-S.ico">
       
@@ -41,8 +42,9 @@
           }
           /* Push content right */
             body > .flex-grow-1, .main-content {
-            margin-left: 260px;
-            padding: 2rem;
+              
+            margin-left: 17rem;
+            padding: 1rem;
             }
           .btn-outline-light{
             color: #000 ;
@@ -105,31 +107,85 @@
             display: flex;
             align-items: center;
           }
-      
+          #sidebar {
+            height: 100vh;
+            position: fixed;
+          }
           #themeIcon {
             font-size: 1.2rem;
             margin-right: 8px;
           }
         </style>
       </head>
-      <body class="dark d-flex clearfix">
-        <!-- Sidebar -->
-        <nav id="sidebar" class="bg-dark text-white p-lg-5 d-flex flex-column justify-content-start">
-            <div class="text-center mb-4">
-              <img src="./media/img/M K S.png" alt="Profile Picture" width="150" height="150" class="img-fluid ">
-            </div>
-            <h4 class="text-center mb-4">Menu</h4>
-            <ul class="nav flex-column mt-auto">
-              <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#test-game">Playable Demo</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-            </ul>
-            <div class="clearfix"></div>
-          </nav>
+      <body class="dark d-flex">
+       <!-- Sidebar -->
+       <nav id="sidebar" class="bg-dark text-white p-lg-5 d-flex flex-column justify-content-start">
+
+        <div class="text-center mb-4">
+          <img src="./media/img/M K S.png" alt="Profile Picture" width="150" height="150" class="img-fluid ">
+        </div>
+        <h4 class="text-center mb-4">Menu</h4>
+        <ul class="nav flex-column mt-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#test-game">Playable Demo</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+        </ul>
+        
+      </nav>
+          <!-- Hamburger Button (Mobile Only) -->
+      
+          <button class="btn btn-dark d-lg-none position-fixed top-0 start-0 translate-middle-x z-3 md-3" id="mobileMenuToggle" aria-label="Open menu">
+
+            <i class="bi bi-list" style="font-size: 2rem;"></i>
+          </button>
           
+        
+     
+
+        <!-- Mobile Off-Canvas Menu -->
+        <div id="mobileMenu" class="offcanvas-menu d-lg-none bg-dark text-white p-4">
+          
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <img src="./media/img/M K S.png" alt="Profile Picture" width="100" height="100" class="img-fluid">
+            <button class="btn text-white fs-2" id="closeMobileMenu" aria-label="Close menu">&times;</button>
+          </div>
+          <h4 class="text-center mb-4">Menu</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#test-game">Playable Demo</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <script>
+          const toggleBtn = document.getElementById('mobileMenuToggle');
+          const closeBtn = document.getElementById('closeMobileMenu');
+          const menu = document.getElementById('mobileMenu');
+        
+          toggleBtn.addEventListener('click', () => {
+            menu.classList.add('show');
+          });
+        
+          closeBtn.addEventListener('click', () => {
+            menu.classList.remove('show');
+          });
+        
+          // Optional: close the menu when any link is clicked
+          document.querySelectorAll('#mobileMenu a.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+              menu.classList.remove('show');
+            });
+          });
+        </script>
+        
+       
+
       
         <!-- Main Content -->
         <div class="flex-grow-1 p-4">
@@ -147,7 +203,7 @@
           </div>
       
           <header class="mb-5">
-            <h1>&lt;<span data-en="Md Kamruzzaman Shishir" data-bn="মোঃ কামরুজ্জামান শিশির"></span> /&gt;</h1>
+            <h1>&lt;<span data-en="Md Kamruzzaman Shishir" data-bn="মোঃ কামরুজ্জামান শিশির"></span>/&gt;</h1>
             <p class="role"
               data-en="IT Specialist, Web Designer and Developer, WordPress, Shopify, Unreal Engine, Computer Enthusiast"
               data-bn="আইটি স্পেশালিস্ট, ওয়েব ডিজাইনার ও ডেভেলপার, ওয়ার্ডপ্রেস, শপিফাই, আনরিয়েল ইঞ্জিন, কম্পিউটার অনুরাগী">
@@ -418,100 +474,111 @@
           
         </div>
      
-      
+            
 
-  <!-- JS for Language and Theme -->
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('[data-en]').forEach(el => {
-        el.textContent = el.dataset[lang];
+        <!-- JS for Language and Theme -->
+        <script>
+          function setLanguage(lang) {
+            document.querySelectorAll('[data-en]').forEach(el => {
+              el.textContent = el.dataset[lang];
+            });
+          }
+        
+          const themeBtn = document.getElementById('themeToggleBtn');
+          const themeIcon = document.getElementById('themeIcon');
+          const themeLabel = document.getElementById('themeLabel');
+          const styleTag = document.getElementById('theme-style');
+        
+          const darkTheme = `
+            body.dark { background-color: #1e1e1e; color: #d4d4d4; }
+            .code-block { background-color: #252526; }
+            .tag { color: #ce9178; }
+            .label { color: #569cd6; }
+            .value { color: #dcdcaa; }
+          `;
+        
+          const lightTheme = `
+            body.light { background-color: #f4f4f4; color: #1e1e1e; }
+            .code-block { background-color: #ffffff; }
+            .tag { color: #c71585; }
+            .label { color: #005cc5; }
+            .value { color: #22863a; }
+          `;
+        
+          let isDark = true;
+        
+          themeBtn.addEventListener('click', () => {
+            isDark = !isDark;
+            document.body.classList.toggle('dark', isDark);
+            document.body.classList.toggle('light', !isDark);
+            styleTag.textContent = isDark ? darkTheme : lightTheme;
+            themeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
+            themeLabel.textContent = isDark ? 'Dark Mode' : 'Light Mode';
+          });
+        
+          // Set default theme
+          document.body.classList.add('dark');
+          styleTag.textContent = darkTheme;
+        
+          // 👇 Automatically set default language to English
+          window.addEventListener('DOMContentLoaded', () => {
+            setLanguage('en');
+          });
+        </script>
+        
+
+        <!-- External Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <div class="go-to-top-container">
+
+          <!-- Go Home Button -->
+          <a href="index.html" class="go-home" title="Back to Home">
+              <i class="fas fa-home"></i>
+          </a> 
+
+          <!-- Go to Top Button -->
+          <div class="go-to-top" id="goToTop" title="Back to Top">
+              <i class="fas fa-arrow-up"></i>
+          </div>
+
+      </div>
+
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const goToTopButton = document.getElementById("goToTop");
+
+          // Show/hide the "Go to top" button on scroll
+          window.addEventListener("scroll", function () {
+              if (window.scrollY > 20) {
+                  goToTopButton.classList.add("show-go-to-top");
+              } else {
+                  goToTopButton.classList.remove("show-go-to-top");
+              }
+          });
+
+          // Scroll to top when the button is clicked
+          goToTopButton.addEventListener("click", function () {
+              window.scrollTo({
+                  top: 0,
+                  behavior: "smooth"
+              });
+          });
       });
-    }
-  
-    const themeBtn = document.getElementById('themeToggleBtn');
-    const themeIcon = document.getElementById('themeIcon');
-    const themeLabel = document.getElementById('themeLabel');
-    const styleTag = document.getElementById('theme-style');
-  
-    const darkTheme = `
-      body.dark { background-color: #1e1e1e; color: #d4d4d4; }
-      .code-block { background-color: #252526; }
-      .tag { color: #ce9178; }
-      .label { color: #569cd6; }
-      .value { color: #dcdcaa; }
-    `;
-  
-    const lightTheme = `
-      body.light { background-color: #f4f4f4; color: #1e1e1e; }
-      .code-block { background-color: #ffffff; }
-      .tag { color: #c71585; }
-      .label { color: #005cc5; }
-      .value { color: #22863a; }
-    `;
-  
-    let isDark = true;
-  
-    themeBtn.addEventListener('click', () => {
-      isDark = !isDark;
-      document.body.classList.toggle('dark', isDark);
-      document.body.classList.toggle('light', !isDark);
-      styleTag.textContent = isDark ? darkTheme : lightTheme;
-      themeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
-      themeLabel.textContent = isDark ? 'Dark Mode' : 'Light Mode';
-    });
-  
-    // Set default theme
-    document.body.classList.add('dark');
-    styleTag.textContent = darkTheme;
-  
-    // 👇 Automatically set default language to English
-    window.addEventListener('DOMContentLoaded', () => {
-      setLanguage('en');
-    });
-  </script>
-  
-
-  <!-- External Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <div class="go-to-top-container">
-
-    <!-- Go Home Button -->
-    <a href="index.html" class="go-home" title="Back to Home">
-        <i class="fas fa-home"></i>
-    </a> 
-
-    <!-- Go to Top Button -->
-    <div class="go-to-top" id="goToTop" title="Back to Top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-
-</div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const goToTopButton = document.getElementById("goToTop");
-
-    // Show/hide the "Go to top" button on scroll
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 20) {
-            goToTopButton.classList.add("show-go-to-top");
-        } else {
-            goToTopButton.classList.remove("show-go-to-top");
-        }
-    });
-
-    // Scroll to top when the button is clicked
-    goToTopButton.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+      </script>
+      <script>
+        document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth' });
+            }
+          });
         });
-    });
-});
-</script>
-<div class="clearfix"></div>
-</body>
+      </script>
+
+      </body>
 </html>

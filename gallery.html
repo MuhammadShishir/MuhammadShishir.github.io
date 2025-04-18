@@ -17,6 +17,8 @@
         <meta name="twitter:image" content="https://muhammadshishir.github.io/media/img/SoShishir.png">
       
         <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/grid.css">
@@ -116,10 +118,59 @@
 <body class="dark">
   
     <script src="js/script.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          
+          <!-- Hamburger Button (Mobile Only) -->
+      
+          <button class="btn btn-dark d-lg-none position-fixed top-0 start-50 translate-middle-x z-3 mt-3" id="mobileMenuToggle" aria-label="Open menu">
 
+            <i class="bi bi-list" style="font-size: 2rem;"></i>
+          </button>
+          
+        
+     
+
+        <!-- Mobile Off-Canvas Menu -->
+        <div id="mobileMenu" class="offcanvas-menu d-lg-none bg-dark text-white p-4">
+          
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <img src="./media/img/M K S.png" alt="Profile Picture" width="100" height="100" class="img-fluid">
+            <button class="btn text-white fs-2" id="closeMobileMenu" aria-label="Close menu">&times;</button>
+          </div>
+          <h4 class="text-center mb-4">Menu</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#test-game">Playable Demo</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <script>
+          const toggleBtn = document.getElementById('mobileMenuToggle');
+          const closeBtn = document.getElementById('closeMobileMenu');
+          const menu = document.getElementById('mobileMenu');
+        
+          toggleBtn.addEventListener('click', () => {
+            menu.classList.add('show');
+          });
+        
+          closeBtn.addEventListener('click', () => {
+            menu.classList.remove('show');
+          });
+        
+          // Optional: close the menu when any link is clicked
+          document.querySelectorAll('#mobileMenu a.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+              menu.classList.remove('show');
+            });
+          });
+        </script>
+        
 <!-- nav end -->
 
 

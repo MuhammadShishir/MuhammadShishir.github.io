@@ -19,7 +19,7 @@
   background-color: transparent;
   z-index: 1060; /* must be above #mobileMenu (z-index: 1050) */
   top: 0.1rem;
-  right: 0.1rem !important;
+  right: 2rem !important;
 }
 
 .hamburger {

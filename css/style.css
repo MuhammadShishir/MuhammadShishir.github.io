@@ -1,3 +1,12 @@
+#sidebar {
+  position: fixed;
+  width: 15rem;
+  height: 100%;
+  background-color: #212529;
+  padding: 1rem;
+  z-index: 1000;
+  overflow-y: auto;
+}
 #sidebar .nav-link {
   position: relative;
   font-weight: 500;
@@ -5,11 +14,30 @@
   font-size: 1.1rem;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-button#mobileMenuToggle {
+#mobileMenuToggle {
+  position: fixed;
+  background-color: transparent;
+  z-index: 1060; /* must be above #mobileMenu (z-index: 1050) */
+  top: 0.1rem;
+  right: 0.1rem !important;
+}
+
+.hamburger {
+  position: fixed;
   
-  top: 1rem !important;
-  left: 2rem !important;
-  margin-left: 1rem;
+  width: -webkit-fill-available;
+  height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+button#closeMobileMenu {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+   padding: 0 !important;
+   margin: 0;
+  font-size: 2rem;
 }
 /* Hover glow effects for each nav item */
 #sidebar .nav-item:nth-child(1) .nav-link:hover {
@@ -275,7 +303,7 @@ form textarea:focus {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #212529;
   overflow-y: auto;
   transition: left 0.3s ease-in-out;
@@ -284,6 +312,7 @@ form textarea:focus {
 .offcanvas-menu.show {
   left: 0;
 }
+
 
 @media (max-width: 991px) {
   body > .flex-grow-1, .main-content {
@@ -323,4 +352,39 @@ form textarea:focus {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
   }
+}
+#sidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #00ffe7, #0f0, #f0f, #f03737);
+  background-size: 300% 300%;
+  filter: blur(20px);
+  animation: animateGradient 15s ease infinite;
+  z-index: -1;
+  opacity: 0.25;
+}
+@keyframes animateGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+#sidebar::after {
+  content: "✨";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 1.2rem;
+  animation: sparkleMove 10s linear infinite;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+@keyframes sparkleMove {
+  0% { transform: translate(0, 0); opacity: 0.5; }
+  50% { transform: translate(20px, 40px); opacity: 1; }
+  100% { transform: translate(-10px, -10px); opacity: 0.5; }
 }

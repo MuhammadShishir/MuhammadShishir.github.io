@@ -1,3 +1,4 @@
+
 #sidebar {
   position: fixed;
   width: 15rem;
@@ -16,8 +17,8 @@
 }
 #mobileMenuToggle {
   position: fixed;
-  background-color: transparent;
-  z-index: 1060; /* must be above #mobileMenu (z-index: 1050) */
+  
+  z-index: 1060; 
   top: 0.1rem;
   right: 2rem !important;
 }
@@ -40,32 +41,32 @@ button#closeMobileMenu {
   font-size: 2rem;
 }
 /* Hover glow effects for each nav item */
-#sidebar .nav-item:nth-child(1) .nav-link:hover {
+#sidebar .nav-item:nth-child(1) .nav-link:hover, #mobileMenu .nav-item:nth-child(1) .nav-link:hover {
   color: #0ff;
   text-shadow: 0 0 0.5rem #0ff, 0 0 1rem #0ff;
 }
-#sidebar .nav-item:nth-child(2) .nav-link:hover {
+#sidebar .nav-item:nth-child(2) .nav-link:hover, #mobileMenu .nav-item:nth-child(2) .nav-link:hover {
   color: #0f0;
   text-shadow: 0 0 0.5rem #0f0, 0 0 1rem #0f0;
 }
-#sidebar .nav-item:nth-child(3) .nav-link:hover {
+#sidebar .nav-item:nth-child(3) .nav-link:hover, #mobileMenu .nav-item:nth-child(3) .nav-link:hover {
   color: #f0f;
   text-shadow: 0 0 0.5rem #f0f, 0 0 1rem #f0f;
 }
-#sidebar .nav-item:nth-child(4) .nav-link:hover {
+#sidebar .nav-item:nth-child(4) .nav-link:hover, #mobileMenu .nav-item:nth-child(4) .nav-link:hover {
   color: #ff0;
   text-shadow: 0 0 0.5rem #ff0, 0 0 1rem #ff0;
 }
-#sidebar .nav-item:nth-child(5) .nav-link:hover {
+#sidebar .nav-item:nth-child(5) .nav-link:hover, #mobileMenu .nav-item:nth-child(5) .nav-link:hover {
   color: #f0c;
   text-shadow: 0 0 0.5rem #f0c, 0 0 1rem #f0c;
 }
-#sidebar .nav-item:nth-child(6) .nav-link:hover {
+#sidebar .nav-item:nth-child(6) .nav-link:hover, #mobileMenu .nav-item:nth-child(6) .nav-link:hover {
   color: #f03737;
   text-shadow: 0 0 0.5rem #f03737, 0 0 1rem #f03737;
 }
 
-#sidebar .nav-link::after {
+#sidebar .nav-link::after,  #mobileMenu .nav-link::after {
   content: "";
   display: block;
   height: 0.15rem;
@@ -73,7 +74,7 @@ button#closeMobileMenu {
   background: currentColor;
   transition: width 0.4s ease;
 }
-#sidebar .nav-link:hover::after {
+#sidebar .nav-link:hover::after , #mobileMenu .nav-link:hover::after {
   width: 100%;
 }
 
@@ -204,7 +205,7 @@ form textarea:focus {
 }
 .video-container iframe {
   max-width: 100%;
-  height: auto;
+  height: 300px !important;
 }
 
 .zoom-button {
@@ -316,9 +317,11 @@ form textarea:focus {
 
 @media (max-width: 991px) {
   body > .flex-grow-1, .main-content {
-    margin-left: 0 !important;
+    
     padding: 0 !important;
-    padding-top: 5.5rem !important;
+    padding-top: 3rem !important;
+    margin-left: 0.7rem !important;
+    margin-right: 1rem !important;
   }
   .video-container {
     flex-direction: column;
@@ -328,6 +331,17 @@ form textarea:focus {
     display: none !important;
     
   }
+  .code-block {
+    
+    margin: 1.2rem auto;
+    padding: 1rem;
+    font-size: 0.9rem;
+  
+    justify-content: center;
+    
+    overflow-x: hidden;
+  }
+  
 }
 @media (max-width: 576px) {
   .gallery-container {
@@ -353,7 +367,7 @@ form textarea:focus {
     padding: 0.4rem 0.8rem;
   }
 }
-#sidebar::before {
+#sidebar::before, #mobileMenu::before {
   content: "";
   position: absolute;
   top: 0;
@@ -372,7 +386,7 @@ form textarea:focus {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-#sidebar::after {
+#sidebar::after, #mobileMenu::after {
   content: "✨";
   position: absolute;
   top: 10%;

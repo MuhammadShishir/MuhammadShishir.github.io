@@ -130,11 +130,11 @@
           <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+          <!--<li class="nav-item"><a class="nav-link text-white" href="#goToContact">Contact</a></li>-->
             <li class="nav-item"><a class="nav-link text-white" href="#test-game">Playable Demo</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
         </ul>
-        <!-- From Uiverse.io by whoisyourdeadie --> 
+      
           
 
       </nav>
@@ -448,11 +448,11 @@
               </div>
             </div>
           </section>
-          <section id="contact" class="code-block">
+           <!-- <section id="contact" class="code-block">
             <span class="tag">// Contact</span>
           
-            <!-- External Links -->
-            <div class="mb-4 d-flex flex-column gap-2">
+            
+          <div class="mb-4 d-flex flex-column gap-2">
               <a href="https://mksge.itch.io/" target="_blank" class="contact-link">
                 <i class="fa fa-globe"></i> Itch.io Page
               </a>
@@ -466,24 +466,7 @@
                 <i class="fa fa-envelope"></i> Send Mail
               </a>
             </div>
-          
-            <!-- Contact Form (Formspree) -->
-            <form action="https://formspree.io/f/xanegwyz" method="POST" class="mt-4">
-              <div class="form-group">
-                <label for="name" class="label">Name:</label>
-                <input type="text" name="name" placeholder="Your Name" class="form-control bg-dark text-white border-secondary" required>
-              </div>
-              <div class="form-group mt-2">
-                <label for="email" class="label">Email:</label>
-                <input type="email" name="_replyto" placeholder="Your Email" class="form-control bg-dark text-white border-secondary" required>
-              </div>
-              <div class="form-group mt-2">
-                <label for="message" class="label">Message:</label>
-                <textarea name="message" rows="4" placeholder="Your Message" class="form-control bg-dark text-white border-secondary" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-outline-info mt-3">Send Message</button>
-            </form>
-          </section>
+          </section> -->
           <section id="test-game" class="code-block">
             <span class="tag">// Playable Demo</span>
           
@@ -603,43 +586,91 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
         
-        
+        <!-- Floating Button Container -->
         <div class="go-to-top-container">
 
           <!-- Go Home Button -->
           <a href="index.html" class="go-home" title="Back to Home">
-              <i class="fas fa-home"></i>
-          </a> 
+            <i class="fas fa-home"></i>
+          </a>
+
+          <!-- Contact Button -->
+          <div class="go-contact" id="goToContact" title="Contact Me">
+            <i class="fas fa-envelope"></i>
+          </div>
 
           <!-- Go to Top Button -->
           <div class="go-to-top" id="goToTop" title="Back to Top">
-              <i class="fas fa-arrow-up"></i>
+            <i class="fas fa-arrow-up"></i>
           </div>
 
-      </div>
+        </div>
 
-      <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const goToTopButton = document.getElementById("goToTop");
+        <!-- Contact Modal -->
+        <div id="contactModal" class="contact-modal d-none">
+          <div class="contact-content">
+            <h2 class="text-center text-white">Contact Me</h2>
+            <span class="close-contact" id="closeContact">&times;</span>
 
-          // Show/hide the "Go to top" button on scroll
-          window.addEventListener("scroll", function () {
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/xanegwyz" method="POST" class="mt-4">
+              <div class="form-group">
+                <label for="name" class="label">Name:</label>
+                <input type="text" name="name" placeholder="Your Name" class="form-control bg-dark text-white border-secondary" required>
+              </div>
+              <div class="form-group mt-2">
+                <label for="email" class="label">Email:</label>
+                <input type="email" name="_replyto" placeholder="Your Email" class="form-control bg-dark text-white border-secondary" required>
+              </div>
+              <div class="form-group mt-2">
+                <label for="message" class="label">Message:</label>
+                <textarea name="message" rows="4" placeholder="Your Message" class="form-control bg-dark text-white border-secondary" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-info mt-3">Send Message</button>
+            </form>
+          </div>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const goToTopButton = document.getElementById("goToTop");
+            const contactBtn = document.getElementById("goToContact");
+            const contactModal = document.getElementById("contactModal");
+            const closeBtn = document.getElementById("closeContact");
+
+            // Show/hide "Go to top" on scroll
+            window.addEventListener("scroll", function () {
               if (window.scrollY > 20) {
-                  goToTopButton.classList.add("show-go-to-top");
+                goToTopButton.classList.add("show-go-to-top");
               } else {
-                  goToTopButton.classList.remove("show-go-to-top");
+                goToTopButton.classList.remove("show-go-to-top");
               }
-          });
+            });
 
-          // Scroll to top when the button is clicked
-          goToTopButton.addEventListener("click", function () {
-              window.scrollTo({
-                  top: 0,
-                  behavior: "smooth"
-              });
+            // Scroll to top
+            goToTopButton.addEventListener("click", function () {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+
+            // Show contact modal
+            contactBtn.addEventListener("click", function () {
+              contactModal.classList.remove("d-none");
+            });
+
+            // Hide contact modal
+            closeBtn.addEventListener("click", function () {
+              contactModal.classList.add("d-none");
+            });
+
+            // Close modal if clicked outside
+            window.addEventListener("click", function (e) {
+              if (e.target === contactModal) {
+                contactModal.classList.add("d-none");
+              }
+            });
           });
-      });
-      </script>
+        </script>
+
+
       <script>
         document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function (e) {

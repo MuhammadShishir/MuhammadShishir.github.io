@@ -80,3 +80,31 @@
     color: #fff;
   }
   
+  .contact-modal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(160, 21, 153, 0.5),
+    rgba(183, 1, 255, 0.5),
+    rgb(255, 196, 0),
+    rgb(230, 3, 22)
+  );
+  background-size: 200% 200%;
+  animation: softFlow 30s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes softFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

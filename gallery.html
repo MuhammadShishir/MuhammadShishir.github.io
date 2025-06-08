@@ -120,133 +120,142 @@
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-          
-
-                  <!-- Hamburger Button (Mobile Only) -->
-      
-      <div class="hamburger d-lg-none p-3">
-       
-
-        <button id="mobileMenuToggle" class="btn btn-outline-light" aria-label="Toggle mobile menu">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-     
-
-        <!-- Mobile Off-Canvas Menu -->
-        <div id="mobileMenu" class="offcanvas-menu d-lg-none bg-dark text-white p-4">
-          
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <img src="./media/img/M K S.png" alt="Profile Picture" width="100" height="100" class="img-fluid">
-            <button class="btn text-white fs-2" id="closeMobileMenu" aria-label="Close menu">&times;</button>
-          </div>
-          <h4 class="text-center mb-4">Menu</h4>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#test-game">Playable Demo</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-          </ul>
-        </div>
-
-        <script>
-          const toggleBtn = document.getElementById('mobileMenuToggle');
-          const closeBtn = document.getElementById('closeMobileMenu');
-          const menu = document.getElementById('mobileMenu');
-        
-          toggleBtn.addEventListener('click', () => {
-            menu.classList.add('show');
-          });
-        
-          closeBtn.addEventListener('click', () => {
-            menu.classList.remove('show');
-          });
-        
-          // Optional: close the menu when any link is clicked
-          document.querySelectorAll('#mobileMenu a.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-              menu.classList.remove('show');
-            });
-          });
-        </script>
-        
-<!-- nav end -->
-
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>      
+&nbsp;
+<nav class="navbar navbar-expand-lg fixed-top" style="display: flex; justify-content: space-between; background-color: #0080ff15; padding: 0.5rem 1rem;">
+         <button class="btn btn-outline-light" >
+        <i class="fas fa-home"></i> 
+        <a href="index.html" class="text-dark">  Home</a>
+      </button>
+ <span class="navbar-brand text-white ml-2" style="font-size: 1.5rem; font-weight: bold;">
+  Gallery
+ </span>
+</nav>
 
 <!-- Gallery start -->
-<div class="gallery-text align-content-center" style="text-align: center; color: #fff !important;" >
-    <br>
-    <br>
-    <br>
-    <h4 >Photos</h4>
-    
+
+<div class="gallery-text" style="text-align: center; color: #fff;">
+  <br><br><br>
+  <h4>Photos</h4>
 </div>
 
-    <div class="gallery-container" ></div>
+<div class="gallery-container collage-gallery"></div>
 
-    
-
-
-    <h4 style="text-align: center; color: #fff !important;">Video</h4>
-
+<h4 style="text-align: center; color: #fff;">Video</h4>
 <div class="video-container" style="display: flex; justify-content: center; gap: 2rem;">
-   
-    
-    <iframe src="https://www.youtube.com/embed/pkVka8jisVg" title="Demo level designing for a top-down rogue-like dungeon crawler Game" width="560" height="500"  style="border:none;overflow:hidden" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
-    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmksbd2022%2Fvideos%2F714632553897115%2F&show_text=false&width=560&t=0" width="560" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  <iframe src="https://www.youtube.com/embed/pkVka8jisVg" width="560" height="500" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmksbd2022%2Fvideos%2F714632553897115%2F&show_text=false&width=560&t=0" width="560" height="500" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- Modal Template -->
+<div id="imageModal" class="modal" style="display: none;">
+  <span class="modal-close">&times;</span>
+  <img class="modal-image" src="" alt="Zoomed">
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function() {
-        const galleryContainer = $(".gallery-container");
-        
-        // Define the number of images you have
-        const numberOfImages = 17; // Change this to match the number of images
-        
-        for (let i = 1; i <= numberOfImages; i++) {
-            const imageUrl = `./media/img/${i}.webp`;
-            
-            // Create a new gallery item for each image
-            const galleryItem = `
-                <div class="gallery-item">
-                    <img src="${imageUrl}" alt="Image ${i}" oncontextmenu="return false;">
-                    <button class="zoom-button" data-image="${imageUrl}">Zoom</button>
-                </div>
-            `;
-            
-            galleryContainer.append(galleryItem);
-        }
+  $(document).ready(function () {
+    const galleryContainer = $(".gallery-container");
+    const numberOfImages = 17;
 
-        // Add click event to the zoom buttons
-        galleryContainer.on("click", ".zoom-button", function() {
-            const imageUrl = $(this).data("image");
+    for (let i = 1; i <= numberOfImages; i++) {
+      const imageUrl = `./media/img/${i}.webp`;
+      const itemId = `item-${i}`;
+      const galleryItem = `
+        <div class="gallery-item" id="${itemId}">
+          <img src="${imageUrl}" alt="Image ${i}" oncontextmenu="return false;">
+          <button class="zoom-button" data-image="${imageUrl}" title="Zoom">🔍</button>
+        </div>`;
+      galleryContainer.append(galleryItem);
+    }
 
-            // Create and open the modal
-            const modal = $("<div class='modal'></div>");
-            const modalContent = $("<div class='modal-content'></div>");
-            const modalImage = $("<img class='modal-image' src='" + imageUrl + "'>");
-            const modalClose = $("<span class='modal-close'>&times;</span>");
-
-            modalContent.append(modalClose);
-            modalContent.append(modalImage);
-            modal.append(modalContent);
-
-            modal.appendTo("body");
-            modal.css("display", "block");
-
-            // Close the modal when the close button is clicked
-            modalClose.click(function() {
-                modal.remove();
-            });
-        });
+    galleryContainer.on("click", ".zoom-button", function () {
+      const imageUrl = $(this).data("image");
+      $("#imageModal").fadeIn().find(".modal-image").attr("src", imageUrl);
     });
+
+    $(".modal-close").click(function () {
+      $("#imageModal").fadeOut();
+    });
+  });
 </script>
 
+<style>
+  .collage-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  grid-auto-rows: 350px;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.zoom-button {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 1rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  .collage-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 250px;
+  }
+}
+</style>
 
 
 <!-- End of gallery -->
@@ -282,41 +291,88 @@
   </footer>
 
 
-  <div class="go-to-top-container">
+<!-- Floating Button Container -->
+<div class="go-to-top-container">
 
-    <!-- Go Home Button -->
-    <a href="index.html" class="go-home" title="Back to Home">
-        <i class="fas fa-home"></i>
-    </a> 
+  <!-- Go Home Button -->
+  <a href="index.html" class="go-home" title="Back to Home">
+    <i class="fas fa-home"></i>
+  </a>
 
-    <!-- Go to Top Button -->
-    <div class="go-to-top" id="goToTop" title="Back to Top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+  <!-- Contact Button -->
+  <div class="go-contact" id="goToContact" title="Contact Me">
+    <i class="fas fa-envelope"></i>
+  </div>
+
+  <!-- Go to Top Button -->
+  <div class="go-to-top" id="goToTop" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
 
 </div>
 
+<!-- Contact Modal -->
+<div id="contactModal" class="contact-modal d-none">
+  <div class="contact-content">
+    <h2 class="text-center text-white">Contact Me</h2>
+    <span class="close-contact" id="closeContact">&times;</span>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/xanegwyz" method="POST" class="mt-4">
+      <div class="form-group">
+        <label for="name" class="label">Name:</label>
+        <input type="text" name="name" placeholder="Your Name" class="form-control bg-dark text-white border-secondary" required>
+      </div>
+      <div class="form-group mt-2">
+        <label for="email" class="label">Email:</label>
+        <input type="email" name="_replyto" placeholder="Your Email" class="form-control bg-dark text-white border-secondary" required>
+      </div>
+      <div class="form-group mt-2">
+        <label for="message" class="label">Message:</label>
+        <textarea name="message" rows="4" placeholder="Your Message" class="form-control bg-dark text-white border-secondary" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-info mt-3">Send Message</button>
+    </form>
+  </div>
+</div>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
     const goToTopButton = document.getElementById("goToTop");
+    const contactBtn = document.getElementById("goToContact");
+    const contactModal = document.getElementById("contactModal");
+    const closeBtn = document.getElementById("closeContact");
 
-    // Show/hide the "Go to top" button on scroll
+    // Show/hide "Go to top" on scroll
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 20) {
-            goToTopButton.classList.add("show-go-to-top");
-        } else {
-            goToTopButton.classList.remove("show-go-to-top");
-        }
+      if (window.scrollY > 20) {
+        goToTopButton.classList.add("show-go-to-top");
+      } else {
+        goToTopButton.classList.remove("show-go-to-top");
+      }
     });
 
-    // Scroll to top when the button is clicked
+    // Scroll to top
     goToTopButton.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
-});
+
+    // Show contact modal
+    contactBtn.addEventListener("click", function () {
+      contactModal.classList.remove("d-none");
+    });
+
+    // Hide contact modal
+    closeBtn.addEventListener("click", function () {
+      contactModal.classList.add("d-none");
+    });
+
+    // Close modal if clicked outside
+    window.addEventListener("click", function (e) {
+      if (e.target === contactModal) {
+        contactModal.classList.add("d-none");
+      }
+    });
+  });
 </script>
 </body>
 </html>    

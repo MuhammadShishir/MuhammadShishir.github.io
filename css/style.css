@@ -1,4 +1,4 @@
-
+/* From Uiverse.io by Yaya12085 */ 
 
 .header {
   display: flex;
@@ -247,27 +247,7 @@ form textarea:focus {
   opacity: 0.95;
 }
 
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-.gallery-item {
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 1.2rem rgba(117, 117, 117, 0.6);
-}
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.4rem;
-}
-.gallery-item:hover {
-  transform: translateY(-0.3rem);
-}
+
 
 .video-container {
   display: flex;
@@ -279,58 +259,9 @@ form textarea:focus {
   height: 300px !important;
 }
 
-.zoom-button {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background: #00ffe7;
-  color: #000;
-  padding: 5px 12px;
-  font-size: 0.85rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.zoom-button:hover {
-  background: #fff;
-  color: #00aaff;
-  box-shadow: 0 0 10px #00ffe7;
-}
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding-top: 80px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-}
-.modal-content {
-  position: relative;
-  margin: auto;
-  width: 90%;
-    max-width: 800px;
-}
-.modal-image {
-  width: 100%;
-  border-radius: 8px;
-}
-.modal-close {
-  color: #fff;
-  position: absolute;
-  top: -20px;
-  right: 0;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-}
 
-.go-to-top, .go-home {
+.go-to-top, .go-home, .go-contact {
   position: fixed;
   width: 2.2rem;
   height: 2.2rem;
@@ -344,31 +275,68 @@ form textarea:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   z-index: 1000;
 }
+.go-to-top-container {
+  position: fixed;
+  bottom: 3.1rem;
+  right: 1.6rem;
+  background-color: #0080ff;
+  height: 9rem;
+  width: 3rem;
+  border-radius: 2rem;
+}
+
 .go-to-top {
-  bottom: 2rem;
+  bottom: 3.5rem;
   right: 2rem;
 }
 .go-home {
-  bottom: 5rem;
+  bottom: 9.5rem;
   right: 2rem;
 }
-.go-to-top:hover, .go-home:hover {
+.go-contact {
+  bottom: 6.5rem;
+  right: 2rem;
+}
+.go-to-top:hover, .go-home:hover, .go-contact:hover {
   background: #000;
   color: #fff;
 }
 
-.go-to-top-container {
+/* Modal Styles */
+.contact-modal {
   position: fixed;
-  bottom: 1rem;
-  right: 1.5rem;
-  background-color: #ffffff;
-  box-shadow: 0 0 1.2rem rgba(117, 117, 117, 0.6);
-  height: 7rem;
-  width: 3rem;
-  border-radius: 2rem;
+  inset: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
+.contact-content {
+  background: #c5c5c54b;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+.close-contact {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.d-none {
+  display: none;
+}
+
+
 
 .offcanvas-menu {
   position: fixed;

@@ -312,67 +312,67 @@
 </div>
 
 <!-- Contact Modal -->
-<div id="contactModal" class="contact-modal d-none">
-  <div class="contact-content">
-    <h2 class="text-center text-white">Contact Me</h2>
-    <span class="close-contact" id="closeContact">&times;</span>
+ <div id="contactModal" class="contact-modal d-none">
+          <div class="contact-content">
+            <h2 class="text-center text-white">Contact Me</h2>
+            <span class="close-contact" id="closeContact">&times;</span>
 
-    <!-- Contact Form -->
-    <form action="https://formspree.io/f/xanegwyz" method="POST" class="mt-4">
-      <div class="form-group">
-        <label for="name" class="label">Name:</label>
-        <input type="text" name="name" placeholder="Your Name" class="form-control bg-dark text-white border-secondary" required>
-      </div>
-      <div class="form-group mt-2">
-        <label for="email" class="label">Email:</label>
-        <input type="email" name="_replyto" placeholder="Your Email" class="form-control bg-dark text-white border-secondary" required>
-      </div>
-      <div class="form-group mt-2">
-        <label for="message" class="label">Message:</label>
-        <textarea name="message" rows="4" placeholder="Your Message" class="form-control bg-dark text-white border-secondary" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-outline-info mt-3">Send Message</button>
-    </form>
-  </div>
-</div>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const goToTopButton = document.getElementById("goToTop");
-    const contactBtn = document.getElementById("goToContact");
-    const contactModal = document.getElementById("contactModal");
-    const closeBtn = document.getElementById("closeContact");
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/xanegwyz" method="POST" class="mt-4">
+              <div class="form-group">
+                <label for="name" class="label">Name:</label>
+                <input type="text" name="name" placeholder="Your Name" class="form-control  border-secondary" required>
+              </div>
+              <div class="form-group mt-2">
+                <label for="email" class="label">Email:</label>
+                <input type="email" name="_replyto" placeholder="Your Email" class="form-control  border-secondary" required>
+              </div>
+              <div class="form-group mt-2">
+                <label for="message" class="label">Message:</label>
+                <textarea name="message" rows="4" placeholder="Your Message" class="form-control  border-secondary" required></textarea>
+              </div>
+              <button type="submit" class="outline mt-3">Send Message</button>
+            </form>
+          </div>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const goToTopButton = document.getElementById("goToTop");
+            const contactBtn = document.getElementById("goToContact");
+            const contactModal = document.getElementById("contactModal");
+            const closeBtn = document.getElementById("closeContact");
 
-    // Show/hide "Go to top" on scroll
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 20) {
-        goToTopButton.classList.add("show-go-to-top");
-      } else {
-        goToTopButton.classList.remove("show-go-to-top");
-      }
-    });
+            // Show/hide "Go to top" on scroll
+            window.addEventListener("scroll", function () {
+              if (window.scrollY > 20) {
+                goToTopButton.classList.add("show-go-to-top");
+              } else {
+                goToTopButton.classList.remove("show-go-to-top");
+              }
+            });
 
-    // Scroll to top
-    goToTopButton.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+            // Scroll to top
+            goToTopButton.addEventListener("click", function () {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            });
 
-    // Show contact modal
-    contactBtn.addEventListener("click", function () {
-      contactModal.classList.remove("d-none");
-    });
+            // Show contact modal
+            contactBtn.addEventListener("click", function () {
+              contactModal.classList.remove("d-none");
+            });
 
-    // Hide contact modal
-    closeBtn.addEventListener("click", function () {
-      contactModal.classList.add("d-none");
-    });
+            // Hide contact modal
+            closeBtn.addEventListener("click", function () {
+              contactModal.classList.add("d-none");
+            });
 
-    // Close modal if clicked outside
-    window.addEventListener("click", function (e) {
-      if (e.target === contactModal) {
-        contactModal.classList.add("d-none");
-      }
-    });
-  });
-</script>
+            // Close modal if clicked outside
+            window.addEventListener("click", function (e) {
+              if (e.target === contactModal) {
+                contactModal.classList.add("d-none");
+              }
+            });
+          });
+        </script>
 </body>
 </html>    

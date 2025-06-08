@@ -537,3 +537,29 @@ form textarea:focus {
 .social-preheader .linkedin:hover { color: #ffffff; }
 .social-preheader .email:hover    { color: #ffffff; }
 .social-preheader .itch:hover     { color: #ffffff; }
+
+.label {
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.outline{
+  display: inline-block;
+  font-family: 'Fira Code', monospace;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  border: 0.15rem solid #ffffff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.outline:hover {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5);
+
+  transform: translateY(-0.2rem);
+}

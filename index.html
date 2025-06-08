@@ -74,7 +74,8 @@
           .code-block {
             padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 0 10px #000;
+            background-color: #1d1e22;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
             margin-bottom: 2rem;
           }
       
@@ -116,6 +117,7 @@
         </style>
       </head>
       <body class="dark d-flex">
+        
        <!-- Sidebar -->
        <nav id="sidebar" class="bg-dark text-white p-lg-5 d-flex flex-column justify-content-start">
 
@@ -143,8 +145,7 @@
         </button>
       </div>
           
-        
-     
+      
 
         <!-- Mobile Off-Canvas Menu -->
         <div id="mobileMenu" class="offcanvas-menu d-lg-none bg-dark text-white p-4">
@@ -190,37 +191,101 @@
       
         <!-- Main Content -->
         <div class="flex-grow-1 p-4">
+          
+
+
           <div class="d-flex justify-content-between align-items-center mb-4">
             <!-- Language Toggle -->
             <div>
               <button class="btn btn-outline-light language-switch" onclick="setLanguage('en')">🇬🇧 EN</button>
               <button class="btn btn-outline-light language-switch" onclick="setLanguage('bn')">🇧🇩 BN</button>
             </div>
+            
             <!-- Theme Toggle -->
-            <button id="themeToggleBtn" class="btn btn-outline-light" title="Toggle Theme">
-              <i class="fas fa-moon" id="themeIcon"></i>
-              <span id="themeLabel">Dark Mode</span>
-            </button>
+            
+              <button id="themeToggleBtn" class="btn btn-outline-light" title="Toggle Theme">
+                <i class="fas fa-moon" id="themeIcon"></i>
+                <span id="themeLabel">Dark Mode</span>
+              </button>
+            
           </div>
-      
-          <header class="mb-5">
-            <h1>&lt;<span data-en="Md Kamruzzaman Shishir" data-bn="মোঃ কামরুজ্জামান শিশির"></span>/&gt;</h1>
-            <p class="role"
-              data-en="IT Specialist, Web Designer and Developer, WordPress, Shopify, Unreal Engine, Computer Enthusiast"
-              data-bn="আইটি স্পেশালিস্ট, ওয়েব ডিজাইনার ও ডেভেলপার, ওয়ার্ডপ্রেস, শপিফাই, আনরিয়েল ইঞ্জিন, কম্পিউটার অনুরাগী">
+    
+          <div class="code-editor">
+           
+            <div class="header">
+            <span class="title">My Profile</span>
+              <div class="social-preheader d-flex justify-content-center gap-3 py-2">
+            <a href="https://github.com/MuhammadShishir" class="icon-wrapper github" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" class="icon-wrapper linkedin" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="mailto:mdkamruzzaman.shishir@outlook.com" class="icon-wrapper email" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://mksge.itch.io/" class="icon-wrapper itch" target="_blank" title="Itch.io">
+              <i class="fa fa-globe"></i>
+            </a>
+          </div>
+          </div>
+
+            <div class="editor-content">
+              <code class="code">
+           <p><span class="color-0">&lt;header</span> <span class="color-2">class</span>=<span class="color-3">"name"</span><span class="color-0">&gt;</span></p>
+            <p class="property"><span class="color-3">// Hi, I am </span></p>
+            <p class="property">
+              
+              <span class="color-1" style="font-size: xx-large;" data-en="Md Kamruzzaman Shishir" data-bn="মোঃ কামরুজ্জামান শিশির"></span>
+             
             </p>
-            <p class="role" data-en="I am a passionate developer with a love for technology."
-              data-bn="আমি প্রযুক্তির প্রতি ভালোবাসা নিয়ে একজন উত্সাহী ডেভেলপার।"></p>
-          </header>
-      
-          <section id="about" class="code-block">
-            <span class="tag">// About Me</span><br>
-            <span><span class="label">I'm:</span> <span class="value"
-                data-en="Creative problem solver, tech-savvy, and passionate about development."
-                data-bn="সৃজনশীল সমস্যা সমাধানকারী, প্রযুক্তি অনুরাগী এবং ডেভেলপমেন্টের প্রতি আগ্রহী।"></span></span><br>
-            <span><span class="label">Location:</span> <span class="value" data-en="Bangladesh" data-bn="বাংলাদেশ"></span></span><br>
-            <span><span class="label">Email:</span> <span class="value">mdkamruzzaman.shishir@outlook.com</span></span>
-          </section>
+
+            <p class="property">
+              <span class="color-2">Role:</span> 
+              <span class="color-1" data-en="IT Specialist, Web Designer and Developer, WordPress, Shopify, Unreal Engine, Computer Enthusiast" 
+                    data-bn="আইটি স্পেশালিস্ট, ওয়েব ডিজাইনার ও ডেভেলপার, ওয়ার্ডপ্রেস, শপিফাই, আনরিয়েল ইঞ্জিন, কম্পিউটার অনুরাগী">
+              </span>
+            </p>
+
+            <p class="property">
+              <span class="color-2">Bio:</span> 
+              <span class="color-1" data-en="I am a passionate developer with a love for technology." 
+                    data-bn="আমি প্রযুক্তির প্রতি ভালোবাসা নিয়ে একজন উত্সাহী ডেভেলপার।">
+              </span>
+            </p>
+
+            <p><span class="color-0">&lt;/header&gt;</span></p>
+
+
+                <p><span class="color-0">&lt;section</span> <span class="color-2">id</span>=<span class="color-3">"about"</span><span class="color-0">&gt;</span> </p>
+
+                
+                <p class="property"><span class="color-3">// About Me</span></p>
+                <p class="property">
+                  <span class="color-2">I'm:</span> 
+                  <span class="color-1" data-en="Creative problem solver, tech-savvy, and passionate about development." 
+                        data-bn="সৃজনশীল সমস্যা সমাধানকারী, প্রযুক্তি অনুরাগী এবং ডেভেলপমেন্টের প্রতি আগ্রহী।"></span>
+                </p>
+
+                <p class="property">
+                  <span class="color-2">Location:</span> 
+                  <span class="color-1" data-en="Bangladesh" data-bn="বাংলাদেশ"></span>
+                </p>
+
+                <p class="property">
+                  <span class="color-2">Email:</span> 
+                  <span class="color-1">mdkamruzzaman.shishir@outlook.com</span>
+                </p>
+
+                <p><span class="color-0">&lt;/section&gt;</span></p>
+              </code>
+            </div>
+          </div>
+
+
       
           <section id="skills" class="code-block">
             <span class="tag">// Skills</span><br>
@@ -533,6 +598,8 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+        
+        
         <div class="go-to-top-container">
 
           <!-- Go Home Button -->

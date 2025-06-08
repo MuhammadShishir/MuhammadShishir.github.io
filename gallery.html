@@ -240,9 +240,9 @@
 }
 
 .modal-close {
-  position: relative;
-  top: -12rem;
-  right: -52rem;
+  position: fixed;
+  top: 10%;
+  right: 7%;
   font-size: 2rem;
   color: white;
   cursor: pointer;
@@ -253,6 +253,11 @@
   .collage-gallery {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 250px;
+  }
+  .modal-close{
+    position: fixed;
+    top: 30%;
+    right: 5%;
   }
 }
 </style>

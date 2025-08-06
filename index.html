@@ -656,7 +656,144 @@
           
           
         </div>
-     
+         <!-- Tailwind CSS CDN - Include this in your <head> if not already present -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Transparent and blurry background */
+            background-color: rgba(0, 0, 0, 0.5); /* More transparent overlay */
+            backdrop-filter: blur(8px); /* Blur effect */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+        .modal-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background-color: rgba(26, 32, 44, 0.9); /* Slightly transparent dark background for content */
+            color: #e2e8f0;
+            padding: 2.5rem; /* Increased padding */
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); /* Stronger shadow */
+            max-width: 90%;
+            width: 450px; /* Slightly wider */
+            position: relative;
+            transform: translateY(-30px) scale(0.95); /* More pronounced initial offset and scale */
+            transition: transform 0.4s ease;
+            border: 1px solid rgba(71, 85, 105, 0.3); /* Subtle border for depth */
+        }
+        .modal-overlay.show .modal-content {
+            transform: translateY(0) scale(1); /* Slide and scale into place */
+        }
+        .close-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.8rem; /* Larger close button */
+            color: #cbd5e0;
+            cursor: pointer;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+        .close-button:hover {
+            color: #ffffff;
+            transform: rotate(90deg); /* Spin effect on hover */
+        }
+        .affiliate-button {
+            display: inline-block;
+            padding: 1rem 2.5rem; /* More padding for a larger button */
+            border-radius: 9999px; /* Fully rounded pill shape */
+            background: linear-gradient(90deg, #63b3ed, #4299e1); /* Gradient background */
+            color: white;
+            font-weight: 700; /* Bolder text */
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(66, 153, 225, 0.4); /* Blue shadow */
+            transition: all 0.3s ease;
+            text-transform: uppercase; /* Uppercase text */
+            letter-spacing: 0.05em; /* Slight letter spacing */
+        }
+        .affiliate-button:hover {
+            background: linear-gradient(90deg, #4299e1, #63b3ed); /* Reverse gradient on hover */
+            box-shadow: 0 8px 20px rgba(66, 153, 225, 0.6); /* Stronger shadow on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+        .affiliate-banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem; /* Rounded corners for the banner */
+            margin-bottom: 1.5rem; /* Space below the banner */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+    <!-- The Pop-up Modal Structure -->
+    <div id="affiliateModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-button" id="closeModal">&times;</button>
+            <h2 class="text-3xl font-extrabold mb-4 text-center text-blue-400">
+                Unlock Your Online Presence! 🚀
+            </h2>
+            <p class="text-center mb-6 text-lg text-gray-300">
+                Ready to launch your website? Get reliable domain & hosting!
+            </p>
+            <div class="affiliate-banner text-center mb-6">
+                <a href="https://clients.itnuthosting.com/aff.php?aff=784" target="_blank" rel="noopener">
+                    <img src="https://itnutaff.b-cdn.net/banner/300x250.gif" alt="ITNut Hosting Banner">
+                </a>
+            </div>
+            <div class="text-center">
+                <a href="https://clients.itnuthosting.com/aff.php?aff=784" target="_blank" class="affiliate-button">
+                    Secure Your Spot Now!
+                </a>
+            </div>
+            <p class="text-xs text-gray-400 mt-4 text-center">
+                (This is an affiliate link and we may earn a commission.)
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Get references to the modal and close button
+        const affiliateModal = document.getElementById('affiliateModal');
+        const closeModalButton = document.getElementById('closeModal');
+
+        // Function to show the modal
+        function showModal() {
+            affiliateModal.classList.add('show');
+        }
+
+        // Function to hide the modal
+        function hideModal() {
+            affiliateModal.classList.remove('show');
+        }
+
+        // Show the modal when the page loads
+        window.onload = showModal;
+
+        // Hide the modal when the close button is clicked
+        closeModalButton.addEventListener('click', hideModal);
+
+        // Optional: Hide the modal if the user clicks outside the content
+        affiliateModal.addEventListener('click', (event) => {
+            if (event.target === affiliateModal) {
+                hideModal();
+            }
+        });
+    </script>
+
             
 
         <!-- JS for Language and Theme -->

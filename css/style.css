@@ -30,7 +30,9 @@
   margin: 0 10px 10px;
   color: white;
 }
-
+a{
+  color: white;
+}
 .property {
   margin-left: 30px;
 }
@@ -607,3 +609,35 @@ form textarea:focus {
 .live-button:hover::before {
   left: 120%;
 }
+.category-text {
+  position: absolute;
+  bottom: 0; /* Position it below the description */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: none;
+  background-color: #f0f0f01a; /* A light grey background color */
+  color: #ffffff; /* Darker text for contrast */
+  padding: 5px 10px; /* Some padding for spacing */
+  margin-top: 10px; /* Space it below the description */
+  font-size: 0.9em; /* Make the font a little smaller */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+ 
+}
+
+.grid-item:hover .category-text {
+  display: block;
+  background-color: #007bff; /* A blue background on hover */
+  color: #fff; /* White text on hover */
+}
+
+.bottom-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+  margin-top: 0.5rem;
+}
+

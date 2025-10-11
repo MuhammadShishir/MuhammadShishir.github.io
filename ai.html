@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative AI Studio-Mkshishir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Styles - Aligned with Professional, Clean Branding */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Solid, clean light background, similar to a minimalist developer theme */
+            background-color: #f3f4f6; /* Tailwind gray-100 equivalent */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Styling for the main content card */
+        .card {
+            background-color: white; /* Solid white for maximum cleanliness and contrast */
+            border: none; /* Removed border for a flatter, modern look */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Medium, professional shadow */
+        }
+        /* Primary button styling, focused on the brand's deep blue */
+        .btn-primary {
+            background-color: #1e3a8a; /* Deep Blue */
+            color: white;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3);
+        }
+        /* Enhanced button hover effect using the cyan accent color */
+        .btn-primary:hover {
+            background-color: #3b82f6;
+            box-shadow: 0 6px 15px rgba(56, 234, 230, 0.5); /* Cyan glow on hover */
+            transform: translateY(-2px);
+        }
+        /* Enhanced loading spinner colors */
+        .spinner {
+            border-top-color: #1e3a8a; 
+            border-right-color: #38eae6;
+            border-bottom-color: #1e3a8a;
+        }
+        /* Input focus color to match accent */
+        .focus-accent:focus {
+            border-color: #38eae6;
+            box-shadow: 0 0 0 3px rgba(56, 234, 230, 0.5); /* Soft cyan glow on focus */
+        }
+        /* Tab styling */
+        .tab-button.active {
+            background-color: #1e3a8a;
+            color: white;
+            border-color: #1e3a8a;
+        }
+        .tab-button {
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<div id="app" class="p-8 md:p-10 card w-full max-w-3xl rounded-2xl">
+    
+    <!-- MKS Logo Integration - Now a clickable navigation link -->
+    <div class="text-center mb-2">
+        <a href="https://mkshishir.pages.dev/" target="_blank" title="Go to MKS Home Page">
+            <img src="https://mkshishir.pages.dev/media/img/M%20K%20S.png" alt="MKS Logo" class="inline-block h-16 w-16 object-contain hover:opacity-80 transition duration-150">
+        </a>
+    </div>
+
+    <h1 class="text-3xl font-extrabold text-center text-gray-800 mb-6 border-b-4 border-[#38eae6] pb-3 tracking-wide">
+        <span class="text-4xl text-[#1e3a8a]">AI</span> Creative Studio
+    </h1>
+
+    <!-- Tab Navigation -->
+    <div class="flex border-b border-gray-200 mb-6">
+        <button id="tab-image" onclick="showTab('image')" class="tab-button active flex-1 py-3 px-4 text-center text-sm font-semibold rounded-t-lg border-b-2 border-transparent hover:bg-gray-100 transition duration-300">
+            🎨 Image Generator
+        </button>
+        <button id="tab-text" onclick="showTab('text')" class="tab-button flex-1 py-3 px-4 text-center text-sm font-semibold text-gray-600 rounded-t-lg border-b-2 border-transparent hover:bg-gray-100 transition duration-300">
+            📝 Text Generator
+        </button>
+        <button id="tab-prompt" onclick="showTab('prompt')" class="tab-button flex-1 py-3 px-4 text-center text-sm font-semibold text-gray-600 rounded-t-lg border-b-2 border-transparent hover:bg-gray-100 transition duration-300">
+            💡 Prompt Assistant
+        </button>
+    </div>
+
+    <!-- Generator Content Panels -->
+    
+    <!-- 1. Image Generator Panel -->
+    <div id="panel-image" class="tab-panel">
+        <p class="text-gray-600 mb-4 text-sm">Use the Imagen model to create high-quality, 16:9 visual content.</p>
+        <div class="mb-6">
+            <label for="imagePrompt" class="block text-sm font-semibold text-gray-700 mb-3">Enter Image Prompt:</label>
+            <textarea id="imagePrompt" rows="4" class="w-full p-4 border border-gray-300 rounded-xl bg-gray-50 focus-accent resize-none text-sm shadow-inner">A magnificent futuristic cityscape at sunset, neon lights reflecting off wet streets, digital painting, 8k resolution.</textarea>
+        </div>
+        <button onclick="generateImage()" id="generateImageBtn" class="w-full btn-primary py-3 rounded-xl text-lg font-bold uppercase tracking-wider">
+            Generate Image
+        </button>
+        <div id="imageLoading" class="mt-8 text-center hidden">
+            <div class="animate-spin rounded-full h-14 w-14 border-4 spinner mx-auto mb-4"></div>
+            <p class="text-gray-600 font-medium text-lg">Rendering your stunning image...</p>
+        </div>
+        <div id="imageResultContainer" class="mt-8 hidden">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Generated Image:</h2>
+            <img id="jobImage" class="w-full h-auto rounded-xl shadow-2xl transition-all duration-300 hover:scale-[1.01]" alt="Generated Visual">
+            <p id="imageErrorText" class="text-red-600 mt-4 hidden font-medium text-center"></p>
+        </div>
+    </div>
+    
+    <!-- 2. Text Generator Panel -->
+    <div id="panel-text" class="tab-panel hidden">
+        <p class="text-gray-600 mb-4 text-sm">Use the Gemini model to draft content, articles, or summaries.</p>
+        <div class="mb-6">
+            <label for="textPrompt" class="block text-sm font-semibold text-gray-700 mb-3">Enter Topic or Request:</label>
+            <textarea id="textPrompt" rows="3" class="w-full p-4 border border-gray-300 rounded-xl bg-gray-50 focus-accent resize-none text-sm shadow-inner">Write a persuasive introduction for a blog post about the benefits of using Next.js for e-commerce sites.</textarea>
+        </div>
+        <button onclick="generateText()" id="generateTextBtn" class="w-full btn-primary py-3 rounded-xl text-lg font-bold uppercase tracking-wider">
+            Generate Text
+        </button>
+        <div id="textLoading" class="mt-8 text-center hidden">
+            <div class="animate-spin rounded-full h-14 w-14 border-4 spinner mx-auto mb-4"></div>
+            <p class="text-gray-600 font-medium text-lg">Drafting your content...</p>
+        </div>
+        <div id="textResultContainer" class="mt-8 hidden">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Generated Content:</h2>
+            <div id="textOutput" class="p-4 border border-gray-300 bg-white rounded-xl shadow-inner text-sm whitespace-pre-wrap min-h-[150px]"></div>
+            <p id="textErrorText" class="text-red-600 mt-4 hidden font-medium text-center"></p>
+        </div>
+    </div>
+    
+    <!-- 3. Prompt Assistant Panel -->
+    <div id="panel-prompt" class="tab-panel hidden">
+        <p class="text-gray-600 mb-4 text-sm">Turn your simple idea into a detailed, high-impact prompt for the Image Generator.</p>
+        <div class="mb-6">
+            <label for="assistantPrompt" class="block text-sm font-semibold text-gray-700 mb-3">Enter Simple Idea:</label>
+            <textarea id="assistantPrompt" rows="3" class="w-full p-4 border border-gray-300 rounded-xl bg-gray-50 focus-accent resize-none text-sm shadow-inner">A cat wearing a wizard hat on a flying carpet.</textarea>
+        </div>
+        <button onclick="generatePrompt()" id="generatePromptBtn" class="w-full btn-primary py-3 rounded-xl text-lg font-bold uppercase tracking-wider">
+            Refine Prompt
+        </button>
+        <div id="promptLoading" class="mt-8 text-center hidden">
+            <div class="animate-spin rounded-full h-14 w-14 border-4 spinner mx-auto mb-4"></div>
+            <p class="text-gray-600 font-medium text-lg">Refining your prompt...</p>
+        </div>
+        <div id="promptResultContainer" class="mt-8 hidden">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Refined Prompt:</h2>
+            <textarea id="promptOutput" rows="5" class="w-full p-4 border border-gray-300 bg-white rounded-xl shadow-inner text-sm resize-none"></textarea>
+            <button onclick="copyToImageTab()" class="mt-3 w-full bg-[#38eae6] text-[#1e3a8a] py-2 rounded-xl font-bold hover:bg-opacity-80 transition">
+                Use in Image Generator
+            </button>
+            <p id="promptErrorText" class="text-red-600 mt-4 hidden font-medium text-center"></p>
+        </div>
+    </div>
+
+    <!-- Attribution -->
+    <div class="mt-8 pt-4 border-t border-gray-200 text-center">
+        <p class="text-xs text-gray-500">
+            Powered by <span class="font-semibold text-[#1e3a8a]">Gemini 2.5</span> & <span class="font-semibold text-[#1e3a8a]">Imagen 3.0</span>
+        </p>
+    </div>
+
+</div>
+
+<script>
+    // --- Global State and Constants ---
+    const MAX_RETRIES = 5;
+    const initialDelay = 1000;
+    const imageModel = "imagen-3.0-generate-002";
+    const textModel = "gemini-2.5-flash-preview-05-20";
+
+
+    // --- Utility Functions ---
+
+    function showTab(tabName) {
+        document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.add('hidden'));
+        document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active', 'bg-[#1e3a8a]', 'text-white'));
+        document.querySelectorAll('.tab-button').forEach(button => button.classList.add('text-gray-600'));
+
+        document.getElementById(`panel-${tabName}`).classList.remove('hidden');
+        const tabButton = document.getElementById(`tab-${tabName}`);
+        tabButton.classList.add('active', 'bg-[#1e3a8a]', 'text-white');
+        tabButton.classList.remove('text-gray-600');
+    }
+
+    async function fetchWithRetry(url, options, retryCount = 0) {
+        try {
+            const response = await fetch(url, options);
+            if (response.status === 429 && retryCount < MAX_RETRIES) {
+                const delay = initialDelay * Math.pow(2, retryCount) + Math.random() * 1000;
+                await new Promise(resolve => setTimeout(resolve, delay));
+                return fetchWithRetry(url, options, retryCount + 1);
+            }
+            if (!response.ok) {
+                 const errorBody = await response.json();
+                 throw new Error(`API call failed with status ${response.status}: ${JSON.stringify(errorBody)}`);
+            }
+            return response;
+        } catch (error) {
+            if (retryCount < MAX_RETRIES) {
+                const delay = initialDelay * Math.pow(2, retryCount) + Math.random() * 1000;
+                await new Promise(resolve => setTimeout(resolve, delay));
+                return fetchWithRetry(url, options, retryCount + 1);
+            }
+            throw new Error(`Fetch failed after ${MAX_RETRIES} attempts: ${error.message}`);
+        }
+    }
+
+
+    // --- 1. Image Generation Logic ---
+
+    async function generateImage() {
+        const promptTextarea = document.getElementById('imagePrompt');
+        const generateBtn = document.getElementById('generateImageBtn');
+        const loading = document.getElementById('imageLoading');
+        const resultContainer = document.getElementById('imageResultContainer');
+        const jobImage = document.getElementById('jobImage');
+        const errorText = document.getElementById('imageErrorText');
+        
+        generateBtn.disabled = true;
+        loading.classList.remove('hidden');
+        resultContainer.classList.add('hidden');
+        errorText.classList.add('hidden');
+        jobImage.src = '';
+        
+        const userPrompt = promptTextarea.value;
+        if (!userPrompt.trim()) {
+            errorText.textContent = "Please enter a descriptive prompt before generating the image.";
+            errorText.classList.remove('hidden');
+            loading.classList.add('hidden');
+            generateBtn.disabled = false;
+            return;
+        }
+
+        const apiKey = "";
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${imageModel}:predict?key=${apiKey}`;
+
+        const payload = { 
+            instances: { 
+                prompt: userPrompt 
+            }, 
+            parameters: { 
+                "sampleCount": 1,
+                "aspectRatio": "16:9",
+                "outputMimeType": "image/jpeg"
+            } 
+        };
+
+        try {
+            const response = await fetchWithRetry(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+            
+            if (result.predictions && result.predictions.length > 0 && result.predictions[0].bytesBase64Encoded) {
+                const base64Data = result.predictions[0].bytesBase64Encoded;
+                const imageUrl = `data:image/jpeg;base64,${base64Data}`;
+                jobImage.src = imageUrl;
+                resultContainer.classList.remove('hidden');
+            } else {
+                errorText.textContent = "Image generation failed: Could not retrieve image data.";
+                errorText.classList.remove('hidden');
+                console.error("API response missing image data:", result);
+            }
+        } catch (error) {
+            errorText.textContent = `Error generating image. Details: ${error.message}`;
+            errorText.classList.remove('hidden');
+            console.error("Image generation error:", error);
+        } finally {
+            loading.classList.add('hidden');
+            generateBtn.disabled = false;
+        }
+    }
+
+
+    // --- 2. Text Generation Logic (Gemini) ---
+
+    async function generateText() {
+        const promptTextarea = document.getElementById('textPrompt');
+        const generateBtn = document.getElementById('generateTextBtn');
+        const loading = document.getElementById('textLoading');
+        const resultContainer = document.getElementById('textResultContainer');
+        const textOutput = document.getElementById('textOutput');
+        const errorText = document.getElementById('textErrorText');
+        
+        generateBtn.disabled = true;
+        loading.classList.remove('hidden');
+        resultContainer.classList.add('hidden');
+        errorText.classList.add('hidden');
+        textOutput.textContent = '';
+
+        const userQuery = promptTextarea.value;
+        if (!userQuery.trim()) {
+            errorText.textContent = "Please enter a topic or request for the text generator.";
+            errorText.classList.remove('hidden');
+            loading.classList.add('hidden');
+            generateBtn.disabled = false;
+            return;
+        }
+
+        const apiKey = "";
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${textModel}:generateContent?key=${apiKey}`;
+        
+        const systemPrompt = "You are a highly creative content writer and professional essayist. Generate compelling, detailed, and well-structured content based on the user's topic or request. Format the output using clean markdown (e.g., bolding titles, using paragraphs).";
+
+        const payload = {
+            contents: [{ parts: [{ text: userQuery }] }],
+            systemInstruction: { parts: [{ text: systemPrompt }] },
+        };
+
+        try {
+            const response = await fetchWithRetry(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+            const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
+
+            if (text) {
+                textOutput.textContent = text;
+                resultContainer.classList.remove('hidden');
+            } else {
+                errorText.textContent = "Text generation failed. Please try a different prompt.";
+                errorText.classList.remove('hidden');
+                console.error("API response missing text data:", result);
+            }
+        } catch (error) {
+            errorText.textContent = `Error generating text. Details: ${error.message}`;
+            errorText.classList.remove('hidden');
+            console.error("Text generation error:", error);
+        } finally {
+            loading.classList.add('hidden');
+            generateBtn.disabled = false;
+        }
+    }
+
+
+    // --- 3. Prompt Assistant Logic (Gemini) ---
+
+    async function generatePrompt() {
+        const promptTextarea = document.getElementById('assistantPrompt');
+        const generateBtn = document.getElementById('generatePromptBtn');
+        const loading = document.getElementById('promptLoading');
+        const resultContainer = document.getElementById('promptResultContainer');
+        const promptOutput = document.getElementById('promptOutput');
+        const errorText = document.getElementById('promptErrorText');
+        
+        generateBtn.disabled = true;
+        loading.classList.remove('hidden');
+        resultContainer.classList.add('hidden');
+        errorText.classList.add('hidden');
+        promptOutput.value = '';
+
+        const userQuery = promptTextarea.value;
+        if (!userQuery.trim()) {
+            errorText.textContent = "Please enter a simple idea to expand into a detailed prompt.";
+            errorText.classList.remove('hidden');
+            loading.classList.add('hidden');
+            generateBtn.disabled = false;
+            return;
+        }
+
+        const apiKey = "";
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${textModel}:generateContent?key=${apiKey}`;
+        
+        const systemPrompt = "You are an expert AI prompt engineer for image generation. Take the user's short, simple idea and expand it into a single, long, detailed, and high-quality prompt suitable for a modern image AI. The prompt must include specific details on style (e.g., cinematic, digital painting, watercolor), lighting (e.g., volumetric, golden hour), resolution, and overall mood. Only output the generated prompt string, no greetings or extra text.";
+
+        const payload = {
+            contents: [{ parts: [{ text: userQuery }] }],
+            systemInstruction: { parts: [{ text: systemPrompt }] },
+        };
+
+        try {
+            const response = await fetchWithRetry(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+            const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
+
+            if (text) {
+                promptOutput.value = text.trim();
+                resultContainer.classList.remove('hidden');
+            } else {
+                errorText.textContent = "Prompt refinement failed. Please try a different idea.";
+                errorText.classList.remove('hidden');
+            }
+        } catch (error) {
+            errorText.textContent = `Error refining prompt. Details: ${error.message}`;
+            errorText.classList.remove('hidden');
+        } finally {
+            loading.classList.add('hidden');
+            generateBtn.disabled = false;
+        }
+    }
+
+    function copyToImageTab() {
+        const refinedPrompt = document.getElementById('promptOutput').value;
+        if (refinedPrompt.trim()) {
+            document.getElementById('imagePrompt').value = refinedPrompt;
+            showTab('image');
+        }
+    }
+
+    // Initialize the application by showing the first tab
+    window.onload = () => {
+        showTab('image');
+    };
+</script>
+
+</body>
+</html>

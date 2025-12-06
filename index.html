@@ -162,7 +162,7 @@
                 /* You'll need to replace 'your-background-image.jpg' with an actual path to an image */
                 /* For example: background-image: url('https://source.unsplash.com/random/1200x800?abstract,technology'); */
                 background-image: url('./media/img/shahadat-rahman-voM1Z9cGPCU-unsplash.jpg'); /* Example: abstract tech */
-                background-size: 250% auto; /* Make it wider than the text to allow sliding */
+                background-size: 150% auto; /* Make it wider than the text to allow sliding */
                 background-repeat: repeat-x;
                 -webkit-background-clip: text; /* Clip the background to the shape of the text */
                 background-clip: text;
@@ -281,7 +281,7 @@
                 <div class="flex-grow flex-column items-center justify-center content-center min-h-screen w-full banner-section">
                     <div class="text-center p-4 md:p-8">
                         <h1 class="animated-text-bg 
-                                text-5xl        /* Small Base Size (Mobile) */
+                                text-6xl        /* Small Base Size (Mobile) */
                                 sm:text-7xl     /* Medium Screens */
                                 md:text-9xl     /* Large Desktops */
                                 lg:text-[12rem] /* Huge for Very Large Screens */
@@ -614,13 +614,12 @@
 
                     <hr class="border-gray-800 w-full max-w-7xl">
                     <a href="https://mksge.itch.io/the-expload-ball" target="_blank" id="demo-popup" 
-                    class="fixed right-0 top-1/4 transform translate-x-full opacity-0 
+                    class="fixed right-0 top-2/4 transform translate-x-full opacity-0 
                             w-40 h-10 bg-lime-500 text-gray-900 shadow-xl border border-lime-600 z-50 
                             transition-all duration-500 ease-in-out font-sans 
-                            flex items-center justify-center 
+                            /* ADDED: Hide by default, show using flex layout on medium screens and up */
+                            hidden md:flex items-center justify-center 
                             hover:shadow-2xl hover:bg-lime-400 
-                            
-                            /* FIX: Apply Rotation and Positioning Directly */
                             -rotate-90 origin-bottom-right translate-y-1/2">
                         
                         <span class="text-sm font-bold tracking-widest uppercase whitespace-nowrap">
@@ -633,10 +632,9 @@
                     class="fixed right-0 bottom-1/4 transform translate-x-full opacity-0 
                             w-40 h-10 bg-fuchsia-500 text-white shadow-xl border border-fuchsia-600 z-50 
                             transition-all duration-500 ease-in-out font-sans 
-                            flex items-center justify-center 
+                            /* ADDED: Hide by default, show using flex layout on medium screens and up */
+                            hidden md:flex items-center justify-center 
                             hover:shadow-2xl hover:bg-fuchsia-400 hover:text-gray-900
-                            
-                            /* FIX: Apply Rotation and Positioning Directly */
                             -rotate-90 origin-bottom-right translate-y-1/2">
                         
                         <span class="text-sm font-bold tracking-widest uppercase whitespace-nowrap">
@@ -886,7 +884,7 @@
                 // --- STICKY RIBBON DELAYED REVEAL LOGIC ---
                 const demoPopup = document.getElementById('demo-popup');
                 const affiliatePopup = document.getElementById('affiliate-popup');
-                const RIBBON_DELAY_MS = 5000; // Standardized to 5 seconds
+                const RIBBON_DELAY_MS = 8000; // Standardized to 8 seconds
 
                 function showPopups() {
                     demoPopup?.classList.remove('opacity-0', 'translate-x-full');

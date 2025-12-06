@@ -116,885 +116,832 @@
           <link rel="dns-prefetch" href="//fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    
           <!-- Apple Touch Icon -->
           <link rel="apple-touch-icon" href="/media/img/M K S.png" sizes="180x180">
         <!-- Stylesheets -->
-        
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/grid.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        
+        <link rel="stylesheet" href="/assets/main.css" />
+      
+       
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/v4-shims.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/v5-font-face.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
 
       
     
       
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-        <style id="theme-style">  header h1, .role {
-            color: #ffffff;
-          }
-        
-          </style>
-        <style>
+        <style id="theme-style"> 
+                @font-face {
+            font-family: 'Exwayer';
+            /* Ensure the path below is correct relative to your CSS file! */
+            src: url('../assets/Exwayer-X3eqa.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /* Optional: Improves font rendering on some browsers */
+            font-display: swap; 
+        }
+        @font-face {
+            font-family: 'TechnoBoard';
+            src: url('../assets/fonts/TechnoBoard-519Ej.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap; 
+        }
           body {
-            font-family: 'Fira Code', monospace;
-            transition: background-color 0.3s, color 0.3s;
+            /* background: linear-gradient(270deg, #1a202c, #2d3748, #1a202c); */
+                background: linear-gradient(270deg, #474747, #7a7a7a, #474747);
           }
-          /* Push content right */
-            body > .flex-grow-1, .main-content {
-              
-            margin-left: 17rem;
-            padding: 1rem;
+            /* This ensures smooth scaling of the logo and text */
+            .logo-image, .logo-text {
+                transition: all 0.3s ease-in-out;
             }
-          .btn-outline-light{
-            color: #000 ;
-            border-color: #000 ;
-            background-color: #fff;
-            transition: background-color 0.3s, color 0.3s;
-          }
-          body.dark {
-            width: 100%;
-            height: 100%;
-            --color: rgba(114, 114, 114, 0.3);
-            background-color: #1d1e22;
-            background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-              linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-            background-size: 55px 55px;
-          }
-      
-          body.light {
-            background-color: #f4f4f4;
-            color: #000;
-            --color: rgba(255, 183, 197, 0.35);
-            background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
-              linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
-            background-size: 55px 55px;
-          }
-      
-          .code-block {
-            padding: 1.5rem;
-            border-radius: 8px;
-           
-            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
-            margin-bottom: 2rem;
-          }
-      
-          .tag {
-            font-weight: bold;
-          }
-      
-          header h1 {
-            color: #569cd6;
-          }
-          
-          .role {
-            font-style: italic;
-            margin-top: 0.5rem;
-          }
-      
-          footer {
-            text-align: center;
-            color: #888;
-            margin-top: 4rem;
-            font-size: 0.9rem;
-          }
-      
-          .language-switch {
-            margin-right: 0.5rem;
-          }
-      
-          #themeToggleBtn {
-            padding: 6px 12px;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-          }
-        
-          #themeIcon {
-            font-size: 1.2rem;
-            margin-right: 8px;
-          }
-
-        </style>
-      </head>
-      <body class="dark d-flex">
-        
-       <!-- Sidebar -->
-       <nav id="sidebar" class="bg-dark text-white p-lg-5 d-flex flex-column justify-content-start">
-
-        <div class="text-center mb-4">
-          <img src="./media/img/M K S.png" alt="Profile Picture" width="150" height="150" class="img-fluid ">
-        </div>
-        <h4 class="text-center mb-4">Menu</h4>
-        <ul class="nav flex-column mt-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
-          <!--<li class="nav-item"><a class="nav-link text-white" href="#goToContact">Contact</a></li>-->
-            <li class="nav-item"><a class="nav-link text-white" href="#test-game">Playable Demo</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-        </ul>
-      
-          
-
-      </nav>
-          <!-- Hamburger Button (Mobile Only) -->
-      
-      <div class="hamburger d-lg-none p-3">
-       
-
-        <button id="mobileMenuToggle" class="btn btn-outline-light" aria-label="Toggle mobile menu">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-          
-      
-
-        <!-- Mobile Off-Canvas Menu -->
-        <div id="mobileMenu" class="offcanvas-menu d-lg-none bg-dark text-white p-4">
-          
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <img src="./media/img/M K S.png" alt="Profile Picture" width="100" height="100" class="img-fluid">
-            <button class="btn text-white fs-2" id="closeMobileMenu" aria-label="Close menu">&times;</button>
-          </div>
-          <h4 class="text-center mb-4">Menu</h4>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#test-game">Playable Demo</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-          </ul>
-        </div>
-
-        <script>
-          const toggleBtn = document.getElementById('mobileMenuToggle');
-          const closeBtn = document.getElementById('closeMobileMenu');
-          const menu = document.getElementById('mobileMenu');
-        
-          toggleBtn.addEventListener('click', () => {
-            menu.classList.add('show');
-          });
-        
-          closeBtn.addEventListener('click', () => {
-            menu.classList.remove('show');
-          });
-        
-          // Optional: close the menu when any link is clicked
-          document.querySelectorAll('#mobileMenu a.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-              menu.classList.remove('show');
-            });
-          });
-        </script>
-        
-       
-
-      
-        <!-- Main Content -->
-        <div class="flex-grow-1 p-4">
-          
+            /* Custom CSS for MKSHISHIR text animation */
+            .animated-text-bg {
+                /* You'll need to replace 'your-background-image.jpg' with an actual path to an image */
+                /* For example: background-image: url('https://source.unsplash.com/random/1200x800?abstract,technology'); */
+                background-image: url('./media/img/shahadat-rahman-voM1Z9cGPCU-unsplash.jpg'); /* Example: abstract tech */
+                background-size: 250% auto; /* Make it wider than the text to allow sliding */
+                background-repeat: repeat-x;
+                -webkit-background-clip: text; /* Clip the background to the shape of the text */
+                background-clip: text;
+                -webkit-text-fill-color: transparent; /* Make the actual text invisible to reveal the background */
+                text-fill-color: transparent; /* Standard property for non-webkit browsers */
+                animation: slideBackground 15s linear infinite; /* Animation name, duration, timing, repetition */
+                font-family: 'Exwayer', sans-serif;
+            }
+          .banner-section {
+                background: linear-gradient(135deg, rgb(0, 0, 0), rgba(255, 255, 255, 0.1)), url('./media/img/nasa-Q1p7bh3SHj8-unsplash.jpg') no-repeat center center;
+                background-size: cover;
 
 
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <!-- Language Toggle -->
-            <div>
-              <button class="btn btn-outline-light language-switch" onclick="setLanguage('en')">🇬🇧 EN</button>
-              <button class="btn btn-outline-light language-switch" onclick="setLanguage('bn')">🇧🇩 BN</button>
-            </div>
-            
-            <!-- Theme Toggle -->
-            
-              <button id="themeToggleBtn" class="btn btn-outline-light" title="Toggle Theme">
-                <i class="fas fa-moon" id="themeIcon"></i>
-                <span id="themeLabel">Dark Mode</span>
-              </button>
-            
-          </div>
-    
-          <div class="code-block">
-           
-            <div class="header" id="about">
-            <span class="title">My Profile</span>
-              <div class="social-preheader d-flex justify-content-center gap-3 py-2">
-            <a href="https://github.com/MuhammadShishir" class="icon-wrapper github" target="_blank" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" class="icon-wrapper linkedin" target="_blank" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-
-            <a href="mailto:info.mkshishir@gmail.com" class="icon-wrapper email" title="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-
-            <a href="https://mksge.itch.io/" class="icon-wrapper itch" target="_blank" title="Itch.io">
-              <i class="fab fa-itch-io"></i>
-            </a>
-            <a href="https://orcid.org/0009-0009-2237-0129" class="icon-wrapper orcid" target="_blank" title="ORCID">
-              <i class="fab fa-orcid"></i>
-            </a>
-            <a href="https://www.behance.net/kamruzzshishir"  class="icon-wrapper behance" target="_blank" title="Behance">
-              <i class="fab fa-behance"></i>      
-            </a>
-          </div>
-          </div>
-
-            <div class="editor-content">
-              <code class="code">
-           <p><span class="color-0">&lt;header</span> <span class="color-2">class</span>=<span class="color-3">"name"</span><span class="color-0">&gt;</span></p>
-            <p class="property"><span class="color-3">// Hi, I am </span></p>
-            <p class="property">
-              
-              <span class="color-1" style="font-size: xx-large;" data-en="Md Kamruzzaman Shishir" data-bn="মোঃ কামরুজ্জামান শিশির"></span>
-             
-            </p>
-
-            <p class="property">
-              <span class="color-2">Role:</span> 
-              <span class="color-1" data-en="IT Specialist, Web Designer and Developer, WordPress, Shopify, Unreal Engine, Computer Enthusiast" 
-                    data-bn="আইটি স্পেশালিস্ট, ওয়েব ডিজাইনার ও ডেভেলপার, ওয়ার্ডপ্রেস, শপিফাই, আনরিয়েল ইঞ্জিন, কম্পিউটার অনুরাগী">
-              </span>
-            </p>
-
-            <p class="property">
-              <span class="color-2">Bio:</span> 
-              <span class="color-1" data-en="I am a passionate developer with a love for technology." 
-                    data-bn="আমি প্রযুক্তির প্রতি ভালোবাসা নিয়ে একজন উত্সাহী ডেভেলপার।">
-              </span>
-            </p>
-
-            <p><span class="color-0">&lt;/header&gt;</span></p>
-
-
-                <p><span class="color-0">&lt;section</span> <span class="color-2">id</span>=<span class="color-3">"about"</span><span class="color-0">&gt;</span> </p>
-
+                padding: 60px 20px; /* Generous top/bottom padding */
                 
-                <p class="property"><span class="color-3">// About Me</span></p>
-                <p class="property">
-                  <span class="color-2">I'm:</span> 
-                  <span class="color-1" data-en="Creative problem solver, tech-savvy, and passionate about development." 
-                        data-bn="সৃজনশীল সমস্যা সমাধানকারী, প্রযুক্তি অনুরাগী এবং ডেভেলপমেন্টের প্রতি আগ্রহী।"></span>
-                </p>
+            }   
+            /* Custom Stylesheet Additions */
 
-                <p class="property">
-                  <span class="color-2">Location:</span> 
-                  <span class="color-1" data-en="Bangladesh" data-bn="বাংলাদেশ"></span>
-                </p>
+            /* 1. Skill Badge Styling */
+            .skill-badge {
+                @apply inline-flex items-center px-4 py-1 text-sm font-medium rounded-full 
+                    border shadow-lg transition duration-500 ease-in-out transform 
+                    hover:scale-[1.02] cursor-default; /* Tailwind classes for look and feel */
+                
+                /* Animation application */
+                animation: fadeIn 0.8s ease-out both; 
+                /* The index will be set by JS if you want sequential appearance, otherwise it will fade in together */
+                will-change: transform, opacity;
+            }
 
-                <p class="property">
-                  <span class="color-2">Email:</span> 
-                  <span class="color-1">info.mkshishir@gmail.com</span>
-                </p>
+            /* 2. Category Block Animation (Optional: Use JavaScript for sequential timing) 
+            For a simple CSS effect, we'll just use the hover state on the block: */
+            .skill-category-block:hover .skill-badge {
+                /* When hovering over the parent block, all badges get a subtle lift */
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); 
+            }
 
-                <p><span class="color-0">&lt;/section&gt;</span></p>
-              </code>
-            </div>
-          </div>
+            /* 3. Keyframe Animation for Dynamic Appearance */
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(10px) scale(0.95);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+            }
 
+            @keyframes slideBackground {
+                from {
+                    background-position: 0% center; /* Start from the left */
+                }
+                to {
+                    background-position: -200% center; /* Slide to the left (2x the width of the background-size) */
+                }
+            }
+          </style>
+       <script src="https://cdn.tailwindcss.com"></script>
+       <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    // Custom extensions if needed, but we'll stick to defaults
+                }
+            }
+        }
+        </script>
+    </head>
+    <body>
 
-      
-          <section id="skills" class="code-block">
-            <span class="tag">// Skills</span><br>
-          
-            <span><span class="span-label">Languages:</span> <span class="value">["HTML", "CSS", "JavaScript", "C", "C++", "Java"]</span></span><br>
-            
-            <span><span class="span-label">Frameworks & CMS:</span> <span class="value">["WordPress", "Bootstrap", "Tailwind", "Shopify", "Wix"]</span></span><br>
-            
-            <span><span class="span-label">Shopify:</span> <span class="value">["Theme Development", "Customization", "AJAX Integration"]</span></span><br>
-            
-            <span><span class="span-label">Server & Hosting:</span> <span class="value">["cPanel", "Softculous", "WHM", "Linux Server", "Hosting Management"]</span></span><br>
-            
-            <span><span class="span-label">Tools:</span> <span class="value">["VS Code", "GitHub", "Gemini", "ChatGpt", "Unreal Engine"]</span></span><br>
-            
-            <span><span class="span-label">Graphics Design:</span> <span class="value">["Canva", "Figma"]</span></span><br>
-            
-            <span><span class="span-label">Networking:</span> <span class="value">["NMap", "Cisco Packet Tracer", "Wireshark"]</span></span><br>
-            
-            <span><span class="span-label">Testing:</span> <span class="value">["JMeter", "Acunetix"]</span></span><br>
-
-            <span><span class="span-label">Project Management:</span> <span class="value">["Jira", "ClickUp"]</span></span><br>
-            
-            <span><span class="span-label">Database:</span> <span class="value">["Oracle", "MySQL", "PhpMyAdmin"]</span></span>
-            
-          </section>
-          
-          <section id="projects" class="code-block">
-            <span class="tag">// Projects</span>
-          
-            <!-- Websites -->
-            <h4 class="mt-4 mb-2"><span class="span-label">Websites:</span></h4>
-          <div class="grid-container" id="websites">
-                      <div class="grid-item">
-                        <a href="prtrade.html">
-                          <img src="./media/img/prt.png" width="100%">
-                          <p>Paul Russells Trade</p>
+        <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div id="nav-inner" class="flex items-center justify-between h-40">
+                    
+                    <div class="flex-shrink-0">
+                        <a href="https://mkshishir.pages.dev" class="flex items-center space-x-3">
+                            <img src="./media/img/M K S.png" alt="Profile Picture" id="profile-pic" class="w-24 h-24 object-cover border-2 border-transparent">
+                            <span class="text-xl font-semibold text-white tracking-wider hidden sm:block">MKShishir Portfolio</span>
                         </a>
-                        <div class="bottom-items">
-                          <span class="description-text">A Website for Paul Russells's Trade platform, b2b Wholesell.</span>
-                          <span class="category-text">Shopify | Development</span>
-                        </div>
-                      </div>
-                      <div class="grid-item">
-                        <a href="luminate.html">
-                          <img src="./media/img/pr.png" width="100%">
-                          <p>Paul Russells</p>
-                        </a>
-                        <div class="bottom-items">
-                          <span class="description-text">A E-commerce retail Website for paul russells with Custom theme "Luminate"</span>
-                          <span class="category-text">Shopify | Development</span>
-                        </div>
-                      </div>
-                      <div class="grid-item">
-                        <a href="https://www.cymaxbd.com/">
-                          <img src="./media/img/cymaxeng.jpg" width="100%">
-                          <p>Cymax Engineering Co</p>
-                        </a>
-                        <div class="bottom-items">
-                          <span class="description-text">A Website for Mechanical and Electrical project and solutions</span>
-                          <span class="category-text">WordPress | Design</span>
-                        </div>
-                      </div>
-                      <div class="grid-item">
-                        <a href="https://veteranfriendlybusinessassociation.com/">
-                          <img src="./media/img/veteran.jpg" width="100%">
-                          <p>VFA</p>
-                        </a>
-                        <div class="bottom-items">
-                          <span class="description-text">A donation website for Veterans</span>
-                          <span class="category-text">WordPress | Design</span>
-                        </div>
-                      </div>
-                      <div class="grid-item">
-                        <a href="4marchive.html">
-                          <img src="./media/img/UI1.png" width="100%">
-                          <p>4mArchive</p>
-                        </a>
-                        <div class="bottom-items">
-                          <span class="description-text">A Project Thesis Publishing Website(Archiving/News etc)</span>
-                          <span class="category-text">WordPress | Design</span>
-                        </div>
-                      </div>
-                      <div class="grid-item">
-                        <a href="/include/glazclone/index.html">
-                          <img src="./media/img/glazw.jpg" width="100%">
-                          <p>Smart Mirror</p>
-                        </a>
-                        <div class="bottom-items">
-                          <span class="description-text">E-commerce website (Smart Mirror) Clone</span>
-                          <span class="category-text">WordPress | Design</span>
-                        </div>
-                      </div>
-                      <div class="grid-item">
-                        <a href="/include/itiotech/index.html">
-                          <img src="./media/img/itiotech.jpg" width="100%">
-                          <p>PC Parts</p>
-                        </a>
-                        <div class="bottom-items">
-                          <span class="description-text">E-commerce website (Technology)</span>
-                          <span class="category-text">WordPress | Design</span>
-                        </div>
-                      </div>
-                      <div class="grid-item">
-                        <a href="portfolio.html">
-                          <img src="./media/img/p.jpg" width="100%">
-                          <p>Portfolio</p>
-                        </a>
-                        <div class="bottom-items">
-                          <span class="description-text">The portfolio website you are watching now</span>
-                          <span class="category-text">HTML/CSS/JS</span>
-                        </div>
-                      </div>
-                      <div class="grid-item">
-                        <a href="psdtohtml.html">
-                          <img src="./media/img/psd.jpg" width="100%">
-                          <p>PSD to HTML</p>
-                        </a>
-                        <div class="bottom-items">
-                          <span class="description-text">PSD to HTML Sample</span>
-                          <span class="category-text">HTML/CSS</span>
-                        </div>
-                      </div>
                     </div>
-                              
-            <!-- Unreal Engine Projects -->
-            <h4 class="mt-5 mb-2"><span class="span-label">Unreal Engine Projects:</span></h4>
-            <div class="grid-container" id="unreal">
-              <div class="grid-item">
-                <a href="Lost in Green Shores.html">
-                  <img src="./media/img/10.webp" width="100%">
-                  <p>Lost in Green Shores</p>
-                </a>
-                <div class="description-text">A Survival Project with many islands</div>
-              </div>
-          
-              <div class="grid-item">
-                <a href="jebyurgth-phantasy.html">
-                  <img src="./media/img/6.webp" width="100%">
-                  <p>Jebbyurgth Phantasy: Tale of Asygarth</p>
-                </a>
-                <div class="description-text">An RPG project with magical fantasy elements</div>
-              </div>
-          
-              <div class="grid-item">
-                <a href="exploading-ball.html">
-                  <img src="./media/img/ball.png" width="100%">
-                  <p>The Exploding Ball</p>
-                </a>
-                <div class="description-text">A weird funny game that plays with human psyche</div>
-              </div>
-          
-              <div class="grid-item">
-                <a href="resurgence.html">
-                  <img src="./media/img/13.webp" width="100%">
-                  <p>Resurgence: Humanity's Last Stand</p>
-                </a>
-                <div class="description-text">A zombie shooter demo</div>
-              </div>
-          
-              <div class="grid-item">
-                <a href="shadow-myst.html">
-                  <img src="./media/img/8.webp" width="100%">
-                  <p>Cursed Blade: Shadow Myst</p>
-                </a>
-                <div class="description-text">A top-down dungeon crawler</div>
-              </div>
+
+                    <div class="hidden md:flex md:space-x-6 lg:space-x-8">
+                        <a href="#about" class="text-gray-300 hover:text-cyan-400 font-medium transition duration-150 ease-in-out">About</a>
+                        <a href="#skills" class="text-gray-300 hover:text-cyan-400 font-medium transition duration-150 ease-in-out">Skills</a>
+                        <a href="#projects" class="text-gray-300 hover:text-cyan-400 font-medium transition duration-150 ease-in-out">Projects</a>
+                        <a href="#" onclick="openContactModal(); return false;" class="text-gray-300 hover:text-cyan-400 font-medium transition duration-150 ease-in-out">Contact</a>
+                        
+                        <a href="gallery.html" class="text-white hover:text-gray-300 font-medium transition duration-150 ease-in-out">Gallery</a>
+                    </div>
+
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" type="button" class="text-white hover:text-gray-300 focus:outline-none p-2 rounded-md transition duration-150 ease-in-out" aria-controls="mobile-menu" aria-expanded="false">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path id="open-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
-          
-            <!-- Other Projects -->
-            <h4 class="mt-5 mb-2"><span class="span-label">Other Projects:</span></h4>
-            <div class="grid-container" id="other">
-              <div class="grid-item">
-                <a href="pdf-to-html-css.html">
-                  <img src="./media/img/logo.png" width="100%">
-                  <p>PDF to HTML CSS</p>
-                </a>
-                <div class="description-text">Example of PDF to HTML conversion</div>
-              </div>
-          
-              <div class="grid-item">
-                <a href="result-management-system.html">
-                  <img src="./media/img/rESULT.png" width="100%">
-                  <p>Result Management System</p>
-                </a>
-                <div class="description-text">A Java Swing app for calculating results</div>
-              </div>
-          
-              <div class="grid-item">
-                <a href="github-projects.html">
-                  <img src="./media/img/GitHub-Logo.png" width="100%">
-                  <p>Find More on GitHub</p>
-                </a>
-                <div class="description-text">Find me in GitHub</div>
-              </div>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 transition duration-150 ease-in-out">About</a>
+                    <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 transition duration-150 ease-in-out">Skills</a>
+                    <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 transition duration-150 ease-in-out">Projects</a>
+                    <a href="#" onclick="openContactModal(); return false;" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 transition duration-150 ease-in-out">Contact</a>
+                    <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 transition duration-150 ease-in-out">Gallery</a>
+                </div>
             </div>
-          </section>
-           <!-- <section id="contact" class="code-block">
-            <span class="tag">// Contact</span>
-          
-            
-          <div class="mb-4 d-flex flex-column gap-2">
-              <a href="https://mksge.itch.io/" target="_blank" class="contact-link">
-                <i class="fa fa-globe"></i> Itch.io Page
-              </a>
-              <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" target="_blank" class="contact-link">
-                <i class="fab fa-linkedin"></i> LinkedIn
-              </a>
-              <a href="https://github.com/MuhammadShishir" target="_blank" class="contact-link">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="mailto:mdkamruzzaman.shishir@outlook.com" class="contact-link">
-                <i class="fa fa-envelope"></i> Send Mail
-              </a>
-            </div>
-          </section> -->
-          <section id="test-game" class="code-block">
-            <span class="tag">// Playable Demo</span>
-          
-            <div class="text-center mt-4">
-              <p class="value mb-3">
-                <span data-en="🎮 Test out one of my mini mind-bending Unreal Engine games below — " data-bn="🎮 আনরিয়েল ইঞ্জিন দিয়ে বানানো আমার একটি ছোট অসাধারণ গেইম টেস্ট করুন  — "></span><strong>"The Exploding Ball"</strong>. 
-                <span data-en="It’s weird. It's funny. It’s chaos in a click." data-bn="এটি আজিব। এটি মজাদার। একটি ক্লিকেই বুম"></span>
-              </p>
-          
-              <div class="game-embed-wrapper mb-4">
-                <iframe
-                  frameborder="0"
-                  src="https://itch.io/embed/1916359?linkback=true&amp;bg_color=001&amp;fg_color=fff&amp;link_color=a221a8&amp;border_color=ffffff"
-                  width="560"
-                  height="175"
-                  style="max-width: 100%; border-radius: 8px; box-shadow: 0 0 12px rgba(0,255,255,0.15);">
-                  <a href="https://mksge.itch.io/the-expload-ball">The Exploding Ball by MKS Entertainment</a>
-                </iframe>
-              </div>
-          
-              <a href="https://mksge.itch.io/the-expload-ball" target="_blank" class="play-now-btn">
-                ▶ PLAY NOW
-              </a>
-          
-              <p class="description-text mt-3"><span data-en="Built with Unreal Engine. Expect chaos 💥" data-bn="আনরিয়েল ইঞ্জিন দিয়ে তৈরি, খুবি জোস 💥"></span></p>
-            </div>
-          </section>
-          <section id="advertisement" class="code-block">
-            
-          
-            
-              <span class="tag" >// Advertisement</span>
-              
-             
-              
-          <div class="text-center mt-4">
-             <p class="value mb-3">
-                <span data-en="Need reliable web hosting or domain registration? Check out my affiliate link for a great deal!" data-bn="বিশ্বস্ত ওয়েব হোস্টিং বা ডোমেইন রেজিস্ট্রেশন প্রয়োজন? দারুন অফারের জন্য আমার অ্যাফিলিয়েট লিঙ্ক দেখুন!"></span>
-              </p>  
-              <a href="https://clients.itnuthosting.com/aff.php?aff=784" target="_blank" class="affiliate-button">
-                Web Hosting & Domain Registration
-              </a>
-            </div>
-            
-            <div class="text-center mt-3">
-              <p class="description-text small">
-                <span data-en="Use my affiliate link to get a great deal on web hosting and domain registration." data-bn="ওয়েব হোস্টিং এবং ডোমেইন রেজিস্ট্রেশনে দারুন অফার পেতে আমার অ্যাফিলিয়েট লিঙ্ক ব্যবহার করুন।"></span>
-              </p>
-            </div>
+        </nav>
+
+        <main class="min-h-screen text-grey flex flex-col items-center">
+
+                <div class="flex-grow flex-column items-center justify-center content-center min-h-screen w-full banner-section">
+                    <div class="text-center p-4 md:p-8">
+                        <h1 class="animated-text-bg 
+                                text-5xl        /* Small Base Size (Mobile) */
+                                sm:text-7xl     /* Medium Screens */
+                                md:text-9xl     /* Large Desktops */
+                                lg:text-[12rem] /* Huge for Very Large Screens */
+                                font-extrabold mb-4 leading-none">
+                            MKSHISHIR
+                        </h1>
+                        <h2 class="text-lg          /* Small Base Size (Mobile) */
+                                sm:text-xl
+                                md:text-3xl
+                                lg:text-5xl 
+                                font-semibold text-gray-300 mt-4">
+                            IT Specialist | Web Developer
+                        </h2>
+                    </div>
                 
-          </section>
-          <footer class="footer mt-5 text-center">
-            <div class="footer-content">
-              
-          
-              <div class="footer-icons d-flex justify-content-center gap-3 mb-2">
-          
-                <a href="https://github.com/MuhammadShishir" class="icon-wrapper github" target="_blank" title="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-          
-                <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" class="icon-wrapper linkedin" target="_blank" title="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-          
-                <a href="mailto:info.mkshishir@gmail.com" class="icon-wrapper email" title="Email">
-                  <i class="fas fa-envelope"></i>
-                </a>
-          
-                <a href="https://mksge.itch.io/" class="icon-wrapper itch" target="_blank" title="Itch.io">
-                  <i class="fab fa-itch-io"></i>
-                </a>
-                <a href="https://orcid.org/0009-0009-2237-0129" class="icon-wrapper orcid" target="_blank" title="ORCID">
-                  <i class="fab fa-orcid"></i>
-                </a>
-                <a href="https://www.behance.net/kamruzzshishir"  class="icon-wrapper behance" target="_blank" title="Behance">
-                  <i class="fab fa-behance"></i>      
-                </a>
-              </div>
-              <br>
-              <p class="mb-2">&copy; 2025 <strong>Md Kamruzzaman Shishir</strong></p>
-              <p class="description-text small">// Built with 💻, ☕, and 🚀</p>
-            </div>
-          </footer>
-          
-          
-        </div>
-         <!-- Tailwind CSS CDN - Include this in your <head> if not already present -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            /* Transparent and blurry background */
-            background-color: rgba(0, 0, 0, 0.5); /* More transparent overlay */
-            backdrop-filter: blur(8px); /* Blur effect */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.4s ease, visibility 0.4s ease;
-        }
-        .modal-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        .modal-content {
-            background-color: rgba(26, 32, 44, 0.9); /* Slightly transparent dark background for content */
-            color: #e2e8f0;
-            padding: 2.5rem; /* Increased padding */
-            border-radius: 1.5rem; /* More rounded corners */
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); /* Stronger shadow */
-            max-width: 90%;
-            width: 450px; /* Slightly wider */
-            position: relative;
-            transform: translateY(-30px) scale(0.95); /* More pronounced initial offset and scale */
-            transition: transform 0.4s ease;
-            border: 1px solid rgba(71, 85, 105, 0.3); /* Subtle border for depth */
-        }
-        .modal-overlay.show .modal-content {
-            transform: translateY(0) scale(1); /* Slide and scale into place */
-        }
-        .close-button {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: none;
-            font-size: 1.8rem; /* Larger close button */
-            color: #cbd5e0;
-            cursor: pointer;
-            transition: color 0.2s ease, transform 0.2s ease;
-        }
-        .close-button:hover {
-            color: #ffffff;
-            transform: rotate(90deg); /* Spin effect on hover */
-        }
-        .affiliate-button {
-            display: inline-block;
-            padding: 1rem 2.5rem; /* More padding for a larger button */
-            border-radius: 9999px; /* Fully rounded pill shape */
-            background: linear-gradient(90deg, #63b3ed, #4299e1); /* Gradient background */
-            color: white;
-            font-weight: 700; /* Bolder text */
-            text-decoration: none;
-            box-shadow: 0 5px 15px rgba(66, 153, 225, 0.4); /* Blue shadow */
-            transition: all 0.3s ease;
-            text-transform: uppercase; /* Uppercase text */
-            letter-spacing: 0.05em; /* Slight letter spacing */
-        }
-        .affiliate-button:hover {
-            background: linear-gradient(90deg, #4299e1, #63b3ed); /* Reverse gradient on hover */
-            box-shadow: 0 8px 20px rgba(66, 153, 225, 0.6); /* Stronger shadow on hover */
-            transform: translateY(-2px); /* Slight lift effect */
-        }
-        .affiliate-banner img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 0.75rem; /* Rounded corners for the banner */
-            margin-bottom: 1.5rem; /* Space below the banner */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-    </style>
-
-    <!-- The Pop-up Modal Structure -->
-    <div id="affiliateModal" class="modal-overlay">
-        <div class="modal-content">
-            <button class="close-button" id="closeModal">&times;</button>
-            <h2 class="text-3xl font-extrabold mb-4 text-center text-blue-400">
-                Unlock Your Online Presence! 🚀
-            </h2>
-            <p class="text-center mb-6 text-lg text-gray-300">
-                Ready to launch your website? Get reliable domain & hosting!
-            </p>
-            <div class="affiliate-banner text-center mb-6">
-                <a href="https://clients.itnuthosting.com/aff.php?aff=784" target="_blank" rel="noopener">
-                    <img src="https://itnutaff.b-cdn.net/banner/300x250.gif" alt="ITNut Hosting Banner">
-                </a>
-            </div>
-            <div class="text-center">
-                <a href="https://clients.itnuthosting.com/aff.php?aff=784" target="_blank" class="affiliate-button">
-                    Secure Your Spot Now!
-                </a>
-            </div>
-            <p class="text-xs text-gray-400 mt-4 text-center">
-                (This is an affiliate link and we may earn a commission.)
-            </p>
-        </div>
-    </div>
-
-    <script>
-        // Get references to the modal and close button
-        const affiliateModal = document.getElementById('affiliateModal');
-        const closeModalButton = document.getElementById('closeModal');
-
-        // Function to show the modal
-        function showModal() {
-            affiliateModal.classList.add('show');
-        }
-
-        // Function to hide the modal
-        function hideModal() {
-            affiliateModal.classList.remove('show');
-        }
-
-        // Show the modal when the page loads
-        window.onload = showModal;
-
-        // Hide the modal when the close button is clicked
-        closeModalButton.addEventListener('click', hideModal);
-
-        // Optional: Hide the modal if the user clicks outside the content
-        affiliateModal.addEventListener('click', (event) => {
-            if (event.target === affiliateModal) {
-                hideModal();
-            }
-        });
-    </script>
-
+                
+                
+                </div>
             
+                <div class="flex flex-col items-center justify-center w-full">
+                    
+                    <!-- About Me Section -->
+                    <section id="about" class="py-16 md:py-24 bg-gray-950 w-full text-center">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            
+                            <h3 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-10 border-b-2 border-cyan-600 pb-3 custom-glow-text inline-block">
+                                // About Me <span class="blinking-cursor">|</span>
+                            </h3>
 
-        <!-- JS for Language and Theme -->
-        <script>
-          function setLanguage(lang) {
-            document.querySelectorAll('[data-en]').forEach(el => {
-              el.textContent = el.dataset[lang];
-            });
-          }
-        
-          const themeBtn = document.getElementById('themeToggleBtn');
-          const themeIcon = document.getElementById('themeIcon');
-          const themeLabel = document.getElementById('themeLabel');
-          const styleTag = document.getElementById('theme-style');
-        
-          const darkTheme = `
-            body.dark { background-color: #1e1e1e; color: #d4d4d4; }
-            .code-block {  background-color: #1d1e22;}
-            .tag { color: #ce9178; }
-            .span-label { color: #569cd6; }
-            .value { color: #dcdcaa; }
-          `;
-        
-          const lightTheme = `
-            body.light { background-color: #f4f4f4; color: #1e1e1e; }
-            .code-block { background-color: #ffffff; }
-            .tag { color: #c71585; }
-            .span-label { color: #005cc5; }
-            .value { color: #22863a; }
-          `;
-        
-          let isDark = true;
-        
-          themeBtn.addEventListener('click', () => {
-            isDark = !isDark;
-            document.body.classList.toggle('dark', isDark);
-            document.body.classList.toggle('light', !isDark);
-            styleTag.textContent = isDark ? darkTheme : lightTheme;
-            themeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
-            themeLabel.textContent = isDark ? 'Dark Mode' : 'Light Mode';
-          });
-        
-          // Set default theme
-          document.body.classList.add('dark');
-          styleTag.textContent = darkTheme;
-        
-          // 👇 Automatically set default language to English
-          window.addEventListener('DOMContentLoaded', () => {
-            setLanguage('en');
-          });
-        </script>
-        
+                            <!-- The following div contains structured data, keeping it left-aligned within the centered container for readability. -->
+                            <div class="space-y-6 md:space-y-8 font-mono text-left max-w-4xl mx-auto">
+                                <p class="text-xl md:text-2xl font-light text-gray-500 leading-snug code-comment text-center">
+                                    // Hi, I am Md Kamruzzaman Shishir
+                                </p>
 
-        <!-- External Scripts -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                                <p id="typewriter-output" class="text-3xl md:text-4xl font-extrabold text-lime-400 code-line-value text-center">
+                                    <!-- Placeholder for typewriter text -->
+                                </p>
+                                
+                                <div class="space-y-4 pt-6 border-t border-gray-800">
+                                    
+                                    <div class="flex flex-col md:flex-row items-start code-line">
+                                        <span class="text-lg md:text-xl font-semibold text-fuchsia-400 md:w-40 flex-shrink-0 code-prop-key">Role:</span>
+                                        <span class="text-lg md:text-xl text-gray-300 hover-line-highlight">
+                                            IT Specialist, Web Designer and Developer, WordPress, Shopify, Unreal Engine, Computer Enthusiast
+                                        </span>
+                                    </div>
 
-        
-        <!-- Floating Button Container -->
-        <div class="go-to-top-container">
+                                    <div class="flex flex-col md:flex-row items-start code-line">
+                                        <span class="text-lg md:text-xl font-semibold text-fuchsia-400 md:w-40 flex-shrink-0 code-prop-key">I'm:</span>
+                                        <span class="text-lg md:text-xl text-gray-300 hover-line-highlight">
+                                            Creative problem solver, tech-savvy, and passionate about development.
+                                        </span>
+                                    </div>
 
-          <!-- Go Home Button -->
-          <a href="index.html" class="go-home" title="Back to Home">
-            <i class="fas fa-home"></i>
-          </a>
+                                    <div class="flex flex-col md:flex-row items-start code-line">
+                                        <span class="text-lg md:text-xl font-semibold text-fuchsia-400 md:w-40 flex-shrink-0 code-prop-key">Email:</span>
+                                        <a href="mailto:info.mkshishir@gmail.com" class="text-lg md:text-xl text-cyan-400 hover-line-highlight hover:underline">
+                                            info.mkshishir@gmail.com
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="flex flex-col md:flex-row items-start code-line">
+                                        <span class="text-lg md:text-xl font-semibold text-fuchsia-400 md:w-40 flex-shrink-0 code-prop-key">Location:</span>
+                                        <span class="text-lg md:text-xl text-gray-300 hover-line-highlight">
+                                            Bangladesh
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-          <!-- Contact Button -->
-          <div class="go-contact" id="goToContact" title="Contact Me">
-            <i class="fa-solid fa-comments"></i>
-          </div>
+                    <hr class="border-gray-800 w-full max-w-7xl">
 
-          <!-- Go to Top Button -->
-          <div class="go-to-top" id="goToTop" title="Back to Top">
-            <i class="fas fa-arrow-up"></i>
-          </div>
+                    <!-- Skills Section -->
+                <section id="skills" class="py-16 md:py-24 bg-gray-950 w-full text-center">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-mono">
+                            <h3 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-10 border-b-2 border-cyan-600 pb-3 custom-glow-text inline-block">// Core Competencies</h3>
+                            
+                            <div class="space-y-12 text-left max-w-5xl mx-auto">
 
+                                <div class="skill-category-block group">
+                                    <h4 class="text-3xl font-bold text-fuchsia-400 mb-6 code-prop-key transition-colors duration-500 group-hover:text-fuchsia-300">
+                                        <span class="mr-3">💻</span> Web Development & Programming
+                                    </h4>
+                                    <div class="flex flex-wrap gap-3">
+                                        <span class="skill-badge bg-fuchsia-800/30 text-fuchsia-300 border-fuchsia-500/50 hover:bg-fuchsia-700/50">HTML & CSS</span>
+                                        <span class="skill-badge bg-fuchsia-800/30 text-fuchsia-300 border-fuchsia-500/50 hover:bg-fuchsia-700/50">JavaScript</span>
+                                        <span class="skill-badge bg-fuchsia-800/30 text-fuchsia-300 border-fuchsia-500/50 hover:bg-fuchsia-700/50">C/C++ & Java</span>
+                                        <span class="skill-badge bg-fuchsia-800/30 text-fuchsia-300 border-fuchsia-500/50 hover:bg-fuchsia-700/50">Bootstrap</span>
+                                        <span class="skill-badge bg-fuchsia-800/30 text-fuchsia-300 border-fuchsia-500/50 hover:bg-fuchsia-700/50">Tailwind CSS</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category-block group">
+                                    <h4 class="text-3xl font-bold text-lime-400 mb-6 code-prop-key transition-colors duration-500 group-hover:text-lime-300">
+                                        <span class="mr-3">🛒</span> E-commerce & CMS Expertise
+                                    </h4>
+                                    <div class="flex flex-wrap gap-3">
+                                        <span class="skill-badge bg-lime-800/30 text-lime-300 border-lime-500/50 hover:bg-lime-700/50">Shopify Theme Dev</span>
+                                        <span class="skill-badge bg-lime-800/30 text-lime-300 border-lime-500/50 hover:bg-lime-700/50">Shopify AJAX Integration</span>
+                                        <span class="skill-badge bg-lime-800/30 text-lime-300 border-lime-500/50 hover:bg-lime-700/50">WordPress Design</span>
+                                        <span class="skill-badge bg-lime-800/30 text-lime-300 border-lime-500/50 hover:bg-lime-700/50">Bug Fixing</span>
+                                        <span class="skill-badge bg-lime-800/30 text-lime-300 border-lime-500/50 hover:bg-lime-700/50">Wix/Webflow</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category-block group">
+                                    <h4 class="text-3xl font-bold text-cyan-400 mb-6 code-prop-key transition-colors duration-500 group-hover:text-cyan-300">
+                                        <span class="mr-3">💾</span> Infrastructure & Database Management
+                                    </h4>
+                                    <div class="flex flex-wrap gap-3">
+                                        <span class="skill-badge bg-cyan-800/30 text-cyan-300 border-cyan-500/50 hover:bg-cyan-700/50">cPanel / WHM</span>
+                                        <span class="skill-badge bg-cyan-800/30 text-cyan-300 border-cyan-500/50 hover:bg-cyan-700/50">Linux Server Admin</span>
+                                        <span class="skill-badge bg-cyan-800/30 text-cyan-300 border-cyan-500/50 hover:bg-cyan-700/50">MySQL / PhpMyAdmin</span>
+                                        <span class="skill-badge bg-cyan-800/30 text-cyan-300 border-cyan-500/50 hover:bg-cyan-700/50">Oracle Database</span>
+                                        <span class="skill-badge bg-cyan-800/30 text-cyan-300 border-cyan-500/50 hover:bg-cyan-700/50">Hosting Management</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category-block group">
+                                    <h4 class="text-3xl font-bold text-orange-400 mb-6 code-prop-key transition-colors duration-500 group-hover:text-orange-300">
+                                        <span class="mr-3">🛠️</span> Specialized Tools & IT Operations
+                                    </h4>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div class="space-y-3">
+                                            <p class="text-lg text-gray-300 hover-line-highlight"><strong class="text-orange-400">Networking:</strong> NMap, Wireshark, Cisco Packet Tracer</p>
+                                            <p class="text-lg text-gray-300 hover-line-highlight"><strong class="text-orange-400">Testing & QA:</strong> JMeter, Acunetix</p>
+                                            <p class="text-lg text-gray-300 hover-line-highlight"><strong class="text-orange-400">Project Management:</strong> Jira, ClickUp</p>
+                                        </div>
+                                        <div class="space-y-3">
+                                            <p class="text-lg text-gray-300 hover-line-highlight"><strong class="text-orange-400">Design & Media:</strong> Canva, Figma, Unreal Engine</p>
+                                            <p class="text-lg text-gray-300 hover-line-highlight"><strong class="text-orange-400">Version Control:</strong> VS Code, GitHub</p>
+                                            <p class="text-lg text-gray-300 hover-line-highlight"><strong class="text-orange-400">AI Assistants:</strong> Gemini, ChatGPT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="border-gray-800 w-full max-w-7xl">
+
+                    <!-- Projects Section -->
+                    <section id="projects" class="py-16 md:py-24 bg-gray-950 w-full text-center">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <h3 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-10 border-b-2 border-cyan-600 pb-3 custom-glow-text inline-block">// Projects</h3>
+
+                            <h4 class="text-2xl font-bold text-white mt-8 mb-4 border-b border-gray-700 pb-2">Websites:</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="websites">
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
+                                    <a href="prtrade.html" class="block">
+                                        <img src="./media/img/prt.png" width="100%" alt="Paul Russells Trade Website" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Paul Russells Trade</p>
+                                    </a>
+                                    <div class="mt-2 space-y-1">
+                                        <span class="text-sm text-gray-400 block">A Website for Paul Russells's Trade platform, b2b Wholesell.</span>
+                                        <span class="text-xs font-mono text-cyan-400 block">Shopify | Development</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
+                                    <a href="luminate.html" class="block">
+                                        <img src="./media/img/pr.png" width="100%" alt="Paul Russells E-commerce Website" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Paul Russells</p>
+                                    </a>
+                                    <div class="mt-2 space-y-1">
+                                        <span class="text-sm text-gray-400 block">A E-commerce retail Website for paul russells with Custom theme "Luminate"</span>
+                                        <span class="text-xs font-mono text-cyan-400 block">Shopify | Development</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
+                                    <a href="https://www.cymaxbd.com/" class="block" target="_blank">
+                                        <img src="./media/img/cymaxeng.jpg" width="100%" alt="Cymax Engineering Co Website" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Cymax Engineering Co</p>
+                                    </a>
+                                    <div class="mt-2 space-y-1">
+                                        <span class="text-sm text-gray-400 block">A Website for Mechanical and Electrical project and solutions</span>
+                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
+                                    <a href="https://veteranfriendlybusinessassociation.com/" class="block" target="_blank">
+                                        <img src="./media/img/veteran.jpg" width="100%" alt="Veteran Friendly Business Association Website" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">VFA</p>
+                                    </a>
+                                    <div class="mt-2 space-y-1">
+                                        <span class="text-sm text-gray-400 block">A donation website for Veterans</span>
+                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
+                                    <a href="4marchive.html" class="block">
+                                        <img src="./media/img/UI1.png" width="100%" alt="4mArchive Thesis Publishing Website" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">4mArchive</p>
+                                    </a>
+                                    <div class="mt-2 space-y-1">
+                                        <span class="text-sm text-gray-400 block">A Project Thesis Publishing Website(Archiving/News etc)</span>
+                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
+                                    <a href="/include/glazclone/index.html" class="block">
+                                        <img src="./media/img/glazw.jpg" width="100%" alt="Smart Mirror E-commerce Clone" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Smart Mirror</p>
+                                    </a>
+                                    <div class="mt-2 space-y-1">
+                                        <span class="text-sm text-gray-400 block">E-commerce website (Smart Mirror) Clone</span>
+                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
+                                    <a href="/include/itiotech/index.html" class="block">
+                                        <img src="./media/img/itiotech.jpg" width="100%" alt="PC Parts E-commerce Website" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">PC Parts</p>
+                                    </a>
+                                    <div class="mt-2 space-y-1">
+                                        <span class="text-sm text-gray-400 block">E-commerce website (Technology)</span>
+                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
+                                    <a href="portfolio.html" class="block">
+                                        <img src="./media/img/p.jpg" width="100%" alt="Portfolio Website" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Portfolio</p>
+                                    </a>
+                                    <div class="mt-2 space-y-1">
+                                        <span class="text-sm text-gray-400 block">The portfolio website you are watching now</span>
+                                        <span class="text-xs font-mono text-cyan-400 block">HTML/CSS/JS</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
+                                    <a href="psdtohtml.html" class="block">
+                                        <img src="./media/img/psd.jpg" width="100%" alt="PSD to HTML Sample" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">PSD to HTML</p>
+                                    </a>
+                                    <div class="mt-2 space-y-1">
+                                        <span class="text-sm text-gray-400 block">PSD to HTML Sample</span>
+                                        <span class="text-xs font-mono text-cyan-400 block">HTML/CSS</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <h4 class="text-2xl font-bold text-white mt-10 mb-4 border-b border-gray-700 pb-2">Unreal Engine Projects:</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="unreal">
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
+                                    <a href="Lost in Green Shores.html" class="block">
+                                        <img src="./media/img/10.webp" width="100%" alt="Lost in Green Shores Game" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">Lost in Green Shores</p>
+                                    </a>
+                                    <span class="text-sm text-gray-400 block mt-2">A Survival Project with many islands</span>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
+                                    <a href="jebyurgth-phantasy.html" class="block">
+                                        <img src="./media/img/6.webp" width="100%" alt="Jebbyurgth Phantasy RPG" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">Jebbyurgth Phantasy: Tale of Asygarth</p>
+                                    </a>
+                                    <span class="text-sm text-gray-400 block mt-2">An RPG project with magical fantasy elements</span>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
+                                    <a href="exploading-ball.html" class="block">
+                                        <img src="./media/img/ball.png" width="100%" alt="The Exploding Ball Game" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">The Exploding Ball</p>
+                                    </a>
+                                    <span class="text-sm text-gray-400 block mt-2">A weird funny game that plays with human psyche</span>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
+                                    <a href="resurgence.html" class="block">
+                                        <img src="./media/img/13.webp" width="100%" alt="Resurgence Zombie Shooter Demo" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">Resurgence: Humanity's Last Stand</p>
+                                    </a>
+                                    <span class="text-sm text-gray-400 block mt-2">A zombie shooter demo</span>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
+                                    <a href="shadow-myst.html" class="block">
+                                        <img src="./media/img/8.webp" width="100%" alt="Cursed Blade: Shadow Myst Dungeon Crawler" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">Cursed Blade: Shadow Myst</p>
+                                    </a>
+                                    <span class="text-sm text-gray-400 block mt-2">A top-down dungeon crawler</span>
+                                </div>
+
+                            </div>
+
+                            <h4 class="text-2xl font-bold text-white mt-10 mb-4 border-b border-gray-700 pb-2">Other Projects:</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="other">
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:bg-gray-700/50 group">
+                                    <a href="pdf-to-html-css.html" class="block">
+                                        <img src="./media/img/logo.png" width="100%" alt="PDF to HTML CSS Conversion" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-cyan-400">PDF to HTML CSS</p>
+                                    </a>
+                                    <span class="text-sm text-gray-400 block mt-2">Example of PDF to HTML conversion</span>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:bg-gray-700/50 group">
+                                    <a href="result-management-system.html" class="block">
+                                        <img src="./media/img/rESULT.png" width="100%" alt="Result Management System App" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-cyan-400">Result Management System</p>
+                                    </a>
+                                    <span class="text-sm text-gray-400 block mt-2">A Java Swing app for calculating results</span>
+                                </div>
+
+                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:bg-gray-700/50 group">
+                                    <a href="github-projects.html" class="block">
+                                        <img src="./media/img/GitHub-Logo.png" width="100%" alt="GitHub Link" class="rounded-md object-cover h-48 w-full">
+                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-cyan-400">Find More on GitHub</p>
+                                    </a>
+                                    <span class="text-sm text-gray-400 block mt-2">Find me in GitHub</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="border-gray-800 w-full max-w-7xl">
+                    <a href="https://mksge.itch.io/the-expload-ball" target="_blank" id="demo-popup" 
+                    class="fixed right-0 top-1/4 transform translate-x-full opacity-0 
+                            w-40 h-10 bg-lime-500 text-gray-900 shadow-xl border border-lime-600 z-50 
+                            transition-all duration-500 ease-in-out font-sans 
+                            flex items-center justify-center 
+                            hover:shadow-2xl hover:bg-lime-400 
+                            
+                            /* FIX: Apply Rotation and Positioning Directly */
+                            -rotate-90 origin-bottom-right translate-y-1/2">
+                        
+                        <span class="text-sm font-bold tracking-widest uppercase whitespace-nowrap">
+                            🎮 Quick Demo
+                        </span>
+                        
+                    </a>
+
+                    <a href="https://clients.itnuthosting.com/aff.php?aff=784" target="_blank" id="affiliate-popup" 
+                    class="fixed right-0 bottom-1/4 transform translate-x-full opacity-0 
+                            w-40 h-10 bg-fuchsia-500 text-white shadow-xl border border-fuchsia-600 z-50 
+                            transition-all duration-500 ease-in-out font-sans 
+                            flex items-center justify-center 
+                            hover:shadow-2xl hover:bg-fuchsia-400 hover:text-gray-900
+                            
+                            /* FIX: Apply Rotation and Positioning Directly */
+                            -rotate-90 origin-bottom-right translate-y-1/2">
+                        
+                        <span class="text-sm font-bold tracking-widest uppercase whitespace-nowrap">
+                            🔗 Hosting DEAL
+                        </span>
+                        
+                    </a>
+                </div>
+        </main>
+ 
+        <footer class="bg-gray-900 py-12 md:py-16 border-t border-cyan-600/50 font-mono">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-4">// Ready to Collaborate?</h3>
+                    <a href="mailto:info.mkshishir@gmail.com" 
+                    class="inline-flex items-center px-6 py-3 text-lg font-semibold bg-fuchsia-600 text-white rounded-lg 
+                            hover:bg-fuchsia-500 transition duration-300 shadow-xl shadow-fuchsia-500/30">
+                        <i class="fas fa-envelope mr-3"></i> 
+                        info.mkshishir@gmail.com
+                    </a>
+                </div>
+
+                <hr class="border-gray-800 my-10">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+                    
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2">Md Kamruzzaman Shishir</h4>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Web Developer, IT Specialist & Unreal Engine Enthusiast.
+                        </p>
+                        <a href="#" onclick="openContactModal(); return false;" class="text-fuchsia-400 hover:text-fuchsia-300 text-sm font-semibold transition duration-300">// Get in touch</a>
+                    </div>
+
+                    <div class="md:col-span-1">
+                        <h4 class="text-lg font-bold text-cyan-400 mb-4">Connect Here</h4>
+                        <div class="flex flex-wrap justify-center md:justify-start gap-4 text-2xl text-gray-400">
+                            <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" target="_blank" title="LinkedIn" class="hover:text-cyan-400 transition duration-200"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/MuhammadShishir" target="_blank" title="GitHub" class="hover:text-cyan-400 transition duration-200"><i class="fab fa-github"></i></a>
+                            <a href="https://muhammadshishir.github.io/" target="_blank" title="Portfolio" class="hover:text-cyan-400 transition duration-200"><i class="fas fa-globe"></i></a>
+                            <a href="https://mksge.itch.io/" target="_blank" title="Itch.io" class="hover:text-cyan-400 transition duration-200"><i class="fab fa-itch-io"></i></a>
+                            <a href="https://www.behance.net/kamruzzshishir" target="_blank" title="Behance" class="hover:text-cyan-400 transition duration-200"><i class="fab fa-behance"></i></a>
+                            <a href="https://www.kaggle.com/mdkamruzzamanshishir" target="_blank" title="Kaggle" class="hover:text-cyan-400 transition duration-200"><i class="fab fa-kaggle"></i></a>
+                            <a href="https://orcid.org/0009-0009-2237-0129" target="_blank" title="ORCID" class="hover:text-cyan-400 transition duration-200"><i class="fab fa-orcid"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <h4 class="text-lg font-bold text-cyan-400 mb-4">Quick Links</h4>
+                        <ul class="text-sm space-y-2 text-gray-400">
+                            <li><a href="#about" class="hover:text-fuchsia-400 transition duration-200">About Me</a></li>
+                            <li><a href="#skills" class="hover:text-fuchsia-400 transition duration-200">Skills</a></li>
+                            <li><a href="#projects" class="hover:text-fuchsia-400 transition duration-200">Projects</a></li>
+                            <li><a href="#" onclick="openContactModal(); return false;" class="hover:text-fuchsia-400 transition duration-200">Contact</a></li>
+                            <li><a href="gallery.html" class="hover:text-fuchsia-400 transition duration-200">Gallery</a></li>
+                            <li><a href="portfolioold.html" class="hover:text-fuchsia-400 transition duration-200">Old Portfolio</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="mt-12 pt-6 border-t border-gray-800 text-center">
+                    <p class="text-gray-400 mb-1 text-sm">
+                        &copy; <span id="year"></span> <strong class="text-white">Md Kamruzzaman Shishir</strong>. All rights reserved.
+                    </p>
+                    <p class="text-xs text-gray-500 font-mono">// Crafted with 💻, ☕, and 🚀</p>
+                </div>
+                
+            </div>
+        </footer>
+      
+        <div class="fixed left-6 bottom-4 z-50 flex flex-col items-end space-y-3">
+
+            <a href="index.html" class="w-12 h-12 rounded-full flex items-center justify-center 
+                    bg-gray-800 text-cyan-400 text-xl shadow-lg border border-cyan-600/50 
+                    hover:bg-cyan-600 hover:text-white transition duration-300" 
+                    title="Back to Home">
+                <i class="fas fa-home"></i>
+            </a>
+
+            <div id="goToContact" title="Contact Me" class="w-12 h-12 rounded-full flex items-center justify-center cursor-pointer
+                    bg-fuchsia-600 text-white text-xl shadow-xl shadow-fuchsia-500/50 border border-fuchsia-700 
+                    hover:bg-fuchsia-500 transition duration-300 transform hover:scale-105">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <div id="goToTop" title="Back to Top" class="w-12 h-12 rounded-full flex items-center justify-center cursor-pointer
+                    bg-gray-800 text-cyan-400 text-xl shadow-lg border border-cyan-600/50 
+                    hover:bg-cyan-600 hover:text-white transition duration-300
+                    opacity-0 pointer-events-none translate-y-4">
+                <i class="fas fa-arrow-up"></i>
+            </div>
         </div>
 
-        <!-- Contact Modal -->
-        <div id="contactModal" class="contact-modal d-none">
-          <div class="contact-content">
-            <h2 class="text-center text-white">Contact Me</h2>
-            <span class="close-contact" id="closeContact">&times;</span>
+        <div id="contactModal" class="fixed inset-0 bg-gray-950 bg-opacity-80 z-[60] flex items-center justify-center hidden">
+            <div class="bg-gray-900 p-8 rounded-xl shadow-2xl border-2 border-cyan-600 w-full max-w-md relative font-mono">
+                <h2 class="text-2xl font-bold text-cyan-400 text-center mb-6">// Contact Me</h2>
+                
+                <span id="closeContact" class="absolute top-2 right-4 text-3xl text-gray-500 cursor-pointer 
+                    hover:text-red-500 transition duration-300">&times;</span>
 
-            <!-- Contact Form -->
-            <form action="https://formspree.io/f/xanegwyz" method="POST" class="mt-4">
-              <div class="form-group">
-                <label for="name" class="label">Name:</label>
-                <input type="text" name="name" placeholder="Your Name" class="form-control  border-secondary" required>
-              </div>
-              <div class="form-group mt-2">
-                <label for="email" class="label">Email:</label>
-                <input type="email" name="_replyto" placeholder="Your Email" class="form-control  border-secondary" required>
-              </div>
-              <div class="form-group mt-2">
-                <label for="message" class="label">Message:</label>
-                <textarea name="message" rows="4" placeholder="Your Message" class="form-control  border-secondary" required></textarea>
-              </div>
-              <button type="submit" class="outline mt-3">Send Message</button>
-            </form>
-          </div>
+                <form action="https://formspree.io/f/xanegwyz" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name:</label>
+                        <input type="text" name="name" placeholder="Your Name" 
+                            class="w-full p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email:</label>
+                        <input type="email" name="_replyto" placeholder="Your Email" 
+                            class="w-full p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message:</label>
+                        <textarea name="message" rows="4" placeholder="Your Message" 
+                                class="w-full p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none" required></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="w-full py-3 bg-fuchsia-600 text-white font-bold rounded-lg text-lg 
+                                hover:bg-fuchsia-500 transition duration-300 transform hover:scale-[1.01] shadow-lg">
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </div>
         <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const goToTopButton = document.getElementById("goToTop");
-            const contactBtn = document.getElementById("goToContact");
-            const contactModal = document.getElementById("contactModal");
-            const closeBtn = document.getElementById("closeContact");
-
-            // Show/hide "Go to top" on scroll
-            window.addEventListener("scroll", function () {
-              if (window.scrollY > 20) {
-                goToTopButton.classList.add("show-go-to-top");
-              } else {
-                goToTopButton.classList.remove("show-go-to-top");
-              }
-            });
-
-            // Scroll to top
-            goToTopButton.addEventListener("click", function () {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            });
-
-            // Show contact modal
-            contactBtn.addEventListener("click", function () {
-              contactModal.classList.remove("d-none");
-            });
-
-            // Hide contact modal
-            closeBtn.addEventListener("click", function () {
-              contactModal.classList.add("d-none");
-            });
-
-            // Close modal if clicked outside
-            window.addEventListener("click", function (e) {
-              if (e.target === contactModal) {
-                contactModal.classList.add("d-none");
-              }
-            });
-          });
-        </script>
-
-
-      <script>
-        document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-              target.scrollIntoView({ behavior: 'smooth' });
+            // =========================================================================
+            // GLOBAL FUNCTION: Open Contact Modal
+            // This function must be outside DOMContentLoaded to be called by external links (like in the footer)
+            // =========================================================================
+            function openContactModal() {
+                const contactModal = document.getElementById("contactModal");
+                if (contactModal) {
+                    contactModal.classList.remove("hidden");
+                }
             }
-          });
-        });
-      </script>
 
-      </body>
+            document.addEventListener("DOMContentLoaded", function () {
+                // --- FOOTER YEAR INITIALIZATION ---
+                const yearElement = document.getElementById('year');
+                if (yearElement) {
+                    yearElement.textContent = new Date().getFullYear();
+                }
+
+                // --- TYPEWRITER EFFECT LOGIC ---
+                const typewriterOutput = document.getElementById('typewriter-output');
+                const phrases = [
+                    "Web Designer & Developer.",
+                    "IT Specialist.",
+                    "Shopify Expert.",
+                    "Unreal Engine Enthusiast."
+                ];
+                let phraseIndex = 0;
+                let charIndex = 0;
+                let isDeleting = false;
+                const typingSpeed = 100;
+                const deletingSpeed = 50;
+                const delayBetweenPhrases = 1500; // 1.5 second delay
+
+                function typeWriter() {
+                    if (!typewriterOutput) return; // Stop if element is not found
+
+                    const currentPhrase = phrases[phraseIndex];
+                    let displayedText = typewriterOutput.textContent.replace('|', '').trim();
+
+                    if (isDeleting) {
+                        displayedText = currentPhrase.substring(0, charIndex - 1);
+                        charIndex--;
+                    } else {
+                        displayedText = currentPhrase.substring(0, charIndex + 1);
+                        charIndex++;
+                    }
+
+                    let currentSpeed = isDeleting ? deletingSpeed : typingSpeed;
+
+                    if (!isDeleting && charIndex === currentPhrase.length + 1) {
+                        currentSpeed = delayBetweenPhrases;
+                        isDeleting = true;
+                    } else if (isDeleting && charIndex === 0) {
+                        isDeleting = false;
+                        phraseIndex = (phraseIndex + 1) % phrases.length;
+                        currentSpeed = typingSpeed;
+                    }
+
+                    const cursor = '<span class="blinking-cursor">|</span>';
+                    typewriterOutput.innerHTML = displayedText + cursor;
+
+                    setTimeout(typeWriter, currentSpeed);
+                }
+
+                // Initialize Typewriter on page load
+                if (typewriterOutput) {
+                    typeWriter();
+                }
+
+
+                // --- NAVBAR SCROLL & MOBILE TOGGLE LOGIC ---
+                const navbar = document.getElementById('navbar');
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const openIcon = document.getElementById('open-icon');
+                const closeIcon = document.getElementById('close-icon');
+                const profilePic = document.getElementById('profile-pic');
+                const navInner = document.getElementById('nav-inner');
+
+                // 1. SCROLL EFFECT: Adds background and blur on scroll (and shrinks profile pic)
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        navbar?.classList.add('bg-gray-900', 'bg-opacity-70', 'shadow-lg', 'backdrop-blur-sm');
+                        navbar?.classList.remove('bg-transparent');
+                        navInner?.classList.remove('h-40');
+                        navInner?.classList.add('h-20');
+                        profilePic?.classList.remove('w-24', 'h-24');
+                        profilePic?.classList.add('w-12', 'h-12');
+                    } else {
+                        navbar?.classList.remove('bg-gray-900', 'bg-opacity-70', 'shadow-lg', 'backdrop-blur-sm');
+                        navbar?.classList.add('bg-transparent');
+                        navInner?.classList.remove('h-20');
+                        navInner?.classList.add('h-40');
+                        profilePic?.classList.remove('w-12', 'h-12');
+                        profilePic?.classList.add('w-24', 'h-24');
+                    }
+                });
+
+                // 2. MOBILE TOGGLE: Toggles the mobile menu open/close
+                mobileMenuButton?.addEventListener('click', () => {
+                    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+                    mobileMenu?.classList.toggle('hidden');
+
+                    // Toggle hamburger/close icon
+                    openIcon?.classList.toggle('hidden');
+                    closeIcon?.classList.toggle('hidden');
+                });
+
+                // Close mobile menu when a link is clicked
+                mobileMenu?.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenuButton.setAttribute('aria-expanded', 'false');
+                        openIcon?.classList.remove('hidden');
+                        closeIcon?.classList.add('hidden');
+                    });
+                });
+                
+                // --- STICKY RIBBON DELAYED REVEAL LOGIC ---
+                const demoPopup = document.getElementById('demo-popup');
+                const affiliatePopup = document.getElementById('affiliate-popup');
+                const RIBBON_DELAY_MS = 5000; // Standardized to 5 seconds
+
+                function showPopups() {
+                    demoPopup?.classList.remove('opacity-0', 'translate-x-full');
+                    affiliatePopup?.classList.remove('opacity-0', 'translate-x-full');
+                }
+
+                setTimeout(showPopups, RIBBON_DELAY_MS);
+
+
+                // --- FLOATING BUTTON & MODAL LOGIC (Integrated) ---
+                const goToTopButton = document.getElementById("goToTop");
+                const contactBtn = document.getElementById("goToContact");
+                const contactModal = document.getElementById("contactModal");
+                const closeBtn = document.getElementById("closeContact");
+
+                // Go To Top Show/Hide on scroll
+                window.addEventListener("scroll", function () {
+                    if (window.scrollY > 400) { 
+                        goToTopButton?.classList.remove("opacity-0", "pointer-events-none", "translate-y-4");
+                    } else {
+                        goToTopButton?.classList.add("opacity-0", "pointer-events-none", "translate-y-4");
+                    }
+                });
+
+                // Scroll to top
+                goToTopButton?.addEventListener("click", function () {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+
+                // Show contact modal via the floating button
+                contactBtn?.addEventListener("click", openContactModal); 
+
+                // Hide contact modal via the 'X' button
+                closeBtn?.addEventListener("click", function () {
+                    contactModal?.classList.add("hidden");
+                });
+
+                // Close modal if clicked outside the content (on the dark overlay)
+                window.addEventListener("click", function (e) {
+                    if (e.target === contactModal) {
+                        contactModal.classList.add("hidden");
+                    }
+                });
+            });
+
+            // --- SMOOTH SCROLL LOGIC (FOR NAVBAR/FOOTER LINKS) ---
+            document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>

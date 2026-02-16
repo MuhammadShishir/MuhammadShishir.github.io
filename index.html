@@ -199,7 +199,41 @@
                 /* When hovering over the parent block, all badges get a subtle lift */
                 box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); 
             }
+/* Custom Neon Cursor */
+:root {
+    --neon-cyan: #22d3ee;
+    --neon-fuchsia: #f0abfc;
+}
+body { cursor: none; } /* Hide default cursor */
 
+#cursor-dot {
+    width: 8px; height: 8px; background: var(--neon-cyan);
+    border-radius: 50%; position: fixed; pointer-events: none; z-index: 999;
+}
+#cursor-glow {
+    width: 40px; height: 40px; border: 2px solid var(--neon-fuchsia);
+    border-radius: 50%; position: fixed; pointer-events: none; z-index: 998;
+    transition: all 0.1s ease-out; opacity: 0.6;
+}
+
+/* Project Card Vault Style */
+.project-card-vault {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.3s ease;
+    text-align: left;
+}
+.project-card-vault:hover {
+    border-color: var(--neon-cyan);
+}
+/* Disable custom cursor on mobile */
+@media (max-width: 768px) {
+    body { cursor: auto; }
+    #cursor-dot, #cursor-glow { display: none; }
+}
             /* 3. Keyframe Animation for Dynamic Appearance */
             @keyframes fadeIn {
                 0% {
@@ -431,357 +465,423 @@
                     <hr class="border-gray-800 w-full max-w-7xl">
 
                     <!-- Projects Section -->
-                    <section id="projects" class="py-16 md:py-24 bg-gray-950 w-full text-center">
-                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                            <h3 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-10 border-b-2 border-cyan-600 pb-3 custom-glow-text inline-block">// Projects</h3>
+                    <section id="projects" class="py-16 md:py-24 bg-gray-950 w-full">
+    <div id="cursor-dot"></div>
+    <div id="cursor-glow"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h3 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-4 inline-block italic tracking-tighter uppercase">
+                // Digital <span class="text-fuchsia-500">Archive</span>
+            </h3>
+            <p class="text-gray-500 font-mono text-sm block">>> PROJECT_VAULT_ACCESS_GRANTED</p>
+        </div>
 
-                            <h4 class="text-2xl font-bold text-white mt-8 mb-4 border-b border-gray-700 pb-2">Websites:</h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="websites">
+        <h4 class="text-xl font-bold text-white mb-8 flex items-center gap-3">
+            <span class="text-cyan-500">#</span> WEBSITES
+        </h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            
+            <div class="project-card-vault group">
+                <a href="prtrade.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/prt.png" alt="Paul Russells Trade" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-cyan-500 mb-1">SHOPIFY // DEV</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">Paul Russells Trade</h5>
+                    <p class="text-sm text-gray-400">B2B Wholesale platform development.</p>
+                </div>
+            </div>
 
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
-                                    <a href="prtrade.html" class="block">
-                                        <img src="./media/img/prt.png" width="100%" alt="Paul Russells Trade Website" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Paul Russells Trade</p>
-                                    </a>
-                                    <div class="mt-2 space-y-1">
-                                        <span class="text-sm text-gray-400 block">A Website for Paul Russells's Trade platform, b2b Wholesell.</span>
-                                        <span class="text-xs font-mono text-cyan-400 block">Shopify | Development</span>
+            <div class="project-card-vault group">
+                <a href="luminate.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/pr.png" alt="Paul Russells" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-cyan-500 mb-1">SHOPIFY // THEME</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">Paul Russells</h5>
+                    <p class="text-sm text-gray-400">Retail e-commerce with Custom theme "Luminate".</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group">
+                <a href="https://www.cymaxbd.com/" target="_blank" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/cymaxeng.jpg" alt="Cymax" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-cyan-500 mb-1">WORDPRESS // DESIGN</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">Cymax Engineering Co</h5>
+                    <p class="text-sm text-gray-400">Mechanical and Electrical project solutions.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group">
+                <a href="https://veteranfriendlybusinessassociation.com/" target="_blank" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/veteran.jpg" alt="VFA" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-cyan-500 mb-1">WORDPRESS // DESIGN</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">VFA</h5>
+                    <p class="text-sm text-gray-400">A donation website for Veterans.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group">
+                <a href="4marchive.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/UI1.png" alt="4mArchive" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-cyan-500 mb-1">WORDPRESS // CMS</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">4mArchive</h5>
+                    <p class="text-sm text-gray-400">Project Thesis Publishing Website.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group">
+                <a href="/include/glazclone/index.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/glazw.jpg" alt="Smart Mirror" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-cyan-500 mb-1">UI_CLONE // DESIGN</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">Smart Mirror</h5>
+                    <p class="text-sm text-gray-400">E-commerce website (Smart Mirror) Clone.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group">
+                <a href="/include/itiotech/index.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/itiotech.jpg" alt="PC Parts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-cyan-500 mb-1">E-COMMERCE // TECH</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">PC Parts</h5>
+                    <p class="text-sm text-gray-400">Technology retail website architecture.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group">
+                <a href="portfolio.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/p.jpg" alt="Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-cyan-500 mb-1">CORE // HTML_JS</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">Portfolio</h5>
+                    <p class="text-sm text-gray-400">The high-end site you are currently viewing.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group">
+                <a href="psdtohtml.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/psd.jpg" alt="PSD to HTML" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-cyan-500 mb-1">FRONTEND // UI</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">PSD to HTML</h5>
+                    <p class="text-sm text-gray-400">Precision conversion from design to code.</p>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="text-xl font-bold text-white mb-8 flex items-center gap-3">
+            <span class="text-lime-500">#</span> UNREAL ENGINE
+        </h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            
+            <div class="project-card-vault group border-lime-500/10 hover:border-lime-500">
+                <a href="Lost in Green Shores.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/10.webp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-lime-500 mb-1">UE5 // SURVIVAL</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-lime-400 transition-colors">Lost in Green Shores</h5>
+                    <p class="text-sm text-gray-400">A Survival Project with many islands.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group border-lime-500/10 hover:border-lime-500">
+                <a href="jebyurgth-phantasy.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/6.webp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-lime-500 mb-1">UE5 // RPG</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-lime-400 transition-colors">Jebbyurgth Phantasy</h5>
+                    <p class="text-sm text-gray-400">Magical fantasy world with RPG elements.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group border-lime-500/10 hover:border-lime-500">
+                <a href="exploading-ball.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/ball.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-lime-500 mb-1">UE5 // PHYSICS</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-lime-400 transition-colors">The Exploding Ball</h5>
+                    <p class="text-sm text-gray-400">A physics-based game testing human psyche.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group border-lime-500/10 hover:border-lime-500">
+                <a href="resurgence.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/13.webp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-lime-500 mb-1">UE5 // SHOOTER</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-lime-400 transition-colors">Resurgence</h5>
+                    <p class="text-sm text-gray-400">Zombie shooter demo: Humanity's Last Stand.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group border-lime-500/10 hover:border-lime-500">
+                <a href="shadow-myst.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/8.webp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-lime-500 mb-1">UE5 // DUNGEON</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-lime-400 transition-colors">Cursed Blade</h5>
+                    <p class="text-sm text-gray-400">A top-down dungeon crawler project.</p>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="text-xl font-bold text-white mb-8 flex items-center gap-3">
+            <span class="text-fuchsia-500">#</span> OTHER SYSTEMS
+        </h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="project-card-vault group border-fuchsia-500/10 hover:border-fuchsia-500">
+                <a href="pdf-to-html-css.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/logo.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-fuchsia-500 mb-1">UTILS // HTML</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">PDF to HTML CSS</h5>
+                    <p class="text-sm text-gray-400">Advanced PDF to web content conversion.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group border-fuchsia-500/10 hover:border-fuchsia-500">
+                <a href="result-management-system.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/rESULT.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-fuchsia-500 mb-1">JAVA // SWING</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">Result System</h5>
+                    <p class="text-sm text-gray-400">Java Swing desktop application logic.</p>
+                </div>
+            </div>
+
+            <div class="project-card-vault group border-fuchsia-500/10 hover:border-fuchsia-500">
+                <a href="github-projects.html" class="block overflow-hidden aspect-video">
+                    <img src="./media/img/GitHub-Logo.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </a>
+                <div class="p-6">
+                    <p class="text-xs font-mono text-fuchsia-500 mb-1">ARCHIVE // REPOS</p>
+                    <h5 class="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">GitHub Repository</h5>
+                    <p class="text-sm text-gray-400">Explore my code and open-source contributions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                    <script>
+                        // 1. Restore the Signature Cursor
+                        const dot = document.getElementById('cursor-dot');
+                        const glow = document.getElementById('cursor-glow');
+                        
+                        document.addEventListener('mousemove', (e) => {
+                            dot.style.left = e.clientX + 'px';
+                            dot.style.top = e.clientY + 'px';
+                            setTimeout(() => {
+                                glow.style.left = (e.clientX - 16) + 'px';
+                                glow.style.top = (e.clientY - 16) + 'px';
+                            }, 40);
+                        });
+
+                        // 2. 3D Card Tilt Effect
+                        document.querySelectorAll('.project-card-vault').forEach(card => {
+                            card.addEventListener('mousemove', (e) => {
+                                const rect = card.getBoundingClientRect();
+                                const x = e.clientX - rect.left;
+                                const y = e.clientY - rect.top;
+                                const xc = rect.width / 2;
+                                const yc = rect.height / 2;
+                                const dx = x - xc;
+                                const dy = y - yc;
+                                card.style.transform = `perspective(1000px) rotateY(${dx / 25}deg) rotateX(${-dy / 25}deg)`;
+                            });
+
+                            card.addEventListener('mouseleave', () => {
+                                card.style.transform = "perspective(1000px) rotateY(0deg) rotateX(0deg)";
+                            });
+                        });
+                    </script>
+                    <section id="faq" class="w-full py-20 bg-gray-900">
+                            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-12 text-center">
+                                    <span class="text-cyan-400">//</span> Frequently Asked Questions
+                                </h2>
+
+                                <div class="max-w-4xl mx-auto space-y-4">
+                                    <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden transition-all duration-300">
+                                        <button class="faq-header w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                                            <span class="text-lg font-bold text-fuchsia-400">Who is Md Kamruzzaman Shishir?</span>
+                                            <span class="faq-icon text-gray-500 transition-transform duration-300">＋</span>
+                                        </button>
+                                        <div class="faq-content max-h-0 transition-all duration-500 ease-in-out opacity-0">
+                                            <div class="px-6 pb-6 text-gray-300 leading-relaxed text-sm md:text-base">
+                                                I am a professional <strong>Web Developer</strong> and <strong>IT Specialist</strong> based in Bangladesh. I specialize in building high-performance websites, managing secure IT infrastructures, and delivering custom digital solutions for businesses worldwide.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden transition-all duration-300">
+                                        <button class="faq-header w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                                            <span class="text-lg font-bold text-cyan-400">What kind of IT and Web services do you offer?</span>
+                                            <span class="faq-icon text-gray-500 transition-transform duration-300">＋</span>
+                                        </button>
+                                        <div class="faq-content max-h-0 transition-all duration-500 ease-in-out opacity-0">
+                                            <div class="px-6 pb-6 text-gray-300 leading-relaxed text-sm md:text-base">
+                                                <p class="mb-4">I provide a wide range of technical solutions tailored to your business needs:</p>
+                                                <ul class="space-y-2">
+                                                    <li class="flex items-start">
+                                                        <span class="text-cyan-400 mr-2">▹</span>
+                                                        <span><strong>Shopify Expert:</strong> Full store setup and custom Liquid theme tweaks.</span>
+                                                    </li>
+                                                    <li class="flex items-start">
+                                                        <span class="text-cyan-400 mr-2">▹</span>
+                                                        <span><strong>WordPress Specialist:</strong> From LMS platforms to multi-vendor e-commerce.</span>
+                                                    </li>
+                                                    <li class="flex items-start">
+                                                        <span class="text-cyan-400 mr-2">▹</span>
+                                                        <span><strong>IT Support:</strong> Hardware troubleshooting, server management, and security audits.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden transition-all duration-300">
+                                        <button class="faq-header w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                                            <span class="text-lg font-bold text-fuchsia-400">How long does a typical project take?</span>
+                                            <span class="faq-icon text-gray-500 transition-transform duration-300">＋</span>
+                                        </button>
+                                        <div class="faq-content max-h-0 transition-all duration-500 ease-in-out opacity-0">
+                                            <div class="px-6 pb-6 text-gray-300 leading-relaxed text-sm md:text-base">
+                                                Timelines vary based on complexity. A <strong>landing page</strong> usually takes 3-5 days, while a <strong>full e-commerce store</strong> can take 2-3 weeks. I always prioritize quality and security over rushed delivery.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden transition-all duration-300">
+                                        <button class="faq-header w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                                            <span class="text-lg font-bold text-cyan-400">Do you provide post-launch support?</span>
+                                            <span class="faq-icon text-gray-500 transition-transform duration-300">＋</span>
+                                        </button>
+                                        <div class="faq-content max-h-0 transition-all duration-500 ease-in-out opacity-0">
+                                            <div class="px-6 pb-6 text-gray-300 leading-relaxed text-sm md:text-base">
+                                                Absolutely. I offer <strong>30 days of free technical support</strong> after project completion. Long-term maintenance plans are also available to ensure your website remains updated and secure.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                    </section>
 
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
-                                    <a href="luminate.html" class="block">
-                                        <img src="./media/img/pr.png" width="100%" alt="Paul Russells E-commerce Website" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Paul Russells</p>
-                                    </a>
-                                    <div class="mt-2 space-y-1">
-                                        <span class="text-sm text-gray-400 block">A E-commerce retail Website for paul russells with Custom theme "Luminate"</span>
-                                        <span class="text-xs font-mono text-cyan-400 block">Shopify | Development</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
-                                    <a href="https://www.cymaxbd.com/" class="block" target="_blank">
-                                        <img src="./media/img/cymaxeng.jpg" width="100%" alt="Cymax Engineering Co Website" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Cymax Engineering Co</p>
-                                    </a>
-                                    <div class="mt-2 space-y-1">
-                                        <span class="text-sm text-gray-400 block">A Website for Mechanical and Electrical project and solutions</span>
-                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
-                                    <a href="https://veteranfriendlybusinessassociation.com/" class="block" target="_blank">
-                                        <img src="./media/img/veteran.jpg" width="100%" alt="Veteran Friendly Business Association Website" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">VFA</p>
-                                    </a>
-                                    <div class="mt-2 space-y-1">
-                                        <span class="text-sm text-gray-400 block">A donation website for Veterans</span>
-                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
-                                    <a href="4marchive.html" class="block">
-                                        <img src="./media/img/UI1.png" width="100%" alt="4mArchive Thesis Publishing Website" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">4mArchive</p>
-                                    </a>
-                                    <div class="mt-2 space-y-1">
-                                        <span class="text-sm text-gray-400 block">A Project Thesis Publishing Website(Archiving/News etc)</span>
-                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
-                                    <a href="/include/glazclone/index.html" class="block">
-                                        <img src="./media/img/glazw.jpg" width="100%" alt="Smart Mirror E-commerce Clone" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Smart Mirror</p>
-                                    </a>
-                                    <div class="mt-2 space-y-1">
-                                        <span class="text-sm text-gray-400 block">E-commerce website (Smart Mirror) Clone</span>
-                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
-                                    <a href="/include/itiotech/index.html" class="block">
-                                        <img src="./media/img/itiotech.jpg" width="100%" alt="PC Parts E-commerce Website" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">PC Parts</p>
-                                    </a>
-                                    <div class="mt-2 space-y-1">
-                                        <span class="text-sm text-gray-400 block">E-commerce website (Technology)</span>
-                                        <span class="text-xs font-mono text-cyan-400 block">WordPress | Design</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
-                                    <a href="portfolio.html" class="block">
-                                        <img src="./media/img/p.jpg" width="100%" alt="Portfolio Website" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">Portfolio</p>
-                                    </a>
-                                    <div class="mt-2 space-y-1">
-                                        <span class="text-sm text-gray-400 block">The portfolio website you are watching now</span>
-                                        <span class="text-xs font-mono text-cyan-400 block">HTML/CSS/JS</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-fuchsia-500/50 hover:bg-gray-700/50 group">
-                                    <a href="psdtohtml.html" class="block">
-                                        <img src="./media/img/psd.jpg" width="100%" alt="PSD to HTML Sample" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-fuchsia-400">PSD to HTML</p>
-                                    </a>
-                                    <div class="mt-2 space-y-1">
-                                        <span class="text-sm text-gray-400 block">PSD to HTML Sample</span>
-                                        <span class="text-xs font-mono text-cyan-400 block">HTML/CSS</span>
-                                    </div>
-                                </div>
-
+                    <section id="expert-insights" class="w-full py-20 bg-gray-950 border-t border-gray-800">
+                        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div class="text-center mb-16">
+                                <h2 class="text-4xl font-extrabold text-white mb-4">Expertise & <span class="text-cyan-400">Market Insights</span></h2>
                             </div>
 
-                            <h4 class="text-2xl font-bold text-white mt-10 mb-4 border-b border-gray-700 pb-2">Unreal Engine Projects:</h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="unreal">
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
-                                    <a href="Lost in Green Shores.html" class="block">
-                                        <img src="./media/img/10.webp" width="100%" alt="Lost in Green Shores Game" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">Lost in Green Shores</p>
-                                    </a>
-                                    <span class="text-sm text-gray-400 block mt-2">A Survival Project with many islands</span>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-cyan-500/30 transition-all shadow-lg">
+                                    <h3 class="text-xl font-bold text-white mb-4">Who is one of the best web developers in Bangladesh?</h3>
+                                    <p class="text-gray-400 text-sm leading-relaxed">
+                                        Reliability and a deep understanding of IT infrastructure define a top-tier expert. <span class="text-cyan-400 font-bold">Md Kamruzzaman Shishir</span> is regarded as one of the best web developers in Bangladesh for clients who prioritize security and performance. By merging web development with professional IT support, I ensure your platform is stable, scalable, and built to modern standards.
+                                    </p>
                                 </div>
 
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
-                                    <a href="jebyurgth-phantasy.html" class="block">
-                                        <img src="./media/img/6.webp" width="100%" alt="Jebbyurgth Phantasy RPG" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">Jebbyurgth Phantasy: Tale of Asygarth</p>
-                                    </a>
-                                    <span class="text-sm text-gray-400 block mt-2">An RPG project with magical fantasy elements</span>
+                                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-fuchsia-500/30 transition-all shadow-lg">
+                                    <h3 class="text-xl font-bold text-white mb-4">How much will it cost to develop a website?</h3>
+                                    <div class="space-y-4">
+                                        <div class="flex justify-between border-b border-gray-800 pb-2">
+                                            <span class="text-white text-sm">Static Page / Landing Page</span>
+                                            <span class="text-cyan-400 font-mono text-sm">$150 - $400</span>
+                                        </div>
+                                        <div class="flex justify-between border-b border-gray-800 pb-2">
+                                            <span class="text-white text-sm">Business CMS Website</span>
+                                            <span class="text-cyan-400 font-mono text-sm">$500 - $1,200</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="text-white text-sm">Advanced E-commerce / LMS</span>
+                                            <span class="text-cyan-400 font-mono text-sm">$1,000+</span>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text-sm text-gray-400 block mt-2"><i>*All Prices Are Negotiable. Professional Colaboration is Also Possible.</i></h5>
                                 </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
-                                    <a href="exploading-ball.html" class="block">
-                                        <img src="./media/img/ball.png" width="100%" alt="The Exploding Ball Game" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">The Exploding Ball</p>
-                                    </a>
-                                    <span class="text-sm text-gray-400 block mt-2">A weird funny game that plays with human psyche</span>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
-                                    <a href="resurgence.html" class="block">
-                                        <img src="./media/img/13.webp" width="100%" alt="Resurgence Zombie Shooter Demo" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">Resurgence: Humanity's Last Stand</p>
-                                    </a>
-                                    <span class="text-sm text-gray-400 block mt-2">A zombie shooter demo</span>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-lime-500/50 hover:bg-gray-700/50 group">
-                                    <a href="shadow-myst.html" class="block">
-                                        <img src="./media/img/8.webp" width="100%" alt="Cursed Blade: Shadow Myst Dungeon Crawler" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-lime-400">Cursed Blade: Shadow Myst</p>
-                                    </a>
-                                    <span class="text-sm text-gray-400 block mt-2">A top-down dungeon crawler</span>
-                                </div>
-
                             </div>
 
-                            <h4 class="text-2xl font-bold text-white mt-10 mb-4 border-b border-gray-700 pb-2">Other Projects:</h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="other">
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:bg-gray-700/50 group">
-                                    <a href="pdf-to-html-css.html" class="block">
-                                        <img src="./media/img/logo.png" width="100%" alt="PDF to HTML CSS Conversion" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-cyan-400">PDF to HTML CSS</p>
-                                    </a>
-                                    <span class="text-sm text-gray-400 block mt-2">Example of PDF to HTML conversion</span>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:bg-gray-700/50 group">
-                                    <a href="result-management-system.html" class="block">
-                                        <img src="./media/img/rESULT.png" width="100%" alt="Result Management System App" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-cyan-400">Result Management System</p>
-                                    </a>
-                                    <span class="text-sm text-gray-400 block mt-2">A Java Swing app for calculating results</span>
-                                </div>
-
-                                <div class="p-4 bg-gray-800 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:bg-gray-700/50 group">
-                                    <a href="github-projects.html" class="block">
-                                        <img src="./media/img/GitHub-Logo.png" width="100%" alt="GitHub Link" class="rounded-md object-cover h-48 w-full">
-                                        <p class="text-xl font-semibold text-white mt-2 group-hover:text-cyan-400">Find More on GitHub</p>
-                                    </a>
-                                    <span class="text-sm text-gray-400 block mt-2">Find me in GitHub</span>
-                                </div>
-
+                            <div class="mt-12 p-8 bg-gray-900 rounded-3xl border border-gray-800 text-center max-w-4xl mx-auto">
+                                <p class="text-gray-300 italic text-sm md:text-base">
+                                    "As an IT Specialist and Developer, I ensure your digital presence is built on a foundation of security and performance. I build digital assets that drive real business growth."
+                                </p>
                             </div>
                         </div>
                     </section>
 
-               <section id="faq" class="w-full py-20 bg-gray-900">
-                    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-12 text-center">
-                            <span class="text-cyan-400">//</span> Frequently Asked Questions
-                        </h2>
-
-                        <div class="max-w-4xl mx-auto space-y-4">
-                            <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden transition-all duration-300">
-                                <button class="faq-header w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                                    <span class="text-lg font-bold text-fuchsia-400">Who is Md Kamruzzaman Shishir?</span>
-                                    <span class="faq-icon text-gray-500 transition-transform duration-300">＋</span>
-                                </button>
-                                <div class="faq-content max-h-0 transition-all duration-500 ease-in-out opacity-0">
-                                    <div class="px-6 pb-6 text-gray-300 leading-relaxed text-sm md:text-base">
-                                        I am a professional <strong>Web Developer</strong> and <strong>IT Specialist</strong> based in Bangladesh. I specialize in building high-performance websites, managing secure IT infrastructures, and delivering custom digital solutions for businesses worldwide.
-                                    </div>
-                                </div>
+                    <section id="hire-me" class="w-full py-20 bg-gray-900 border-t border-gray-800">
+                        <div class="max-w-4xl mx-auto px-4">
+                            <div class="text-center mb-10">
+                                <h2 class="text-3xl font-bold text-white">Select a Service & <span class="text-fuchsia-500">Hire Me</span></h2>
+                                <p class="text-gray-400 mt-2">Submit your details below for a professional consultation and quote.</p>
                             </div>
-
-                            <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden transition-all duration-300">
-                                <button class="faq-header w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                                    <span class="text-lg font-bold text-cyan-400">What kind of IT and Web services do you offer?</span>
-                                    <span class="faq-icon text-gray-500 transition-transform duration-300">＋</span>
-                                </button>
-                                <div class="faq-content max-h-0 transition-all duration-500 ease-in-out opacity-0">
-                                    <div class="px-6 pb-6 text-gray-300 leading-relaxed text-sm md:text-base">
-                                        <p class="mb-4">I provide a wide range of technical solutions tailored to your business needs:</p>
-                                        <ul class="space-y-2">
-                                            <li class="flex items-start">
-                                                <span class="text-cyan-400 mr-2">▹</span>
-                                                <span><strong>Shopify Expert:</strong> Full store setup and custom Liquid theme tweaks.</span>
-                                            </li>
-                                            <li class="flex items-start">
-                                                <span class="text-cyan-400 mr-2">▹</span>
-                                                <span><strong>WordPress Specialist:</strong> From LMS platforms to multi-vendor e-commerce.</span>
-                                            </li>
-                                            <li class="flex items-start">
-                                                <span class="text-cyan-400 mr-2">▹</span>
-                                                <span><strong>IT Support:</strong> Hardware troubleshooting, server management, and security audits.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden transition-all duration-300">
-                                <button class="faq-header w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                                    <span class="text-lg font-bold text-fuchsia-400">How long does a typical project take?</span>
-                                    <span class="faq-icon text-gray-500 transition-transform duration-300">＋</span>
-                                </button>
-                                <div class="faq-content max-h-0 transition-all duration-500 ease-in-out opacity-0">
-                                    <div class="px-6 pb-6 text-gray-300 leading-relaxed text-sm md:text-base">
-                                        Timelines vary based on complexity. A <strong>landing page</strong> usually takes 3-5 days, while a <strong>full e-commerce store</strong> can take 2-3 weeks. I always prioritize quality and security over rushed delivery.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden transition-all duration-300">
-                                <button class="faq-header w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                                    <span class="text-lg font-bold text-cyan-400">Do you provide post-launch support?</span>
-                                    <span class="faq-icon text-gray-500 transition-transform duration-300">＋</span>
-                                </button>
-                                <div class="faq-content max-h-0 transition-all duration-500 ease-in-out opacity-0">
-                                    <div class="px-6 pb-6 text-gray-300 leading-relaxed text-sm md:text-base">
-                                        Absolutely. I offer <strong>30 days of free technical support</strong> after project completion. Long-term maintenance plans are also available to ensure your website remains updated and secure.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="expert-insights" class="w-full py-20 bg-gray-950 border-t border-gray-800">
-                    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="text-center mb-16">
-                            <h2 class="text-4xl font-extrabold text-white mb-4">Expertise & <span class="text-cyan-400">Market Insights</span></h2>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-cyan-500/30 transition-all shadow-lg">
-                                <h3 class="text-xl font-bold text-white mb-4">Who is one of the best web developers in Bangladesh?</h3>
-                                <p class="text-gray-400 text-sm leading-relaxed">
-                                    Reliability and a deep understanding of IT infrastructure define a top-tier expert. <span class="text-cyan-400 font-bold">Md Kamruzzaman Shishir</span> is regarded as one of the best web developers in Bangladesh for clients who prioritize security and performance. By merging web development with professional IT support, I ensure your platform is stable, scalable, and built to modern standards.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-fuchsia-500/30 transition-all shadow-lg">
-                                <h3 class="text-xl font-bold text-white mb-4">How much will it cost to develop a website?</h3>
-                                <div class="space-y-4">
-                                    <div class="flex justify-between border-b border-gray-800 pb-2">
-                                        <span class="text-white text-sm">Static Page / Landing Page</span>
-                                        <span class="text-cyan-400 font-mono text-sm">$150 - $400</span>
-                                    </div>
-                                    <div class="flex justify-between border-b border-gray-800 pb-2">
-                                        <span class="text-white text-sm">Business CMS Website</span>
-                                        <span class="text-cyan-400 font-mono text-sm">$500 - $1,200</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span class="text-white text-sm">Advanced E-commerce / LMS</span>
-                                        <span class="text-cyan-400 font-mono text-sm">$1,000+</span>
-                                    </div>
-                                </div>
-                                <br>
-                                <h5 class="text-sm text-gray-400 block mt-2"><i>*All Prices Are Negotiable. Professional Colaboration is Also Possible.</i></h5>
-                            </div>
-                        </div>
-
-                        <div class="mt-12 p-8 bg-gray-900 rounded-3xl border border-gray-800 text-center max-w-4xl mx-auto">
-                            <p class="text-gray-300 italic text-sm md:text-base">
-                                "As an IT Specialist and Developer, I ensure your digital presence is built on a foundation of security and performance. I build digital assets that drive real business growth."
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="hire-me" class="w-full py-20 bg-gray-900 border-t border-gray-800">
-                    <div class="max-w-4xl mx-auto px-4">
-                        <div class="text-center mb-10">
-                            <h2 class="text-3xl font-bold text-white">Select a Service & <span class="text-fuchsia-500">Hire Me</span></h2>
-                            <p class="text-gray-400 mt-2">Submit your details below for a professional consultation and quote.</p>
-                        </div>
-                        
-                        <form action="https://api.web3forms.com/submit" method="POST" class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-2xl">
-                            <input type="hidden" name="access_key" value="bbd650bf-7ccb-43cd-9794-efee2605f469">
                             
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                <input type="text" name="name" placeholder="Your Name" required class="w-full bg-gray-950 border border-gray-700 rounded-lg p-3 text-white focus:border-cyan-500 outline-none transition">
-                                <input type="email" name="email" placeholder="Email Address" required class="w-full bg-gray-950 border border-gray-700 rounded-lg p-3 text-white focus:border-cyan-500 outline-none transition">
-                            </div>
+                            <form action="https://api.web3forms.com/submit" method="POST" class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-2xl">
+                                <input type="hidden" name="access_key" value="bbd650bf-7ccb-43cd-9794-efee2605f469">
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                    <input type="text" name="name" placeholder="Your Name" required class="w-full bg-gray-950 border border-gray-700 rounded-lg p-3 text-white focus:border-cyan-500 outline-none transition">
+                                    <input type="email" name="email" placeholder="Email Address" required class="w-full bg-gray-950 border border-gray-700 rounded-lg p-3 text-white focus:border-cyan-500 outline-none transition">
+                                </div>
 
-                            <label class="block text-gray-400 text-sm mb-2 font-semibold">Select the service you need:</label>
-                            <select name="service" class="w-full bg-gray-950 border border-gray-700 rounded-lg p-3 text-white focus:border-cyan-500 outline-none mb-6 cursor-pointer">
-                                <optgroup label="IT Support Services">
-                                    <option value="pc-hardware">PC Hardware Support & Maintenance</option>
-                                    <option value="pc-troubleshooting">PC Troubleshooting & Software Repair</option>
-                                    <option value="it-consultation">General IT & Server Consultation</option>
-                                </optgroup>
-                                <optgroup label="WordPress Website Design">
-                                    <option value="wp-landing">WordPress Landing Page Design</option>
-                                    <option value="wp-company">WordPress Company/Corporate Website</option>
-                                    <option value="wp-ecommerce">WordPress E-Commerce Store (WooCommerce)</option>
-                                    <option value="wp-multivendor">Multi-Vendor WordPress Website</option>
-                                    <option value="wp-lms">Learning Platform with LMS in WordPress</option>
-                                    <option value="wp-membership">Membership & Subscription Website</option>
-                                    <option value="wp-booking">Appointment & Booking System Website</option>
-                                </optgroup>
-                                <optgroup label="Shopify Theme Customization">
-                                    <option value="shopify-ecommerce">Shopify E-Commerce Store Setup</option>
-                                    <option value="shopify-b2b">B2B Shopify Store Development</option>
-                                    <option value="shopify-multivendor">Multi-vendor Shopify Website</option>
-                                    <option value="shopify-custom">Custom Shopify Liquid Theme Tweaks</option>
-                                </optgroup>
-                                <optgroup label="Web Development & Conversion">
-                                    <option value="static-dev">Static Webpage (PSD/Figma/PDF to HTML)</option>
-                                    <option value="speed-optimization">Website Speed & Performance Optimization</option>
-                                    <option value="technical-seo">Technical SEO Audit & Implementation</option>
-                                </optgroup>
-                            </select>
+                                <label class="block text-gray-400 text-sm mb-2 font-semibold">Select the service you need:</label>
+                                <select name="service" class="w-full bg-gray-950 border border-gray-700 rounded-lg p-3 text-white focus:border-cyan-500 outline-none mb-6 cursor-pointer">
+                                    <optgroup label="IT Support Services">
+                                        <option value="pc-hardware">PC Hardware Support & Maintenance</option>
+                                        <option value="pc-troubleshooting">PC Troubleshooting & Software Repair</option>
+                                        <option value="it-consultation">General IT & Server Consultation</option>
+                                    </optgroup>
+                                    <optgroup label="WordPress Website Design">
+                                        <option value="wp-landing">WordPress Landing Page Design</option>
+                                        <option value="wp-company">WordPress Company/Corporate Website</option>
+                                        <option value="wp-ecommerce">WordPress E-Commerce Store (WooCommerce)</option>
+                                        <option value="wp-multivendor">Multi-Vendor WordPress Website</option>
+                                        <option value="wp-lms">Learning Platform with LMS in WordPress</option>
+                                        <option value="wp-membership">Membership & Subscription Website</option>
+                                        <option value="wp-booking">Appointment & Booking System Website</option>
+                                    </optgroup>
+                                    <optgroup label="Shopify Theme Customization">
+                                        <option value="shopify-ecommerce">Shopify E-Commerce Store Setup</option>
+                                        <option value="shopify-b2b">B2B Shopify Store Development</option>
+                                        <option value="shopify-multivendor">Multi-vendor Shopify Website</option>
+                                        <option value="shopify-custom">Custom Shopify Liquid Theme Tweaks</option>
+                                    </optgroup>
+                                    <optgroup label="Web Development & Conversion">
+                                        <option value="static-dev">Static Webpage (PSD/Figma/PDF to HTML)</option>
+                                        <option value="speed-optimization">Website Speed & Performance Optimization</option>
+                                        <option value="technical-seo">Technical SEO Audit & Implementation</option>
+                                    </optgroup>
+                                </select>
 
-                            <textarea name="message" rows="4" placeholder="Tell me more about your specific requirements..." required class="w-full bg-gray-950 border border-gray-700 rounded-lg p-3 text-white focus:border-cyan-500 outline-none mb-6"></textarea>
+                                <textarea name="message" rows="4" placeholder="Tell me more about your specific requirements..." required class="w-full bg-gray-950 border border-gray-700 rounded-lg p-3 text-white focus:border-cyan-500 outline-none mb-6"></textarea>
 
-                            <button type="submit" class="w-full bg-gradient-to-r from-cyan-600 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-white font-bold py-4 rounded-lg transition-all shadow-lg transform hover:scale-[1.01]">
-                                Confirm Order Request
-                            </button>
-                        </form>
-                    </div>
-                </section>
+                                <button type="submit" class="w-full bg-gradient-to-r from-cyan-600 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-white font-bold py-4 rounded-lg transition-all shadow-lg transform hover:scale-[1.01]">
+                                    Confirm Order Request
+                                </button>
+                            </form>
+                        </div>
+                    </section>
 
 
                     <hr class="border-gray-800 w-full max-w-7xl">

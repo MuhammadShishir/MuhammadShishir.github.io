@@ -1,519 +1,260 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-                <!-- Primary Meta Tags -->
-          <title>Md Kamruzzaman Shishir | IT Specialist & Developer</title>
-          <meta name="title" content="Md Kamruzzaman Shishir | IT Specialist & Developer">
-          <meta name="description" content="Professional in IT, Web Design & Development, WordPress, and Unreal Engine. Explore projects, skills, and get in touch.">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Kamruzzaman Shishir | Gallery</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-          <!-- Canonical URL -->
-          <link rel="canonical" href="https://mkshishir.pages.dev/">
+    <style>
+        :root {
+            --neon-cyan: #22d3ee;
+            --neon-fuchsia: #f0abfc;
+        }
 
-          <!-- Keywords (optional, not used much anymore, but doesn't hurt) -->
-          <meta name="keywords" content="Md Kamruzzaman Shishir, IT Specialist, Web Developer, WordPress, Unreal Engine, Portfolio, Bangladesh">
-
-          <!-- Author -->
-          <meta name="author" content="Md Kamruzzaman Shishir">
-
-          <!-- Language -->
-          <meta http-equiv="Content-Language" content="en">
-
-          <!-- Robots -->
-          <meta name="robots" content="index, follow">
-          <meta name="googlebot" content="index, follow">
-
-          <!-- Theme Color (Mobile browser UI) -->
-          <meta name="theme-color" content="#000000" />
-
-            <!-- Favicon -->
-                  <link rel="icon" type="image/x-icon" href="./M-K-S.ico">
-          <!-- Apple Touch Icon -->   
-          <link rel="icon" type="image/png" sizes="32x32" href="./media/img/M K S.png">
-
-          <!-- Manifest (for PWA support) -->
-          <link rel="manifest" href="/manifest.json">
-
-          <!-- DNS Prefetch & Preconnect for performance -->
-          <link rel="dns-prefetch" href="//fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-          <!-- Apple Touch Icon -->
-          <link rel="apple-touch-icon" href="/media/img/apple-touch-icon.png">
-
-          <!-- PWA iOS Support -->
-          <meta name="apple-mobile-web-app-capable" content="yes">
-          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-          <meta name="apple-mobile-web-app-title" content="Md Kamruzzaman Shishir">
-
-          <!-- Site Verification (Google, Bing, etc.) -->
-          <!-- <meta name="google-site-verification" content="your_verification_token_here"> -->
-          <!-- <meta name="msvalidate.01" content="your_verification_token_here" /> -->
-
-          <!-- Open Graph / Facebook -->  
-          <meta property="og:type" content="website">
-          <meta property="og:title" content="Md Kamruzzaman Shishir | IT Specialist & Developer">
-          <meta property="og:description" content="Professional in IT, Web Design & Development, WordPress, and Unreal Engine. Explore projects, skills, and get in touch.">
-          <meta property="og:image" content="https://mkshishir.pages.dev/media/img/SoShishir.png">
-          <meta property="og:url" content="https://mkshishir.pages.dev/">
-          <meta property="og:site_name" content="Md Kamruzzaman Shishir">
-          <meta property="og:locale" content="en_US">
-          <meta property="og:image:alt" content="Md Kamruzzaman Shishir - IT Specialist & Developer">
-          <meta property="og:image:width" content="1200">
-          <meta property="og:image:height" content="630">
-          <!-- Twitter -->
-          <meta name="twitter:card" content="summary_large_image">  
-          <meta name="twitter:title" content="Md Kamruzzaman Shishir | IT Specialist & Developer">
-          <meta name="twitter:description" content="Professional in IT, Web Design & Development, WordPress, and Unreal Engine. Explore projects, skills, and get in touch.">
-          <meta name="twitter:image" content="https://mkshishir.pages.dev/media/img/SoShishir.png">
-          <meta name="twitter:site" content="@MuhammadShishir">
-          <meta name="twitter:creator" content="@MuhammadShishir">
-          <meta name="twitter:image:alt" content="Md Kamruzzaman Shishir - IT Specialist & Developer">
-          <meta name="twitter:card" content="summary_large_image">
-          <meta name="twitter:domain" content="mkshishir.pages.dev">
-          <meta name="twitter:url" content="https://mkshishir.pages.dev/">
-          <meta name="twitter:label1" content="Written by">
-          <meta name="twitter:data1" content="Md Kamruzzaman Shishir">
-          <meta name="twitter:label2" content="Est. reading time">
-          <meta name="twitter:data2" content="5 minutes">
-          <meta name="twitter:site" content="@MuhammadShishir">
-          <meta name="twitter:creator" content="@MuhammadShishir">
-          <meta name="twitter:app:name:iphone" content="Md Kamruzzaman Shishir">
-          <meta name="twitter:app:id:iphone" content="your_app_id_here">
-          <meta name="twitter:app:name:ipad" content="Md Kamruzzaman Shishir">
-          <meta name="twitter:app:id:ipad" content="your_app_id_here">
-          <meta name="twitter:app:name:googleplay" content="Md Kamruzzaman Shishir">
-          <meta name="twitter:app:id:googleplay" content="your_app_id_here">
-          <meta name="twitter:app:url:iphone" content="https://mkshishir.pages.dev/">
-          <meta name="twitter:app:url:ipad" content="https://mkshishir.pages.dev/">
-          <meta name="twitter:app:url:googleplay" content="https://mkshishir.pages.dev/">
-          <meta name="twitter:app:country" content="US">
-          <meta name="twitter:app:country" content="BD">
-          <meta name="twitter:app:country" content="IN">
-          <meta name="twitter:app:country" content="UK">
-          <meta name="twitter:app:country" content="CA">
-          <meta name="twitter:app:country" content="AU">
-          <meta name="twitter:app:country" content="DE">
-          <meta name="twitter:app:country" content="FR">
-          <meta name="twitter:app:country" content="JP">
-          <meta name="twitter:app:country" content="CN">
-          <meta name="twitter:app:country" content="BR">
-          <meta name="twitter:app:country" content="ZA">
-          <meta name="twitter:app:country" content="RU">
-          <meta name="twitter:app:country" content="KR">
-          <meta name="twitter:app:country" content="ES">
-          <meta name="twitter:app:country" content="IT">
-          <meta name="twitter:app:country" content="MX">
-          <meta name="twitter:app:country" content="AR">
-          <!-- Twitter Image -->
-          <meta name="twitter:image" content="https://mkshishir.pages.dev/media/img/SoShishir.png">
-          <meta name="twitter:image:alt" content="Md Kamruzzaman Shishir - IT Specialist & Developer">
-      
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/v4-shims.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/v5-font-face.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/grid.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
-      
-      
-      
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-        <style id="theme-style">  header h1, .role {
-            color: #ffffff;
-          }
-        
-          </style>
-        <style>
-          body {
+        body {
             font-family: 'Fira Code', monospace;
-            transition: background-color 0.3s, color 0.3s;
-          }
-          /* Push content right */
-            body > .flex-grow-1, .main-content {
-            margin-left: 260px;
-            padding: 2rem;
-            }
-          .btn-outline-light{
-            color: #000 ;
-            border-color: #000 ;
-            background-color: #fff;
-            transition: background-color 0.3s, color 0.3s;
-          }
-          body.dark {
-            width: 100%;
-            height: 100%;
-            --color: rgba(114, 114, 114, 0.3);
-            background-color: #191a1a;
-            background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-              linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-            background-size: 55px 55px;
-          }
-      
-          body.light {
-            background-color: #f4f4f4;
-            --color: rgba(255, 183, 197, 0.35);
-            background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
-              linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
-            background-size: 55px 55px;
-          }
-      
-          .code-block {
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #000;
-            margin-bottom: 2rem;
-          }
-      
-          .tag {
-            font-weight: bold;
-          }
-      
-          header h1 {
-            color: #569cd6;
-          }
-          
-          .role {
-            font-style: italic;
-            margin-top: 0.5rem;
-          }
-      
-          footer {
-            text-align: center;
-            color: #888;
-            margin-top: 4rem;
-            font-size: 0.9rem;
-          }
-      
-          .language-switch {
-            margin-right: 0.5rem;
-          }
-      
-          #themeToggleBtn {
-            padding: 6px 12px;
-            border-radius: 25px;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+            cursor: none;
+        }
+
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            background-image: 
+                linear-gradient(to right, rgba(34, 211, 238, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(34, 211, 238, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            mask-image: radial-gradient(circle at center, black, transparent 90%);
+        }
+
+        #cursor-dot {
+            width: 8px; height: 8px; background: var(--neon-cyan);
+            border-radius: 50%; position: fixed; pointer-events: none; z-index: 999;
+        }
+        #cursor-glow {
+            width: 40px; height: 40px; border: 2px solid var(--neon-fuchsia);
+            border-radius: 50%; position: fixed; pointer-events: none; z-index: 998;
+            transition: all 0.1s ease-out; opacity: 0.6;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-auto-rows: 240px;
+            gap: 1.5rem;
+        }
+
+        .bento-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #0f172a;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: border-color 0.3s ease;
+        }
+
+        .bento-item:hover {
+            border-color: var(--neon-cyan);
+        }
+
+        .span-h-2 { grid-row: span 2; }
+        .span-w-2 { grid-column: span 2; }
+
+        /* Modal Styles */
+        #lightbox {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        #lightbox.active {
             display: flex;
-            align-items: center;
-          }
-      
-          #themeIcon {
-            font-size: 1.2rem;
-            margin-right: 8px;
-          }
-        </style>
-      </head>
-<body class="dark">
-  
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>      
-&nbsp;
-<nav class="navbar navbar-expand-lg fixed-top" style="display: flex; justify-content: space-between; background-color: #0080ff15; padding: 0.5rem 1rem;">
-         <button class="btn btn-outline-light" >
-        <i class="fas fa-home"></i> 
-        <a href="index.html" class="text-dark">  Home</a>
-      </button>
- <span class="navbar-brand text-white ml-2" style="font-size: 1.5rem; font-weight: bold;">
-  Gallery
- </span>
-</nav>
+            opacity: 1;
+        }
 
-<!-- Gallery start -->
+        @media (max-width: 768px) {
+            .span-w-2 { grid-column: span 1; }
+            body { cursor: auto; }
+            #cursor-dot, #cursor-glow { display: none; }
+        }
+    </style>
+</head>
+<body>
 
-<div class="gallery-text" style="text-align: center; color: #fff;">
-  <br><br><br>
-  <h4>Photos</h4>
-</div>
+    <div class="bg-grid"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-glow"></div>
 
-<div class="gallery-container collage-gallery"></div>
+    <nav class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center backdrop-blur-md border-b border-white/5">
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-cyan-500 transition-colors">
+                <i class="fas fa-home text-sm"></i>
+            </a>
+            <span class="font-bold tracking-tight text-xl">
+                Md Kamruzzaman Shishir <span class="text-cyan-500">|</span> <span class="text-fuchsia-400">Gallery</span>
+            </span>
+        </div>
+    </nav>
 
-<h4 style="text-align: center; color: #fff;">Video</h4>
-<div class="video-container" style="display: flex; justify-content: center; gap: 2rem;">
-  <iframe src="https://www.youtube.com/embed/pkVka8jisVg" width="560" height="500" frameborder="0" allowfullscreen></iframe>
-  <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmksbd2022%2Fvideos%2F714632553897115%2F&show_text=false&width=560&t=0" width="560" height="500" frameborder="0" allowfullscreen></iframe>
-</div>
+    <main class="container mx-auto px-6 pt-32 pb-24">
+        <div class="mb-16">
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase italic">
+                The <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">Archive</span>
+            </h2>
+        </div>
 
-<!-- Modal Template -->
-<div id="imageModal" class="modal" style="display: none;">
-  <span class="modal-close">&times;</span>
-  <img class="modal-image" src="" alt="Zoomed">
-</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(document).ready(function () {
-    const galleryContainer = $(".gallery-container");
-    const numberOfImages = 50;
-
-    // List of supported formats, in priority order
-    const extensions = ["webp", "jpg", "jpeg", "png", "gif", "tiff", "bmp", "avif"];
-
-    function loadFirstAvailableImage(i, callback) {
-      let found = false;
-      let imageUrl = "";
-      let attempts = 0;
-
-      function tryNextExtension() {
-        if (attempts >= extensions.length) return;
-
-        const ext = extensions[attempts];
-        const testUrl = `./media/img/${i}.${ext}`;
-        const img = new Image();
-
-        img.onload = function () {
-          if (!found) {
-            found = true;
-            imageUrl = testUrl;
-            callback(imageUrl);
-          }
-        };
-
-        img.onerror = function () {
-          attempts++;
-          tryNextExtension();
-        };
-
-        img.src = testUrl;
-      }
-
-      tryNextExtension();
-    }
-
-    // Try to load an available image for each index
-    for (let i = 1; i <= numberOfImages; i++) {
-      loadFirstAvailableImage(i, function (imageUrl) {
-        const itemId = `item-${i}`;
-        const galleryItem = `
-          <div class="gallery-item" id="${itemId}">
-            <img src="${imageUrl}" alt="Image ${i}" oncontextmenu="return false;">
-            <button class="zoom-button" data-image="${imageUrl}" title="Zoom">🔍</button>
-          </div>`;
-        galleryContainer.append(galleryItem);
-      });
-    }
-
-    // Zoom modal logic
-    galleryContainer.on("click", ".zoom-button", function () {
-      const imageUrl = $(this).data("image");
-      $("#imageModal").fadeIn().find(".modal-image").attr("src", imageUrl);
-    });
-
-    $(".modal-close").click(function () {
-      $("#imageModal").fadeOut();
-    });
-  });
-</script>
-
-
-<style>
-  .collage-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
-  grid-auto-rows: 350px;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.05);
-}
-
-.zoom-button {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  font-size: 1.2rem;
-  padding: 4px 8px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 20, 20, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.modal-image {
-  max-width: 90%;
-  max-height: 80%;
-  border-radius: 1rem;
-}
-
-.modal-close {
-  position: fixed;
-  top: 10%;
-  right: 7%;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
-
-
-@media screen and (max-width: 768px) {
-  .collage-gallery {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 250px;
-  }
-  .modal-close{
-    position: fixed;
-    top: 30%;
-    right: 5%;
-  }
-}
-</style>
-
-
-<!-- End of gallery -->
-
-
-<footer class="footer mt-5 text-center">
-            <div class="footer-content">
-              
-          
-              <div class="footer-icons d-flex justify-content-center gap-3 mb-2">
-          
-                <a href="https://github.com/MuhammadShishir" class="icon-wrapper github" target="_blank" title="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-          
-                <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" class="icon-wrapper linkedin" target="_blank" title="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-          
-                <a href="mailto:mdkamruzzaman.shishir@outlook.com" class="icon-wrapper email" title="Email">
-                  <i class="fas fa-envelope"></i>
-                </a>
-          
-                <a href="https://mksge.itch.io/" class="icon-wrapper itch" target="_blank" title="Itch.io">
-                  <i class="fab fa-itch-io"></i>
-                </a>
-                <a href="https://orcid.org/0009-0009-2237-0129" class="icon-wrapper orcid" target="_blank" title="ORCID">
-                  <i class="fab fa-orcid"></i>
-                </a>
-                <a href="https://www.behance.net/kamruzzshishir"  class="icon-wrapper behance" target="_blank" title="Behance">
-                  <i class="fab fa-behance"></i>      
-                </a>
-              </div>
-              <br>
-              <p class="mb-2">&copy; 2025 <strong>Md Kamruzzaman Shishir</strong></p>
-              <p class="description-text small">// Built with 💻, ☕, and 🚀</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/pkVka8jisVg" frameborder="0" allowfullscreen></iframe>
             </div>
-          </footer>
-
-<!-- Floating Button Container -->
-   <div class="go-to-top-container">
-
-          <!-- Go Home Button -->
-          <a href="index.html" class="go-home" title="Back to Home">
-            <i class="fas fa-home"></i>
-          </a>
-
-          <!-- Contact Button -->
-          <div class="go-contact" id="goToContact" title="Contact Me">
-            <i class="fa-solid fa-comments"></i>
-          </div>
-
-          <!-- Go to Top Button -->
-          <div class="go-to-top" id="goToTop" title="Back to Top">
-            <i class="fas fa-arrow-up"></i>
-          </div>
-
+            <div class="aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
+                <iframe class="w-full h-full" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmksbd2022%2Fvideos%2F714632553897115%2F&show_text=false" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
 
-<!-- Contact Modal -->
- <div id="contactModal" class="contact-modal d-none">
-          <div class="contact-content">
-            <h2 class="text-center text-white">Contact Me</h2>
-            <span class="close-contact" id="closeContact">&times;</span>
+        <div id="gallery-root" class="bento-grid">
+            </div>
+    </main>
 
-            <!-- Contact Form -->
-            <form action="https://formspree.io/f/xanegwyz" method="POST" class="mt-4">
-              <div class="form-group">
-                <label for="name" class="label">Name:</label>
-                <input type="text" name="name" placeholder="Your Name" class="form-control  border-secondary" required>
-              </div>
-              <div class="form-group mt-2">
-                <label for="email" class="label">Email:</label>
-                <input type="email" name="_replyto" placeholder="Your Email" class="form-control  border-secondary" required>
-              </div>
-              <div class="form-group mt-2">
-                <label for="message" class="label">Message:</label>
-                <textarea name="message" rows="4" placeholder="Your Message" class="form-control  border-secondary" required></textarea>
-              </div>
-              <button type="submit" class="outline mt-3">Send Message</button>
-            </form>
-          </div>
-        </div>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const goToTopButton = document.getElementById("goToTop");
-            const contactBtn = document.getElementById("goToContact");
-            const contactModal = document.getElementById("contactModal");
-            const closeBtn = document.getElementById("closeContact");
+    <div id="lightbox" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-xl p-4 md:p-12">
+        <button id="close-lightbox" class="absolute top-8 right-8 text-white/50 hover:text-cyan-400 text-3xl z-[110]">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <button id="prev-btn" class="absolute left-4 md:left-8 text-white/30 hover:text-cyan-400 text-4xl transition-all z-[110]">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <img id="lightbox-img" src="" class="max-w-full max-h-full rounded-lg shadow-2xl border border-white/10 object-contain transition-transform duration-500 transform scale-95">
+        
+        <button id="next-btn" class="absolute right-4 md:right-8 text-white/30 hover:text-cyan-400 text-4xl transition-all z-[110]">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
 
-            // Show/hide "Go to top" on scroll
-            window.addEventListener("scroll", function () {
-              if (window.scrollY > 20) {
-                goToTopButton.classList.add("show-go-to-top");
-              } else {
-                goToTopButton.classList.remove("show-go-to-top");
-              }
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // --- 1. CURSOR LOGIC ---
+        const dot = document.getElementById('cursor-dot');
+        const glow = document.getElementById('cursor-glow');
+        
+        document.addEventListener('mousemove', (e) => {
+            dot.style.left = e.clientX + 'px';
+            dot.style.top = e.clientY + 'px';
+            setTimeout(() => {
+                glow.style.left = (e.clientX - 16) + 'px';
+                glow.style.top = (e.clientY - 16) + 'px';
+            }, 40);
+        });
+
+        $(document).ready(function () {
+            const container = $("#gallery-root");
+            const total = 30;
+            const exts = ["webp", "jpg", "png"];
+            let imagesArray = []; // To store image paths for navigation
+            let currentIndex = 0;
+
+            // --- 2. GALLERY LOADING ---
+            function init() {
+                for (let i = 1; i <= total; i++) {
+                    let span = "";
+                    if (i === 1 || i === 8) span = "span-w-2 span-h-2";
+                    else if (i % 5 === 0) span = "span-h-2";
+                    load(i, span);
+                }
+            }
+
+            function load(id, span) {
+                let eIdx = 0;
+                function check() {
+                    if (eIdx >= exts.length) return;
+                    const src = `./media/img/${id}.${exts[eIdx]}`;
+                    const img = new Image();
+                    img.onload = () => {
+                        imagesArray.push(src); // Add to sequence
+                        const itemIdx = imagesArray.length - 1;
+                        
+                        container.append(`
+                            <div class="bento-item ${span} group cursor-pointer gallery-trigger" data-index="${itemIdx}" data-src="${src}">
+                                <img src="${src}" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6">
+                                    <span class="text-[10px] font-mono text-cyan-400">VAULT_FILE: ${id}</span>
+                                    <h4 class="font-bold text-lg text-white uppercase">Visual Asset</h4>
+                                </div>
+                            </div>
+                        `);
+                    };
+                    img.onerror = () => { eIdx++; check(); };
+                    img.src = src;
+                }
+                check();
+            }
+
+            init();
+
+            // --- 3. 3D TILT ---
+            $(document).on("mousemove", ".bento-item", function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left, y = e.clientY - rect.top;
+                const xc = rect.width / 2, yc = rect.height / 2;
+                const dx = x - xc, dy = y - yc;
+                $(this).css("transform", `perspective(1000px) rotateY(${dx / 25}deg) rotateX(${-dy / 25}deg)`);
             });
 
-            // Scroll to top
-            goToTopButton.addEventListener("click", function () {
-              window.scrollTo({ top: 0, behavior: "smooth" });
+            $(document).on("mouseleave", ".bento-item", function() {
+                $(this).css("transform", "perspective(1000px) rotateY(0deg) rotateX(0deg)");
             });
 
-            // Show contact modal
-            contactBtn.addEventListener("click", function () {
-              contactModal.classList.remove("d-none");
+            // --- 4. MODAL & NAVIGATION ---
+            const $modal = $("#lightbox");
+            const $modalImg = $("#lightbox-img");
+
+            function updateModal() {
+                $modalImg.removeClass("scale-100").addClass("scale-95");
+                setTimeout(() => {
+                    $modalImg.attr("src", imagesArray[currentIndex]);
+                    $modalImg.removeClass("scale-95").addClass("scale-100");
+                }, 150);
+            }
+
+            $(document).on("click", ".gallery-trigger", function() {
+                currentIndex = parseInt($(this).attr("data-index"));
+                $modal.addClass("active");
+                updateModal();
             });
 
-            // Hide contact modal
-            closeBtn.addEventListener("click", function () {
-              contactModal.classList.add("d-none");
+            $("#next-btn").click(function(e) {
+                e.stopPropagation();
+                currentIndex = (currentIndex + 1) % imagesArray.length;
+                updateModal();
             });
 
-            // Close modal if clicked outside
-            window.addEventListener("click", function (e) {
-              if (e.target === contactModal) {
-                contactModal.classList.add("d-none");
-              }
+            $("#prev-btn").click(function(e) {
+                e.stopPropagation();
+                currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
+                updateModal();
             });
-          });
-        </script>
+
+            $("#close-lightbox, #lightbox").click(function(e) {
+                if (e.target.id === "lightbox" || e.target.id === "close-lightbox" || $(e.target).closest('#close-lightbox').length) {
+                    $modal.removeClass("active");
+                }
+            });
+
+            // Keyboard Support
+            $(document).keydown(function(e) {
+                if (!$modal.hasClass("active")) return;
+                if (e.keyCode === 37) $("#prev-btn").click(); // Left
+                if (e.keyCode === 39) $("#next-btn").click(); // Right
+                if (e.keyCode === 27) $modal.removeClass("active"); // Esc
+            });
+        });
+    </script>
 </body>
-</html>    
+</html>

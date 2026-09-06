@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>Md Kamruzzaman Shishir | IT Specialist & Web Developer</title>
   
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -98,11 +98,13 @@
           font-display: swap; 
       }
 
-      body {
+      html, body {
+          width: 100%;
+          max-width: 100%;
+          overflow-x: hidden; /* Guards against horizontal scrolling on small screens */
           background-color: var(--bg-primary);
           color: var(--text-main);
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-          cursor: auto;
       }
 
       /* Animated Text */
@@ -111,32 +113,29 @@
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
-          text-fill-color: transparent;
           font-family: 'Exwayer', sans-serif;
       }
 
-      /* Banner Section */
+      /* Banner Section Responsive Padding */
       .banner-section {
           background: linear-gradient(to bottom, #FBF9F5, var(--bg-secondary));
-          padding: 80px 20px;
+          padding: 60px 16px;
+      }
+      @media (min-width: 768px) {
+          .banner-section {
+              padding: 80px 20px;
+          }
       }   
       
-      /* Logo Transitions */
       .logo-image, .logo-text {
           transition: opacity 0.2s ease-in-out;
       }
 
-      /* Skill Badges */
       .skill-badge {
           @apply inline-flex items-center px-3.5 py-1.5 text-xs font-medium rounded-md bg-white border border-stone-200 text-stone-800 shadow-sm transition-all duration-200 ease-in-out hover:border-stone-400 hover:shadow;
           animation: fadeIn 0.6s ease-out both; 
       }
 
-      .skill-category-block:hover .skill-badge {
-          border-color: #d6d3d1; 
-      }
-
-      /* Project Card Vault */
       .project-card-vault {
           position: relative;
           border-radius: 12px;
@@ -154,7 +153,6 @@
           transform: translateY(-2px);
       }
 
-      /* Widget Buttons */
       .sk-widget-btn, .sk-widget-btn span {
           color: var(--text-main) !important;
       }
@@ -195,98 +193,87 @@
           0% { opacity: 0; transform: translateY(6px); }
           100% { opacity: 1; transform: translateY(0); }
       }
-      
-      /* Contact Modal Container */
-      #contactModal {
-          display: none;
-          opacity: 0;
-          transition: opacity 0.3s ease;
-      }
-      #contactModal.active {
-          display: flex;
-          opacity: 1;
-      }
   </style>
 
   <script src="js/include.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
-<body class="antialiased selection:bg-stone-900 selection:text-stone-100 relative">
+<body class="antialiased selection:bg-stone-900 selection:text-stone-100 relative w-full overflow-x-hidden">
 
-  <header data-include="components/navbar.html"></header>
+  <header data-include="components/navbar.html" class="w-full"></header>
 
-  <main class="w-full">
+  <main class="w-full overflow-hidden">
     <section id="home" data-include="components/hero.html" class="min-h-screen w-full banner-section"></section>
     
-    <section id="about" data-include="components/about.html" class="bg-[#FBF9F5] w-full"></section>
+    <section id="about" data-include="components/about.html" class="bg-[#FBF9F5] w-full "></section>
     
-    <section id="skills" data-include="components/skills.html" class="bg-white w-full"></section>
+    <section id="skills" data-include="components/skills.html" class="bg-white w-full "></section>
     
-    <section id="projects" data-include="components/projects.html" class="bg-[#FBF9F5] w-full"></section>
+    <section id="projects" data-include="components/projects.html" class="bg-[#FBF9F5] w-full "></section>
     
-    <section id="faq" data-include="components/faq.html" class="w-full bg-white"></section>
+    <section id="faq" data-include="components/faq.html" class="w-full bg-white "></section>
     
-    <section id="expert-insights" data-include="components/expert-insights.html" class="w-full bg-[#FBF9F5]"></section>
+    <section id="expert-insights" data-include="components/expert-insights.html" class="w-full bg-[#FBF9F5] "></section>
     
-    <section id="hire-me" data-include="components/hire-me.html" class="w-full bg-white"></section>
+    <section id="hire-me" data-include="components/hire-me.html" class="w-full bg-white "></section>
+
+    <div class="hidden md:block">
         <a href="#hire-me" id="hire-popup" 
-            class="fixed right-0 top-1/4 transform w-40 h-10 bg-stone-900 text-white shadow-md border border-stone-800 z-50 transition-all duration-200 ease-in-out font-sans hidden md:flex items-center justify-center hover:bg-stone-800 -rotate-90 origin-bottom-right translate-y-1/2">
+            class="fixed right-0 top-1/4 transform w-40 h-10 bg-stone-900 text-white shadow-md border border-stone-800 z-50 transition-all duration-200 ease-in-out font-sans flex items-center justify-center hover:bg-stone-800 -rotate-90 origin-bottom-right translate-y-1/2">
             <span class="text-xs font-mono tracking-widest uppercase whitespace-nowrap">
                 💼 Hire Me
             </span>
         </a>
 
         <a href="https://mkstech.itch.io/the-expload-ball" target="_blank" id="demo-popup" 
-            class="fixed right-0 top-2/4 transform w-40 h-10 bg-white text-stone-900 shadow-md border border-stone-200 z-50 transition-all duration-200 ease-in-out font-sans hidden md:flex items-center justify-center hover:bg-stone-50 -rotate-90 origin-bottom-right translate-y-1/2">
+            class="fixed right-0 top-2/4 transform w-40 h-10 bg-white text-stone-900 shadow-md border border-stone-200 z-50 transition-all duration-200 ease-in-out font-sans flex items-center justify-center hover:bg-stone-50 -rotate-90 origin-bottom-right translate-y-1/2">
             <span class="text-xs font-mono tracking-widest uppercase whitespace-nowrap">
                 🎮 Quick Demo
             </span>
         </a>
 
         <a href="https://clients.itnuthosting.com/aff.php?aff=784" target="_blank" id="affiliate-popup" 
-            class="fixed right-0 bottom-1/4 transform w-40 h-10 bg-stone-700 text-white shadow-md border border-stone-600 z-50 transition-all duration-200 ease-in-out font-sans hidden md:flex items-center justify-center hover:bg-stone-800 -rotate-90 origin-bottom-right translate-y-1/2">
+            class="fixed right-0 bottom-1/4 transform w-40 h-10 bg-stone-700 text-white shadow-md border border-stone-600 z-50 transition-all duration-200 ease-in-out font-sans flex items-center justify-center hover:bg-stone-800 -rotate-90 origin-bottom-right translate-y-1/2">
             <span class="text-xs font-mono tracking-widest uppercase whitespace-nowrap">
                 🔗 Hosting DEAL
             </span>
         </a>
+    </div>
   </main>
 
-  <footer data-include="components/footer.html"></footer>
+  <footer data-include="components/footer.html" class="w-full"></footer>
 
-  <!-- Floating Action Group Container -->
-  <div class="fixed bottom-6 right-12 z-50 flex flex-col gap-3">
-      <!-- Contact Button -->
+  <div class="fixed bottom-5 right-5 md:right-8 z-50 flex flex-col gap-3">
       <button id="goToContact" aria-label="Contact Me" title="Contact Me"
-              class="w-11 h-11 bg-white/80 backdrop-blur-md border border-stone-300/80 rounded-full shadow-lg text-stone-800 flex items-center justify-center transition-all duration-300 hover:bg-stone-900 hover:text-white hover:border-stone-900 hover:-translate-y-1 cursor-pointer">
+              class="w-11 h-11 bg-white/90 backdrop-blur-md border border-stone-300/80 rounded-full shadow-lg text-stone-800 flex items-center justify-center transition-all duration-300 hover:bg-stone-900 hover:text-white hover:border-stone-900 hover:-translate-y-1 cursor-pointer">
           <i class="fa-solid fa-comments text-sm"></i>
       </button>
 
-      <!-- Go to Top Button -->
       <button id="scrollToTopBtn" aria-label="Go to top" title="Back to Top"
-              class="w-11 h-11 bg-white/80 backdrop-blur-md border border-stone-300/80 rounded-full shadow-lg text-stone-800 flex items-center justify-center opacity-0 translate-y-4 pointer-events-none transition-all duration-300 hover:bg-stone-900 hover:text-white hover:border-stone-900 hover:-translate-y-1 cursor-pointer">
+              class="w-11 h-11 bg-white/90 backdrop-blur-md border border-stone-300/80 rounded-full shadow-lg text-stone-800 flex items-center justify-center opacity-0 translate-y-4 pointer-events-none transition-all duration-300 hover:bg-stone-900 hover:text-white hover:border-stone-900 hover:-translate-y-1 cursor-pointer">
           <i class="fas fa-arrow-up text-sm"></i>
       </button>
   </div>
 
-  <!-- Contact Modal -->
-  <div id="contactModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-stone-950/80 backdrop-blur-2xl p-4">
-      <div class="bg-white border border-stone-300/80 rounded-3xl p-8 max-w-md w-full shadow-2xl relative">
-          <span id="closeContact" class="absolute top-6 right-6 w-10 h-10 bg-stone-100 hover:bg-stone-900 text-stone-800 hover:text-white border border-stone-300 rounded-full flex items-center justify-center transition-all cursor-pointer select-none text-lg leading-none">&times;</span>
-          <h2 class="text-2xl font-normal text-stone-900 mb-6 text-center">Contact Me</h2>
+  <div id="contactModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-stone-950/80 backdrop-blur-md p-4 sm:p-6">
+      <div class="bg-white border border-stone-300/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl relative max-h-[90vh] overflow-y-auto">
+          <button id="closeContact" type="button" aria-label="Close modal" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-9 h-9 sm:w-10 sm:h-10 bg-stone-100 hover:bg-stone-900 text-stone-800 hover:text-white border border-stone-300 rounded-full flex items-center justify-center transition-all cursor-pointer">
+              <i class="fas fa-times text-sm"></i>
+          </button>
+          <h2 class="text-xl sm:text-2xl font-normal text-stone-900 mb-6 text-center">Contact Me</h2>
 
-          <!-- Contact Form -->
           <form action="https://formspree.io/f/xanegwyz" method="POST" class="space-y-4">
               <div>
                   <label for="name" class="block text-xs font-mono uppercase tracking-widest text-stone-500 mb-1.5">Name:</label>
-                  <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:border-stone-900 text-stone-900 text-sm" required>
+                  <input type="text" id="name" name="name" placeholder="Your Name" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:border-stone-900 text-stone-900 text-sm" required>
               </div>
               <div>
                   <label for="email" class="block text-xs font-mono uppercase tracking-widest text-stone-500 mb-1.5">Email:</label>
-                  <input type="email" name="_replyto" placeholder="Your Email" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:border-stone-900 text-stone-900 text-sm" required>
+                  <input type="email" id="email" name="_replyto" placeholder="Your Email" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:border-stone-900 text-stone-900 text-sm" required>
               </div>
               <div>
                   <label for="message" class="block text-xs font-mono uppercase tracking-widest text-stone-500 mb-1.5">Message:</label>
-                  <textarea name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:border-stone-900 text-stone-900 text-sm resize-none" required></textarea>
+                  <textarea id="message" name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:border-stone-900 text-stone-900 text-sm resize-none" required></textarea>
               </div>
               <button type="submit" class="w-full py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-medium text-sm transition-all shadow-sm cursor-pointer mt-2">Send Message</button>
           </form>
@@ -300,9 +287,9 @@
         const contactModal = document.getElementById("contactModal");
         const closeBtn = document.getElementById("closeContact");
 
-        // Go To Top Button Visibility & Scroll
+        // Scroll listener for Top Button Visibility
         window.addEventListener('scroll', () => {
-          if (window.scrollY > 400) {
+          if (window.scrollY > 300) {
             scrollToTopBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
             scrollToTopBtn.classList.add('opacity-100', 'translate-y-0');
           } else {
@@ -318,27 +305,31 @@
           });
         });
 
-        // Show contact modal
+        // Open Contact Modal
         contactBtn.addEventListener("click", function () {
-            contactModal.classList.add("active");
+            contactModal.classList.remove("hidden");
+            contactModal.classList.add("flex");
+            document.body.style.overflow = "hidden"; // Prevent body scroll when modal is active
         });
 
-        // Hide contact modal
-        closeBtn.addEventListener("click", function () {
-            contactModal.classList.remove("active");
-        });
+        // Close Contact Modal
+        function closeModal() {
+            contactModal.classList.remove("flex");
+            contactModal.classList.add("hidden");
+            document.body.style.overflow = ""; // Restore body scroll
+        }
 
-        // Close modal if clicked outside
+        closeBtn.addEventListener("click", closeModal);
+
         window.addEventListener("click", function (e) {
             if (e.target === contactModal) {
-                contactModal.classList.remove("active");
+                closeModal();
             }
         });
 
-        // Close modal on Escape key
         document.addEventListener("keydown", function (e) {
-            if (e.key === "Escape") {
-                contactModal.classList.remove("active");
+            if (e.key === "Escape" && !contactModal.classList.contains("hidden")) {
+                closeModal();
             }
         });
     });

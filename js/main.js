@@ -4,42 +4,79 @@
  * and modular component interactions (Project Filtering, 3D Tilt, FAQ Accordions, Typewriter, and Support Widget).
  */
 
-document.addEventListener('DOMContentLoaded', () => {
-    // --- MOBILE MENU TOGGLE FUNCTIONALITY ---
+// --- MOBILE MENU INITIALIZATION FUNCTION ---
+function initMobileMenu() {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     const openIcon = document.getElementById('open-icon');
     const closeIcon = document.getElementById('close-icon');
 
-    if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.contains('hidden');
-            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-            
-            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+    if (!mobileMenuButton || !mobileMenu) return;
 
-            if (isHidden) {
-                mobileMenu.classList.remove('hidden');
-                openIcon?.classList.add('hidden');
-                closeIcon?.classList.remove('hidden');
-            } else {
-                mobileMenu.classList.add('hidden');
-                openIcon?.classList.remove('hidden');
-                closeIcon?.classList.add('hidden');
-            }
-        });
+    // Toggle menu state
+    const toggleMenu = () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
 
-        // Close mobile menu when clicking a link inside it
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                mobileMenuButton.setAttribute('aria-expanded', 'false');
-                openIcon?.classList.remove('hidden');
-                closeIcon?.classList.add('hidden');
-            });
+        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+
+        if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            openIcon?.classList.add('hidden');
+            closeIcon?.classList.remove('hidden');
+        } else {
+            mobileMenu.classList.add('hidden');
+            openIcon?.classList.remove('hidden');
+            closeIcon?.classList.add('hidden');
+        }
+    };
+
+    // Remove old listener if re-initializing to avoid duplicate handlers
+    mobileMenuButton.removeEventListener('click', toggleMenu);
+    mobileMenuButton.addEventListener('click', toggleMenu);
+
+    // Close mobile menu when clicking any inner anchor link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            openIcon?.classList.remove('hidden');
+            closeIcon?.classList.add('hidden');
         });
+    });
+}
+
+// Fallback listener: Event delegation on document to catch menu clicks if navbar is injected asynchronously
+document.addEventListener('click', (e) => {
+    const btn = e.target.closest('#mobile-menu-button');
+    if (!btn) return;
+
+    const mobileMenu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('open-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    if (!mobileMenu) return;
+
+    const isHidden = mobileMenu.classList.contains('hidden');
+    const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+    btn.setAttribute('aria-expanded', !isExpanded);
+
+    if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        openIcon?.classList.add('hidden');
+        closeIcon?.classList.remove('hidden');
+    } else {
+        mobileMenu.classList.add('hidden');
+        openIcon?.classList.remove('hidden');
+        closeIcon?.classList.add('hidden');
     }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Run Mobile Menu setup
+    initMobileMenu();
 
     // --- NAVBAR SCROLL EFFECT ---
     const navbar = document.getElementById('navbar');

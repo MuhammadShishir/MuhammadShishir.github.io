@@ -1,0 +1,70 @@
+<!-- Hire Me Section -->
+<section id="hire-me" class="w-full py-20 md:py-32 bg-[#FBF9F5] border-t border-stone-200/60 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-xs font-mono tracking-widest text-stone-500 uppercase mb-3">// Wanna Work Together?</h2>
+            <h3 class="text-4xl md:text-5xl font-light tracking-tight text-stone-900 mb-6">
+                Select a Service & <span class="font-semibold text-stone-900">Hire Me</span>
+            </h3>
+            <p class="text-stone-600 text-base md:text-lg font-light leading-relaxed">
+                Submit your project specifications below for a professional consultation, technical scope assessment, and custom quotation.
+            </p>
+        </div>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-8 md:p-12 rounded-2xl border border-stone-200/80 shadow-xs relative">
+            <input type="hidden" name="access_key" value="bbd650bf-7ccb-43cd-9794-efee2605f469">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <label class="block text-stone-500 text-xs font-mono uppercase tracking-wider mb-2">Your Name</label>
+                    <input type="text" name="name" placeholder="John Doe" required class="w-full bg-[#FBF9F5] border border-stone-200 rounded-xl p-3.5 text-stone-900 placeholder-stone-400 focus:border-stone-900 focus:ring-1 focus:ring-stone-900 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-stone-500 text-xs font-mono uppercase tracking-wider mb-2">Email Address</label>
+                    <input type="email" name="email" placeholder="john@example.com" required class="w-full bg-[#FBF9F5] border border-stone-200 rounded-xl p-3.5 text-stone-900 placeholder-stone-400 focus:border-stone-900 focus:ring-1 focus:ring-stone-900 outline-none transition">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <label class="block text-stone-500 text-xs font-mono uppercase tracking-wider mb-2">Select the service you need</label>
+                <select name="service" class="w-full bg-[#FBF9F5] border border-stone-200 rounded-xl p-3.5 text-stone-900 focus:border-stone-900 focus:ring-1 focus:ring-stone-900 outline-none cursor-pointer transition">
+                    <optgroup label="IT Support Services" class="bg-white text-stone-900">
+                        <option value="pc-hardware">PC Hardware Support & Maintenance</option>
+                        <option value="pc-troubleshooting">PC Troubleshooting & Software Repair</option>
+                        <option value="it-consultation">General IT & Server Consultation</option>
+                    </optgroup>
+                    <optgroup label="WordPress Website Design" class="bg-white text-stone-900">
+                        <option value="wp-landing">WordPress Landing Page Design</option>
+                        <option value="wp-company">WordPress Company/Corporate Website</option>
+                        <option value="wp-ecommerce">WordPress E-Commerce Store (WooCommerce)</option>
+                        <option value="wp-multivendor">Multi-Vendor WordPress Website</option>
+                        <option value="wp-lms">Learning Platform with LMS in WordPress</option>
+                        <option value="wp-membership">Membership & Subscription Website</option>
+                        <option value="wp-booking">Appointment & Booking System Website</option>
+                    </optgroup>
+                    <optgroup label="Shopify Theme Customization" class="bg-white text-stone-900">
+                        <option value="shopify-ecommerce">Shopify E-Commerce Store Setup</option>
+                        <option value="shopify-b2b">B2B Shopify Store Development</option>
+                        <option value="shopify-multivendor">Multi-vendor Shopify Website</option>
+                        <option value="shopify-custom">Custom Shopify Liquid Theme Tweaks</option>
+                    </optgroup>
+                    <optgroup label="Web Development & Conversion" class="bg-white text-stone-900">
+                        <option value="static-dev">Static Webpage (PSD/Figma/PDF to HTML)</option>
+                        <option value="speed-optimization">Website Speed & Performance Optimization</option>
+                        <option value="technical-seo">Technical SEO Audit & Implementation</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="mb-6">
+                <label class="block text-stone-500 text-xs font-mono uppercase tracking-wider mb-2">Project Details</label>
+                <textarea name="message" rows="4" placeholder="Tell me more about your specific requirements, timeline, or goals..." required class="w-full bg-[#FBF9F5] border border-stone-200 rounded-xl p-3.5 text-stone-900 placeholder-stone-400 focus:border-stone-900 focus:ring-1 focus:ring-stone-900 outline-none transition resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-stone-900 hover:bg-stone-800 text-white font-bold py-4 rounded-xl transition-all shadow-xs cursor-pointer">
+                Confirm Order Request
+            </button>
+        </form>
+    </div>
+</section>
+

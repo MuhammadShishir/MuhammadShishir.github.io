@@ -1,4 +1,4 @@
-/* From Uiverse.io by Yaya12085 */ 
+/* From Uiverse.io by Yaya12085 - Modernized & Harmonized for MKShishir Profile Portfolio */
 
 .header {
   display: flex;
@@ -30,9 +30,11 @@
   margin: 0 10px 10px;
   color: white;
 }
-a{
-  color: white;
+
+a {
+  color: inherit;
 }
+
 .property {
   margin-left: 30px;
 }
@@ -57,7 +59,7 @@ a{
   color: rgb(207 146 120);
 }
 
-.color-preview-1,.color-preview-2 {
+.color-preview-1, .color-preview-2 {
   height: 8px;
   width: 8px;
   border: 1px solid #fff;
@@ -66,53 +68,55 @@ a{
 }
 
 .color-preview-1 {
-  background-color: #1d1e22;
-}
-
-.color-preview-1 {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 #sidebar {
   position: fixed;
-  width: 15rem;
+  width: 16rem;
   height: 100%;
-  background-color: #212529;
-  padding: 1rem;
+  background-color: #1c1917; /* Harmonized with stone-900 theme */
+  border-right: 1px solid rgba(214, 211, 209, 0.1);
+  padding: 1.5rem 1rem;
   z-index: 1000;
   overflow-y: auto;
 }
+
 #sidebar .nav-link {
   position: relative;
   font-weight: 500;
   letter-spacing: 0.05rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  color: #d6d3d1;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
 #mobileMenuToggle {
   position: fixed;
-  
   z-index: 1060; 
-  top: 0.1rem;
-  right: 2rem !important;
+  top: 0.8rem;
+  right: 1.5rem !important;
 }
 
 .hamburger {
   position: fixed;
-  
-  width: -webkit-fill-available;
+  width: auto;
   height: 2.5rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
+
 button#closeMobileMenu {
   position: absolute;
-  top: 3rem;
-  right: 2rem;
-   padding: 0 !important;
-   margin: 0;
+  top: 2rem;
+  right: 1.5rem;
+  padding: 0 !important;
+  margin: 0;
   font-size: 2rem;
+  color: #fff;
 }
+
 /* Hover glow effects for each nav item */
 #sidebar .nav-item:nth-child(1) .nav-link:hover, #mobileMenu .nav-item:nth-child(1) .nav-link:hover {
   color: #0ff;
@@ -139,7 +143,7 @@ button#closeMobileMenu {
   text-shadow: 0 0 0.5rem #f03737, 0 0 1rem #f03737;
 }
 
-#sidebar .nav-link::after,  #mobileMenu .nav-link::after {
+#sidebar .nav-link::after, #mobileMenu .nav-link::after {
   content: "";
   display: block;
   height: 0.15rem;
@@ -147,12 +151,13 @@ button#closeMobileMenu {
   background: currentColor;
   transition: width 0.4s ease;
 }
-#sidebar .nav-link:hover::after , #mobileMenu .nav-link:hover::after {
+
+#sidebar .nav-link:hover::after, #mobileMenu .nav-link:hover::after {
   width: 100%;
 }
 
 .contact-link {
-  color: #00ffe7;
+  color: #d4af37; /* Refined luxury accent gold */
   font-weight: 500;
   margin-bottom: 0.5rem;
   text-decoration: none;
@@ -160,9 +165,11 @@ button#closeMobileMenu {
   display: inline-block;
   transition: color 0.3s ease;
 }
+
 .contact-link i {
   margin-right: 0.5rem;
 }
+
 .contact-link:hover {
   color: #ffffff;
 }
@@ -170,18 +177,20 @@ button#closeMobileMenu {
 form input,
 form textarea {
   font-family: 'Fira Code', monospace;
-  background-color: #1e1e1e;
+  background-color: #1c1917;
   border: 0.1rem solid #444;
   color: #fff;
   font-size: 1rem;
   padding: 0.75rem;
+  border-radius: 0.5rem;
   width: 100%;
 }
 
 form input:focus,
 form textarea:focus {
-  border-color: #00ffe7;
-  box-shadow: 0 0 0.5rem rgba(0, 255, 231, 0.3);
+  border-color: #d4af37;
+  box-shadow: 0 0 0.5rem rgba(212, 175, 55, 0.3);
+  outline: none;
 }
 
 .play-now-btn {
@@ -189,20 +198,20 @@ form textarea:focus {
   font-family: 'Fira Code', monospace;
   text-decoration: none;
   font-weight: bold;
-  color: #0ff;
-  border: 0.15rem solid #0ff;
+  color: #1c1917;
+  border: 0.15rem solid #1c1917;
   padding: 0.6rem 1.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 0 0.6rem rgba(0, 255, 255, 0.3);
-  background-color: transparent;
+  box-shadow: 0 0 0.6rem rgba(28, 25, 23, 0.1);
+  background-color: #FBF9F5;
 }
 
 .play-now-btn:hover {
-  background-color: #0ff;
-  color: #000;
-  box-shadow: 0 0 1.2rem rgba(0, 255, 255, 0.5), 0 0 0.3rem rgba(0, 255, 255, 0.4) inset;
+  background-color: #1c1917;
+  color: #FBF9F5;
+  box-shadow: 0 0 1.2rem rgba(28, 25, 23, 0.2);
   transform: translateY(-0.2rem);
 }
 
@@ -215,133 +224,156 @@ form textarea:focus {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #f5f2eb;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin: 0 0.4rem;
   font-size: 1.2rem;
-  color: #000;
+  color: #1c1917;
   position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
 }
+
 .footer-icons .icon-wrapper:hover {
   color: #fff;
   transform: translateY(-0.2rem);
 }
-.icon-wrapper.github:hover { background-color: #000; }
+
+.icon-wrapper.github:hover { background-color: #181717; }
 .icon-wrapper.linkedin:hover { background-color: #0077b5; }
 .icon-wrapper.email:hover { background-color: #c23a2b; }
 .icon-wrapper.itch:hover { background-color: #fa5c5c; }
-.icon-wrapper.orcid:hover { background-color: #f0c; }
-.icon-wrapper.behance:hover { background-color: #00bfff; }
-
+.icon-wrapper.orcid:hover { background-color: #a6ce39; }
+.icon-wrapper.behance:hover { background-color: #1769ff; }
 
 .icon-wrapper[title]:hover::after {
   content: attr(title);
   position: absolute;
-  bottom: -2rem;
+  bottom: -2.2rem;
   left: 50%;
   transform: translateX(-50%);
-  background: #222;
+  background: #1c1917;
   color: #fff;
   padding: 0.3rem 0.6rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
   white-space: nowrap;
   opacity: 0.95;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-
-
 
 .video-container {
   display: flex;
   flex-direction: row;
   padding: 2vw;
+  gap: 1.5rem;
 }
+
 .video-container iframe {
   max-width: 100%;
   height: 300px !important;
+  border-radius: 1rem;
 }
-
-
 
 .go-to-top, .go-home, .go-contact {
   position: fixed;
-  width: 2.2rem;
-  height: 2.2rem;
-  background-color: #fff;
-  color: #0077b5;
-  font-size: 1.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #FBF9F5;
+  color: #1c1917;
+  font-size: 1.1rem;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 0 1rem rgba(117, 117, 117, 0.6);
+  border: 1px solid rgba(214, 211, 209, 0.8);
+  box-shadow: 0 4px 12px rgba(28, 25, 23, 0.08);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   z-index: 1000;
 }
+
 .go-to-top-container {
   position: fixed;
   bottom: 3.1rem;
   right: 1.6rem;
-  background-color: #0080ff;
-  height: 9rem;
-  width: 3rem;
+  background-color: rgba(28, 25, 23, 0.85);
+  backdrop-filter: blur(8px);
+  height: 10rem;
+  width: 3.5rem;
   border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .go-to-top {
-  bottom: 3.5rem;
-  right: 2rem;
+  bottom: 3.8rem;
+  right: 2.1rem;
 }
-.go-home {
-  bottom: 9.5rem;
-  right: 2rem;
-}
+
 .go-contact {
-  bottom: 6.5rem;
-  right: 2rem;
+  bottom: 6.8rem;
+  right: 2.1rem;
 }
+
+.go-home {
+  bottom: 9.8rem;
+  right: 2.1rem;
+}
+
 .go-to-top:hover, .go-home:hover, .go-contact:hover {
-  background: #000;
+  background: #1c1917;
   color: #fff;
+  transform: scale(1.05);
 }
 
 /* Modal Styles */
 .contact-modal {
   position: fixed;
   inset: 0;
-  background: #000;
+  background: rgba(28, 25, 23, 0.75);
+  backdrop-filter: blur(12px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
 }
+
 .contact-content {
-  background: #c5c5c54b;
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 500px;
+  background: rgba(251, 249, 245, 0.95);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(214, 211, 209, 0.8);
+  max-width: 520px;
   width: 90%;
-  color: white;
+  color: #1c1917;
   position: relative;
   z-index: 1000;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
+
 .close-contact {
   position: absolute;
-  top: 0.5rem;
-  right: 1rem;
+  top: 1rem;
+  right: 1.25rem;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #78716c;
+  transition: color 0.2s;
 }
+
+.close-contact:hover {
+  color: #1c1917;
+}
+
 .d-none {
-  display: none;
+  display: none !important;
 }
-
-
 
 .offcanvas-menu {
   position: fixed;
@@ -349,44 +381,40 @@ form textarea:focus {
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: #212529;
+  background-color: #1c1917;
   overflow-y: auto;
-  transition: left 0.3s ease-in-out;
+  transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 1050;
+  padding: 2rem 1rem;
 }
+
 .offcanvas-menu.show {
   left: 0;
 }
 
-
 @media (max-width: 991px) {
   body > .flex-grow-1, .main-content {
-    
     padding: 0 !important;
-    padding-top: 3rem !important;
-    margin-left: 0.7rem !important;
-    margin-right: 1rem !important;
+    padding-top: 3.5rem !important;
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
   }
   .video-container {
     flex-direction: column;
-    width: 90vw;
+    width: 92vw;
   }
   #sidebar {
     display: none !important;
-    
   }
   .code-block {
-    
     margin: 1.2rem auto;
     padding: 1rem;
     font-size: 0.9rem;
-  
     justify-content: center;
-    
     overflow-x: hidden;
   }
-  
 }
+
 @media (max-width: 576px) {
   .gallery-container {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
@@ -399,6 +427,7 @@ form textarea:focus {
     padding: 0.5rem 1rem;
   }
 }
+
 @media (max-width: 400px) {
   .gallery-container {
     grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
@@ -411,6 +440,7 @@ form textarea:focus {
     padding: 0.4rem 0.8rem;
   }
 }
+
 #sidebar::before, #mobileMenu::before {
   content: "";
   position: absolute;
@@ -418,18 +448,20 @@ form textarea:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(120deg, #00ffe7, #0f0, #f0f, #f03737);
+  background: linear-gradient(120deg, rgba(212,175,55,0.15), rgba(120,113,108,0.1), rgba(28,25,23,0.2));
   background-size: 300% 300%;
-  filter: blur(20px);
+  filter: blur(30px);
   animation: animateGradient 15s ease infinite;
   z-index: -1;
-  opacity: 0.25;
+  opacity: 0.4;
 }
+
 @keyframes animateGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
 #sidebar::after, #mobileMenu::after {
   content: "✨";
   position: absolute;
@@ -481,9 +513,9 @@ form textarea:focus {
 
 .inner-content {
   position: relative;
-  border: 1px solid #222;
-  background: #000;
-  color: white;
+  border: 1px solid rgba(214, 211, 209, 0.8);
+  background: #FBF9F5;
+  color: #1c1917;
   font-size: 16px;
   text-align: center;
   padding: 16px 26px;
@@ -512,16 +544,15 @@ form textarea:focus {
     opacity: 0;
   }
 }
-.social-preheader {
 
+.social-preheader {
   display: flex;
   justify-content: center;
   place-content: center;
   align-items: center;
   text-align: center;
   gap: 1rem;
-  color: #ccc;
- 
+  color: #78716c;
 }
 
 .social-preheader .icon-wrapper {
@@ -529,45 +560,47 @@ form textarea:focus {
   width: 1.5rem;
   align-items: center;
   border-radius: 100%;
-  color: #ccc;
+  color: #78716c;
   transition: color 0.3s ease;
 }
 
 .social-preheader .icon-wrapper:hover {
-  color: #00ffff; /* Aqua hover */
+  color: #d4af37;
   text-align: center;
 }
 
-.social-preheader .github:hover   { color: #6e5494; }
-.social-preheader .linkedin:hover { color: #ffffff; }
-.social-preheader .email:hover    { color: #ffffff; }
-.social-preheader .itch:hover     { color: #ffffff; }
+.social-preheader .github:hover    { color: #181717; }
+.social-preheader .linkedin:hover { color: #0077b5; }
+.social-preheader .email:hover    { color: #c23a2b; }
+.social-preheader .itch:hover     { color: #fa5c5c; }
 
 .label {
   font-family: 'Fira Code', monospace;
   font-weight: bold;
-  color: #ffffff;
+  color: #1c1917;
   margin-bottom: 0.5rem;
 }
-.outline{
+
+.outline {
   display: inline-block;
   font-family: 'Fira Code', monospace;
   text-decoration: none;
   font-weight: bold;
-  color: #ffffff;
+  color: #1c1917;
   background-color: transparent;
-  border: 0.15rem solid #ffffff;
+  border: 0.15rem solid #1c1917;
   padding: 0.6rem 1.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
-.outline:hover {
-  background-color: #ffffff;
-  color: rgba(0, 0, 0, 0.5);
 
+.outline:hover {
+  background-color: #1c1917;
+  color: #FBF9F5;
   transform: translateY(-0.2rem);
 }
+
 .live-button {
   display: inline-block;
   padding: 12px 24px;
@@ -575,11 +608,11 @@ form textarea:focus {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  color: #fff;
-  background-color: #007bff;
+  color: #FBF9F5;
+  background-color: #1c1917;
   border: none;
   border-radius: 50px;
-  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(28, 25, 23, 0.2);
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -587,9 +620,9 @@ form textarea:focus {
 }
 
 .live-button:hover {
-  color: #fff;
-  background-color: #0056b3;
-  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+  color: #FBF9F5;
+  background-color: #44403c;
+  box-shadow: 0 6px 20px rgba(28, 25, 23, 0.3);
   transform: translateY(-2px);
 }
 
@@ -600,7 +633,7 @@ form textarea:focus {
   left: -75%;
   width: 50%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
   transform: skewX(-20deg);
   transition: all 0.5s ease;
   z-index: 0;
@@ -609,35 +642,33 @@ form textarea:focus {
 .live-button:hover::before {
   left: 120%;
 }
+
 .category-text {
   position: absolute;
-  bottom: 0; /* Position it below the description */
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   display: none;
-  background-color: #f0f0f01a; /* A light grey background color */
-  color: #ffffff; /* Darker text for contrast */
-  padding: 5px 10px; /* Some padding for spacing */
-  margin-top: 10px; /* Space it below the description */
-  font-size: 0.9em; /* Make the font a little smaller */
-  border-radius: 5px; /* Rounded corners */
-  text-align: center; /* Center the text */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
- 
+  background-color: rgba(28, 25, 23, 0.85);
+  color: #ffffff;
+  padding: 6px 10px;
+  margin-top: 10px;
+  font-size: 0.85em;
+  border-radius: 0 0 1rem 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .grid-item:hover .category-text {
   display: block;
-  background-color: #007bff; /* A blue background on hover */
-  color: #fff; /* White text on hover */
+  background-color: #1c1917;
+  color: #fff;
 }
 
 .bottom-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
   margin-top: 0.5rem;
 }
-

@@ -1,0 +1,84 @@
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#FBF9F5]/85 backdrop-blur-xl border-b border-stone-200/80 shadow-xs">
+    <div class="container mx-auto px-6 sm:px-12 lg:px-24">
+        <div id="nav-inner" class="flex items-center justify-between h-20 transition-all duration-300">
+            
+            <div class="flex-shrink-0">
+                <a href="https://mkshishir.pro.bd" class="flex items-center space-x-3 group">
+                    <div class="relative">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-stone-600 to-stone-900 rounded-full blur-xs opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                        <img src="./media/img/M K S.png" alt="Md Kamruzzaman Shishir" id="profile-pic" 
+                            class="relative w-12 h-12 object-cover rounded-full bg-stone-900 border-2 border-stone-700 shadow-md transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-base font-semibold text-stone-900 tracking-tight group-hover:text-stone-700 transition-colors">MKShishir</span>
+                        <span class="text-[9px] font-mono uppercase tracking-widest text-stone-500">IT & Web Expert</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden lg:flex lg:space-x-8 items-center">
+                <a href="#about" class="relative text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors duration-200 py-1 group">
+                    About
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#skills" class="relative text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors duration-200 py-1 group">
+                    Skills
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#projects" class="relative text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors duration-200 py-1 group">
+                    Projects
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="gallery.html" class="relative text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors duration-200 py-1 group">
+                    Gallery
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" onclick="openContactModal(); return false;" class="relative text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors duration-200 py-1 group">
+                    Contact
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="#hire-me" class="group relative inline-flex items-center px-6 py-2.5 rounded-full text-xs font-mono uppercase tracking-wider text-stone-100 bg-stone-900 hover:bg-stone-800 transition-all duration-300 shadow-md hover:-translate-y-0.5 overflow-hidden">
+                    <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                    <span class="relative z-10">Hire Me</span>
+                </a>
+
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" type="button" class="text-stone-800 hover:text-stone-900 focus:outline-none p-2 rounded-xl bg-stone-200/50 hover:bg-stone-200 transition duration-200">
+                        <svg class="h-6 w-6 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path id="open-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 7h16M4 12h16M4 17h16" />
+                            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#FBF9F5]/95 backdrop-blur-2xl border-b border-stone-200/90 shadow-2xl transition-all duration-300">
+        <div class="px-6 pt-5 pb-7 space-y-2.5">
+            <a href="#about" class="flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium text-stone-800 hover:bg-stone-200/60 hover:text-stone-900 transition-all duration-200">
+                <span>About</span>
+                <i class="fas fa-arrow-right text-xs text-stone-400"></i>
+            </a>
+            <a href="#skills" class="flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium text-stone-800 hover:bg-stone-200/60 hover:text-stone-900 transition-all duration-200">
+                <span>Skills</span>
+                <i class="fas fa-arrow-right text-xs text-stone-400"></i>
+            </a>
+            <a href="#projects" class="flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium text-stone-800 hover:bg-stone-200/60 hover:text-stone-900 transition-all duration-200">
+                <span>Projects</span>
+                <i class="fas fa-arrow-right text-xs text-stone-400"></i>
+            </a>
+            <a href="gallery.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium text-stone-800 hover:bg-stone-200/60 hover:text-stone-900 transition-all duration-200">
+                <span>Gallery</span>
+                <i class="fas fa-arrow-right text-xs text-stone-400"></i>
+            </a>
+            <a href="#" onclick="openContactModal(); return false;" class="flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium text-stone-800 hover:bg-stone-200/60 hover:text-stone-900 transition-all duration-200">
+                <span>Contact</span>
+                <i class="fas fa-arrow-right text-xs text-stone-400"></i>
+            </a>
+        </div>
+    </div>
+</nav>

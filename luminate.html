@@ -1,268 +1,397 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Luminate Theme Devlog| Md Kamruzzaman Shishir</title>
-<!-- Favicon -->
-                  <link rel="icon" type="image/x-icon" href="https://mkshishir.pro.bd/M-K-S.ico">
-  <meta name="description" content="Luminate Theme Devlog and Documentation by MKShishir. Explore the latest features, design philosophy, and future plans for the Luminate theme." />
-  <meta name="keywords" content="Luminate, Theme, Devlog, Documentation, MKShishir, E-commerce, Shopify, Liquid, CSS, HTML" />
-  <meta name="author" content="MKShishir" />
-                  <link rel="icon" type="image/x-icon" href="https://mkshishir.pro.bd/M-K-S.ico">
-          <!-- Apple Touch Icon -->   
-          <link rel="icon" type="image/png" sizes="32x32" href="https://mkshishir.pro.bd/media/img/M K S.png">
-
-          <!-- Manifest (for PWA support) -->
-          <link rel="manifest" href="/manifest.json">
-
-          <!-- DNS Prefetch & Preconnect for performance -->
-          <link rel="dns-prefetch" href="//fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-          <!-- Apple Touch Icon -->
-          <link rel="apple-touch-icon" href="/media/img/M K S.png" sizes="180x180">
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/grid.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/v4-shims.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/v5-font-face.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Luminate Theme Devlog | Md Kamruzzaman Shishir</title>
     
-      
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <!-- Poppins Font with all weights -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+e4z5l5d5a5b5b5b5b5b5b5" crossorigin="anonymous">
-  <link rel="stylesheet" href="luminate-include/style.css" />
-  
+    <meta name="description" content="Luminate Theme Devlog and Documentation by MKShishir. Explore the latest features, design philosophy, and future plans for the Luminate theme." />
+    <meta name="keywords" content="Luminate, Theme, Devlog, Documentation, MKShishir, E-commerce, Shopify, Liquid, CSS, HTML" />
+    <meta name="author" content="MKShishir" />
+
+    <link rel="icon" type="image/x-icon" href="https://mkshishir.pro.bd/M-K-S.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://mkshishir.pro.bd/media/img/M K S.png">
+    <link rel="apple-touch-icon" href="https://mkshishir.pro.bd/media/img/M K S.png" sizes="180x180">
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-primary: #FBF9F5;
+            --bg-secondary: #F4F0EA;
+            --text-main: #1c1917;
+            --text-muted: #78716c;
+            --border-color: #e7e5e4;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            overflow-x: hidden;
+        }
+
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            background-image: radial-gradient(#1c1917 1px, transparent 1px);
+            background-size: 36px 36px;
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        @keyframes blob {
+            0%, 100% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        .animate-blob {
+            animation: blob 10s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+
+        /* Floating Action Group Container */
+        .floating-controls {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .floating-btn {
+            width: 3rem;
+            height: 3rem;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(231, 229, 228, 0.9);
+            color: var(--text-main);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px -5px rgba(28, 25, 23, 0.08);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .floating-btn:hover {
+            background: #1c1917;
+            color: #ffffff;
+            border-color: #1c1917;
+            transform: translateY(-2px);
+        }
+
+        #go-to-top {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #go-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Contact Modal Container */
+        #contact-modal {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        #contact-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+    </style>
 </head>
+<body class="antialiased selection:bg-stone-900 selection:text-stone-100 relative">
 
-<body>
-  <header>
-    Luminate Theme - Devlog & Documentation
-  </header>
+    <div class="bg-grid"></div>
 
-  <main>
-    <div class="section">
-      <h2>v0.0.0.1</h2>
-      <small>Released: 26 June 2025 • Author: <a href="https://mkshishir.pro.bd" target="_blank">MKShishir</a></small>
-      <p>🚀 Initial setup with a persistent site-wide <strong>Header</strong>.</p>
+    <div class="absolute inset-0 -z-10 opacity-30 pointer-events-none overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-[450px] h-[450px] bg-[#EFECE6] rounded-full blur-[120px] animate-blob"></div>
+        <div class="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] bg-[#E8E2D5] rounded-full blur-[120px] animate-blob animation-delay-2000"></div>
     </div>
 
-    <div class="section">
-      <h2>v0.0.0.2</h2>
-      <small>Released: 27 June 2025 (AM)</small>
-      <p>➕ Added <strong>Footer</strong> with dynamic year and author link.</p>
-    </div>
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full z-40 px-6 sm:px-12 lg:px-24 py-5 flex justify-between items-center bg-[#FBF9F5]/80 backdrop-blur-xl border-b border-stone-300/60 shadow-xs">
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="w-10 h-10 flex items-center justify-center rounded-xl bg-white border border-stone-300/80 text-stone-800 hover:bg-stone-900 hover:text-white hover:border-stone-900 transition-all shadow-sm">
+                <i class="fas fa-arrow-left text-sm"></i>
+            </a>
+            <span class="font-medium tracking-tight text-base sm:text-lg text-stone-900">
+                Luminate Theme <span class="text-stone-400 font-mono mx-1">/</span> <span class="font-normal text-stone-600 font-mono text-sm">Devlog & Documentation</span>
+            </span>
+        </div>
+        <div class="hidden sm:inline-flex items-center gap-2.5 px-3.5 py-1.5 text-xs font-mono uppercase tracking-widest text-stone-700 bg-white/80 border border-stone-300/80 rounded-full shadow-xs backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+            <span>v1.0.0 Stable</span>
+        </div>
+    </nav>
 
-    <div class="section">
-      <h2>v0.0.0.3</h2>
-      <small>Released: 27 June 2025 (PM)</small>
-      <p>🎯 Introduced the <strong>Hero Section</strong> to showcase key visuals and CTAs.</p>
-    </div>
-
-    <div class="section">
-      <h2>v0.0.0.4</h2>
-      <small>Released: 29 June 2025</small>
-      <p>💡 Added interactive <strong>Room Light / Color Mood Changer</strong> to elevate theme personalization.</p>
-    </div>
-
-    <div class="section">
-      <h2>v0.0.0.5</h2>
-      <small>Released: 30 June 2025</small>
-      <p>🔥 Built <strong>Best Seller</strong> section to highlight top-performing products.</p>
-    </div>
-
-    <div class="section">
-      <h2>v0.0.0.6</h2>
-      <small>Released: 01 July 2025 (AM)</small>
-      <p>🆕 Added <strong>New Arrivals</strong> section with clean product cards and animations.</p>
-    </div>
-
-    <div class="section">
-      <h2>v0.0.0.7</h2>
-      <small>Released: 01 July 2025 (PM)</small>
-      <p>
-        📱 Finalized layout structure and <strong>fixed mobile responsiveness</strong> across all major sections:<br/>
-        Header, Footer, Hero, Mood Changer, Best Sellers & New Arrivals.<br/>
-        Enhanced with base animations, consistent spacing, and a polished, accessible visual structure.
-      </p>
-    </div>
-  <div class="section">
-  <h2>v1.0.0</h2>
-  <small>Released: 15 September 2025 (PM)</small>
-  <p>
-    Final Release of Luminate Theme v1.0.0!<br/>
-    🎉 Complete with all core sections, responsive design, and performance optimizations.<br/>
-    <a href="https://paulrussells.com" class="live-button">See Live Deployment</a>
-  </p>
-</div>
-
-    <div class="section">
-      <h2>Design Philosophy</h2>
-      <p>
-        Luminate is built to be vibrant, accessible, and performance-first. Minimal JavaScript, reusable Liquid components, and blazing-fast loads. The font hierarchy is built around Poppins Thin, Light, Regular, and Bold to maintain clarity with elegance.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Next Steps</h2>
-      <p>
-        - Add Customizer Options<br/>
-        - Dynamic Image-based Hero Layouts<br/>
-        - Product Card Customizations<br/>
-        - More section presets for reusability
-      </p>
-    </div>
-  </main>
-
- <footer class="footer mt-5 text-center">
-            <div class="footer-content">
-              
-          
-              <div class="footer-icons d-flex justify-content-center gap-3 mb-2">
-          
-                <a href="https://github.com/MuhammadShishir" class="icon-wrapper github" target="_blank" title="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-          
-                <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" class="icon-wrapper linkedin" target="_blank" title="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-          
-                <a href="mailto:mdkamruzzaman.shishir@outlook.com" class="icon-wrapper email" title="Email">
-                  <i class="fas fa-envelope"></i>
-                </a>
-          
-                <a href="https://mksge.itch.io/" class="icon-wrapper itch" target="_blank" title="Itch.io">
-                  <i class="fab fa-itch-io"></i>
-                </a>
-                <a href="https://orcid.org/0009-0009-2237-0129" class="icon-wrapper orcid" target="_blank" title="ORCID">
-                  <i class="fab fa-orcid"></i>
-                </a>
-                <a href="https://www.behance.net/kamruzzshishir"  class="icon-wrapper behance" target="_blank" title="Behance">
-                  <i class="fab fa-behance"></i>      
-                </a>
-              </div>
-              
-             
-            </div>
-          <br>
-    &copy; <span id="year"></span> <strong>Md Kamruzzaman Shishir</strong> at <a href="https://mkshishir.pro.bd" target="_blank">MKShishir</a>
-  </footer>
-          <!-- External Scripts -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <!-- Main Content Area -->
+    <main class="max-w-4xl mx-auto px-6 sm:px-12 lg:px-24 pt-36 pb-24 relative z-10">
         
-        <!-- Floating Button Container -->
-        <div class="go-to-top-container">
-
-          <!-- Go Home Button -->
-          <a href="index.html" class="go-home" title="Back to Home">
-            <i class="fas fa-home"></i>
-          </a>
-
-          <!-- Contact Button -->
-          <div class="go-contact" id="goToContact" title="Contact Me">
-            <i class="fa-solid fa-comments"></i>
-          </div>
-
-          <!-- Go to Top Button -->
-          <div class="go-to-top" id="goToTop" title="Back to Top">
-            <i class="fas fa-arrow-up"></i>
-          </div>
-
+        <div class="mb-16">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 mb-5 text-xs font-mono uppercase tracking-widest text-stone-700 bg-white/80 border border-stone-300/80 rounded-full shadow-xs backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-stone-900"></span>
+                <span>Changelog & History</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-light tracking-tight text-stone-900 mb-4">
+                Luminate <span class="font-normal text-stone-900 underline decoration-stone-300 underline-offset-8">Theme.</span>
+            </h1>
+            <p class="text-stone-600 text-base md:text-lg leading-relaxed font-light">
+                Documenting the evolution, architecture decisions, and progressive releases of the custom Shopify theme engineered by MKShishir.
+            </p>
         </div>
-        <!-- Contact Modal -->
-        <div id="contactModal" class="contact-modal d-none">
-          <div class="contact-content">
-            <h2 class="text-center text-white">Contact Me</h2>
-            <span class="close-contact" id="closeContact">&times;</span>
 
-            <!-- Contact Form -->
-            <form action="https://formspree.io/f/xanegwyz" method="POST" class="mt-4">
-              <div class="form-group">
-                <label for="name" class="label">Name:</label>
-                <input type="text" name="name" placeholder="Your Name" class="form-control  border-secondary" required>
-              </div>
-              <div class="form-group mt-2">
-                <label for="email" class="label">Email:</label>
-                <input type="email" name="_replyto" placeholder="Your Email" class="form-control  border-secondary" required>
-              </div>
-              <div class="form-group mt-2">
-                <label for="message" class="label">Message:</label>
-                <textarea name="message" rows="4" placeholder="Your Message" class="form-control  border-secondary" required></textarea>
-              </div>
-              <button type="submit" class="outline mt-3">Send Message</button>
+        <!-- Version Log Section -->
+        <section class="space-y-6 mb-16">
+            <div class="border-b border-stone-300/80 pb-4">
+                <h2 class="text-2xl font-normal tracking-tight text-stone-900">Release Timeline</h2>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                <!-- v1.0.0 -->
+                <div class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl hover:border-stone-400 transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-stone-900 text-white flex items-center justify-center font-mono text-sm font-bold">1.0</div>
+                            <h3 class="text-xl font-medium text-stone-900">v1.0.0 — Final Production Release</h3>
+                        </div>
+                        <span class="text-xs font-mono text-stone-500 uppercase tracking-widest bg-stone-100 border border-stone-300 px-3 py-1 rounded-full w-fit">15 Sept 2025</span>
+                    </div>
+                    <p class="text-stone-600 font-light text-sm md:text-base mb-4 leading-relaxed">
+                        Official production launch of the Luminate Theme featuring full section modularity, enhanced responsive design, and rigorous performance optimizations.
+                    </p>
+                    <a href="https://paulrussells.com" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-stone-900 text-white text-xs font-medium hover:bg-stone-800 transition-all">
+                        <span>See Live Deployment</span>
+                        <i class="fas fa-external-link-alt text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- v0.0.0.7 -->
+                <div class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <h3 class="text-lg font-medium text-stone-900">v0.0.0.7 — Responsiveness & Polish</h3>
+                        <span class="text-xs font-mono text-stone-500 uppercase tracking-widest bg-stone-100 border border-stone-300 px-3 py-1 rounded-full w-fit">01 July 2025 (PM)</span>
+                    </div>
+                    <p class="text-stone-600 font-light text-sm md:text-base leading-relaxed">
+                        Finalized cross-device layout integrity and fixed mobile responsiveness across core blocks: Header, Footer, Hero, Mood Changer, Best Sellers, and New Arrivals with consistent spacing and accessible hierarchy.
+                    </p>
+                </div>
+
+                <!-- v0.0.0.6 -->
+                <div class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <h3 class="text-lg font-medium text-stone-900">v0.0.0.6 — New Arrivals Module</h3>
+                        <span class="text-xs font-mono text-stone-500 uppercase tracking-widest bg-stone-100 border border-stone-300 px-3 py-1 rounded-full w-fit">01 July 2025 (AM)</span>
+                    </div>
+                    <p class="text-stone-600 font-light text-sm md:text-base leading-relaxed">
+                        Introduced the New Arrivals component layout complete with clean product preview cards, hover micro-interactions, and smooth grid transitions.
+                    </p>
+                </div>
+
+                <!-- v0.0.0.5 -->
+                <div class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <h3 class="text-lg font-medium text-stone-900">v0.0.0.5 — Best Sellers Section</h3>
+                        <span class="text-xs font-mono text-stone-500 uppercase tracking-widest bg-stone-100 border border-stone-300 px-3 py-1 rounded-full w-fit">30 June 2025</span>
+                    </div>
+                    <p class="text-stone-600 font-light text-sm md:text-base leading-relaxed">
+                        Built and deployed the Best Seller grid to highlight high-performing catalog items with optimized asset loading.
+                    </p>
+                </div>
+
+                <!-- v0.0.0.4 -->
+                <div class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <h3 class="text-lg font-medium text-stone-900">v0.0.0.4 — Room Light / Color Mood Changer</h3>
+                        <span class="text-xs font-mono text-stone-500 uppercase tracking-widest bg-stone-100 border border-stone-300 px-3 py-1 rounded-full w-fit">29 June 2025</span>
+                    </div>
+                    <p class="text-stone-600 font-light text-sm md:text-base leading-relaxed">
+                        Added interactive ambient theme personalization features, enabling visitors to modulate background tones dynamically.
+                    </p>
+                </div>
+
+                <!-- v0.0.0.3 -->
+                <div class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <h3 class="text-lg font-medium text-stone-900">v0.0.0.3 — Hero Section Integration</h3>
+                        <span class="text-xs font-mono text-stone-500 uppercase tracking-widest bg-stone-100 border border-stone-300 px-3 py-1 rounded-full w-fit">27 June 2025 (PM)</span>
+                    </div>
+                    <p class="text-stone-600 font-light text-sm md:text-base leading-relaxed">
+                        Implemented high-impact Hero visuals paired with conversion-driven Call to Action (CTA) buttons.
+                    </p>
+                </div>
+
+                <!-- v0.0.0.2 -->
+                <div class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <h3 class="text-lg font-medium text-stone-900">v0.0.0.2 — Footer Component</h3>
+                        <span class="text-xs font-mono text-stone-500 uppercase tracking-widest bg-stone-100 border border-stone-300 px-3 py-1 rounded-full w-fit">27 June 2025 (AM)</span>
+                    </div>
+                    <p class="text-stone-600 font-light text-sm md:text-base leading-relaxed">
+                        Created the global footer framework incorporating dynamic year injection and author profile links.
+                    </p>
+                </div>
+
+                <!-- v0.0.0.1 -->
+                <div class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <h3 class="text-lg font-medium text-stone-900">v0.0.0.1 — Initial Architecture Setup</h3>
+                        <span class="text-xs font-mono text-stone-500 uppercase tracking-widest bg-stone-100 border border-stone-300 px-3 py-1 rounded-full w-fit">26 June 2025</span>
+                    </div>
+                    <p class="text-stone-600 font-light text-sm md:text-base leading-relaxed">
+                        Repository initialization and structural layout setup featuring a persistent site-wide navigation header. Authored by <a href="https://mkshishir.pro.bd" target="_blank" class="underline decoration-stone-400">MKShishir</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Philosophy & Roadmap Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            <section class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl">
+                <h2 class="text-xl font-medium text-stone-900 mb-4">Design Philosophy</h2>
+                <p class="text-stone-600 font-light text-sm md:text-base leading-relaxed">
+                    Luminate is built to be vibrant, accessible, and performance-first. Minimal JavaScript, reusable Liquid components, and blazing-fast loads. The typography hierarchy relies on clean weight variations (Thin, Light, Regular, Bold) to maintain pristine visual legibility.
+                </p>
+            </section>
+
+            <section class="p-8 rounded-3xl bg-white/80 border border-stone-300/80 shadow-sm backdrop-blur-xl">
+                <h2 class="text-xl font-medium text-stone-900 mb-4">Next Steps & Roadmap</h2>
+                <ul class="space-y-2.5 text-stone-600 font-light text-sm md:text-base">
+                    <li class="flex items-start gap-2"><span class="text-stone-900">•</span> Expanded Customizer settings panel options</li>
+                    <li class="flex items-start gap-2"><span class="text-stone-900">•</span> Dynamic image-based responsive Hero layouts</li>
+                    <li class="flex items-start gap-2"><span class="text-stone-900">•</span> Advanced product card UI customizations</li>
+                    <li class="flex items-start gap-2"><span class="text-stone-900">•</span> Additional reusable section presets</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="py-12 border-t border-stone-300/60 bg-stone-100/50 backdrop-blur-md relative z-10 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-center gap-3 mb-6">
+                <a href="https://github.com/MuhammadShishir" class="w-10 h-10 rounded-full bg-white border border-stone-300/80 text-stone-800 hover:bg-stone-900 hover:text-white flex items-center justify-center transition-all shadow-xs" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/md-kamruzzaman-shishir/" class="w-10 h-10 rounded-full bg-white border border-stone-300/80 text-stone-800 hover:bg-stone-900 hover:text-white flex items-center justify-center transition-all shadow-xs" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:mdkamruzzaman.shishir@outlook.com" class="w-10 h-10 rounded-full bg-white border border-stone-300/80 text-stone-800 hover:bg-stone-900 hover:text-white flex items-center justify-center transition-all shadow-xs" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://mksge.itch.io/" class="w-10 h-10 rounded-full bg-white border border-stone-300/80 text-stone-800 hover:bg-stone-900 hover:text-white flex items-center justify-center transition-all shadow-xs" target="_blank" title="Itch.io">
+                    <i class="fab fa-itch-io"></i>
+                </a>
+                <a href="https://orcid.org/0009-0009-2237-0129" class="w-10 h-10 rounded-full bg-white border border-stone-300/80 text-stone-800 hover:bg-stone-900 hover:text-white flex items-center justify-center transition-all shadow-xs" target="_blank" title="ORCID">
+                    <i class="fab fa-orcid"></i>
+                </a>
+                <a href="https://www.behance.net/kamruzzshishir" class="w-10 h-10 rounded-full bg-white border border-stone-300/80 text-stone-800 hover:bg-stone-900 hover:text-white flex items-center justify-center transition-all shadow-xs" target="_blank" title="Behance">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </div>
+            <p class="text-stone-500 text-sm font-light">
+                &copy; <span id="year"></span> <strong>Md Kamruzzaman Shishir</strong> at <a href="https://mkshishir.pro.bd" target="_blank" class="underline decoration-stone-300">MKShishir</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Controls Container -->
+    <div class="floating-controls">
+        <a href="index.html" class="floating-btn" title="Back to Home">
+            <i class="fas fa-home text-sm"></i>
+        </a>
+        <button id="go-to-contact" class="floating-btn" title="Contact Me">
+            <i class="fa-solid fa-comments text-sm"></i>
+        </button>
+        <button id="go-to-top" class="floating-btn" title="Back to Top">
+            <i class="fas fa-arrow-up text-sm"></i>
+        </button>
+    </div>
+
+    <!-- Contact Modal Overlay -->
+    <div id="contact-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-stone-950/80 backdrop-blur-2xl p-4">
+        <div class="bg-white border border-stone-300/80 rounded-3xl p-8 max-w-md w-full shadow-2xl relative">
+            <button id="close-contact" aria-label="Close modal" class="absolute top-6 right-6 w-10 h-10 bg-stone-100 hover:bg-stone-900 text-stone-800 hover:text-white border border-stone-300 rounded-full flex items-center justify-center transition-all cursor-pointer">
+                <i class="fas fa-times text-sm"></i>
+            </button>
+            <h3 class="text-2xl font-normal text-stone-900 mb-6 text-center">Contact Me</h3>
+
+            <form action="https://formspree.io/f/xanegwyz" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-mono uppercase tracking-widest text-stone-500 mb-1.5">Name</label>
+                    <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:border-stone-900 text-stone-900 text-sm" required>
+                </div>
+                <div>
+                    <label class="block text-xs font-mono uppercase tracking-widest text-stone-500 mb-1.5">Email</label>
+                    <input type="email" name="_replyto" placeholder="Your Email" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:border-stone-900 text-stone-900 text-sm" required>
+                </div>
+                <div>
+                    <label class="block text-xs font-mono uppercase tracking-widest text-stone-500 mb-1.5">Message</label>
+                    <textarea name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:border-stone-900 text-stone-900 text-sm resize-none" required></textarea>
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-medium text-sm transition-all shadow-sm cursor-pointer">Send Message</button>
             </form>
-          </div>
         </div>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const goToTopButton = document.getElementById("goToTop");
-            const contactBtn = document.getElementById("goToContact");
-            const contactModal = document.getElementById("contactModal");
-            const closeBtn = document.getElementById("closeContact");
+    </div>
 
-            // Show/hide "Go to top" on scroll
-            window.addEventListener("scroll", function () {
-              if (window.scrollY > 20) {
-                goToTopButton.classList.add("show-go-to-top");
-              } else {
-                goToTopButton.classList.remove("show-go-to-top");
-              }
-            });
-
-            // Scroll to top
-            goToTopButton.addEventListener("click", function () {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            });
-
-            // Show contact modal
-            contactBtn.addEventListener("click", function () {
-              contactModal.classList.remove("d-none");
-            });
-
-            // Hide contact modal
-            closeBtn.addEventListener("click", function () {
-              contactModal.classList.add("d-none");
-            });
-
-            // Close modal if clicked outside
-            window.addEventListener("click", function (e) {
-              if (e.target === contactModal) {
-                contactModal.classList.add("d-none");
-              }
-            });
-          });
-        </script>
-
-
-      <script>
-        document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-              target.scrollIntoView({ behavior: 'smooth' });
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Set dynamic copyright year
+            const yearEl = document.getElementById('year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
             }
-          });
-        });
-      </script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
 
+            // Scroll-to-top button logic
+            const $goToTop = $("#go-to-top");
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $goToTop.addClass("show");
+                } else {
+                    $goToTop.removeClass("show");
+                }
+            });
+
+            $goToTop.click(function () {
+                $("html, body").animate({ scrollTop: 0 }, "smooth");
+                return false;
+            });
+
+            // Contact modal controls
+            const $contactModal = $("#contact-modal");
+            $("#go-to-contact").click(function () {
+                $contactModal.addClass("active");
+            });
+
+            $("#close-contact, #contact-modal").click(function (e) {
+                if (e.target.id === "contact-modal" || e.target.id === "close-contact" || $(e.target).closest('#close-contact').length) {
+                    $contactModal.removeClass("active");
+                }
+            });
+
+            $(document).keydown(function (e) {
+                if (e.keyCode === 27) {
+                    $contactModal.removeClass("active");
+                }
+            });
+        });
+    </script>
+</body>
 </html>

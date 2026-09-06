@@ -1,10 +1,10 @@
-/* From Uiverse.io by RiccardoRapelli - Responsive Version */
+/* From Uiverse.io by RiccardoRapelli - Harmonized & Modernized with MKShishir Luxury Stone Theme */
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 6rem; /* ~60px */
-  height: 3.4rem; /* ~34px */
+  width: 6rem; 
+  height: 3.4rem; 
 }
 
 .switch #input {
@@ -20,10 +20,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #2196f3;
-  transition: 0.4s;
+  background-color: #d4af37; /* Sophisticated warm gold for daylight state */
+  transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 0;
   overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sun-moon {
@@ -32,28 +33,30 @@
   width: 2.6rem;
   left: 0.4rem;
   bottom: 0.4rem;
-  background-color: yellow;
-  transition: 0.4s;
+  background-color: #FBF9F5; /* Matches core page background */
+  transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 #input:checked + .slider {
-  background-color: black;
+  background-color: #1c1917; /* stone-900 for dark mode */
+  border: 1px solid rgba(214, 211, 209, 0.2);
 }
 
 #input:focus + .slider {
-  box-shadow: 0 0 0.1rem #2196f3;
+  box-shadow: 0 0 0.2rem #d4af37;
 }
 
 #input:checked + .slider .sun-moon {
   transform: translateX(2.6rem);
-  background-color: white;
-  animation: rotate-center 0.6s ease-in-out both;
+  background-color: #FBF9F5;
+  animation: rotate-center 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .moon-dot {
   opacity: 0;
   transition: 0.4s;
-  fill: gray;
+  fill: #78716c; /* stone-500 */
 }
 
 #input:checked + .slider .sun-moon .moon-dot {
@@ -103,8 +106,8 @@
   width: 4.3rem;
   height: 4.3rem;
   z-index: -1;
-  fill: white;
-  opacity: 10%;
+  fill: #ffffff;
+  opacity: 15%;
 }
 
 #light-ray-2 {
@@ -114,8 +117,8 @@
   width: 5.5rem;
   height: 5.5rem;
   z-index: -1;
-  fill: white;
-  opacity: 10%;
+  fill: #ffffff;
+  opacity: 15%;
 }
 
 #light-ray-3 {
@@ -125,21 +128,21 @@
   width: 6rem;
   height: 6rem;
   z-index: -1;
-  fill: white;
-  opacity: 10%;
+  fill: #ffffff;
+  opacity: 15%;
 }
 
 /* Clouds */
 .cloud-light {
   position: absolute;
-  fill: #eee;
-  animation: cloud-move 6s infinite;
+  fill: rgba(255, 255, 255, 0.85);
+  animation: cloud-move 6s infinite ease-in-out;
 }
 
 .cloud-dark {
   position: absolute;
-  fill: #ccc;
-  animation: cloud-move 6s infinite;
+  fill: rgba(255, 255, 255, 0.45);
+  animation: cloud-move 6s infinite ease-in-out;
   animation-delay: 1s;
 }
 
@@ -189,10 +192,10 @@
 }
 
 .star {
-  fill: white;
+  fill: #d4af37; /* Accent gold stars */
   position: absolute;
   transition: 0.4s;
-  animation: star-twinkle 2s infinite;
+  animation: star-twinkle 2s infinite ease-in-out;
 }
 
 #input:checked + .slider .stars {
@@ -225,8 +228,13 @@
 }
 
 @keyframes star-twinkle {
-  0% { transform: scale(1); }
-  40% { transform: scale(1.2); }
-  80% { transform: scale(0.8); }
-  100% { transform: scale(1); }
+  0% { transform: scale(1); opacity: 0.8; }
+  40% { transform: scale(1.2); opacity: 1; }
+  80% { transform: scale(0.8); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+@keyframes rotate-center {
+  0% { transform: translateX(0) rotate(0); }
+  100% { transform: translateX(2.6rem) rotate(360deg); }
 }

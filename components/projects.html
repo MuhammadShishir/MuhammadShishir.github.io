@@ -1,0 +1,339 @@
+<section id="projects" class="py-24 md:py-32 bg-[#FBF9F5] w-full relative overflow-hidden">
+    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-stone-200/50 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-200/70 border border-stone-300/60 text-stone-700 text-xs font-mono tracking-widest uppercase mb-4 shadow-sm transform hover:scale-105 transition-transform duration-300">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                Portfolio Showcase
+            </div>
+            <h2 class="text-4xl md:text-6xl font-light tracking-tight text-stone-900 mb-6">
+                Featured <span class="font-normal text-stone-900 underline decoration-stone-300 underline-offset-8">Projects.</span>
+            </h2>
+            <p class="text-stone-600 text-base md:text-lg font-light leading-relaxed">
+                A curated selection of high-performance web applications, scalable e-commerce architectures, and interactive digital systems designed for exceptional user experiences.
+            </p>
+        </div>
+
+        <input type="radio" name="filter" id="filter-all" class="hidden" checked>
+        <input type="radio" name="filter" id="filter-websites" class="hidden">
+        <input type="radio" name="filter" id="filter-unreal" class="hidden">
+        <input type="radio" name="filter" id="filter-other" class="hidden">
+
+        <div class="flex flex-wrap justify-center gap-3 mb-16">
+            <label for="filter-all" class="filter-btn px-6 py-2.5 rounded-full text-xs font-mono tracking-wider uppercase transition-all duration-300 bg-stone-900 text-white border border-stone-900 cursor-pointer shadow-sm">All</label>
+            <label for="filter-websites" class="filter-btn px-6 py-2.5 rounded-full text-xs font-mono tracking-wider uppercase transition-all duration-300 bg-white/85 backdrop-blur-md text-stone-600 border border-stone-200/80 hover:text-stone-900 hover:border-stone-400 hover:bg-white cursor-pointer shadow-xs">Websites</label>
+            <label for="filter-unreal" class="filter-btn px-6 py-2.5 rounded-full text-xs font-mono tracking-wider uppercase transition-all duration-300 bg-white/85 backdrop-blur-md text-stone-600 border border-stone-200/80 hover:text-stone-900 hover:border-stone-400 hover:bg-white cursor-pointer shadow-xs">Unreal Engine</label>
+            <label for="filter-other" class="filter-btn px-6 py-2.5 rounded-full text-xs font-mono tracking-wider uppercase transition-all duration-300 bg-white/85 backdrop-blur-md text-stone-600 border border-stone-200/80 hover:text-stone-900 hover:border-stone-400 hover:bg-white cursor-pointer shadow-xs">Other Systems</label>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="luminate-2.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/luminate-2.png" alt="Luminate-2 Theme" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">SHOPIFY // DEV + THEME // RETAIL</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">paulrussells - Luminate-2 Theme</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Next-generation evolution of the custom paulrussells retail theme, engineered for enhanced speed, UI flexibility, and conversion rates.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="https://arister.co.uk/" target="_blank" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/arister.png" alt="Arister" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">SHOPIFY // DEV + THEME // RETAIL</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">Arister - Heart-Beat Theme</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">UK-based online toy shop and retail platform featuring children's brands, party balloons, and arts & crafts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="prtrade.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/prt.png" alt="paulrussells Trade" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">SHOPIFY // DEV + THEME // B2B</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">paulrussells Trade - LumitradeTheme</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Secure B2B wholesale platform engineered for high-volume commercial distribution and seamless partner transactions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="luminate.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/pr.png" alt="paulrussells" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">SHOPIFY // DEV + THEME // RETAIL</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">paulrussells - Luminate-1 Theme</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Flagship retail e-commerce architecture optimized for conversion and powered by the custom "Luminate" theme.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="https://www.cymaxbd.com/" target="_blank" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/cymaxeng.jpg" alt="Cymax" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">WORDPRESS // DESIGN // CORPORATE</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">Cymax Engineering Co</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Corporate web presence tailored for mechanical and electrical project portfolios, emphasizing structural clarity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="https://veteranfriendlybusinessassociation.com/" target="_blank" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/veteran.jpg" alt="VFA" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">WORDPRESS // DESIGN // NGO</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">VFA</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Mission-driven donation portal designed for veteran advocacy and robust community support networks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="4marchive.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/UI1.png" alt="4mArchive" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">WORDPRESS // ARCHIVE // ACADEMIC</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">4mArchive</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Structured academic repository and publishing ecosystem optimized for thesis documentation and research.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="/include/glazclone/index.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/glazw.jpg" alt="Smart Mirror" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">HTML // UI_CLONE // DESIGN</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">Smart Mirror</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">High-fidelity frontend UI replication featuring modern e-commerce layouts and interactive elements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="/include/itiotech/index.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/itiotech.jpg" alt="PC Parts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">WORDPRESS // E-COMMERCE // RETAIL</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">PC Parts</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Optimized hardware retail interface built for extensive technical product catalogs and filtering.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="portfolio.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/p.jpg" alt="Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">HTML // TAILWIND // ALPINE.JS </p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">Portfolio</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Modular professional showcase featuring custom CSS/JS interaction systems and responsive design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="websites">
+                <div>
+                    <a href="psdtohtml.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/psd.jpg" alt="PSD to HTML" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">HTML // CSS // JAVASCRIPT</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">PSD to HTML</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Pixel-accurate, responsive frontend translation from complex design wireframes to clean code.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="unreal">
+                <div>
+                    <a href="Lost in Green Shores.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/10.webp" alt="Lost in Green Shores" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">UE5 // SCENARY // SURVIVAL</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">Lost in Green Shores</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Open-world survival environment featuring multi-island exploration mechanics and immersive landscape design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="unreal">
+                <div>
+                    <a href="jebyurgth-phantasy.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/6.webp" alt="Jebbyurgth Phantasy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">UE5 // SCENARY // RPG</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">Jebbyurgth Phantasy</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Stylized fantasy realm integration with comprehensive role-playing frameworks and asset structuring.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="unreal">
+                <div>
+                    <a href="exploading-ball.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/ball.png" alt="The Exploding Ball" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">UE5 // GAME // PHYSICS</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">The Exploding Ball</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Interactive physics simulation stressing dynamic trigger conditions and environmental reactions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="unreal">
+                <div>
+                    <a href="resurgence.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/13.webp" alt="Resurgence" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">UE5 // DEMO-GAME // SHOOTER</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">Resurgence</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Tactical survival-horror combat prototype focusing on advanced AI state management and combat loops.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="unreal">
+                <div>
+                    <a href="shadow-myst.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/8.webp" alt="Cursed Blade" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">UE5 // DEMO-GAME // DUNGEON // RPG</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">Cursed Blade</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Procedural dungeon crawler blueprint utilizing optimized modular architecture and combat scripts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="other">
+                <div>
+                    <a href="pdf-to-html-css.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/logo.png" alt="PDF to HTML CSS" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">UTILS // HTML // CSS</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">PDF to HTML CSS</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Automation utility for precise document format translation to standards-compliant web elements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="other">
+                <div>
+                    <a href="result-management-system.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/rESULT.png" alt="Result System" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">JAVA // SWING</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">Result System</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Desktop application utility built for streamlined academic data processing, validation, and reporting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-vault group relative bg-white/80 backdrop-blur-2xl rounded-3xl overflow-hidden border border-stone-200/90 shadow-xl shadow-stone-950/[0.02] transition-all duration-500 hover:shadow-2xl hover:shadow-stone-950/[0.08] hover:-translate-y-2 hover:border-stone-400 flex flex-col justify-between" data-category="other">
+                <div>
+                    <a href="github-projects.html" class="block overflow-hidden aspect-video relative bg-stone-100">
+                        <img src="./media/img/GitHub-Logo.png" alt="GitHub Repository" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="text-xs font-mono text-stone-400 tracking-widest uppercase">ARCHIVE // REPOS</p>
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-emerald-500 transition-colors"></span>
+                        </div>
+                        <h5 class="text-xl font-normal text-stone-900 mb-3 tracking-tight group-hover:text-stone-950 transition-colors">GitHub Repository</h5>
+                        <p class="text-sm text-stone-600 font-light leading-relaxed">Comprehensive collection of open-source utilities, developer scripts, and modular system codebases.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
